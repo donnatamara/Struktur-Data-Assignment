@@ -10,14 +10,14 @@ Tipe data merupakan pengelompokkan atau mengklasifikasikan sebuah data dalam bah
 
 Tipe data primitif merupakan sebuah jenis data pada bahasa pemrograman yang telah ditentukan oleh sistem dan tersedia pada banyak bahasa pemrograman, hal yang membedakan antara bahasa pemrograman yang satu dengan yang lain adalah pada jumlah bit didalam tipe data primitif tergantung pada bahasa pemrograman, compiler, dan sistem operasinya. 
 Contohnya:
-- Int: Digunakan untuk menyimpan bilangan bulat seperti 12, 1, atau 4.
-- Float: Digunakan untuk menyimpan bilangan desimal seperti 1.5, 2.1, atau 3.14.
-- Char: Digunakan untuk menyimpan huruf atau simbol seperti A, B, C.
-- Boolean: Digunakan untuk menyimpan nilai boolean seperti true atau false.
+a. Int: Digunakan untuk menyimpan bilangan bulat seperti 12, 1, 4, dan lain sebagainya.
+b. Float: Digunakan untuk menyimpan bilangan desimal seperti 1.5, 2.1, 3.14, dan lain sebagainya.
+c. Char: Digunakan untuk menyimpan huruf atau simbol seperti A, B, C, dan lain sebagainya.
+d. Boolean: Digunakan untuk menyimpan nilai boolean yang hanya memiliki dua nilai daja yaitu true atau false.
 
 ### 2. Tipe Data Abstrak:
 
-Tipe data abstrak, atau Abstrak Data Type (ADT), dibentuk oleh programer dan bisa berisi berbagai jenis data. Fitur class dalam Object Oriented Programming (OOP) mirip dengan struktur data struct pada bahasa C++, dengan perbedaan akses default (public untuk struct, private untuk class).
+Tipe data abstrak atau Abstrak Data Type (ADT) adalah sebuah tipe data yang dibentuk oleh programernya sendiri dan bisa berisi berbagai jenis data. Fitur class dalam Object Oriented Programming (OOP) mirip dengan struktur data struct pada bahasa C++, dengan perbedaan akses default (public untuk struct, private untuk class).
 
 ### 3. Tipe Data Koleksi:
 
