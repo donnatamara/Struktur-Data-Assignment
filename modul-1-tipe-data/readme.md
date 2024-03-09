@@ -17,7 +17,7 @@ d. Boolean: Digunakan untuk menyimpan nilai boolean yang hanya memiliki dua nila
 
 ### 2. Tipe Data Abstrak:
 
-Tipe data abstrak atau Abstrak Data Type (ADT) adalah sebuah tipe data yang dibentuk oleh programernya sendiri dan bisa berisi berbagai jenis data. Fitur class dalam Object Oriented Programming (OOP) mirip dengan struktur data struct pada bahasa C++, dengan perbedaan akses default (public untuk struct, private untuk class).
+Tipe data abstrak atau Abstrak Data Type (ADT) adalah sebuah tipe data yang dibentuk oleh programernya sendiri. Tipe data iini dapat berisi berbagai jenis data. Fitur class dalam Object Oriented Programming (OOP) mirip dengan struktur data struct pada bahasa C++, dengan perbedaan akses default (public untuk struct, private untuk class).
 
 ### 3. Tipe Data Koleksi:
 
