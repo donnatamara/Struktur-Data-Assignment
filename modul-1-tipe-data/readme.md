@@ -74,7 +74,7 @@ main()
 ```
 
 #### Output:
-<img width="960" alt="Screenshot 2024-03-09 181046" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/67d8b890-60c0-49cc-8c85-327d074026c6">
+<img width="960" alt="Screenshot 2024-03-09 181046" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/f109d046-df2e-44c6-a40e-8f58f0d6d8fa">
 
 Kode di atas adalah program yang meminta pengguna untuk memasukkan operator matematika (+, -, \*, /) dan dua bilangan floating-point. Setelah menerima input, program menggunakan switch statement untuk melakukan operasi sesuai dengan operator yang dimasukkan. Hasil operasi tersebut kemudian dicetak ke layar. Jika operator yang dimasukkan tidak sesuai dengan yang sudah disediakan, maka program akan mencetak pesan error. Program berakhir setelah operasi selesai dan hasilnya ditampilkan.
 
@@ -117,7 +117,7 @@ int main()
 ```
 
 #### Output:
- <img width="960" alt="Screenshot 2024-03-09 181112" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/8447f9e4-1553-4935-bb79-350086135a92">
+<img width="960" alt="Screenshot 2024-03-09 181112" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/de885d7a-d522-4e16-ba04-a0a80adb159f">
 
 Kode di atas merupakan program yang menggunakan struktur data atau struct untuk merepresentasikan informasi mahasiswa. Dalam struct `Mahasiswa`, terdapat tiga anggota yaitu `name` (nama), `address` (alamat), dan `age` (umur). Program kemudian membuat dua variabel bertipe struct Mahasiswa, yaitu `mhs1` dan `mhs2`, dan mengisi nilai untuk masing-masing variabel.
 
@@ -149,7 +149,7 @@ int main()
 ```
 
 #### Output:
-<img width="960" alt="Screenshot 2024-03-09 192753" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/a59337ea-8e0c-411c-850d-aaf086155928">
+<img width="960" alt="Screenshot 2024-03-09 192753" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/f311bda2-fc4b-43e6-89b1-40615dd49fae">
 
 Kode di atas adalah program yang menggunakan array untuk menyimpan beberapa nilai integer. Array tersebut bernama `nilai` dan memiliki panjang 5. Nilai-nilai tersebut diinisialisasi secara terpisah untuk setiap elemen array menggunakan indeks 0 hingga 4.
 
@@ -209,7 +209,7 @@ int main() {
 ```
 
 #### Output:
-<img width="960" alt="Screenshot 2024-03-09 192908" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/920d0e6c-5e78-46c9-a27c-2192b6ba0028">
+<img width="960" alt="Screenshot 2024-03-09 192908" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/516ae316-fdbb-49da-979b-30eb1614ca26">
 
 Kode di atas adalah program yang memungkinkan pengguna memilih antara menghitung luas persegi atau volume kubus. Program meminta pengguna untuk memasukkan pilihan menu (1 untuk menghitung luas persegi, 2 untuk menghitung volume kubus).
 
@@ -288,7 +288,7 @@ int main() {
 ```
 
 #### Output:
-<img width="960" alt="Screenshot 2024-03-09 193003" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/8f948771-96c1-4ffe-96e8-753edc31cbf2">
+<img width="960" alt="Screenshot 2024-03-09 193003" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/87a5583c-b7fb-4844-9746-b03b149c6841">
 
 #### Class Employee:
 
@@ -335,7 +335,7 @@ int main() {
 ```
 
 #### Output:
-<img width="960" alt="Screenshot 2024-03-09 194116" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/2d95847c-96d2-41a8-bbe5-5226170b71db">
+<img width="960" alt="Screenshot 2024-03-09 194116" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/28d51732-51af-4920-8508-1a6b5b8dae40">
 
 Kode di atas menggunakan struktur data map untuk menyimpan pasangan nilai (key-value). Key dalam hal ini adalah indeks, dan value adalah nilai yang terkait. Setelah map diinisialisasi dan diisi dengan beberapa pasangan nilai, program menggunakan loop for untuk mencetak nilai dari setiap pasangan. Hasilnya adalah mencetak nilai-nilai tersebut ke layar tanpa nomor indeks array tertentu.
 
