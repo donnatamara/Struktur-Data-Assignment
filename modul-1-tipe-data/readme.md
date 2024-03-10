@@ -338,13 +338,13 @@ int main() {
 #### Output:
 <img width="960" alt="Screenshot 2024-03-09 194116" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/28d51732-51af-4920-8508-1a6b5b8dae40">
 
-Kode di atas menggunakan struktur data map untuk menyimpan pasangan nilai (key-value). Key dalam hal ini adalah indeks, dan value adalah nilai yang terkait. Setelah map diinisialisasi dan diisi dengan beberapa pasangan nilai, program menggunakan loop for untuk mencetak nilai dari setiap pasangan. Hasilnya adalah mencetak nilai-nilai tersebut ke layar tanpa nomor indeks array tertentu.
+Kodingan di atas adalah penggunaan dari struktur data map pada bahasa pemrograman C++. Untuk objek `nilai` dideklarasikan sebagai sebuah map yang memiliki kunci dan nilai bertipe integer. Pasangan dari key-value ditambahkan ditambahkan ke dalam map `nilai` menggunakan operator indeks`[ ]`. Program melakukan iterasi melalui setiap elemen map menggunakan fungsi loop for untuk mencetak nilai dari setiap pasangan nilai. Hasilnya adalah untuk mencetak semua nilai ke layar tanpa indeks pada array.
 
 #### Perbedaan Array dan Map:
 
 a. Array cocok digunakan ketika kita tahu ukuran data yang akan disimpan, sementara map lebih fleksibel karena dapat menyesuaikan ukurannya.
 b. Array diakses menggunakan indeks numerik, sementara map diakses menggunakan kunci unik untuk mendapatkan nilai yang terkait.
-c. Map lebih cocok untuk situasi di mana hubungan antara kunci dan nilai penting, sedangkan array digunakan untuk kumpulan data dengan indeks numerik.
+c. Map lebih cocok untuk situasi di mana hubungan antara kunci dan nilai penting, sedangkan array digunakan untuk kumpulan data dengan indeks numerik. Map adalah struktur data yang terdiri dari pasangan kunci-nilai (key-value pairs).
 
 Singkatnya, array cocok untuk situasi dengan data yang memiliki ukuran tetap dan diakses secara numerik, sementara map lebih fleksibel dan berguna untuk data yang memiliki hubungan kunci-nilai yang unik.
 
