@@ -23,11 +23,9 @@ Tipe data abstrak atau Abstrak Data Type (ADT) adalah sebuah tipe data yang dibe
 
 Tipe data koleksi atau Collection Data Type digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data ini dapat menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara terstruktur.   Beberapa contoh tipe data koleksi meliputi:
 
-- Array: Struktur data statis yang didalamnya berisi elemen-elemen tipe data yang sama, elemen-elemen tersebut menggunakan indeks untuk aksesnya dan ukurannya tetap.
-- Vector: Mirip seperti array tetapi dinamis dengan alokasi memorinya otomatis.
-- Map: Map mirip dengan array, tetapi indeksnya bisa berupa tipe data selain integer, disebut "key", dan menggunakan struktur pohon self-balancing seperti Red-Black Tree pada std::map.
-
-Tipe data koleksi memungkinkan pengelolaan dan akses data yang lebih terstruktur, sementara tipe data abstrak memberikan fleksibilitas dalam membentuk jenis data sesuai kebutuhan programer. Tipe data primitif, di sisi lain, sudah ditentukan oleh sistem dengan perbedaan tergantung pada bahasa pemrograman dan sistem operasional yang digunakan.
+- Array: Struktur data statis yang didalamnya berisi elemen-elemen tipe data yang sama, elemen-elemen tersebut menggunakan indeks untuk aksesnya dan ukurannya tetap yang ditentukan saat pendeklarasian.
+- Vector: Mirip seperti array tetapi jumlah elemennya dinamis dan alokasi memorinya dilakukan otomatis dan bersebelahan.
+- Map: Map mirip juga seperti array, namun indeksnya dapat berupa selain tipe data integer. Pada map, indeks dapat disebut juga dengan "key", self balancing tree khususnya black tree menggunakan std::map. 
 
 ## Guided
 
@@ -119,9 +117,9 @@ int main()
 #### Output:
 <img width="960" alt="Screenshot 2024-03-09 181112" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/de885d7a-d522-4e16-ba04-a0a80adb159f">
 
-Kodingan di atas adalah kode yang menjalankan program yang menggunakan fungsi "struct" untuk menampilkan informasi mahasiswa, pada kode diatas 'Mahasiswa' memiliki tiga data anggota yaitu 'name', 'address', dan 'age'.
+Kodingan di atas adalah kode yang menjalankan program yang menggunakan fungsi "struct" untuk menampilkan informasi mahasiswa, pada kode diatas 'Mahasiswa' memiliki tiga data anggota yaitu `name`, `address`, dan `age`.
 
-Di dalam struct ada fungsi display() yang digunakan untuk mencetak informasi mahasiswa ke layar. Menggunakan fungsi 'main()', buat dua variabel 'Mahasiswa' (mhs1 dan mhs2). Setelah mengisi nilai ke struct, program akan mencetak isi struct tersebut menggunakan fungsi 'printf()' yang hasilnya akan berupa informasi nama, alamat, dan usia masing-masing mahasiswa.
+Di dalam struct ada fungsi `display()` yang digunakan untuk mencetak informasi mahasiswa ke layar. Menggunakan fungsi `main()`, buat dua variabel `Mahasiswa` (mhs1 dan mhs2). Setelah mengisi nilai ke struct, program akan mencetak isi struct tersebut menggunakan fungsi `printf()` yang hasilnya akan berupa informasi nama, alamat, dan usia masing-masing mahasiswa.
 
 ### 3. Tipe Data Koleksi
 
@@ -342,13 +340,15 @@ Kodingan di atas adalah penggunaan dari struktur data map pada bahasa pemrograma
 
 #### Perbedaan Array dan Map:
 
-a. Array cocok digunakan ketika kita tahu ukuran data yang akan disimpan, sementara map lebih fleksibel karena dapat menyesuaikan ukurannya.
-b. Array diakses menggunakan indeks numerik, sementara map diakses menggunakan kunci unik untuk mendapatkan nilai yang terkait.
-c. Map lebih cocok untuk situasi di mana hubungan antara kunci dan nilai penting, sedangkan array digunakan untuk kumpulan data dengan indeks numerik. Map adalah struktur data yang terdiri dari pasangan kunci-nilai (key-value pairs).
+Array adalah kumpulan data yang diakses dengan berdasarkan indeks (mulai dari 0 sampai ukuran array-1). Array juga merupakan sebuah elemen dengan tipe data yang sama disimpan dalam sebuah memori, ukurannya ditentukan saat proses deklarasi dan tidak dapat diubah selama program berjalan, cocok digunakan untuk pengumpulan data yang diakses secara berurutan dan ukurannya dapat diketahui sebelumnya.
 
-Singkatnya, array cocok untuk situasi dengan data yang memiliki ukuran tetap dan diakses secara numerik, sementara map lebih fleksibel dan berguna untuk data yang memiliki hubungan kunci-nilai yang unik.
+Sedangkan map, merupakan struktur data yang menyimpan pasangan kunci-nilai (key-value pairs), elemen-elemennya tidak dapat disimpan dalam urutan tertentu, tetapi disusun berdasarkan penerapan struktur data. Elemen pada map dapat dihapus, ditambahkan, dan dicari dengan menggunakan kunci, dengan ukuran yang dapat berubah secara dinamis. Map cocok digunakan untuk memetakan kunci ke nilai dan digunakan dalam situasi di mana struktur data asosiatif diperlukan
+
+Jadi, pemilihan antara keduanya tergantung pada kebutuhan dari program dan cara data akan diakses dan disimpan. Jika membutuhkan koleksi data yang sederhana dan ukurannya tetap maka gunakan array, tetapi jika perlu memetakan kunci ke nilai dan mengelola data secara dinamis maka gunakan map.
 
 ## Kesimpulan
+
+
 
 Pemahaman tipe data, struktur data, dan konsep class/struct merupakan dasar yang penting dalam pemrograman. Tipe data primitif menyediakan dasar untuk menyimpan informasi, tipe data abstrak memberikan fleksibilitas, dan tipe data koleksi memungkinkan pengelolaan data yang terstruktur. Class dan struct memberikan kemampuan untuk membuat struktur data yang kompleks, sementara array dan map menyediakan cara penyimpanan yang berbeda untuk data yang beragam. Program-program contoh memberikan implementasi praktis dari konsep-konsep ini.
 
