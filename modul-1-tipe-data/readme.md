@@ -78,8 +78,6 @@ main()
 
 Kodingan di atas adalah kode yang menjalankan sebuah program yang meminta pengguna untuk memasukkan sebuah operator matematika (+, -, *, /) dan dua angka, di dalam progam diatas menggunakan fungsi 'switch' untuk melakukan operasi sesuai dengan operator yang dimasukkan. Jika operator yang dimasukkan tidak sesuai dengan yang ada pada program, maka program akan mencetak error.
 
-Kode di atas adalah program yang meminta pengguna untuk memasukkan operator matematika (+, -, \*, /) dan dua bilangan floating-point. Setelah menerima input, program menggunakan switch statement untuk melakukan operasi sesuai dengan operator yang dimasukkan. Hasil operasi tersebut kemudian dicetak ke layar. Jika operator yang dimasukkan tidak sesuai dengan yang sudah disediakan, maka program akan mencetak pesan error. Program berakhir setelah operasi selesai dan hasilnya ditampilkan.
-
 ### 2. Tipe Data Abstrak
 
 ```C++
@@ -121,11 +119,9 @@ int main()
 #### Output:
 <img width="960" alt="Screenshot 2024-03-09 181112" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/de885d7a-d522-4e16-ba04-a0a80adb159f">
 
-Kodingan di atas adalah kode yang menjalankan program yang menggunakan
+Kodingan di atas adalah kode yang menjalankan program yang menggunakan fungsi "struct" untuk menampilkan informasi mahasiswa, pada kode diatas 'Mahasiswa' memiliki tiga data anggota yaitu 'name', 'address', dan 'age'.
 
-Kode di atas merupakan program yang menggunakan struktur data atau struct untuk merepresentasikan informasi mahasiswa. Dalam struct `Mahasiswa`, terdapat tiga anggota yaitu `name` (nama), `address` (alamat), dan `age` (umur). Program kemudian membuat dua variabel bertipe struct Mahasiswa, yaitu `mhs1` dan `mhs2`, dan mengisi nilai untuk masing-masing variabel.
-
-Selanjutnya, program mencetak informasi mahasiswa ke layar menggunakan fungsi `printf`, termasuk nama, alamat, dan umur untuk kedua mahasiswa. Hasilnya adalah mencetak informasi mahasiswa 1 (mhs1) dan mahasiswa 2 (mhs2) ke layar sesuai dengan nilai yang telah diisikan sebelumnya.
+Di dalam struct ada fungsi display() yang digunakan untuk mencetak informasi mahasiswa ke layar. Menggunakan fungsi 'main()', buat dua variabel 'Mahasiswa' (mhs1 dan mhs2). Setelah mengisi nilai ke struct, program akan mencetak isi struct tersebut menggunakan fungsi 'printf()' yang hasilnya akan berupa informasi nama, alamat, dan usia masing-masing mahasiswa.
 
 ### 3. Tipe Data Koleksi
 
@@ -155,7 +151,7 @@ int main()
 #### Output:
 <img width="960" alt="Screenshot 2024-03-09 192753" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/f311bda2-fc4b-43e6-89b1-40615dd49fae">
 
-Kode di atas adalah program yang menggunakan array untuk menyimpan beberapa nilai integer. Array tersebut bernama `nilai` dan memiliki panjang 5. Nilai-nilai tersebut diinisialisasi secara terpisah untuk setiap elemen array menggunakan indeks 0 hingga 4.
+Kodingan di atas adalah program penggunaan array yang terdiri dari lima elemen bertipe integer. Array diatas bernama 'nilai' yang terdiri dari lima elemen, nilai pada array 'nilai' diinisialisasi menggunakan indeks untuk setiap elemen array.
 
 Selanjutnya, program mencetak setiap nilai dari array `nilai` ke layar menggunakan perintah `cout`. Hasilnya adalah mencetak nilai dari setiap elemen array, yaitu nilai[0], nilai[1], nilai[2], nilai[3], dan nilai[4], secara berurutan. Program kemudian mengembalikan nilai 0, menandakan bahwa program berjalan dengan sukses.
 
