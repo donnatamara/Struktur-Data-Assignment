@@ -24,7 +24,7 @@ Tipe data abstrak atau Abstrak Data Type (ADT) adalah sebuah tipe data yang dibe
 Tipe data koleksi atau Collection Data Type digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data ini dapat menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara terstruktur.   Beberapa contoh tipe data koleksi meliputi:
 
 - Array: Struktur data statis yang didalamnya berisi elemen-elemen tipe data yang sama, elemen-elemen tersebut menggunakan indeks untuk aksesnya dan ukurannya tetap.
-- Vector: Vector mirip dengan array, tetapi dinamis dengan alokasi memorinya otomatis.
+- Vector: Mirip seperti array tetapi dinamis dengan alokasi memorinya otomatis.
 - Map: Map mirip dengan array, tetapi indeksnya bisa berupa tipe data selain integer, disebut "key", dan menggunakan struktur pohon self-balancing seperti Red-Black Tree pada std::map.
 
 Tipe data koleksi memungkinkan pengelolaan dan akses data yang lebih terstruktur, sementara tipe data abstrak memberikan fleksibilitas dalam membentuk jenis data sesuai kebutuhan programer. Tipe data primitif, di sisi lain, sudah ditentukan oleh sistem dengan perbedaan tergantung pada bahasa pemrograman dan sistem operasional yang digunakan.
@@ -151,9 +151,9 @@ int main()
 #### Output:
 <img width="960" alt="Screenshot 2024-03-09 192753" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/f311bda2-fc4b-43e6-89b1-40615dd49fae">
 
-Kodingan di atas adalah program penggunaan array yang terdiri dari lima elemen bertipe integer. Array diatas bernama 'nilai' yang terdiri dari lima elemen, nilai pada array 'nilai' diinisialisasi menggunakan indeks untuk setiap elemen array.
+Kodingan di atas adalah program penggunaan array yang terdiri dari lima elemen bertipe integer. Array diatas bernama `nilai` yang terdiri dari lima elemen, nilai pada array `nilai` diinisialisasi menggunakan indeks untuk setiap elemen array.
 
-Selanjutnya, program mencetak setiap nilai dari array `nilai` ke layar menggunakan perintah `cout`. Hasilnya adalah mencetak nilai dari setiap elemen array, yaitu nilai[0], nilai[1], nilai[2], nilai[3], dan nilai[4], secara berurutan. Program kemudian mengembalikan nilai 0, menandakan bahwa program berjalan dengan sukses.
+Menggunakan fungsi `cout` untuk mencetak nilai dari setiap array `nilai`, setelah mencetak isi dari setiap elemen array, program akan mengembalikan nilai 0 dari fungsi `main()` yang dapat diartikan bahwa program tersebut berjalan sukses.
 
 ## Unguided
 
@@ -211,6 +211,7 @@ int main() {
 #### Output:
 <img width="960" alt="Screenshot 2024-03-09 192908" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/516ae316-fdbb-49da-979b-30eb1614ca26">
 
+Kodingan di atas adalah 
 Kode di atas adalah program yang memungkinkan pengguna memilih antara menghitung luas persegi atau volume kubus. Program meminta pengguna untuk memasukkan pilihan menu (1 untuk menghitung luas persegi, 2 untuk menghitung volume kubus).
 
 Setelah memasukkan pilihan menu, program meminta pengguna untuk memasukkan panjang sisi persegi. Berdasarkan pilihan yang dimasukkan, program menggunakan fungsi-fungsi terpisah (`hitungLuasPersegi` dan `hitungVolumeKubus`) untuk melakukan perhitungan dan mencetak hasilnya ke layar.
