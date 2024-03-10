@@ -215,21 +215,20 @@ Program menjalankan fungsi `main()` untuk memilih menu dengan menampilkan piliha
 
 #### Kesimpulan materi tipe data primitif:
 
-Kesimpulan dari materi di atas adalah bahwa tipe data primitif adalah klasifikasi jenis data yang sudah ditentukan oleh sistem dan disediakan oleh berbagai bahasa pemrograman. Contoh tipe data primitif meliputi int untuk menyimpan bilangan bulat, float untuk bilangan desimal, char untuk huruf atau simbol, dan boolean untuk menyimpan nilai boolean dengan dua kemungkinan nilai, yaitu true atau false.
+Kesimpulan dari materi tipe data primitif di atas adalah bahwa tipe data primitif adalah jenis data yang telah ditentukan oleh sistem dan tersedia pada banyak bahasa pemrograman. Contoh tipe data primitif adalah int untuk menyimpan bilangan bulat, float untuk menyimpan bilangan desimal, char untuk menyimpan huruf atau simbol, dan boolean untuk menyimpan nilai boolean dengan dua kemungkinan nilai, yaitu true atau false.
 
 ### 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya
 
 #### Class
 
-Class adalah suatu fitur dalam pemrograman berorientasi objek (OOP) yang memungkinkan programmer untuk membuat struktur data yang kompleks. Class digunakan untuk mendefinisikan sebuah tipe data baru yang dapat menyimpan data (atribut) dan perilaku (metode) bersama-sama. Dengan kata lain, class dapat digambarkan sebagai "blueprint" atau cetak biru untuk menciptakan objek. Setiap objek yang dibuat dari suatu class memiliki atribut dan metode yang sama, namun nilainya bisa berbeda.
-
+Class digunakan untuk membuat tipe data baru, tetapi biasanya digunakan untuk membuat tipe data yang lebih kompleks. Class mendukung konsep enkapsulasi, di mana anggota-anggota data (variabel) dan fungsi-fungsi yang berkaitan dapat disembunyikan atau diakses secara terbatas. 
 #### Struct
 
-Struct, singkatan dari structure, juga digunakan untuk membuat struktur data, tetapi memiliki perbedaan utama dengan class. Struct tidak memiliki kemampuan untuk menyembunyikan akses ke atribut atau metodenya, dan secara default bersifat public. Ini berarti semua anggota struct dapat diakses langsung dari luar struct.
+Struct atau structure, adalah tipe data yang dapat digunakan untuk mengelompokkan sejumlah variabel dengan tipe data yang berbeda ke dalam satu kesatuan.Secara default, semua anggota (variabel) struktur dapat diakses secara publik.
 
 #### Perbedaan
 
-Perbedaan utama antara class dan struct adalah pada hak akses defaultnya. Dalam class, anggota bersifat private secara default, sementara dalam struct bersifat public secara default. Dengan class, kita dapat menggunakan hak akses private untuk menyembunyikan implementasi internal dari pengguna class, sementara struct lebih terbuka dan digunakan terutama untuk menyimpan data tanpa perilaku yang kompleks.
+Perbedaan utama antara class dan struct dalam C++ adalah hak akses default untuk anggota-anggotanya. Secara default, anggota struct adalah public, sedangkan anggota class adalah private.
 
 #### Contoh Program
 
@@ -286,24 +285,16 @@ int main() {
 #### Output:
 <img width="960" alt="Screenshot 2024-03-09 193003" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/87a5583c-b7fb-4844-9746-b03b149c6841">
 
-#### Class Employee:
+Kodingan diatas adlaha program dengan penggunaan `class`, `struct`, dan obejk-objek dari kedua dalam bahasa pemrograman.
 
-- Terdapat dua class Employee, satu tanpa deklarasi hak akses (default private) dan satunya dengan hak akses public.
-- Class Employee pertama memiliki atribut nama, umur, dan email, tetapi anggotanya tidak dapat diakses langsung dari luar class karena hak akses private.
-- Class Employee kedua memiliki hak akses public, sehingga atribut nama, umur, dan email dapat diakses dari luar class.
+Dalam class Makanan_Daerah, anggota-anggota seperti `nama`, `jenis`, dan `asal` tidak dideklarasikan sebagai public, tetapi secara default, mereka memiliki hak akses private. Class Makanan_Daerah 2 memiliki semua anggota public, yang berarti variabel `nama`, `jenis`, dan `asal` dapat diakses dari luar class.
 
-#### Struct Employeee:
+Struct Makanan_Daerahh memiliki tiga anggota yang semuanya adalah public secara default. Ini berarti semua anggota `nama`, `jenis`, dan `asal` bisa diakses langsung dari luar struct.
 
-- Terdapat struct Employeee dengan atribut nama, umur, dan email.
-- Struct ini bersifat default public, sehingga atributnya dapat diakses langsung dari luar struct.
+Di dalam `main()`, dua objek yang dibuat adalah `md1` dari tipe struct `Makanan_Daerahh` dan `md2` dari tipe class `Makanan_Daerah2`.
+Setelah itu, nilai-nilai pelengkap dari kedua objek diatur dan dicetak ke layar menggunakan cout.
 
-#### Fungsi main:
-
-- Membuat objek emp1 dari struct Employeee dan objek emp2 dari class Employee2.
-- Mengisi nilai atribut objek emp1 dan emp2.
-- Menampilkan informasi karyawan (employee) menggunakan objek emp1 dan emp2 melalui cout.
-
-Dengan demikian, program ini menunjukkan perbedaan dalam penggunaan class dan struct, terutama terkait dengan hak akses default anggota (private pada class, public pada struct). Objek emp1 menggunakan struct, sementara emp2 menggunakan class dengan hak akses public.
+Hasilnya adalah dua objek `md1` dan `md2` yang berbeda, masing-masing memiliki pelengksp `nama makanan`, `jenis`, dan `asal daerah` yang berbeda pula.
 
 ### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map.
 
@@ -345,7 +336,7 @@ Jadi, pemilihan antara keduanya tergantung pada kebutuhan dari program dan cara 
 
 ## Kesimpulan
 
-Pemahaman tipe data, struktur data, dan konsep class/struct merupakan dasar yang penting dalam pemrograman. Tipe data primitif menyediakan dasar untuk menyimpan informasi, tipe data abstrak memberikan fleksibilitas, dan tipe data koleksi memungkinkan pengelolaan data yang terstruktur. Class dan struct memberikan kemampuan untuk membuat struktur data yang kompleks, sementara array dan map menyediakan cara penyimpanan yang berbeda untuk data yang beragam. Program-program contoh memberikan implementasi praktis dari konsep-konsep ini.
+Kesimpulannya, tipe data memiliki 3 jenis yaitu tipe data primitif, tipe data abstrak, dan tipe data koleksi. Tipe data primitif meliputi integer, float, character, dan boiolean. Tipe data abstrak meliputi struct dan class, struct memiliki askses default yang bersifat public sedangkan class bersifat private. Tipe data koleksi meliputi array, vector, dan map. Array adalah struktur data statis, berukuran tetap, berisi tipe data yang sama secara beruruta. Vector adalah struktur data dinamis, ukurannya dapat disesuaikan, dan alokasi memorinya dilakukan otomatis dan bersebelahan. Sedangkan Map adalah struktur data yang memetakan kunci (key) ke nilai (value), setiap kuncinya harus unik.
 
 ## Referensi
 
