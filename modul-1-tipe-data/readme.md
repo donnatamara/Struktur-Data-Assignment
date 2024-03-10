@@ -4,7 +4,7 @@
 
 ## Dasar Teori
 
-Tipe data merupakan pengelompokkan atau mengklasifikasikan sebuah data dalam bahasa pemrograman. Ada tiga jenis tipe data utama yang umumnya digunakan:
+Tipe data merupakan sebuah pengelompokkan sebuah data berdasarkan jenis data dalam sebuah bahasa pemrograman. Dibawah ini adalah jenis tipe data yang umumnya digunakan:
 
 ### 1. Tipe Data Primitif:
 
@@ -17,15 +17,15 @@ d. Boolean: Digunakan untuk menyimpan nilai boolean yang hanya memiliki dua nila
 
 ### 2. Tipe Data Abstrak:
 
-Tipe data abstrak atau Abstrak Data Type (ADT) adalah sebuah tipe data yang dibentuk oleh programernya sendiri. Tipe data iini dapat berisi berbagai jenis data. Fitur class dalam Object Oriented Programming (OOP) mirip dengan struktur data struct pada bahasa C++, dengan perbedaan akses default (public untuk struct, private untuk class).
+Tipe data abstrak atau Abstrak Data Type (ADT) adalah sebuah tipe data yang dibentuk oleh programernya sendiri. Tipe data ini dapat berisi berbagai jenis data. Fitur class dalam Object Oriented Programming (OOP) mirip dengan struktur data struct pada bahasa C, ada perbedaan pada akses default antara struct bersifat public dan class bersifat privat.
 
 ### 3. Tipe Data Koleksi:
 
-Tipe data koleksi digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Beberapa contoh tipe data koleksi meliputi:
+Tipe data koleksi atau Collection Data Type digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data ini dapat menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara terstruktur.   Beberapa contoh tipe data koleksi meliputi:
 
-- Array: Struktur data statis dengan elemen-elemen tipe data yang sama dan ukuran tetap.
-- Vector: Mirip dengan array, tetapi dinamis dengan alokasi memorinya otomatis.
-- Map: Mirip dengan array, tetapi indeksnya bisa berupa tipe data selain integer, disebut "key", dan menggunakan struktur pohon self-balancing seperti Red-Black Tree pada std::map.
+a. Array: Struktur data statis yang didalamnya berisi elemen-elemen tipe data yang sama, elemen-elemen tersebut menggunakan indeks untuk aksesnya dan ukurannya tetap.
+b. Vector: Vector mirip dengan array, tetapi dinamis dengan alokasi memorinya otomatis.
+c. Map: Map mirip dengan array, tetapi indeksnya bisa berupa tipe data selain integer, disebut "key", dan menggunakan struktur pohon self-balancing seperti Red-Black Tree pada std::map.
 
 Tipe data koleksi memungkinkan pengelolaan dan akses data yang lebih terstruktur, sementara tipe data abstrak memberikan fleksibilitas dalam membentuk jenis data sesuai kebutuhan programer. Tipe data primitif, di sisi lain, sudah ditentukan oleh sistem dengan perbedaan tergantung pada bahasa pemrograman dan sistem operasional yang digunakan.
 
@@ -76,6 +76,8 @@ main()
 #### Output:
 <img width="960" alt="Screenshot 2024-03-09 181046" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/f109d046-df2e-44c6-a40e-8f58f0d6d8fa">
 
+Kodingan di atas adalah kode yang menjalankan sebuah program yang meminta pengguna untuk memasukkan sebuah operator matematika (+, -, *, /) dan dua angka, di dalam progam diatas menggunakan fungsi 'switch' untuk melakukan operasi sesuai dengan operator yang dimasukkan. Jika operator yang dimasukkan tidak sesuai dengan yang ada pada program, maka program akan mencetak error.
+
 Kode di atas adalah program yang meminta pengguna untuk memasukkan operator matematika (+, -, \*, /) dan dua bilangan floating-point. Setelah menerima input, program menggunakan switch statement untuk melakukan operasi sesuai dengan operator yang dimasukkan. Hasil operasi tersebut kemudian dicetak ke layar. Jika operator yang dimasukkan tidak sesuai dengan yang sudah disediakan, maka program akan mencetak pesan error. Program berakhir setelah operasi selesai dan hasilnya ditampilkan.
 
 ### 2. Tipe Data Abstrak
@@ -118,6 +120,8 @@ int main()
 
 #### Output:
 <img width="960" alt="Screenshot 2024-03-09 181112" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/de885d7a-d522-4e16-ba04-a0a80adb159f">
+
+Kodingan di atas adalah kode yang menjalankan program yang menggunakan
 
 Kode di atas merupakan program yang menggunakan struktur data atau struct untuk merepresentasikan informasi mahasiswa. Dalam struct `Mahasiswa`, terdapat tiga anggota yaitu `name` (nama), `address` (alamat), dan `age` (umur). Program kemudian membuat dua variabel bertipe struct Mahasiswa, yaitu `mhs1` dan `mhs2`, dan mengisi nilai untuk masing-masing variabel.
 
@@ -339,11 +343,11 @@ int main() {
 
 Kode di atas menggunakan struktur data map untuk menyimpan pasangan nilai (key-value). Key dalam hal ini adalah indeks, dan value adalah nilai yang terkait. Setelah map diinisialisasi dan diisi dengan beberapa pasangan nilai, program menggunakan loop for untuk mencetak nilai dari setiap pasangan. Hasilnya adalah mencetak nilai-nilai tersebut ke layar tanpa nomor indeks array tertentu.
 
-#### Perbedaan Dari Array dan Map:
+#### Perbedaan Array dan Map:
 
-- Array cocok digunakan ketika kita tahu ukuran data yang akan disimpan, sementara map lebih fleksibel karena dapat menyesuaikan ukurannya.
-- Array diakses menggunakan indeks numerik, sementara map diakses menggunakan kunci unik untuk mendapatkan nilai yang terkait.
-- Map lebih cocok untuk situasi di mana hubungan antara kunci dan nilai penting, sedangkan array digunakan untuk kumpulan data dengan indeks numerik.
+a. Array cocok digunakan ketika kita tahu ukuran data yang akan disimpan, sementara map lebih fleksibel karena dapat menyesuaikan ukurannya.
+b. Array diakses menggunakan indeks numerik, sementara map diakses menggunakan kunci unik untuk mendapatkan nilai yang terkait.
+c. Map lebih cocok untuk situasi di mana hubungan antara kunci dan nilai penting, sedangkan array digunakan untuk kumpulan data dengan indeks numerik.
 
 Singkatnya, array cocok untuk situasi dengan data yang memiliki ukuran tetap dan diakses secara numerik, sementara map lebih fleksibel dan berguna untuk data yang memiliki hubungan kunci-nilai yang unik.
 
