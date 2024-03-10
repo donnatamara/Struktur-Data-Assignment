@@ -209,12 +209,9 @@ int main() {
 #### Output:
 <img width="960" alt="Screenshot 2024-03-09 192908" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/516ae316-fdbb-49da-979b-30eb1614ca26">
 
-Kodingan di atas adalah 
-Kode di atas adalah program yang memungkinkan pengguna memilih antara menghitung luas persegi atau volume kubus. Program meminta pengguna untuk memasukkan pilihan menu (1 untuk menghitung luas persegi, 2 untuk menghitung volume kubus).
+Kodingan di atas adalah program yang memungkinkan pengguna untuk menghitung luas persegi atau volume balok berdasarkan pilihan menu yang telah dibuat. Dimulai dari fungsi `hitungLuasPersegi` untuk menghitung luas persegi berdasarkan panjang sisi, `hitungVolumeBalok` untuk menghitung volume balok berdasarkan panjang, lebar, dan tinggi.
 
-Setelah memasukkan pilihan menu, program meminta pengguna untuk memasukkan panjang sisi persegi. Berdasarkan pilihan yang dimasukkan, program menggunakan fungsi-fungsi terpisah (`hitungLuasPersegi` dan `hitungVolumeKubus`) untuk melakukan perhitungan dan mencetak hasilnya ke layar.
-
-Program ini menggunakan switch statement untuk memproses pilihan menu yang dimasukkan oleh pengguna dan memberikan output sesuai dengan operasi yang dipilih. Jika pengguna memasukkan pilihan yang tidak valid, program akan mencetak "Menu Tidak Ada".
+Program menjalankan fungsi `main()` untuk memilih menu dengan menampilkan pilihan 1 atau 2 dan pengguna diminta untuk memasukkan karakter yang sesuai dengan pilihan menu. Menggunakan fungsi `switch` untuk menjalankan bagian kode yang sesuai dengan pilihan pengguna. Jika pengguna memilih menu 1 maka program akan menjalankan fungsi `hitungLuasPersegi`, jika pengguna memilih menu 2 maka program akan menjalankan `hitungVolumeBalok`, dan jika pengguna memasukkan pilihan menu selain menu 1 atau 2 maka program menampilkan pesan `Menu Tidak Ada`. program kemudian mengembalikan nilai 0 yang menandakan bahwa program telah sukses berjalan.
 
 #### Kesimpulan materi tipe data primitif:
 
@@ -340,7 +337,7 @@ Kodingan di atas adalah penggunaan dari struktur data map pada bahasa pemrograma
 
 #### Perbedaan Array dan Map:
 
-Array adalah kumpulan data yang diakses dengan berdasarkan indeks (mulai dari 0 sampai ukuran array-1). Array juga merupakan sebuah elemen dengan tipe data yang sama disimpan dalam sebuah memori, ukurannya ditentukan saat proses deklarasi dan tidak dapat diubah selama program berjalan, cocok digunakan untuk pengumpulan data yang diakses secara berurutan dan ukurannya dapat diketahui sebelumnya.
+Array adalah kumpulan data yang diakses dengan berdasarkan indeks (mulai dari 0 sampai ukuran array-1). array adalah kumpulan elemen dengan tipe data yang sama yang disimpan secara berurutan[1]. Ukurannya ditentukan saat proses deklarasi dan tidak dapat diubah selama program berjalan, cocok digunakan untuk pengumpulan data yang diakses secara berurutan dan ukurannya dapat diketahui sebelumnya.
 
 Sedangkan map, merupakan struktur data yang menyimpan pasangan kunci-nilai (key-value pairs), elemen-elemennya tidak dapat disimpan dalam urutan tertentu, tetapi disusun berdasarkan penerapan struktur data. Elemen pada map dapat dihapus, ditambahkan, dan dicari dengan menggunakan kunci, dengan ukuran yang dapat berubah secara dinamis. Map cocok digunakan untuk memetakan kunci ke nilai dan digunakan dalam situasi di mana struktur data asosiatif diperlukan
 
@@ -348,11 +345,9 @@ Jadi, pemilihan antara keduanya tergantung pada kebutuhan dari program dan cara 
 
 ## Kesimpulan
 
-
-
 Pemahaman tipe data, struktur data, dan konsep class/struct merupakan dasar yang penting dalam pemrograman. Tipe data primitif menyediakan dasar untuk menyimpan informasi, tipe data abstrak memberikan fleksibilitas, dan tipe data koleksi memungkinkan pengelolaan data yang terstruktur. Class dan struct memberikan kemampuan untuk membuat struktur data yang kompleks, sementara array dan map menyediakan cara penyimpanan yang berbeda untuk data yang beragam. Program-program contoh memberikan implementasi praktis dari konsep-konsep ini.
 
 ## Referensi
 
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
-[2] "cppreference", [Online]. Available: https://en.cppreference.com/w/. [Accessed: March 7, 2024].
+[1] Van Weert, P., & Gregoire, M. (2019). C++17 Standard Library Quick Reference. Apress.
+[2] C++ Primer" by Stanley B. Lippman, Josée Lajoie, and Barbara E. Moo
