@@ -228,7 +228,7 @@ Struct atau structure, adalah tipe data yang dapat digunakan untuk mengelompokka
 
 #### Perbedaan
 
-Perbedaan utama antara class dan struct dalam C++ adalah hak akses default untuk anggota-anggotanya. Secara default, anggota struct adalah public, sedangkan anggota class adalah private.
+Perbedaan utama antara class dan struct dalam C++ adalah hak akses default untuk anggota-anggotanya. Secara default, anggota struct adalah public, sedangkan anggota class adalah private. Class lebih banyak digunakan untuk objek yang dimana setiap proses di dalamnya saling berhubungan. Sedangkan struct biasa digunakan untuk struktur data atau objek yang sebenarnya, menyimpan data menggunakan variabel dan membuat fungsi [2].
 
 #### Contoh Program
 
@@ -340,5 +340,5 @@ Kesimpulannya, tipe data memiliki tiga jenis yaitu tipe data primitif, tipe data
 ## Referensi
 
 [1] R. Hidayat, "Pengertian Tipe Data dan Penggunaannya dalam Bahasa Pemrograman," J. Informatika dan Teknologi Univ. Gunadarma, 2020.
-[2] N. M. Josuttis, "C++ Standard Library: A Tutorial and Reference", 2019.
+[2] A. Aristo, “Swift: Class vs. Struct - Dipantry - Medium,” Medium, Dec. 28, 2021. [Online]. Available: https://medium.com/dipantry/swift-class-vs-struct-c0b279b1dfaf.
 [3] P. Van Weert and M. Gregoire, C++17 Standard Library Quick Reference. Apress, 2019.
