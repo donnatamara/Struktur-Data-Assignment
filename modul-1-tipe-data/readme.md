@@ -4,7 +4,7 @@
 
 ## Dasar Teori
 
-Tipe data merupakan sebuah pengelompokkan sebuah data berdasarkan jenis data dalam sebuah bahasa pemrograman. Dibawah ini adalah jenis tipe data yang umumnya digunakan:
+Tipe data merupakan salah satu konsep dasar dalam pemrograman komputer, tipe data adlah sebuah pengelompokkan sebuah data berdasarkan jenis data dalam sebuah bahasa pemrograman. Tipe data menentukan jenis data yang dapat disimpan dalam variabel dan operasi yang dapat dilakukan pada variabel tersebut [1]. Dibawah ini adalah jenis tipe data yang umumnya digunakan:
 
 ### 1. Tipe Data Primitif:
 
@@ -328,7 +328,7 @@ Kodingan di atas adalah penggunaan dari struktur data map pada bahasa pemrograma
 
 #### Perbedaan Array dan Map:
 
-Array adalah kumpulan data yang diakses dengan berdasarkan indeks (mulai dari 0 sampai ukuran array-1). array adalah kumpulan elemen dengan tipe data yang sama yang disimpan secara berurutan[1]. Ukurannya ditentukan saat proses deklarasi dan tidak dapat diubah selama program berjalan, cocok digunakan untuk pengumpulan data yang diakses secara berurutan dan ukurannya dapat diketahui sebelumnya.
+Array adalah kumpulan data yang diakses dengan berdasarkan indeks (mulai dari 0 sampai ukuran array-1). array adalah kumpulan elemen dengan tipe data yang sama yang disimpan secara berurutan[2]. Ukurannya ditentukan saat proses deklarasi dan tidak dapat diubah selama program berjalan, cocok digunakan untuk pengumpulan data yang diakses secara berurutan dan ukurannya dapat diketahui sebelumnya.
 
 Sedangkan map, merupakan struktur data yang menyimpan pasangan kunci-nilai (key-value pairs), elemen-elemennya tidak dapat disimpan dalam urutan tertentu, tetapi disusun berdasarkan penerapan struktur data. Elemen pada map dapat dihapus, ditambahkan, dan dicari dengan menggunakan kunci, dengan ukuran yang dapat berubah secara dinamis. Map cocok digunakan untuk memetakan kunci ke nilai dan digunakan dalam situasi di mana struktur data asosiatif diperlukan
 
@@ -340,5 +340,6 @@ Kesimpulannya, tipe data memiliki 3 jenis yaitu tipe data primitif, tipe data ab
 
 ## Referensi
 
-[1] Van Weert, P., & Gregoire, M. (2019). C++17 Standard Library Quick Reference. Apress.
-[2] C++ Primer" by Stanley B. Lippman, Josée Lajoie, and Barbara E. Moo
+[1] Rian Hidayat, "Pengertian Tipe Data dan Penggunaannya dalam Bahasa Pemrograman", Jurnal Informatika dan Teknologi Universitas Gunadarma, 2020.
+[2] Van Weert, P., & Gregoire, M. (2019). C++17 Standard Library Quick Reference. Apress.
+[3] Stanley B. Lippman, Josée Lajoie, and Barbara E. Moo (2019). C++ Primer
