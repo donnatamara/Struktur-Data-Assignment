@@ -4,7 +4,7 @@
 
 ## Dasar Teori
 
-Tipe data merupakan salah satu konsep dasar dalam pemrograman komputer, tipe data adlah sebuah pengelompokkan sebuah data berdasarkan jenis data dalam sebuah bahasa pemrograman. Tipe data menentukan jenis data yang dapat disimpan dalam variabel dan operasi yang dapat dilakukan pada variabel tersebut [1]. Dibawah ini adalah jenis tipe data yang umumnya digunakan:
+Tipe data merupakan salah satu konsep dasar dalam pemrograman komputer, tipe data adlah sebuah pengelompokkan sebuah data berdasarkan jenis data dalam sebuah bahasa pemrograman. Tipe data menentukan jenis data yang dapat disimpan dalam variabel dan operasi yang dapat dilakukan pada variabel tersebut [1]. Dibawah ini adalah jenis tipe data yang biasanya digunakan:
 
 ### 1. Tipe Data Primitif:
 
@@ -13,15 +13,15 @@ Contohnya:
 - Int: Digunakan untuk menyimpan bilangan bulat seperti 12, 1, 4, dan lain sebagainya.
 - Float: Digunakan untuk menyimpan bilangan desimal seperti 1.5, 2.1, 3.14, dan lain sebagainya.
 - Char: Digunakan untuk menyimpan huruf atau simbol seperti A, B, C, dan lain sebagainya.
-- Boolean: Digunakan untuk menyimpan nilai boolean yang hanya memiliki dua nilai daja yaitu true atau false.
+- Boolean: Digunakan untuk menyimpan nilai boolean yang hanya memiliki dua nilai saja yaitu true atau false.
 
 ### 2. Tipe Data Abstrak:
 
-Tipe data abstrak atau Abstrak Data Type (ADT) adalah sebuah tipe data yang dibentuk oleh programernya sendiri. Tipe data ini dapat berisi berbagai jenis data. Fitur class dalam Object Oriented Programming (OOP) mirip dengan struktur data struct pada bahasa C, ada perbedaan pada akses default antara struct bersifat public dan class bersifat privat.
+Tipe data abstrak atau Abstrak Data Type (ADT) adalah sebuah tipe data yang dibentuk oleh programernya sendiri. Tipe data ini dapat berisi berbagai jenis data. Fitur class dalam Object Oriented Programming (OOP) mirip dengan struktur data struct pada bahasa C, ada perbedaan pada akses default antara keduanya yaitu struct bersifat public dan class bersifat privat.
 
 ### 3. Tipe Data Koleksi:
 
-Tipe data koleksi atau Collection Data Type digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data ini dapat menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara terstruktur.   Beberapa contoh tipe data koleksi meliputi:
+Tipe data koleksi atau Collection Data Type digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data ini dapat menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara terstruktur. Beberapa contoh tipe data koleksi meliputi:
 
 - Array: Struktur data statis yang didalamnya berisi elemen-elemen tipe data yang sama, elemen-elemen tersebut menggunakan indeks untuk aksesnya dan ukurannya tetap yang ditentukan saat pendeklarasian.
 - Vector: Mirip seperti array tetapi jumlah elemennya dinamis dan alokasi memorinya dilakukan otomatis dan bersebelahan.
@@ -74,7 +74,7 @@ main()
 #### Output:
 <img width="960" alt="Screenshot 2024-03-09 181046" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/f109d046-df2e-44c6-a40e-8f58f0d6d8fa">
 
-Kodingan di atas adalah kode yang menjalankan sebuah program yang meminta pengguna untuk memasukkan sebuah operator matematika (+, -, *, /) dan dua angka, di dalam progam diatas menggunakan fungsi 'switch' untuk melakukan operasi sesuai dengan operator yang dimasukkan. Jika operator yang dimasukkan tidak sesuai dengan yang ada pada program, maka program akan mencetak error.
+Kodingan di atas adalah kode yang menjalankan sebuah program yang meminta pengguna untuk memasukkan sebuah operator matematika (+, -, *, /) dan dua angka, progam di atas menggunakan fungsi 'switch' untuk melakukan operasi sesuai dengan operator yang dimasukkan, jika operator yang dimasukkan tidak sesuai dengan yang ada pada program, maka program akan mencetak error.
 
 ### 2. Tipe Data Abstrak
 
@@ -117,9 +117,9 @@ int main()
 #### Output:
 <img width="960" alt="Screenshot 2024-03-09 181112" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/de885d7a-d522-4e16-ba04-a0a80adb159f">
 
-Kodingan di atas adalah kode yang menjalankan program yang menggunakan fungsi "struct" untuk menampilkan informasi mahasiswa, pada kode diatas 'Mahasiswa' memiliki tiga data anggota yaitu `name`, `address`, dan `age`.
+Kodingan di atas adalah kode yang menjalankan program yang menggunakan fungsi "struct" untuk menampilkan informasi mahasiswa, pada kode diatas `Mahasiswa` memiliki tiga data anggota yaitu `name`, `address`, dan `age`.
 
-Di dalam struct ada fungsi `display()` yang digunakan untuk mencetak informasi mahasiswa ke layar. Menggunakan fungsi `main()`, buat dua variabel `Mahasiswa` (mhs1 dan mhs2). Setelah mengisi nilai ke struct, program akan mencetak isi struct tersebut menggunakan fungsi `printf()` yang hasilnya akan berupa informasi nama, alamat, dan usia masing-masing mahasiswa.
+Di dalam struct ada fungsi `display()` yang digunakan untuk mencetak informasi mahasiswa ke layar. Menggunakan fungsi `main()`, dan membuat dua variabel `Mahasiswa` (mhs1 dan mhs2). Setelah mengisi nilai ke struct, program akan mencetak isi struct tersebut menggunakan fungsi `printf()` yang hasilnya akan berupa informasi nama, alamat, dan usia masing-masing mahasiswa.
 
 ### 3. Tipe Data Koleksi
 
@@ -215,7 +215,7 @@ Program menjalankan fungsi `main()` untuk memilih menu dengan menampilkan piliha
 
 #### Kesimpulan materi tipe data primitif:
 
-Kesimpulan dari materi tipe data primitif di atas adalah bahwa tipe data primitif adalah jenis data yang telah ditentukan oleh sistem dan tersedia pada banyak bahasa pemrograman. Contoh tipe data primitif adalah int untuk menyimpan bilangan bulat, float untuk menyimpan bilangan desimal, char untuk menyimpan huruf atau simbol, dan boolean untuk menyimpan nilai boolean dengan dua kemungkinan nilai, yaitu true atau false.
+Kesimpulannya adalah tipe data primitif merupakan jenis tipe data yang telah ditentukan oleh sistem dan tersedia pada banyak bahasa pemrograman. Contoh tipe data primitif adalah int untuk menyimpan bilangan bulat, float untuk menyimpan bilangan desimal, char untuk menyimpan huruf atau simbol, dan boolean untuk menyimpan nilai boolean yang hanya berisi dua kemungkinan nilai, yaitu true atau false.
 
 ### 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya
 
@@ -224,7 +224,7 @@ Kesimpulan dari materi tipe data primitif di atas adalah bahwa tipe data primiti
 Class digunakan untuk membuat tipe data baru, tetapi biasanya digunakan untuk membuat tipe data yang lebih kompleks. Class mendukung konsep enkapsulasi, di mana anggota-anggota data (variabel) dan fungsi-fungsi yang berkaitan dapat disembunyikan atau diakses secara terbatas. 
 #### Struct
 
-Struct atau structure, adalah tipe data yang dapat digunakan untuk mengelompokkan sejumlah variabel dengan tipe data yang berbeda ke dalam satu kesatuan.Secara default, semua anggota (variabel) struktur dapat diakses secara publik.
+Struct atau structure, adalah tipe data yang dapat digunakan untuk mengelompokkan sejumlah variabel dengan tipe data yang berbeda ke dalam satu kesatuan.Secara default, semua anggota (variabel) struktur dapat diakses secara publik [2].
 
 #### Perbedaan
 
@@ -290,11 +290,10 @@ Kodingan diatas adlaha program dengan penggunaan `class`, `struct`, dan obejk-ob
 Dalam class Makanan_Daerah, anggota-anggota seperti `nama`, `jenis`, dan `asal` tidak dideklarasikan sebagai public, tetapi secara default, mereka memiliki hak akses private. Class Makanan_Daerah 2 memiliki semua anggota public, yang berarti variabel `nama`, `jenis`, dan `asal` dapat diakses dari luar class.
 
 Struct Makanan_Daerahh memiliki tiga anggota yang semuanya adalah public secara default. Ini berarti semua anggota `nama`, `jenis`, dan `asal` bisa diakses langsung dari luar struct.
-
 Di dalam `main()`, dua objek yang dibuat adalah `md1` dari tipe struct `Makanan_Daerahh` dan `md2` dari tipe class `Makanan_Daerah2`.
-Setelah itu, nilai-nilai pelengkap dari kedua objek diatur dan dicetak ke layar menggunakan cout.
+Setelah itu, nilai-nilai atribut dari kedua objek diatur dan dicetak ke layar menggunakan cout.
 
-Hasilnya adalah dua objek `md1` dan `md2` yang berbeda, masing-masing memiliki pelengksp `nama makanan`, `jenis`, dan `asal daerah` yang berbeda pula.
+Hasilnya adalah dua objek `md1` dan `md2` yang berbeda, masing-masing memiliki atribut `nama makanan`, `jenis`, dan `asal daerah` yang berbeda pula.
 
 ### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map.
 
@@ -328,18 +327,18 @@ Kodingan di atas adalah penggunaan dari struktur data map pada bahasa pemrograma
 
 #### Perbedaan Array dan Map:
 
-Array adalah kumpulan data yang diakses dengan berdasarkan indeks (mulai dari 0 sampai ukuran array-1). array adalah kumpulan elemen dengan tipe data yang sama yang disimpan secara berurutan[2]. Ukurannya ditentukan saat proses deklarasi dan tidak dapat diubah selama program berjalan, cocok digunakan untuk pengumpulan data yang diakses secara berurutan dan ukurannya dapat diketahui sebelumnya.
+Array adalah kumpulan data yang diakses dengan berdasarkan indeks (mulai dari 0 sampai ukuran array-1). array adalah kumpulan elemen dengan tipe data yang sama yang disimpan secara berurutan[3]. Ukurannya ditentukan saat proses deklarasi dan tidak dapat diubah selama program berjalan, cocok digunakan untuk pengumpulan data yang diakses secara berurutan dan ukurannya dapat diketahui sebelumnya.
 
-Sedangkan map, merupakan struktur data yang menyimpan pasangan kunci-nilai (key-value pairs), elemen-elemennya tidak dapat disimpan dalam urutan tertentu, tetapi disusun berdasarkan penerapan struktur data. Elemen pada map dapat dihapus, ditambahkan, dan dicari dengan menggunakan kunci, dengan ukuran yang dapat berubah secara dinamis. Map cocok digunakan untuk memetakan kunci ke nilai dan digunakan dalam situasi di mana struktur data asosiatif diperlukan
+Sedangkan map, merupakan struktur data yang menyimpan pasangan kunci-nilai (key-value pairs), elemen-elemennya tidak dapat disimpan dalam urutan tertentu, tetapi disusun berdasarkan penerapan struktur data. Elemen pada map dapat dihapus, ditambahkan, dan dicari dengan menggunakan kunci, dengan ukuran yang dapat berubah secara dinamis. Map cocok digunakan untuk memetakan kunci ke nilai dan digunakan dalam situasi di mana struktur data asosiatif diperlukan.
 
 Jadi, pemilihan antara keduanya tergantung pada kebutuhan dari program dan cara data akan diakses dan disimpan. Jika membutuhkan koleksi data yang sederhana dan ukurannya tetap maka gunakan array, tetapi jika perlu memetakan kunci ke nilai dan mengelola data secara dinamis maka gunakan map.
 
 ## Kesimpulan
 
-Kesimpulannya, tipe data memiliki 3 jenis yaitu tipe data primitif, tipe data abstrak, dan tipe data koleksi. Tipe data primitif meliputi integer, float, character, dan boiolean. Tipe data abstrak meliputi struct dan class, struct memiliki askses default yang bersifat public sedangkan class bersifat private. Tipe data koleksi meliputi array, vector, dan map. Array adalah struktur data statis, berukuran tetap, berisi tipe data yang sama secara beruruta. Vector adalah struktur data dinamis, ukurannya dapat disesuaikan, dan alokasi memorinya dilakukan otomatis dan bersebelahan. Sedangkan Map adalah struktur data yang memetakan kunci (key) ke nilai (value), setiap kuncinya harus unik.
+Kesimpulannya, tipe data memiliki tiga jenis yaitu tipe data primitif, tipe data abstrak, dan tipe data koleksi. Tipe data primitif meliputi integer, float, character, dan boiolean. Tipe data abstrak meliputi struct dan class, struct memiliki askses default yang bersifat public sedangkan class bersifat private. Tipe data koleksi meliputi array, vector, dan map. Array adalah struktur data statis, berukuran tetap, berisi tipe data yang sama secara beruruta. Vector adalah struktur data dinamis, ukurannya dapat disesuaikan, dan alokasi memorinya dilakukan otomatis dan bersebelahan. Sedangkan Map adalah struktur data yang memetakan kunci (key) ke nilai (value), setiap kuncinya harus unik.
 
 ## Referensi
 
-[1] Rian Hidayat, "Pengertian Tipe Data dan Penggunaannya dalam Bahasa Pemrograman", Jurnal Informatika dan Teknologi Universitas Gunadarma, 2020.
-[2] Van Weert, P., & Gregoire, M. (2019). C++17 Standard Library Quick Reference. Apress.
-[3] Stanley B. Lippman, Josée Lajoie, and Barbara E. Moo (2019). C++ Primer
+[1] R. Hidayat, "Pengertian Tipe Data dan Penggunaannya dalam Bahasa Pemrograman," J. Informatika dan Teknologi Univ. Gunadarma, 2020.
+[2] N. M. Josuttis, "C++ Standard Library: A Tutorial and Reference", 2019.
+[3] P. Van Weert and M. Gregoire, C++17 Standard Library Quick Reference. Apress, 2019.
