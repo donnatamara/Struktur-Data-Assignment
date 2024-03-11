@@ -292,7 +292,6 @@ Dalam class Makanan_Daerah, anggota-anggota seperti `nama`, `jenis`, dan `asal` 
 Struct Makanan_Daerahh memiliki tiga anggota yang semuanya adalah public secara default. Ini berarti semua anggota `nama`, `jenis`, dan `asal` bisa diakses langsung dari luar struct.
 Di dalam `main()`, dua objek yang dibuat adalah `md1` dari tipe struct `Makanan_Daerahh` dan `md2` dari tipe class `Makanan_Daerah2`.
 Setelah itu, nilai-nilai atribut dari kedua objek diatur dan dicetak ke layar menggunakan cout.
-
 Hasilnya adalah dua objek `md1` dan `md2` yang berbeda, masing-masing memiliki atribut `nama makanan`, `jenis`, dan `asal daerah` yang berbeda pula.
 
 ### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map.
@@ -327,7 +326,7 @@ Kodingan di atas adalah penggunaan dari struktur data map pada bahasa pemrograma
 
 #### Perbedaan Array dan Map:
 
-Array adalah kumpulan data yang diakses dengan berdasarkan indeks (mulai dari 0 sampai ukuran array-1). array adalah kumpulan elemen dengan tipe data yang sama yang disimpan secara berurutan[3]. Ukurannya ditentukan saat proses deklarasi dan tidak dapat diubah selama program berjalan, cocok digunakan untuk pengumpulan data yang diakses secara berurutan dan ukurannya dapat diketahui sebelumnya.
+Array adalah kumpulan data yang diakses dengan berdasarkan indeks (mulai dari 0 sampai ukuran array-1). array adalah kumpulan elemen dengan tipe data yang sama yang disimpan secara berurutan [3]. Ukurannya ditentukan saat proses deklarasi dan tidak dapat diubah selama program berjalan, cocok digunakan untuk pengumpulan data yang diakses secara berurutan dan ukurannya dapat diketahui sebelumnya.
 
 Sedangkan map, merupakan struktur data yang menyimpan pasangan kunci-nilai (key-value pairs), elemen-elemennya tidak dapat disimpan dalam urutan tertentu, tetapi disusun berdasarkan penerapan struktur data. Elemen pada map dapat dihapus, ditambahkan, dan dicari dengan menggunakan kunci, dengan ukuran yang dapat berubah secara dinamis. Map cocok digunakan untuk memetakan kunci ke nilai dan digunakan dalam situasi di mana struktur data asosiatif diperlukan.
 
