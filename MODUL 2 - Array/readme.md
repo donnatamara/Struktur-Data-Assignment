@@ -4,7 +4,7 @@
 
 ## Dasar Teori
 
-Tipe data merupakan salah satu konsep dasar dalam pemrograman komputer, tipe data adlah sebuah pengelompokkan sebuah data berdasarkan jenis data dalam sebuah bahasa pemrograman. Tipe data menentukan jenis data yang dapat disimpan dalam variabel dan operasi yang dapat dilakukan pada variabel tersebut [1]. Dibawah ini adalah jenis tipe data yang biasanya digunakan:
+Tipe data merupakan salah satu konsep dasar dalam pemrograman komputer, tipe data adlah sebuah pengelompokkan sebuah data berdasarkan jenis data dalam sebuah bahasa pemrograman. Tipe data menentukan jenis data yang dapat disimpan dalam variabel dan operasi yang dapat dilakukan pada variabel tersebut [1]. Dibawah ini adalah jenis tipe data yang biasanya digunakan:aaaaaa
 
 ### 1. Tipe Data Primitif:
 
