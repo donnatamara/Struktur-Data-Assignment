@@ -3,22 +3,24 @@
 
 ## Dasar Teori
 
-Array merupakan struktur data yang paling dasar dalam sebuah bahasa pemrograman. Array adalah. Dalam bahasa pemrograman C++, ukuran dan tipe array tidak dapat diubah setelah deklarasinya[1]. Dibawah ini adalah beberapa jenis array yang umum diketahui:
+Array merupakan struktur data yang paling dasar dalam sebuah bahasa pemrograman. Array dapat mempermudah dalam menyimpan data karena array berisi komponen-komponen yang memiliki tipe data yang sama yang setiap anggota array dapat diakses melalui suatu indeks[1]. Dalam bahasa pemrograman C++, ukuran dan tipe array tidak dapat diubah setelah deklarasinya[2]. Dibawah ini adalah beberapa jenis array yang umum diketahui:
 
 ### 1. Array Satu Dimensi
-Array satu dimensi adalah tipe variabel yang berisi kumpulan data dengan tipe data yang sama dan disusun dalam satu baris atau satu dimensi. Elemen dalam array memiliki sebuah indeks yang berguna untuk mengakses elemen tersebut, indeksnya dimulai dari 0 dan berakhir pada jumlah semua elemen dikurangi satu.
+Array satu dimensi atau dapat disebut dengan vektor adalah tipe variabel yang berisi kumpulan data dengan tipe data yang sama dan disusun dalam satu baris atau satu dimensi. Elemen dalam array memiliki sebuah indeks yang berguna untuk mengakses elemen tersebut, indeksnya dimulai dari 0 dan berakhir pada jumlah semua elemen dikurangi satu.
 
 ### 2. Array Dua Dimensi
-Array dua dimensi adalah tipe variabel yang berisi kumpulan array satu dimensi dengan tipe data sama dan tersusun dalam bentuk tabel atau matriks, dimana baris dan kolom mewakili dimensi data. Setiap elemen dalam array ini diakses dengan dua indeks, yaitu indeks baris dan indeks kolom. Indeks baris menentukan posisi elemen di baris tertentu, dan indeks kolom menentukan posisi elemen di kolom tertentu. 
+Array dua dimensi atau sering disebut dengan matriks adalah tipe variabel yang berisi kumpulan array satu dimensi dengan tipe data sama dan tersusun dalam bentuk tabel atau matriks, dimana baris dan kolom mewakili dimensi data. Setiap elemen dalam array ini diakses dengan dua indeks, yaitu indeks baris dan indeks kolom. Indeks baris menentukan posisi elemen di baris tertentu, dan indeks kolom menentukan posisi elemen di kolom tertentu. 
 
 ### 3. Array Multidimensi
 Array multidimensi adalah penggabungan antara array satu dimensi dan dua dimensi, namun memiliki kapasitas memori yang lebih besar. Array ini dapat memiliki indeks lebih dari dua dimensi dan dapat divisualisasikan sebagai struktur berlapis yang mana setiap dimensi mewakili satu lapisan.
 
 ### 4. Array Empat Dimensi
-Array empat dimensi adalah tipe variabel yang berisi array dengan empat dimensi saja dan memiliki tipe data yang sama, di mana setiap dimensi mewakili satu tingkatan struktur data serta dapat divisualisaikan sebagai struktur berlapis, di mana setiap dimensi mewakili satu lapisan.
+Array empat dimensi atau biasa disebut tensor adalah tipe variabel yang berisi array dengan empat dimensi saja dan memiliki tipe data yang sama, di mana setiap dimensi mewakili satu tingkatan struktur data serta dapat divisualisaikan sebagai struktur berlapis, di mana setiap dimensi mewakili satu lapisan.
 
 ### 5. Array Lima Dimensi
 Array lima dimensi adalah tipe variabel yang berisi array dengan lima dimensi dan memiliki tipe data yang sama, setiap dimensi mewakili satu tingkatan struktur data, dapat divisualisasikan sebagai struktur berlapis dengan lima tingkatan. Array ini memiliki kompleksitas yang sangat tinggi dan membutuhkan memori yang besar juga. Akses dalam array dengan dimensi tinggi seperti pada array ini dapat memakan waktu dan sumber daya.
+
+### Kekurangan dan Kelebihan Array
 
 ## Guided 
 
@@ -169,8 +171,11 @@ int main() {
 #### Output:
 <img width="187" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/4f0760f4-1f13-4c7d-b492-12c6b1f3645e">
 
+Kode diatas merupakan kode program yang meminta pengguna memasukkan jumlah data yang akan dimasukkan di dalam array dan menampilkan nomor ganjil dan genap pada array yang telah dimasukkan. 
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Menggunakan loop `for` untuk menginputkan data sebanyak `n` kali, program akan meminta pengguna untuk memasukkan data ke-i dan menyimpannya di array `data`. Menggunakan loop `for` pada kode di atas juga untuk memisahkan data genap dan ganjil dari array `data` untuk ditampilkan secara terpisah, program akan mengecek setiap elemen pada array, jika genap maka akan ditampilkan dalam bagian `Nomor Genap`, dan jika ganjil maka akan ditampilkan dalam bagian `Nomor Ganjil`. Kemudian program akan mengembalikan nilai 0 yang menandakan bahwa program berjalan dengan sukses.
+
+
 
 #### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/134fd3ba-fde5-4586-b3c0-720659a0c5b8">
@@ -247,6 +252,8 @@ int main() {
 #### Output:
 <img width="273" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/88fd18f0-95cd-4f18-b53d-c360c6d64923">
 
+Kode diatas merupakan kode program yang membuat dan mengelola array 3 dimensi dengan menggunakan dynamic memory allocation.
+
 #### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/2c24a53f-b4e5-4542-835d-3a2dcf9350d0">
 
@@ -319,4 +326,6 @@ int main() {
 Kesimpulannya, array adalah suatu struktur data yang sangat penting dalam bahasa pemrograman c++, digunakan untuk menyimpan dan memanipulasi data dengan cara yang efisien.
 
 ## Referensi
-[1] “C++ Arrays (With examples).” https://www.programiz.com/cpp-programming/arrays [accesed 24 march 2024].
+[1]M. P. Putri, ed., Algoritma dan Struktur Data, CV WIDINA MEDIA UTAMA, 2022.
+
+[2]“C++ Arrays (With examples).” https://www.programiz.com/cpp-programming/arrays [accesed 24 march 2024].
