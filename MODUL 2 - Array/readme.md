@@ -9,7 +9,7 @@ Array merupakan struktur data yang paling dasar dalam sebuah bahasa pemrograman.
 Array satu dimensi atau dapat disebut dengan vektor adalah tipe variabel yang berisi kumpulan data dengan tipe data yang sama dan disusun dalam satu baris atau satu dimensi. Elemen dalam array memiliki sebuah indeks yang berguna untuk mengakses elemen tersebut, indeksnya dimulai dari 0 dan berakhir pada jumlah semua elemen dikurangi satu.
 
 ### 2. Array Dua Dimensi
-Array dua dimensi atau sering disebut dengan matriks adalah tipe variabel yang berisi kumpulan array satu dimensi dengan tipe data sama dan tersusun dalam bentuk tabel atau matriks, dimana baris dan kolom mewakili dimensi data. Setiap elemen dalam array ini diakses dengan dua indeks, yaitu indeks baris dan indeks kolom. Indeks baris menentukan posisi elemen di baris tertentu, dan indeks kolom menentukan posisi elemen di kolom tertentu. 
+Array dua dimensi atau sering disebut dengan matriks adalah tipe variabel yang berisi kumpulan array satu dimensi dengan tipe data sama dan tersusun dalam bentuk tabel atau matriks, dimana baris dan kolom mewakili dimensi data. Setiap elemen dalam array ini diakses dengan dua indeks, yaitu indeks baris dan indeks kolom. Indeks baris menentukan posisi elemen di baris tertentu, dan indeks kolom menentukan posisi elemen di kolom tertentu[3]. 
 
 ### 3. Array Multidimensi
 Array multidimensi adalah penggabungan antara array satu dimensi dan dua dimensi, namun memiliki kapasitas memori yang lebih besar. Array ini dapat memiliki indeks lebih dari dua dimensi dan dapat divisualisasikan sebagai struktur berlapis yang mana setiap dimensi mewakili satu lapisan.
@@ -111,7 +111,7 @@ int main()
     cout << "Nilai maksimum adalah " << maks << " berada di Array ke " << lokasi << endl;
 }
 ```
-Kode diatas merupakan kode program untuk mencari nilai maksimum beserta lokasi indeksnya pada sebuah array yang diinputkan oleh pengguna. 
+Kode diatas merupakan kode program untuk mencari nilai maksimum beserta lokasi indeksnya pada sebuah array yang telah diinputkan oleh pengguna. 
 
 Variabel `maks` diperlukan untuk menyimpan nilai maksimum, variabel `a` untuk panjang array, `i` sebagai penghitung, dan `lokasi` untuk menyimpan indeks nilai maksimum. Lalu pengguna diminta memasukkan panjang array melalui `cin`.
 
@@ -317,10 +317,14 @@ int main() {
 ### Output:
 <img width="214" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/4df486cb-80a1-4670-b7d0-a86d4e92114e">
 
+Kode diatas merupakan kode program untuk menghitung nilai maksimum, minimum, dan rata-rata dari elemen-elemen array, dengan meminta pengguna memasukkan ukuran array yang di simpan pada variabel `a`. 
+
+Kemudian program melakukan validasi untuk memastikan bahwa ukuran array yang dimasukkan oleh oengguna valid atau tidak, yaitu lebih besar dari 0 dan tidak melebihi `max_size`. Jika ukuran array yang dimasukkan tidak sesuai maka program akan mencetak pesan error dengan mengembalikan nilai 1.
+
+Setelah itu, program meminta pengguna untuk memasukkan elemen-elemen sebanyak `a` kali. Menggunakan loop `for` untuk mengiterasi melalui elemen-elemen dan mencari nilai maksimum(`max`), nilai minimum(`min`), dan menjumlahkan semua elemen(`sum`) untuk menghitung rata-rata(`avg`). Program mengembalikan nilai 0 yang menandakan bahwa program telah berjalan dengan sukses.
 
 ### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/25491c83-b91c-4284-ae9e-a8e82a9b5804">
-
 
 
 ## Kesimpulan
@@ -330,3 +334,5 @@ Kesimpulannya, array adalah suatu struktur data yang sangat penting dalam bahasa
 [1]M. P. Putri, ed., Algoritma dan Struktur Data, CV WIDINA MEDIA UTAMA, 2022.
 
 [2]“C++ Arrays (With examples).” https://www.programiz.com/cpp-programming/arrays [accesed 24 march 2024].
+
+[3]Siahaan, V., & Sianipar, R. H. (2023). *THREE COOKBOOKS IN ONE: Visual C++, Visual Basic, Visual C#*. New York, NY: Apress.
