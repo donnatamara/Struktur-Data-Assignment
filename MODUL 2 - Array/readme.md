@@ -6,34 +6,44 @@
 Array merupakan struktur data yang paling dasar dalam sebuah bahasa pemrograman. Array dapat mempermudah dalam menyimpan data karena array berisi komponen-komponen yang memiliki tipe data yang sama yang setiap anggota array dapat diakses melalui suatu indeks[1]. Dalam bahasa pemrograman C++, ukuran dan tipe array tidak dapat diubah setelah deklarasinya[2]. Dibawah ini adalah beberapa jenis array yang umum diketahui:
 
 ### 1. Array Satu Dimensi
-Array satu dimensi atau dapat disebut dengan vektor adalah tipe variabel yang berisi kumpulan data dengan tipe data yang sama dan disusun dalam satu baris atau satu dimensi. Elemen dalam array memiliki sebuah indeks yang berguna untuk mengakses elemen tersebut, indeksnya dimulai dari 0 dan berakhir pada jumlah semua elemen dikurangi satu.
+Array satu dimensi atau dapat disebut dengan vektor adalah tipe variabel yang berisi kumpulan data dengan tipe data yang sama dan disusun dalam satu baris atau satu dimensi. Array satu dimensi relatif sederhana untuk dipahami dan digunakan dan biasanya digunakan untuk menyimpan data yang tidak memiliki hubungan spasial, seperti daftar nama atau nilai. 
+
+Elemen dalam array memiliki sebuah indeks yang berguna untuk mengakses elemen tersebut, indeksnya dimulai dari 0 dan berakhir pada jumlah semua elemen dikurangi satu. Array satu dimensi dapat divisualisasikan sebagai garis lurus.
 
 ### 2. Array Dua Dimensi
-Array dua dimensi atau sering disebut dengan matriks adalah tipe variabel yang berisi kumpulan array satu dimensi dengan tipe data sama dan tersusun dalam bentuk tabel atau matriks, dimana baris dan kolom mewakili dimensi data. Setiap elemen dalam array ini diakses dengan dua indeks, yaitu indeks baris dan indeks kolom. Indeks baris menentukan posisi elemen di baris tertentu, dan indeks kolom menentukan posisi elemen di kolom tertentu[3]. 
+Array dua dimensi atau sering disebut dengan matriks adalah tipe variabel yang berisi kumpulan array satu dimensi dengan tipe data sama dan tersusun dalam bentuk tabel atau matriks, dimana baris dan kolom mewakili dimensi data. Array ini lebih kompleks daripada array satu dimensi, tetapi masih relatif mudah untuk dipahami dan digunakan.  
+
+Array dua dimensi digunakan untuk menyimpan data yang memiliki hubungan spasial, seperti gambar, tabel, atau matriks. Setiap elemen dalam array ini diakses dengan dua indeks, yaitu indeks baris dan indeks kolom. Indeks baris menentukan posisi elemen di baris tertentu, dan indeks kolom menentukan posisi elemen di kolom tertentu[3]. 
 
 ### 3. Array Multidimensi
-Array multidimensi adalah penggabungan antara array satu dimensi dan dua dimensi, namun memiliki kapasitas memori yang lebih besar. Array ini dapat memiliki indeks lebih dari dua dimensi dan dapat divisualisasikan sebagai struktur berlapis yang mana setiap dimensi mewakili satu lapisan.
+Array multidimensi adalah penggabungan antara array satu dimensi dan dua dimensi, namun memiliki kapasitas memori yang lebih besar. Array ini dapat memiliki indeks lebih dari dua dimensi dan dapat divisualisasikan sebagai struktur berlapis yang mana setiap dimensi mewakili satu lapisan. 
+
+Array multidimensi digunakan untuk menyimpan data yang memiliki hubungan spasial dan temporal, seperti data simulasi atau data ilmiah. Dapat dideklarasikan dengan lebih dari tiga dimensi, tetapi array dengan lebih dari empat dimensi jarang digunakan.
 
 ### 4. Array Empat Dimensi
-Array empat dimensi atau biasa disebut tensor adalah tipe variabel yang berisi array dengan empat dimensi saja dan memiliki tipe data yang sama, di mana setiap dimensi mewakili satu tingkatan struktur data serta dapat divisualisaikan sebagai struktur berlapis, di mana setiap dimensi mewakili satu lapisan.
+Array empat dimensi atau biasa disebut tensor adalah tipe variabel yang berisi array dengan empat dimensi saja dan memiliki tipe data yang sama, di mana setiap dimensi mewakili satu tingkatan struktur data serta dapat divisualisaikan sebagai struktur berlapis, di mana setiap dimensi mewakili satu lapisan. Array ini digunakan untuk menyimpan data spasial dan temporal, seperti data fisika atau data astronomi.
 
 ### 5. Array Lima Dimensi
-Array lima dimensi adalah tipe variabel yang berisi array dengan lima dimensi dan memiliki tipe data yang sama, setiap dimensi mewakili satu tingkatan struktur data, dapat divisualisasikan sebagai struktur berlapis dengan lima tingkatan. Array ini memiliki kompleksitas yang sangat tinggi dan membutuhkan memori yang besar juga. Akses dalam array dengan dimensi tinggi seperti pada array ini dapat memakan waktu dan sumber daya.
+Array lima dimensi adalah tipe variabel yang berisi array dengan lima dimensi dan memiliki tipe data yang sama, setiap dimensi mewakili satu tingkatan struktur data, dapat divisualisasikan sebagai struktur berlapis dengan lima tingkatan. 
 
-### Kekurangan dan Kelebihan Array
+Array ini memiliki kompleksitas yang sangat tinggi dan membutuhkan memori yang besar juga. Akses dalam array dengan dimensi tinggi seperti pada array ini dapat memakan waktu dan sumber daya. Array ini digunakan untuk menyimpan data spasial, temporal, dan spektral, seperti data citra medis atau data penginderaan jauh.
+
+
+## Kekurangan dan Kelebihan Array
 Berikut beberapa kekurangan dan kelebihan dari array pada bahasa pemrograman C++:
 
-##### Kekurangan Array
+#### Kekurangan Array
   - Ukuran Tetap, ukuran array tidak dapat dirubah setelahnya dan harus ditentukan saat pendeklarasian.
   - Memori Terbuang, jika ada elemen array yang tidak digunakan, maka akan ada memori yang terbuang sia-sia.
   - Kompleksitas, mengelola array dengan banyak dimensi bisa menjadi kompleks dan sulit.
   - Keamanan Memori, akses yang tidak terkontrol ke array dapat menyebabkan error dan crash pada program.
-  - 
-##### Kelebihan Array
+    
+#### Kelebihan Array
   - Efesiensi Memori, array menyimpan data yang bertipe sama secara berdekatan dalam memori, sehingga dapat meningkatkan efesiensi memori.
   - Akses Data Cepat, dalam mengakses elemen array dapat dilakukan dengan cepat karena alamat memori elemen-elemennya berurutan.
   - Sederhana, penggunaannya relatif sederhana dan mudah dipahami.
   - Fleksibel, array dapat digunakan untuk berbagai keperluan, seperti menyimpan data statistik, data sensor, dan data matriks.
+
 
 ## Guided 
 
@@ -341,7 +351,7 @@ Setelah itu, program meminta pengguna untuk memasukkan elemen-elemen sebanyak `a
 
 
 ## Kesimpulan
-Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan dan memanipulasi data dengan cara yang efisien.
+Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan data dengan cara yang efisien, ukuran dan tipe array tidak dapat diubah setelah deklarasinya. Ada beberapa jenis array yang diketahui yaitu, array satu dimensi, array dua dimensi, array multidimensi, array empat dimensi, dan array lima dimensi. 
 
 ## Referensi
 [1]M. P. Putri, ed., Algoritma dan Struktur Data, CV WIDINA MEDIA UTAMA, 2022.
