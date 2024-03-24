@@ -1,33 +1,42 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int a;
-    cout << "Masukkan Data array: ";
-    cin >> a;
+int main() {
+  int n, data[100];
 
-    int array[a];
-    cout << "Masukkan elemen array\n" << endl;
-    for (i = 0; i < a; i++) {
-        cin >> array[i];
-    }
+  // Menginput jumlah data
+  cout << "Masukkan jumlah data: ";
+  cin >> n;
 
-    cout << "Array ke-: ";
-    for (i = 0; i < a; i++)
-    {
-        cout << "\n\nNomor Genap: ";
-        for (int j = 0; j < a; j++) {
-            if (array[j] % 2 == 0) {
-                cout << array[j] << " "; 
-            }
-        }
-        cout << "\n\nNomor Ganjil: ";
-        for (int k = 0; k < a; k++); {
-            if (array[k] % 2 != 0) {
-                cout << array[k] << " "; 
-            }
-        }
+  // Menginput data
+  for (int i = 0; i < n; i++) {
+    cout << "Masukkan data ke-" << i + 1 << ": ";
+    cin >> data[i];
+  }
+
+  // Menampilkan data array
+  cout << "Data Array: ";
+  for (int i = 0; i < n; i++) {
+    cout << data[i] << " ";
+  }
+  cout << endl;
+
+  // Menampilkan data genap dan ganjil
+  cout << "Nomor Genap: ";
+  for (int i = 0; i < n; i++) {
+    if (data[i] % 2 == 0) {
+      cout << data[i] << " ";
     }
-    return 0;
+  }
+  cout << endl;
+
+  cout << "Nomor Ganjil: ";
+  for (int i = 0; i < n; i++) {
+    if (data[i] % 2 == 1) {
+      cout << data[i] << " ";
+    }
+  }
+  cout << endl;
+
+  return 0;
 }
