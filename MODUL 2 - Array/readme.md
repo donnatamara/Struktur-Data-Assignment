@@ -245,7 +245,7 @@ int main() {
 }
 ```
 #### Output:
-<img width="130" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/40957724-cfa9-49a9-83b6-036326393fbd">
+<img width="273" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/88fd18f0-95cd-4f18-b53d-c360c6d64923">
 
 #### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/2c24a53f-b4e5-4542-835d-3a2dcf9350d0">
@@ -256,18 +256,62 @@ int main() {
 ### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata–rata dari suatu array dengan input yang dimasukan oleh user!
 
 ```C++
+#include <iostream>
 
+using namespace std;
+
+int main() {
+    const int max_size = 100; // Ukuran maksimum array
+    int arr[max_size];
+    int a;
+
+    // Input ukuran array dari pengguna
+    cout << "Masukkan ukuran array: ";
+    cin >> a;
+
+    // Validasi ukuran array
+    if (a <= 0 || a > max_size) {
+        cout << "Ukuran array tidak valid.\n";
+        return 1; // Menghentikan program dengan kode error
+    }
+
+    // Input elemen array dari pengguna
+    cout << "Masukkan elemen array:\n";
+    for (int i = 0; i < a; ++i) {
+        cout << "Elemen " << i + 1 << ": ";
+        cin >> arr[i];
+    }
+
+    // Mencari nilai maksimum, minimum, dan rata-rata
+    int max = arr[0], min = arr[0], sum = 0;
+    for (int i = 0; i < a; ++i) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+        sum += arr[i];
+    }
+
+    // Menghitung nilai rata-rata
+    double avg = static_cast<double>(sum) / a;
+
+    // Menampilkan hasil
+    cout << "Nilai Maksimum: " << max << endl;
+    cout << "Nilai Minimum: " << min << endl;
+    cout << "Nilai Rata-rata: " << avg << endl;
+
+    return 0;
+}
 ```
 ### Output:
 <img width="214" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/4df486cb-80a1-4670-b7d0-a86d4e92114e">
-
-<img width="143" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/0141d4bf-ae7f-482d-8432-55b4cd6375ea">
 
 
 ### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/25491c83-b91c-4284-ae9e-a8e82a9b5804">
 
-<img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/96a0a926-abaa-4bed-985a-5965733c8fdc">
 
 
 
