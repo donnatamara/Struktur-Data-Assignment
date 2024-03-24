@@ -127,8 +127,43 @@ Lalu hasilnya, program akan menampilkan nilai maksimum yang telah ditemukan dan 
 using namespace std;
 
 int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
-    return 0;
+  int n, data[100];
+
+  // Menginput jumlah data
+  cout << "Masukkan jumlah data: ";
+  cin >> n;
+
+  // Menginput data
+  for (int i = 0; i < n; i++) {
+    cout << "Masukkan data ke-" << i + 1 << ": ";
+    cin >> data[i];
+  }
+
+  // Menampilkan data array
+  cout << "Data Array: ";
+  for (int i = 0; i < n; i++) {
+    cout << data[i] << " ";
+  }
+  cout << endl;
+
+  // Menampilkan data genap dan ganjil
+  cout << "Nomor Genap: ";
+  for (int i = 0; i < n; i++) {
+    if (data[i] % 2 == 0) {
+      cout << data[i] << " ";
+    }
+  }
+  cout << endl;
+
+  cout << "Nomor Ganjil: ";
+  for (int i = 0; i < n; i++) {
+    if (data[i] % 2 == 1) {
+      cout << data[i] << " ";
+    }
+  }
+  cout << endl;
+
+  return 0;
 }
 ```
 #### Output:
@@ -139,6 +174,100 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 
 #### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/134fd3ba-fde5-4586-b3c0-720659a0c5b8">
+
+### 2. Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main() {
+  int dimensi[3]; // Array untuk menyimpan dimensi
+
+  // Minta pengguna memasukkan dimensi
+  cout << "Masukkan jumlah elemen untuk setiap dimensi:\n";
+  for (int i = 0; i < 3; ++i) 
+  {
+    cout << "Dimensi " << i + 1 << ": ";
+    cin >> dimensi[i];
+  }
+
+  // Alokasikan memori secara dinamis untuk array 3 dimensi
+  int*** arr = new int**[dimensi[0]];
+  for (int i = 0; i < dimensi[0]; ++i) 
+  {
+    arr[i] = new int*[dimensi[1]];
+    for (int j = 0; j < dimensi[1]; ++j) 
+    {
+      arr[i][j] = new int[dimensi[2]];
+    }
+  }
+
+  // Masukkan elemen
+  cout << "\nMasukkan elemen array:\n";
+  for (int i = 0; i < dimensi[0]; ++i) 
+  {
+    for (int j = 0; j < dimensi[1]; ++j) 
+    {
+      for (int k = 0; k < dimensi[2]; ++k) 
+      {
+        cout << "Array[" << i << "][" << j << "][" << k << "] = ";
+        cin >> arr[i][j][k];
+      }
+    }
+  }
+
+  // Tampilkan elemen array
+  cout << "\nElemen array:\n";
+  for (int i = 0; i < dimensi[0]; ++i) 
+  {
+    for (int j = 0; j < dimensi[1]; ++j) 
+    {
+      for (int k = 0; k < dimensi[2]; ++k) 
+      {
+        cout << arr[i][j][k] << " ";
+      }
+      cout << endl;
+    }
+  }
+
+  // Bebaskan memori untuk array 3 dimensi (kebalikan dari urutan alokasi)
+  for (int i = 0; i < dimensi[0]; ++i) 
+  {
+    for (int j = 0; j < dimensi[1]; ++j) 
+    {
+      delete[] arr[i][j];
+    }
+    delete[] arr[i];
+  }
+  delete[] arr;
+  return 0;
+}
+```
+#### Output:
+<img width="130" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/40957724-cfa9-49a9-83b6-036326393fbd">
+
+#### Full code Screenshot:
+<img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/2c24a53f-b4e5-4542-835d-3a2dcf9350d0">
+
+
+
+
+### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata–rata dari suatu array dengan input yang dimasukan oleh user!
+
+```C++
+
+```
+### Output:
+<img width="214" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/4df486cb-80a1-4670-b7d0-a86d4e92114e">
+
+<img width="143" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/0141d4bf-ae7f-482d-8432-55b4cd6375ea">
+
+
+### Full code Screenshot:
+<img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/25491c83-b91c-4284-ae9e-a8e82a9b5804">
+
+<img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/96a0a926-abaa-4bed-985a-5965733c8fdc">
 
 
 
