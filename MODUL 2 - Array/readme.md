@@ -21,6 +21,19 @@ Array empat dimensi atau biasa disebut tensor adalah tipe variabel yang berisi a
 Array lima dimensi adalah tipe variabel yang berisi array dengan lima dimensi dan memiliki tipe data yang sama, setiap dimensi mewakili satu tingkatan struktur data, dapat divisualisasikan sebagai struktur berlapis dengan lima tingkatan. Array ini memiliki kompleksitas yang sangat tinggi dan membutuhkan memori yang besar juga. Akses dalam array dengan dimensi tinggi seperti pada array ini dapat memakan waktu dan sumber daya.
 
 ### Kekurangan dan Kelebihan Array
+Berikut beberapa kekurangan dan kelebihan dari array pada bahasa pemrograman C++:
+
+##### Kekurangan Array
+  - Ukuran Tetap, ukuran array tidak dapat dirubah setelahnya dan harus ditentukan saat pendeklarasian.
+  - Memori Terbuang, jika ada elemen array yang tidak digunakan, maka akan ada memori yang terbuang sia-sia.
+  - Kompleksitas, mengelola array dengan banyak dimensi bisa menjadi kompleks dan sulit.
+  - Keamanan Memori, akses yang tidak terkontrol ke array dapat menyebabkan error dan crash pada program.
+  - 
+##### Kelebihan Array
+  - Efesiensi Memori, array menyimpan data yang bertipe sama secara berdekatan dalam memori, sehingga dapat meningkatkan efesiensi memori.
+  - Akses Data Cepat, dalam mengakses elemen array dapat dilakukan dengan cepat karena alamat memori elemen-elemennya berurutan.
+  - Sederhana, penggunaannya relatif sederhana dan mudah dipahami.
+  - Fleksibel, array dapat digunakan untuk berbagai keperluan, seperti menyimpan data statistik, data sensor, dan data matriks.
 
 ## Guided 
 
@@ -328,7 +341,7 @@ Setelah itu, program meminta pengguna untuk memasukkan elemen-elemen sebanyak `a
 
 
 ## Kesimpulan
-Kesimpulannya, array adalah suatu struktur data yang sangat penting dalam bahasa pemrograman c++, digunakan untuk menyimpan dan memanipulasi data dengan cara yang efisien.
+Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan dan memanipulasi data dengan cara yang efisien.
 
 ## Referensi
 [1]M. P. Putri, ed., Algoritma dan Struktur Data, CV WIDINA MEDIA UTAMA, 2022.
@@ -336,3 +349,5 @@ Kesimpulannya, array adalah suatu struktur data yang sangat penting dalam bahasa
 [2]“C++ Arrays (With examples).” https://www.programiz.com/cpp-programming/arrays [accesed 24 march 2024].
 
 [3]Siahaan, V., & Sianipar, R. H. (2023). *THREE COOKBOOKS IN ONE: Visual C++, Visual Basic, Visual C#*. New York, NY: Apress.
+
+[4]Huda, A., Ardi, N., & Muabi, A. (2023). Pengantar coding berbasis C/C++. Google Play Books.
