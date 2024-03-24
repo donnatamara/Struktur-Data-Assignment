@@ -323,7 +323,6 @@ int main() {
 
 
 
-
 ## Kesimpulan
 Kesimpulannya, array adalah suatu struktur data yang sangat penting dalam bahasa pemrograman c++, digunakan untuk menyimpan dan memanipulasi data dengan cara yang efisien.
 
