@@ -252,12 +252,14 @@ int main() {
 #### Output:
 <img width="273" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/88fd18f0-95cd-4f18-b53d-c360c6d64923">
 
-Kode diatas merupakan kode program yang membuat dan mengelola array 3 dimensi dengan menggunakan dynamic memory allocation.
+Kode diatas merupakan kode program yang membuat dan mengelola array 3 dimensi dengan menggunakan dynamic memory allocation. Dengan mendeklarasikan array `dimensi` yang akan digunakan untuk menhyimpan panjang setiap dimensi array yang akan dibuat. Lalu, program meminta pengguna untuk memasukkan jumlah elemen untuk setiap dimensi, lalu disimpan pada array `dimensi`.
+
+Menggunakan dynamic memory allocation untuk membuat array 3 dimensi dengan ukuran yang sesuai dengan dimensi yang dimasukkan oleh pengguna yang dilakukan dengan menggunakan tiga loop `for`. Loop-loop tersebut berguna untuk membuat array baru sepanjang dimensi masing-masing. Setelah itu, program meminta pengguna untuk memasukkan nilai untuk setiap elemen array secara berurutan.
+
+Kemudian program akan menampilkan elemen-elemen array tersebut dengan menggunakan tiga loop `for`bersarang. Setelah selesai menggunakan array 3 dimensi, program menghapusnya dari memori dengan menggunakan operator `delete[]`. Hal ini dilakukan dengan kebalikan dari urutan alokasi memori, yaitu dimulai dari dimensi ketiga, kemudian kedua, dan terakhir dimensi pertama. Terakhir, program mengembalikan nilai 0 yang menandakan bahwa program tersebut sukses dijalankan.
 
 #### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/2c24a53f-b4e5-4542-835d-3a2dcf9350d0">
-
-
 
 
 ### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata–rata dari suatu array dengan input yang dimasukan oleh user!
