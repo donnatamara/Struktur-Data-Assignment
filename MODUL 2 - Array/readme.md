@@ -6,15 +6,17 @@
 Array merupakan struktur data yang paling dasar dalam sebuah bahasa pemrograman. Array dapat mempermudah dalam menyimpan data karena array berisi komponen-komponen yang memiliki tipe data yang sama yang setiap anggota array dapat diakses melalui suatu indeks. Dalam bahasa pemrograman C++, ukuran dan tipe array tidak dapat diubah setelah deklarasinya[1]. Dibawah ini adalah beberapa jenis array yang umum diketahui:
 
 ### 1. Array Satu Dimensi
-Array satu dimensi atau dapat disebut dengan vektor adalah tipe variabel yang berisi kumpulan data dengan tipe data yang sama dan disusun dalam satu baris atau satu dimensi. Array satu dimensi relatif sederhana untuk dipahami dan digunakan dan biasanya digunakan untuk menyimpan data yang tidak memiliki hubungan spasial, seperti daftar nama atau nilai. Elemen dalam array memiliki sebuah indeks yang berguna untuk mengakses elemen tersebut, indeksnya dimulai dari 0 dan berakhir pada jumlah semua elemen dikurangi satu. Array satu dimensi dapat divisualisasikan sebagai garis lurus[2].
+Array satu dimensi atau dapat disebut dengan vektor adalah tipe variabel yang berisi kumpulan data dengan tipe data yang sama dan disusun dalam satu baris atau satu dimensi. Array satu dimensi relatif sederhana untuk dipahami dan digunakan dan biasanya digunakan untuk menyimpan data yang tidak memiliki hubungan spasial, seperti daftar nama atau nilai. 
+
+Elemen dalam array memiliki sebuah indeks yang berguna untuk mengakses elemen tersebut, indeksnya dimulai dari 0 dan berakhir pada jumlah semua elemen dikurangi satu. Array satu dimensi dapat divisualisasikan sebagai garis lurus.
 
 ### 2. Array Dua Dimensi
 Array dua dimensi atau sering disebut dengan matriks adalah tipe variabel yang berisi kumpulan array satu dimensi dengan tipe data sama dan tersusun dalam bentuk tabel atau matriks, dimana baris dan kolom mewakili dimensi data. Array ini lebih kompleks daripada array satu dimensi, tetapi masih relatif mudah untuk dipahami dan digunakan.  
 
-Array dua dimensi digunakan untuk menyimpan data yang memiliki hubungan spasial, seperti gambar, tabel, atau matriks. Setiap elemen dalam array ini diakses dengan dua indeks, yaitu indeks baris dan indeks kolom. Indeks baris menentukan posisi elemen di baris tertentu, dan indeks kolom menentukan posisi elemen di kolom tertentu[3]. 
+Array dua dimensi digunakan untuk menyimpan data yang memiliki hubungan spasial, seperti gambar, tabel, atau matriks. Setiap elemen dalam array ini diakses dengan dua indeks, yaitu indeks baris dan indeks kolom. Indeks baris menentukan posisi elemen di baris tertentu, dan indeks kolom menentukan posisi elemen di kolom tertentu[2]. 
 
 ### 3. Array Multidimensi
-Array multidimensi adalah penggabungan antara array satu dimensi dan dua dimensi, namun memiliki kapasitas memori yang lebih besar. Array ini dapat memiliki indeks lebih dari dua dimensi dan dapat divisualisasikan sebagai struktur berlapis yang mana setiap dimensi mewakili satu lapisan. 
+Array multidimensi adalah penggabungan antara array satu dimensi dan dua dimensi, namun memiliki kapasitas memori yang lebih besar. Array ini dapat memiliki indeks lebih dari dua dimensi dan dapat divisualisasikan sebagai struktur berlapis yang mana setiap dimensi mewakili satu lapisan [3]. 
 
 Array multidimensi digunakan untuk menyimpan data yang memiliki hubungan spasial dan temporal, seperti data simulasi atau data ilmiah. Dapat dideklarasikan dengan lebih dari tiga dimensi, tetapi array dengan lebih dari empat dimensi jarang digunakan.
 
@@ -30,16 +32,16 @@ Array ini memiliki kompleksitas yang sangat tinggi dan membutuhkan memori yang b
 Berikut beberapa kekurangan dan kelebihan dari array pada bahasa pemrograman C++:
 
 #### Kekurangan Array
-  - Ukuran Tetap, ukuran array tidak dapat dirubah setelahnya dan harus ditentukan saat pendeklarasian.
-  - Memori Terbuang, jika ada elemen array yang tidak digunakan, maka akan ada memori yang terbuang sia-sia.
-  - Kompleksitas, mengelola array dengan banyak dimensi bisa menjadi kompleks dan sulit.
-  - Keamanan Memori, akses yang tidak terkontrol ke array dapat menyebabkan error dan crash pada program.
+  - Ukuran Tetap, ukuran array tidak dapat dirubah setelahnya dan harus ditentukan saat pendeklarasian[4].
+  - Memori Terbuang, jika ada elemen array yang tidak digunakan, maka akan ada memori yang terbuang sia-sia[4].
+  - Kompleksitas, mengelola array dengan banyak dimensi bisa menjadi kompleks dan sulit[4].
+  - Keamanan Memori, akses yang tidak terkontrol ke array dapat menyebabkan error dan crash pada program[4].
     
 #### Kelebihan Array
-  - Efesiensi Memori, array menyimpan data yang bertipe sama secara berdekatan dalam memori, sehingga dapat meningkatkan efesiensi memori.
-  - Akses Data Cepat, dalam mengakses elemen array dapat dilakukan dengan cepat karena alamat memori elemen-elemennya berurutan.
-  - Sederhana, penggunaannya relatif sederhana dan mudah dipahami.
-  - Fleksibel, array dapat digunakan untuk berbagai keperluan, seperti menyimpan data statistik, data sensor, dan data matriks.
+  - Efesiensi Memori, array menyimpan data yang bertipe sama secara berdekatan dalam memori, sehingga dapat meningkatkan efesiensi memori[4].
+  - Akses Data Cepat, dalam mengakses elemen array dapat dilakukan dengan cepat karena alamat memori elemen-elemennya berurutan[4].
+  - Sederhana, penggunaannya relatif sederhana dan mudah dipahami[4].
+  - Fleksibel, array dapat digunakan untuk berbagai keperluan, seperti menyimpan data statistik, data sensor, dan data matriks[4].
 
 
 ## Guided 
@@ -347,8 +349,8 @@ Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan d
 ## Referensi
 [1]Putri, M. P. (Ed.). (2022). Algoritma dan Struktur Data. CV WIDINA MEDIA UTAMA.
 
-[2]Suryana, F., Arsyah, U. I., & Pratiwi, M. (2023). Algoritma dan Pemrograman dengan Bahasa C/C++. (1st ed.). CV MITRA CENDIKIA MEDIA.
+[2]Siahaan, V., & Sianipar, R. H. (2023). THREE COOKBOOKS IN ONE: Visual C++, Visual Basic, Visual C#. New York, NY: Apress.
 
-[3]Siahaan, V., & Sianipar, R. H. (2023). THREE COOKBOOKS IN ONE: Visual C++, Visual Basic, Visual C#. New York, NY: Apress.
+[3]Suryana, F., Arsyah, U. I., & Pratiwi, M. (2023). Algoritma dan Pemrograman dengan Bahasa C/C++. (1st ed.). CV MITRA CENDIKIA MEDIA.
 
 [4]Huda, A., Ardi, N., & Muabi, A. (2023). Pengantar coding berbasis C/C++. UNP PRESS.
