@@ -267,7 +267,7 @@ int main()
 <img width="260" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/eb5df816-7769-4077-859e-861e8e1d5ca0">
 
 
-Kode diatas merupakan kode program yang memungkinkan pengguna untuk memasukkan nilai ke dalam array tiga dimensi yang kemudian ditampilkan nilainya, dengan memanfaatkan konsep array multidimensi. Menggunakan fungsi nested loop untuk mengisi elemen array dengan nilai yang dimasukkan oleh pengguna serta meanmpilkan nilai beserta indeksnya.
+Kode diatas merupakan kode program yang memungkinkan pengguna untuk memasukkan nilai ke dalam array tiga dimensi yang kemudian ditampilkan nilainya, dengan memanfaatkan konsep array multidimensi. Menggunakan fungsi nested loop untuk mengisi elemen array dengan nilai yang dimasukkan oleh pengguna serta menampilkan nilai beserta indeksnya.
 
 Menampilkan nilai-nilai array tanpa label indeks, hanya array saja. Menggunakan `ends` untuk memisahkan nilai array tanpa spasi tambahan di akhir.
 
