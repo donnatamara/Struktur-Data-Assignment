@@ -3,10 +3,10 @@
 
 ## Dasar Teori
 
-Array merupakan struktur data yang paling dasar dalam sebuah bahasa pemrograman. Array dapat mempermudah dalam menyimpan data karena array berisi komponen-komponen yang memiliki tipe data yang sama yang setiap anggota array dapat diakses melalui suatu indeks[1]. Dalam bahasa pemrograman C++, ukuran dan tipe array tidak dapat diubah setelah deklarasinya[2]. Dibawah ini adalah beberapa jenis array yang umum diketahui:
+Array merupakan struktur data yang paling dasar dalam sebuah bahasa pemrograman. Array dapat mempermudah dalam menyimpan data karena array berisi komponen-komponen yang memiliki tipe data yang sama yang setiap anggota array dapat diakses melalui suatu indeks[1]. Dalam bahasa pemrograman C++, ukuran dan tipe array tidak dapat diubah setelah deklarasinya. Dibawah ini adalah beberapa jenis array yang umum diketahui:
 
 ### 1. Array Satu Dimensi
-Array satu dimensi atau dapat disebut dengan vektor adalah tipe variabel yang berisi kumpulan data dengan tipe data yang sama dan disusun dalam satu baris atau satu dimensi. Array satu dimensi relatif sederhana untuk dipahami dan digunakan dan biasanya digunakan untuk menyimpan data yang tidak memiliki hubungan spasial, seperti daftar nama atau nilai. 
+Array satu dimensi atau dapat disebut dengan vektor adalah tipe variabel yang berisi kumpulan data dengan tipe data yang sama dan disusun dalam satu baris atau satu dimensi. Array satu dimensi relatif sederhana untuk dipahami dan digunakan dan biasanya digunakan untuk menyimpan data yang tidak memiliki hubungan spasial, seperti daftar nama atau nilai[2].
 
 Elemen dalam array memiliki sebuah indeks yang berguna untuk mengakses elemen tersebut, indeksnya dimulai dari 0 dan berakhir pada jumlah semua elemen dikurangi satu. Array satu dimensi dapat divisualisasikan sebagai garis lurus.
 
@@ -43,6 +43,7 @@ Berikut beberapa kekurangan dan kelebihan dari array pada bahasa pemrograman C++
   - Akses Data Cepat, dalam mengakses elemen array dapat dilakukan dengan cepat karena alamat memori elemen-elemennya berurutan.
   - Sederhana, penggunaannya relatif sederhana dan mudah dipahami.
   - Fleksibel, array dapat digunakan untuk berbagai keperluan, seperti menyimpan data statistik, data sensor, dan data matriks.
+
 
 
 ## Guided 
@@ -140,6 +141,8 @@ Kode diatas menggunakan fungsi loop untuk menginputkan setiap elemen array sesua
 
 Lalu hasilnya, program akan menampilkan nilai maksimum yang telah ditemukan dan lokasi indeksnya dalam array.
 
+
+
 ## Unguided 
 
 ### 1. Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user!
@@ -196,10 +199,9 @@ Kode diatas merupakan kode program yang meminta pengguna memasukkan jumlah data 
 
 Menggunakan loop `for` untuk menginputkan data sebanyak `n` kali, program akan meminta pengguna untuk memasukkan data ke-i dan menyimpannya di array `data`. Menggunakan loop `for` pada kode di atas juga untuk memisahkan data genap dan ganjil dari array `data` untuk ditampilkan secara terpisah, program akan mengecek setiap elemen pada array, jika genap maka akan ditampilkan dalam bagian `Nomor Genap`, dan jika ganjil maka akan ditampilkan dalam bagian `Nomor Ganjil`. Kemudian program akan mengembalikan nilai 0 yang menandakan bahwa program berjalan dengan sukses.
 
-
-
 #### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/134fd3ba-fde5-4586-b3c0-720659a0c5b8">
+
 
 ### 2. Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
 
@@ -273,9 +275,9 @@ int main() {
 #### Output:
 <img width="273" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/88fd18f0-95cd-4f18-b53d-c360c6d64923">
 
-Kode diatas merupakan kode program yang membuat dan mengelola array 3 dimensi dengan menggunakan dynamic memory allocation. Dengan mendeklarasikan array `dimensi` yang akan digunakan untuk menhyimpan panjang setiap dimensi array yang akan dibuat. Lalu, program meminta pengguna untuk memasukkan jumlah elemen untuk setiap dimensi, lalu disimpan pada array `dimensi`.
+Kode diatas merupakan kode program yang membuat dan mengelola array 3 dimensi dengan menggunakan *dynamic memory allocation*. Dengan mendeklarasikan array `dimensi` yang akan digunakan untuk menhyimpan panjang setiap dimensi array yang akan dibuat. Lalu, program meminta pengguna untuk memasukkan jumlah elemen untuk setiap dimensi, lalu disimpan pada array `dimensi`.
 
-Menggunakan dynamic memory allocation untuk membuat array 3 dimensi dengan ukuran yang sesuai dengan dimensi yang dimasukkan oleh pengguna yang dilakukan dengan menggunakan tiga loop `for`. Loop-loop tersebut berguna untuk membuat array baru sepanjang dimensi masing-masing. Setelah itu, program meminta pengguna untuk memasukkan nilai untuk setiap elemen array secara berurutan.
+Menggunakan *dynamic memory allocation* untuk membuat array 3 dimensi dengan ukuran yang sesuai dengan dimensi yang dimasukkan oleh pengguna yang dilakukan dengan menggunakan tiga loop `for`. Loop-loop tersebut berguna untuk membuat array baru sepanjang dimensi masing-masing. Setelah itu, program meminta pengguna untuk memasukkan nilai untuk setiap elemen array secara berurutan.
 
 Kemudian program akan menampilkan elemen-elemen array tersebut dengan menggunakan tiga loop `for`bersarang. Setelah selesai menggunakan array 3 dimensi, program menghapusnya dari memori dengan menggunakan operator `delete[]`. Hal ini dilakukan dengan kebalikan dari urutan alokasi memori, yaitu dimulai dari dimensi ketiga, kemudian kedua, dan terakhir dimensi pertama. Terakhir, program mengembalikan nilai 0 yang menandakan bahwa program tersebut sukses dijalankan.
 
@@ -348,14 +350,17 @@ Setelah itu, program meminta pengguna untuk memasukkan elemen-elemen sebanyak `a
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/25491c83-b91c-4284-ae9e-a8e82a9b5804">
 
 
+
 ## Kesimpulan
-Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan data dengan cara yang efisien, ukuran dan tipe array tidak dapat diubah setelah deklarasinya. Ada beberapa jenis array yang diketahui yaitu, array satu dimensi, array dua dimensi, array multidimensi, array empat dimensi, dan array lima dimensi. Array memiliki kekurangan dan kelebihan, kelebihan seperti efifiensi memori, akses data cepat, sederhana, fleksibel, sedangkan kekurangan dari array yaitu ukurannya yang tetap, memori terbuang, kompleksitas, dan keamanan memori.
+Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan data dengan cara yang efisien, ukuran dan tipe array tidak dapat diubah setelah deklarasinya serta berisi komponen-komponen yang memiliki tipe data yang sama yang dapat diakses melalui suatu indeks. Ada beberapa jenis array yang diketahui yaitu, array satu dimensi, array dua dimensi, array multidimensi, array empat dimensi, dan array lima dimensi. Array memiliki kekurangan dan kelebihan, kelebihan seperti efifiensi memori, akses data cepat, sederhana, fleksibel, sedangkan kekurangan dari array yaitu ukurannya yang tetap, memori terbuang, kompleksitas, dan keamanan memori.
+
+
 
 ## Referensi
-[1]M. P. Putri, ed., Algoritma dan Struktur Data, CV WIDINA MEDIA UTAMA, 2022.
+[1]Putri, M. P. (Ed.). (2022). Algoritma dan Struktur Data. CV WIDINA MEDIA UTAMA.
 
-[2]“C++ Arrays (With examples).” https://www.programiz.com/cpp-programming/arrays [accesed 24 march 2024].
+[2]Suryana, F., Arsyah, U. I., & Pratiwi, M. (2023). Algoritma dan Pemrograman dengan Bahasa C/C++. (1st ed.). CV MITRA CENDIKIA MEDIA.
 
-[3]Siahaan, V., & Sianipar, R. H. (2023). *THREE COOKBOOKS IN ONE: Visual C++, Visual Basic, Visual C#*. New York, NY: Apress.
+[3]Siahaan, V., & Sianipar, R. H. (2023). THREE COOKBOOKS IN ONE: Visual C++, Visual Basic, Visual C#. New York, NY: Apress.
 
-[4]Huda, A., Ardi, N., & Muabi, A. (2023). Pengantar coding berbasis C/C++. Google Play Books.
+[4]Huda, A., Ardi, N., & Muabi, A. (2023). Pengantar coding berbasis C/C++. UNP PRESS.
