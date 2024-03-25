@@ -32,14 +32,14 @@ Array ini memiliki kompleksitas yang sangat tinggi dan membutuhkan memori yang b
 Berikut beberapa kekurangan dan kelebihan dari array pada bahasa pemrograman C++:
 
 #### Kekurangan Array
-  - Ukuran Tetap, ukuran array tidak dapat dirubah setelahnya dan harus ditentukan saat pendeklarasian[4].
-  - Memori Terbuang, jika ada elemen array yang tidak digunakan, maka akan ada memori yang terbuang sia-sia[4].
+  - Ukuran tetap, ukuran array tidak dapat dirubah setelahnya dan harus ditentukan saat pendeklarasian[4].
+  - Memori terbuang, jika ada elemen array yang tidak digunakan, maka akan ada memori yang terbuang sia-sia[4].
   - Kompleksitas, mengelola array dengan banyak dimensi bisa menjadi kompleks dan sulit[4].
-  - Keamanan Memori, akses yang tidak terkontrol ke array dapat menyebabkan error dan crash pada program[4].
+  - Keamanan memori, akses yang tidak terkontrol ke array dapat menyebabkan error dan crash pada program[4].
     
 #### Kelebihan Array
-  - Efesiensi Memori, array menyimpan data yang bertipe sama secara berdekatan dalam memori, sehingga dapat meningkatkan efesiensi memori[4].
-  - Akses Data Cepat, dalam mengakses elemen array dapat dilakukan dengan cepat karena alamat memori elemen-elemennya berurutan[4].
+  - Efesiensi memori, array menyimpan data yang bertipe sama secara berdekatan dalam memori, sehingga dapat meningkatkan efesiensi memori[4].
+  - Akses data cepat, dalam mengakses elemen array dapat dilakukan dengan cepat karena alamat memori elemen-elemennya berurutan[4].
   - Sederhana, penggunaannya relatif sederhana dan mudah dipahami[4].
   - Fleksibel, array dapat digunakan untuk berbagai keperluan, seperti menyimpan data statistik, data sensor, dan data matriks[4].
 
