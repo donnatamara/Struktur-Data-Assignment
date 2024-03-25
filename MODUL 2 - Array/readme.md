@@ -3,12 +3,10 @@
 
 ## Dasar Teori
 
-Array merupakan struktur data yang paling dasar dalam sebuah bahasa pemrograman. Array dapat mempermudah dalam menyimpan data karena array berisi komponen-komponen yang memiliki tipe data yang sama yang setiap anggota array dapat diakses melalui suatu indeks[1]. Dalam bahasa pemrograman C++, ukuran dan tipe array tidak dapat diubah setelah deklarasinya. Dibawah ini adalah beberapa jenis array yang umum diketahui:
+Array merupakan struktur data yang paling dasar dalam sebuah bahasa pemrograman. Array dapat mempermudah dalam menyimpan data karena array berisi komponen-komponen yang memiliki tipe data yang sama yang setiap anggota array dapat diakses melalui suatu indeks. Dalam bahasa pemrograman C++, ukuran dan tipe array tidak dapat diubah setelah deklarasinya[1]. Dibawah ini adalah beberapa jenis array yang umum diketahui:
 
 ### 1. Array Satu Dimensi
-Array satu dimensi atau dapat disebut dengan vektor adalah tipe variabel yang berisi kumpulan data dengan tipe data yang sama dan disusun dalam satu baris atau satu dimensi. Array satu dimensi relatif sederhana untuk dipahami dan digunakan dan biasanya digunakan untuk menyimpan data yang tidak memiliki hubungan spasial, seperti daftar nama atau nilai[2].
-
-Elemen dalam array memiliki sebuah indeks yang berguna untuk mengakses elemen tersebut, indeksnya dimulai dari 0 dan berakhir pada jumlah semua elemen dikurangi satu. Array satu dimensi dapat divisualisasikan sebagai garis lurus.
+Array satu dimensi atau dapat disebut dengan vektor adalah tipe variabel yang berisi kumpulan data dengan tipe data yang sama dan disusun dalam satu baris atau satu dimensi. Array satu dimensi relatif sederhana untuk dipahami dan digunakan dan biasanya digunakan untuk menyimpan data yang tidak memiliki hubungan spasial, seperti daftar nama atau nilai. Elemen dalam array memiliki sebuah indeks yang berguna untuk mengakses elemen tersebut, indeksnya dimulai dari 0 dan berakhir pada jumlah semua elemen dikurangi satu. Array satu dimensi dapat divisualisasikan sebagai garis lurus[2].
 
 ### 2. Array Dua Dimensi
 Array dua dimensi atau sering disebut dengan matriks adalah tipe variabel yang berisi kumpulan array satu dimensi dengan tipe data sama dan tersusun dalam bentuk tabel atau matriks, dimana baris dan kolom mewakili dimensi data. Array ini lebih kompleks daripada array satu dimensi, tetapi masih relatif mudah untuk dipahami dan digunakan.  
