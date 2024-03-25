@@ -351,7 +351,7 @@ Setelah itu, program meminta pengguna untuk memasukkan elemen-elemen sebanyak `a
 
 
 ## Kesimpulan
-Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan data dengan cara yang efisien, ukuran dan tipe array tidak dapat diubah setelah deklarasinya. Ada beberapa jenis array yang diketahui yaitu, array satu dimensi, array dua dimensi, array multidimensi, array empat dimensi, dan array lima dimensi. 
+Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan data dengan cara yang efisien, ukuran dan tipe array tidak dapat diubah setelah deklarasinya. Ada beberapa jenis array yang diketahui yaitu, array satu dimensi, array dua dimensi, array multidimensi, array empat dimensi, dan array lima dimensi. Array satu dimensi 
 
 ## Referensi
 [1]M. P. Putri, ed., Algoritma dan Struktur Data, CV WIDINA MEDIA UTAMA, 2022.
