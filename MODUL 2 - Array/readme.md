@@ -98,9 +98,7 @@ int main()
     return 0;
 }
 ```
-Kode diatas merupakan kode program untuk menginput serta menampilkan elemen-elemen dalam sebuah array 3 dimensi dengan ukuran 2x3x3 (memiliki 2 blok, setiap blok berisi 3 baris dan 3 kolom).
-
-Menggunakan nested loop (loop bersarang) untuk menginputkan dan menampilkan elemen-elemen array dengan mengakses indeks array sesuai dimensinya. 
+Kode diatas merupakan kode program untuk menginput serta menampilkan elemen-elemen dalam sebuah array 3 dimensi dengan ukuran 2x3x3 (memiliki 2 blok, setiap blok berisi 3 baris dan 3 kolom). Menggunakan nested loop (loop bersarang) untuk menginputkan dan menampilkan elemen-elemen array dengan mengakses indeks array sesuai dimensinya. 
 
 Untuk menaampilkan array dalam format tabel dapat menggunakan nested loop juga, di mana setiap elemen dipisahkan dengan spasi. Kemudian mengembalikan nilai 0 sebagai penanda bahwa program telah sukses berjalan.
 
@@ -351,7 +349,7 @@ Setelah itu, program meminta pengguna untuk memasukkan elemen-elemen sebanyak `a
 
 
 ## Kesimpulan
-Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan data dengan cara yang efisien, ukuran dan tipe array tidak dapat diubah setelah deklarasinya. Ada beberapa jenis array yang diketahui yaitu, array satu dimensi, array dua dimensi, array multidimensi, array empat dimensi, dan array lima dimensi. Array satu dimensi 
+Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan data dengan cara yang efisien, ukuran dan tipe array tidak dapat diubah setelah deklarasinya. Ada beberapa jenis array yang diketahui yaitu, array satu dimensi, array dua dimensi, array multidimensi, array empat dimensi, dan array lima dimensi. Array memiliki kekurangan dan kelebihan, kelebihan seperti efifiensi memori, akses data cepat, sederhana, fleksibel, sedangkan kekurangan dari array yaitu ukurannya yang tetap, memori terbuang, kompleksitas, dan keamanan memori.
 
 ## Referensi
 [1]M. P. Putri, ed., Algoritma dan Struktur Data, CV WIDINA MEDIA UTAMA, 2022.
