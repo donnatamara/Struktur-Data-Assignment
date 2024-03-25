@@ -28,7 +28,6 @@ Array lima dimensi adalah tipe variabel yang berisi array dengan lima dimensi da
 
 Array ini memiliki kompleksitas yang sangat tinggi dan membutuhkan memori yang besar juga. Akses dalam array dengan dimensi tinggi seperti pada array ini dapat memakan waktu dan sumber daya. Array ini digunakan untuk menyimpan data spasial, temporal, dan spektral, seperti data citra medis atau data penginderaan jauh.
 
-
 ## Kekurangan dan Kelebihan Array
 Berikut beberapa kekurangan dan kelebihan dari array pada bahasa pemrograman C++:
 
@@ -43,7 +42,6 @@ Berikut beberapa kekurangan dan kelebihan dari array pada bahasa pemrograman C++
   - Akses Data Cepat, dalam mengakses elemen array dapat dilakukan dengan cepat karena alamat memori elemen-elemennya berurutan.
   - Sederhana, penggunaannya relatif sederhana dan mudah dipahami.
   - Fleksibel, array dapat digunakan untuk berbagai keperluan, seperti menyimpan data statistik, data sensor, dan data matriks.
-
 
 
 ## Guided 
@@ -103,7 +101,6 @@ Kode diatas merupakan kode program untuk menginput serta menampilkan elemen-elem
 
 Untuk menaampilkan array dalam format tabel dapat menggunakan nested loop juga, di mana setiap elemen dipisahkan dengan spasi. Kemudian mengembalikan nilai 0 sebagai penanda bahwa program telah sukses berjalan.
 
-
 ### 2. Program Mencari Nilai Maksimal pada Array
 ```C++
 #include <iostream>
@@ -140,7 +137,6 @@ Variabel `maks` diperlukan untuk menyimpan nilai maksimum, variabel `a` untuk pa
 Kode diatas menggunakan fungsi loop untuk menginputkan setiap elemen array sesuai dengan indeksnya. Fungsi loop juga digunakan untuk membandingkan setiap elemen array dengan nilai maksimum saat ini saat, jika ditemukan elemen yang lebih besar dari nilai maksimum maka nilai maksimum diperbarui dan lokasi indeksnya disimpan.
 
 Lalu hasilnya, program akan menampilkan nilai maksimum yang telah ditemukan dan lokasi indeksnya dalam array.
-
 
 
 ## Unguided 
@@ -201,7 +197,6 @@ Menggunakan loop `for` untuk menginputkan data sebanyak `n` kali, program akan m
 
 #### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/134fd3ba-fde5-4586-b3c0-720659a0c5b8">
-
 
 ### 2. Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
 
@@ -284,7 +279,6 @@ Kemudian program akan menampilkan elemen-elemen array tersebut dengan menggunaka
 #### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/2c24a53f-b4e5-4542-835d-3a2dcf9350d0">
 
-
 ### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata–rata dari suatu array dengan input yang dimasukan oleh user!
 
 ```C++
@@ -349,12 +343,8 @@ Setelah itu, program meminta pengguna untuk memasukkan elemen-elemen sebanyak `a
 ### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/25491c83-b91c-4284-ae9e-a8e82a9b5804">
 
-
-
 ## Kesimpulan
 Kesimpulannya, array adalah suatu struktur data yang digunakan untuk menyimpan data dengan cara yang efisien, ukuran dan tipe array tidak dapat diubah setelah deklarasinya serta berisi komponen-komponen yang memiliki tipe data yang sama yang dapat diakses melalui suatu indeks. Ada beberapa jenis array yang diketahui yaitu, array satu dimensi, array dua dimensi, array multidimensi, array empat dimensi, dan array lima dimensi. Array memiliki kekurangan dan kelebihan, kelebihan seperti efifiensi memori, akses data cepat, sederhana, fleksibel, sedangkan kekurangan dari array yaitu ukurannya yang tetap, memori terbuang, kompleksitas, dan keamanan memori.
-
-
 
 ## Referensi
 [1]Putri, M. P. (Ed.). (2022). Algoritma dan Struktur Data. CV WIDINA MEDIA UTAMA.
