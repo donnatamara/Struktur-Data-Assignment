@@ -1,65 +1,60 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-  int dimensi[3]; // Array untuk menyimpan dimensi
+int main() 
+{
+  // Deklarasi variabel untuk menyimpan dimensi array
+  int x, y, z;
 
-  // Minta pengguna memasukkan dimensi
-  cout << "Masukkan jumlah elemen untuk setiap dimensi:\n";
-  for (int i = 0; i < 3; ++i) 
-  {
-    cout << "Dimensi " << i + 1 << ": ";
-    cin >> dimensi[i];
-  }
+  // Meminta pengguna untuk memasukkan dimensi array
+  cout << "Masukkan jumlah baris: ";
+  cin >> x;
+  cout << "Masukkan jumlah kolom: ";
+  cin >> y;
+  cout << "Masukkan jumlah layer: ";
+  cin >> z;
 
-  // Alokasikan memori secara dinamis untuk array 3 dimensi
-  int*** arr = new int**[dimensi[0]];
-  for (int i = 0; i < dimensi[0]; ++i) 
+  // Deklarasi array dengan dimensi yang diinputkan pengguna
+  int arr[x][y][z];
+
+  // Input elemen array dengan menggunakan fungsi perulangan
+  for (int a = 0; a < x; a++) 
   {
-    arr[i] = new int*[dimensi[1]];
-    for (int j = 0; j < dimensi[1]; ++j) 
+    for (int b = 0; b < y; b++) 
     {
-      arr[i][j] = new int[dimensi[2]];
-    }
-  }
-
-  // Masukkan elemen
-  cout << "\nMasukkan elemen array:\n";
-  for (int i = 0; i < dimensi[0]; ++i) 
-  {
-    for (int j = 0; j < dimensi[1]; ++j) 
-    {
-      for (int k = 0; k < dimensi[2]; ++k) 
+      for (int c = 0; c < z; c++) 
       {
-        cout << "Array[" << i << "][" << j << "][" << k << "] = ";
-        cin >> arr[i][j][k];
+        cout << "Input array[" << a << "][" << b << "][" << c << "] = ";
+        cin >> arr[a][b][c];
       }
     }
+    cout << endl;
   }
 
-  // Tampilkan elemen array
-  cout << "\nElemen array:\n";
-  for (int i = 0; i < dimensi[0]; ++i) 
-  {
-    for (int j = 0; j < dimensi[1]; ++j) 
+  // Output elemen array
+  for (int a = 0; a < x; a++)
     {
-      for (int k = 0; k < dimensi[2]; ++k) 
-      {
-        cout << arr[i][j][k] << " ";
-      }
-      cout << endl;
+        for (int b = 0; b < y; b++)
+        {
+            for (int c = 0; c < z; c++)
+            {
+                cout << "Data Array[" << a << "][" << b << "][" << c <<"] = " << arr[a][b][c] << endl;
+            }
+        }
     }
-  }
+    cout << endl;
 
-  // Bebaskan memori untuk array 3 dimensi (kebalikan dari urutan alokasi)
-  for (int i = 0; i < dimensi[0]; ++i) 
-  {
-    for (int j = 0; j < dimensi[1]; ++j) 
+/// Output array
+     for (int a = 0; a < x; a++)
     {
-      delete[] arr[i][j];
+        for (int b = 0; b < y; b++)
+        {
+            for(int c = 0; c < z; c++)
+            {
+                cout << arr[a][b][c] << ends;
+            }
+            cout << endl;
+        }
+        cout << endl;
     }
-    delete[] arr[i];
-  }
-  delete[] arr;
-  return 0;
 }
