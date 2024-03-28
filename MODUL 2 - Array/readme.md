@@ -32,14 +32,14 @@ Array ini memiliki kompleksitas yang sangat tinggi dan membutuhkan memori yang b
 Berikut beberapa kekurangan dan kelebihan dari array pada bahasa pemrograman C++:
 
 #### Kekurangan Array
-  - Ukuran Tetap, ukuran array tidak dapat dirubah setelahnya dan harus ditentukan saat pendeklarasian[4].
-  - Memori Terbuang, jika ada elemen array yang tidak digunakan, maka akan ada memori yang terbuang sia-sia[4].
+  - Ukuran tetap, ukuran array tidak dapat dirubah setelahnya dan harus ditentukan saat pendeklarasian[4].
+  - Memori terbuang, jika ada elemen array yang tidak digunakan, maka akan ada memori yang terbuang sia-sia[4].
   - Kompleksitas, mengelola array dengan banyak dimensi bisa menjadi kompleks dan sulit[4].
-  - Keamanan Memori, akses yang tidak terkontrol ke array dapat menyebabkan error dan crash pada program[4].
+  - Keamanan memori, akses yang tidak terkontrol ke array dapat menyebabkan error dan crash pada program[4].
     
 #### Kelebihan Array
-  - Efesiensi Memori, array menyimpan data yang bertipe sama secara berdekatan dalam memori, sehingga dapat meningkatkan efesiensi memori[4].
-  - Akses Data Cepat, dalam mengakses elemen array dapat dilakukan dengan cepat karena alamat memori elemen-elemennya berurutan[4].
+  - Efesiensi memori, array menyimpan data yang bertipe sama secara berdekatan dalam memori, sehingga dapat meningkatkan efesiensi memori[4].
+  - Akses data cepat, dalam mengakses elemen array dapat dilakukan dengan cepat karena alamat memori elemen-elemennya berurutan[4].
   - Sederhana, penggunaannya relatif sederhana dan mudah dipahami[4].
   - Fleksibel, array dapat digunakan untuk berbagai keperluan, seperti menyimpan data statistik, data sensor, dan data matriks[4].
 
@@ -267,11 +267,9 @@ int main()
 <img width="260" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/eb5df816-7769-4077-859e-861e8e1d5ca0">
 
 
-Kode diatas merupakan kode program yang membuat dan mengelola array 3 dimensi dengan menggunakan *dynamic memory allocation*. Dengan mendeklarasikan array `dimensi` yang akan digunakan untuk menhyimpan panjang setiap dimensi array yang akan dibuat. Lalu, program meminta pengguna untuk memasukkan jumlah elemen untuk setiap dimensi, lalu disimpan pada array `dimensi`.
+Kode diatas merupakan kode program yang memungkinkan pengguna untuk memasukkan nilai ke dalam array tiga dimensi yang kemudian ditampilkan nilainya, dengan memanfaatkan konsep array multidimensi. Menggunakan fungsi nested loop untuk mengisi elemen array dengan nilai yang dimasukkan oleh pengguna serta menampilkan nilai beserta indeksnya.
 
-Menggunakan *dynamic memory allocation* untuk membuat array 3 dimensi dengan ukuran yang sesuai dengan dimensi yang dimasukkan oleh pengguna yang dilakukan dengan menggunakan tiga loop `for`. Loop-loop tersebut berguna untuk membuat array baru sepanjang dimensi masing-masing. Setelah itu, program meminta pengguna untuk memasukkan nilai untuk setiap elemen array secara berurutan.
-
-Kemudian program akan menampilkan elemen-elemen array tersebut dengan menggunakan tiga loop `for`bersarang. Setelah selesai menggunakan array 3 dimensi, program menghapusnya dari memori dengan menggunakan operator `delete[]`. Hal ini dilakukan dengan kebalikan dari urutan alokasi memori, yaitu dimulai dari dimensi ketiga, kemudian kedua, dan terakhir dimensi pertama. Terakhir, program mengembalikan nilai 0 yang menandakan bahwa program tersebut sukses dijalankan.
+Menampilkan nilai-nilai array tanpa label indeks, hanya array saja. Menggunakan `ends` untuk memisahkan nilai array tanpa spasi tambahan di akhir.
 
 #### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/e3e65c34-bdec-4cf5-b596-c30f05e3485e">
