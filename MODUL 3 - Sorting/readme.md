@@ -6,26 +6,7 @@
 
 Sorting merupakan 
 
-### 1. Tipe Data Primitif:
 
-Tipe data primitif merupakan sebuah jenis data pada bahasa pemrograman yang telah ditentukan oleh sistem dan tersedia pada banyak bahasa pemrograman, hal yang membedakan antara bahasa pemrograman yang satu dengan yang lain adalah pada jumlah bit didalam tipe data primitif tergantung pada bahasa pemrograman, compiler, dan sistem operasinya. 
-Contohnya:
-- Int: Digunakan untuk menyimpan bilangan bulat seperti 12, 1, 4, dan lain sebagainya.
-- Float: Digunakan untuk menyimpan bilangan desimal seperti 1.5, 2.1, 3.14, dan lain sebagainya.
-- Char: Digunakan untuk menyimpan huruf atau simbol seperti A, B, C, dan lain sebagainya.
-- Boolean: Digunakan untuk menyimpan nilai boolean yang hanya memiliki dua nilai saja yaitu true atau false.
-
-### 2. Tipe Data Abstrak:
-
-Tipe data abstrak atau Abstrak Data Type (ADT) adalah sebuah tipe data yang dibentuk oleh programernya sendiri. Tipe data ini dapat berisi berbagai jenis data. Fitur class dalam Object Oriented Programming (OOP) mirip dengan struktur data struct pada bahasa C, ada perbedaan pada akses default antara keduanya yaitu struct bersifat public dan class bersifat privat.
-
-### 3. Tipe Data Koleksi:
-
-Tipe data koleksi atau Collection Data Type digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data ini dapat menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara terstruktur. Beberapa contoh tipe data koleksi meliputi:
-
-- Array: Struktur data statis yang didalamnya berisi elemen-elemen tipe data yang sama, elemen-elemen tersebut menggunakan indeks untuk aksesnya dan ukurannya tetap yang ditentukan saat pendeklarasian.
-- Vector: Mirip seperti array tetapi jumlah elemennya dinamis dan alokasi memorinya dilakukan otomatis dan bersebelahan.
-- Map: Map mirip juga seperti array, namun indeksnya dapat berupa selain tipe data integer. Pada map, indeks dapat disebut juga dengan "key", self balancing tree khususnya black tree menggunakan std::map. 
 
 ## Guided
 
