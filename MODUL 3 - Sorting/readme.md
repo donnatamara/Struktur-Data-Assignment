@@ -8,7 +8,7 @@ Algoritma sorting merupakan algoritma yang digunakan untuk meletakkan elemen-ele
 - Ascending adalah sistem pengurutan dari yang terkecil hingga yang terbesar. Contohnya 1, 2, 3, 4, 5, 6.
 - Descending adalah sistem pengurutan dari yang terbesar hingga terkecil. Contohnya 6,5,4,3,2,1. 
 
-### Insertion Sort
+## Insertion Sort
 ### Konsep Dasar Algoritma Insertion Sort
 Insertion Sort merupakan cara pengurutan dengan pengecekan satu persatu dimulai dari elemen kedua sampai dengan elemen terakhir. Jika ditemukan data yang lebih kecil dari data sebelumnya, maka data tersebut ditempatkan pada posisi yang sesuai. 
 
@@ -25,7 +25,7 @@ for i = to n-1
 end for
 ```
 
-### Bubble Sort
+## Bubble Sort
 ### Konsep Dasar Algoritma Bubble Sort
 Bubble sort merupakan cara pengurutan dengan cara membandingkan satu elemen dengan elemen berikutnya. Jika elemen sekarang lebih besar dari elemen berikutnya maka harus ditukar.
 
@@ -35,7 +35,7 @@ Bubble sort merupakan cara pengurutan dengan cara membandingkan satu elemen deng
 
 ```
 
-### Selection Sort
+## Selection Sort
 ### Konsep Dasar Algoritma Selection Sort
 Selection Sort merupakan cara pengurutan dengan cara membandingkan elemen sekarang dengan elemen berikutnya hingga elemen terakhir. Jika ditemukan elemen paling kecil lalu akan ditukar dengan elemen sekarang.
 
