@@ -204,6 +204,9 @@ int main()
 #### Output:
 <img width="246" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/2d4b6e2d-2938-42b4-9f0d-f64fa677f9e5">
 
+Kode diatas merupakan program dengan algoritma pengurutan selection sort secara descending dengan array yang berisi bilangan desimal floating-point ganda. Looping luar berguna untuk pengurutan bertahap, jumlah iterasi adalah `a-1` karena elemen paling akhir sudah dianggap posisi akhir setelah iterasi sebelumnya. Looping dalam berguna untuk menemukan elemen maksimum dengan memeriksa apakah elemen `arr[j]` lebih besar daripada elemen pada indeks `maks`. Jika benar maka elemen yang lebih besar telah ditemukan, jadi `maks` diperbarui untuk menyimpan indeks `j` dari elemen yang lebih besar.
+
+Setelah loop dalam selesai dijalankan, `maks` akan menyimpan indeks elemen terbesar di antara yang tersisa yang berguna untuk menukar elemen pada indeks `i` saat ini dengan elemen pada indeks `maks`.
 
 #### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/009fec00-eb12-41c3-bfe3-9ffa935dbe77">
@@ -293,6 +296,7 @@ int main()
 #### Output:
 <img width="300" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/e03b13a5-46c2-42e6-ab1f-d1454299cbd7">
 
+Kode diatas merupakan program pengurutan dengan menggunakan bubble sort untuk mengurutkan array yang berisi nama orang. Array tersebut berupa array dua dimenensi dengan panjang array adalah `lenght`. Varibael `not_sorted` bertipe boolean digunakan untuk mengecek apakah array tersebut sudah terurut atau belum. Kemudian dicek apakah ada elemen yang perlu ditukar, jika ada maka lakukan penukaran dengan menggunakan variabel `temp` untuk menyimpan sementara. Program terus berjalan sampai terurut semuanya, cetak isi array, dan `return 0` menandakan bahwa program telah berjalan dengan sukses.
 
 #### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/919b610c-f720-4733-a0fb-d5584801a507">
@@ -379,6 +383,7 @@ int main()
 #### Output:
 <img width="248" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/a0ec03c5-afbf-4109-8073-270bb34f75bc">
 
+Kode diatas merupakan kode program yang memungkinkan pengguna untuk memasukkan sejumlah n yang akan dirutkan secara ascending dan descending. 
 
 Kodingan diatas 
 
