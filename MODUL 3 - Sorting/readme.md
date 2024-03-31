@@ -4,46 +4,29 @@
 
 ## Dasar Teori
 ### Konsep Dasar Sorting
-Algoritma sorting merupakan algoritma yang digunakan untuk meletakkan elemen-elemen data ke dalam urutan tertentu, berdasarkan satu atau beberapa kunci pada tiap elemennya.
+Algoritma sorting merupakan algoritma yang digunakan untuk meletakkan elemen-elemen data ke dalam urutan tertentu, berdasarkan satu atau beberapa kunci pada tiap elemennya. Contoh pada kehidupan sehari-hari: mencari kontak yang dirutkan berdasarkan nama, profil pelajar diurutkan berdasarkan ID, informasi penerbangan, dll [1]. Berikut merupakan dua jenis pengurutan:
+
 - Ascending adalah sistem pengurutan dari yang terkecil hingga yang terbesar. Contohnya 1, 2, 3, 4, 5, 6.
 - Descending adalah sistem pengurutan dari yang terbesar hingga terkecil. Contohnya 6,5,4,3,2,1. 
 
-## Insertion Sort
+### Insertion Sort
 ### Konsep Dasar Algoritma Insertion Sort
-Insertion Sort merupakan cara pengurutan dengan pengecekan satu persatu dimulai dari elemen kedua sampai dengan elemen terakhir. Jika ditemukan data yang lebih kecil dari data sebelumnya, maka data tersebut ditempatkan pada posisi yang sesuai. 
+Insertion Sort merupakan cara pengurutan dengan pengecekan satu persatu dimulai dari elemen kedua sampai dengan elemen terakhir. Jika ditemukan data yang lebih kecil dari data sebelumnya, maka data tersebut ditempatkan pada posisi yang sesuai. Insertion sort termasuk algoritma yang cukup cepat dibandingkan dengan algoritma pengurutan dasar lainnya, yang mengurutkan sekumpulan n elemen dengan rata-rata O(n2) [1].
 
-### Pseudocode Algoritma Insertion Sort
-
-```C++
-for i = to n-1
-        set j = i
-        set t = a[j]
-        repeat while j > 0 and a[j-1] > t
-                move a [j-1] to right
-        end repeat
-        set a[j] = t
-end for
-```
-
-## Bubble Sort
+### Bubble Sort
 ### Konsep Dasar Algoritma Bubble Sort
-Bubble sort merupakan cara pengurutan dengan cara membandingkan satu elemen dengan elemen berikutnya. Jika elemen sekarang lebih besar dari elemen berikutnya maka harus ditukar.
+Bubble sort merupakan cara pengurutan dengan cara membandingkan satu elemen dengan elemen berikutnya. Mulai dari elemen pertama, bandingkan dua elemen pertama dengan berikutnya, jika elemen pertama lebih besar dari elemen berikutnya maka harus ditukar, ulangi terus sampai semua terurut secara ascending ataupun descending.
 
-### Pseudocode Algoritma Bubble Sort
-
-```C++
-
-```
-
-## Selection Sort
+### Selection Sort
 ### Konsep Dasar Algoritma Selection Sort
-Selection Sort merupakan cara pengurutan dengan cara membandingkan elemen sekarang dengan elemen berikutnya hingga elemen terakhir. Jika ditemukan elemen paling kecil lalu akan ditukar dengan elemen sekarang.
+Selection Sort merupakan cara pengurutan dengan cara membandingkan elemen sekarang dengan elemen berikutnya hingga elemen terakhir. Jika ditemukan elemen paling kecil lalu akan ditukar dengan elemen sekarang. Cara kerjanya mirip dengan cara pengurutan kartu remi. Array sebenarnya dibagi menjadi bagian yang diurutkan dan tidak disortir, nilai dari bagian yang tidak disortir diambil dan ditempatkan pada posisi yang benar di bagian yang diurutkan[3].
 
-### Pseudocode Algoritma Selection Sort
-```C++
+## Konsep Dasar Kompleksitas Waktu
+<img width="454" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/6af6dce0-0661-45aa-8303-2e1059f87b6b">
 
-```
-
+Kompleksitas waktu merupakan ukuran jumlah waktu yang diperlukan suatu algoritma untuk dijalankan sebagai fungsi dari ukuran input. Kompleksitas waktu menggambarkan seberapa efisien algoritma tersebut dalam menangani data yang semakin besar. Berikut cara menghitung kompleksitas waktu Big O:
+- Hitung operasi dominan, dengan mengidentifikasi jumlah operasi yang dilakukan oleh algoritma saat menangani ukuran input tertentu.
+- Hapus konstanta, dengan mengahpus dan fokus pada bagian yang mendominasi pertumbuhan, dapat melihat lebih jelas tergantung ukuran input yang semakin besar
 
 ## Guided
 ### 1. Mengurutkan secara *ascending* untuk data numerik bertipe double menggunakan Algoritma Bubble Sort
@@ -98,7 +81,9 @@ int main() {
 #### Output:
 <img width="216" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/5b384e98-4e03-4aa3-9bb7-3aa02f8c4c85">
 
+Kode diatas merupakan program dengan algoritma bubble untuk mengurutkan array bilangan riil (double). Setiap elemen yang belum terurut dipindahkan ke posisi yang sesuai dengan cara membandingkan dan manukar elemen-elemen secara berurutan.
 
+Memanggil fungsi bubble_sort untuk mengurutkan array, lalu mencetaknya setelah sudah diurutkan. Program mengembalikan nilai 0 yang menandakan bahwa program telah berjalan dengan sukses.
 
 ### 2. Mengurutkan karakter secara descending (dari terbesar hingga terkecil) menggunakan Algoritma Insertion Sort
 
@@ -148,6 +133,7 @@ int main() {
 #### Output:
 <img width="249" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/f321d36d-038b-48d3-af4d-c74892bfd0d7">
 
+Kode diatas merupakan program pengurutan dengan algoritma insertion sort yang memiliki parameter sebuah array karakter `arr` dan panjang array `length`. Elemen yang belum terurut dipindahkan ke posisi yang sesuai dengan cara membandingkan dan menukar elemen-elemen. Dalam fungsi main, program akan mencetak array sebelum diurutkan lalu memanggil fungsi `insertion_sort` untuk mengurutkan array, lalu mencetak array setelah diurutkan. Setelah itu dikembalikan nilai 0 yang artinya program telah berjalan dengan sukses.
 
 ## Unguided
 
@@ -383,7 +369,9 @@ int main()
 #### Output:
 <img width="248" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/a0ec03c5-afbf-4109-8073-270bb34f75bc">
 
-Kode diatas merupakan kode program yang memungkinkan pengguna untuk memasukkan sejumlah n yang akan dirutkan secara ascending dan descending. 
+Kode diatas merupakan kode program yang memungkinkan pengguna untuk memasukkan sejumlah n yang akan dirutkan secara ascending dan descending. Variabel bubble sort akan mengiterasi untuk membandingkan dan menukar setiap elemen array sehingga dapat terurut secara ascending. 
+
+Selanjutnya pengguna diminta memasukkan jumlah karakter yang ingin diurutkan. Kemudian, pengguna diminta memasukkan setiap karakternya sejumlah karakter yang dimasukkan. Lalu, program akan menampilkan karakter sebelum diurutkan, melakukan bubble sort untuk mengurutkan karakter secara ascending serta descending dan menampilkan hasilnya. Program akan mengembalikan nilai 0 yang artinya program tersebut berjalan sukses.
 
 Kodingan diatas 
 
@@ -391,12 +379,12 @@ Kodingan diatas
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/40026f18-9bae-42de-9274-b8d544c1b8ad">
 
 
-
-
 ## Kesimpulan
 
-Kesimpulannya, algortima sorting adalah cara pengurutan yang ada pada bahasa pemrograman. Ada beberapa jenis sorting, yaitu bubble sort, selection sort, dan insertion sort. Bubble sort adalah pengurutan dengan. Selection sort adalah pengurutan dengan. Selection sort adalah pengurutan dengan.
+Kesimpulannya, algortima sorting adalah cara pengurutan yang ada pada bahasa pemrograman. Ada beberapa jenis sorting, yaitu bubble sort, selection sort, dan insertion sort. Bubble sort adalah pengurutan dengan cara membandingkan elemen berdekatan dan menukarnya jika belum terurut, dilakukan beberapa kali sampai semua terurut. Selection sort adalah pengurutan dengan elemen pertama, dan ulangi proses sampai semua terurut. Selection sort adalah pengurutan dengan cara mencari posisis yang tepat untuk elemen tersebut.
 
 ## Referensi
 
-[1] 
+[1] P. Ganapathi and R. Chowdhury, “Parallel Divide-and-Conquer algorithms for bubble sort, selection sort and insertion sort,” The Computer Journal, Aug. 2021, doi: 10.1093/comjnl/bxab107.
+[2] GeeksforGeeks. (2023, November 15). Insertion Sort. Diambil dari https://www.geeksforgeeks.org/insertion-sort/
+[3] P. Salvi, “How to calculate Big O notation time complexity | Stackademic,” Medium, Aug. 27, 2023. [Online]. Available: https://blog.stackademic.com/how-to-calculate-big-o-notation-time-complexity-5504bed8d292
