@@ -285,13 +285,10 @@ int main() {
 ```
 
 #### Output:
-<img width="249" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/6bde844f-47a5-4369-a49b-89c4cb440403">
 
 Kodingan diatas 
 
 ### Full code Sreenshot:
-<img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/b8035ad4-b8c9-4453-99eb-88d93bb65586">
-<img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/08de0d56-e877-4d74-ba8a-0b61dd82271c">
 
 
 
