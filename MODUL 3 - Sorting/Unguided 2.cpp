@@ -61,15 +61,15 @@ int main()
 {
 
     int length = 10;
-    char nama_anak[][10] = {"siti", "situ", "sana", "ana", "ani", "caca", "cici", "dida", "dodo", "dadi"};
+    char nama_warga[][10] = {"siti", "situ", "sana", "ana", "ani", "caca", "cici", "dida", "dodo", "dadi"};
 
     cout << "Urutan nama sebelum sorting: " << endl;
-    print_array(nama_anak, length);
+    print_array(nama_warga, length);
 
-    bubble_sort(nama_anak, length);
+    bubble_sort(nama_warga, length);
 
     cout << "\nUrutan nama setelah sorting: " << endl;
-    print_array(nama_anak, length);
+    print_array(nama_warga, length);
 
     return 0;
 }
