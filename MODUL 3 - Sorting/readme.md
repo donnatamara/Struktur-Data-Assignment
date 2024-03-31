@@ -8,7 +8,7 @@ Algoritma sorting merupakan algoritma yang digunakan untuk meletakkan elemen-ele
 - Ascending adalah sistem pengurutan dari yang terkecil hingga yang terbesar. Contohnya 1, 2, 3, 4, 5, 6.
 - Descending adalah sistem pengurutan dari yang terbesar hingga terkecil. Contohnya 6,5,4,3,2,1. 
 
-### Insertion Sort
+## Insertion Sort
 ### Konsep Dasar Algoritma Insertion Sort
 Insertion Sort merupakan cara pengurutan dengan pengecekan satu persatu dimulai dari elemen kedua sampai dengan elemen terakhir. Jika ditemukan data yang lebih kecil dari data sebelumnya, maka data tersebut ditempatkan pada posisi yang sesuai. 
 
@@ -25,7 +25,7 @@ for i = to n-1
 end for
 ```
 
-### Bubble Sort
+## Bubble Sort
 ### Konsep Dasar Algoritma Bubble Sort
 Bubble sort merupakan cara pengurutan dengan cara membandingkan satu elemen dengan elemen berikutnya. Jika elemen sekarang lebih besar dari elemen berikutnya maka harus ditukar.
 
@@ -35,7 +35,7 @@ Bubble sort merupakan cara pengurutan dengan cara membandingkan satu elemen deng
 
 ```
 
-### Selection Sort
+## Selection Sort
 ### Konsep Dasar Algoritma Selection Sort
 Selection Sort merupakan cara pengurutan dengan cara membandingkan elemen sekarang dengan elemen berikutnya hingga elemen terakhir. Jika ditemukan elemen paling kecil lalu akan ditukar dengan elemen sekarang.
 
@@ -145,15 +145,67 @@ int main() {
 
 #### Output:
 
+#### Full code Screenshot:
+
 ## Unguided
 
 ### 1. Kelas S1 IF 2016 G memiliki 5 mahasiswa. Pada akhir semester mereka menerima lembar Indeks Prestasi Semester (IPS), masing-masing mahasiswa tersebut memiliki IPS sebagai berikut: {3.8, 2.9, 3.3, 4.0, 2.4}. Buatlah program untuk mengurutkan IPS mahasiswa tersebut dari yang terbesar hingga terkecil dengan menggunakan algoritma Selection Sort
 
 ```C++
+#include <iostream>
 
+using namespace std;
+
+void selectionSort(double arr[], int a)
+{
+    for (int i = 0; i < a - 1; ++i)
+    {
+        int max = i;
+        for (int j = i + 1; j < a; ++j)
+        {
+            if (arr[j] > arr[max])
+            {
+                max = j;
+            }
+        }
+
+        double temp = arr[i];
+        arr[i] = arr[max];
+        arr[max] = temp;
+    }
+}
+
+int main()
+{
+    const int a = 5;
+    double IPS[a] = {3.8, 2.9, 3.3, 4.0, 2.4};
+
+    cout << "IPS sebelum diurutkan:" << endl;
+    for (int i = 0; i < a - 1; ++i)
+    {
+        cout << IPS[i] << ", ";
+    }
+    cout << IPS[a - 1] << endl;
+
+    selectionSort(IPS, a);
+
+    cout << "IPS setelah diurutkan secara descending:" << endl;
+    for (int i = 0; i < a - 1; ++i)
+    {
+        cout << IPS[i] << ", "; /* code */
+    }
+    cout << IPS[a - 1] << endl;
+    return 0;
+}
 ```
 
 #### Output:
+<img width="246" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/2d4b6e2d-2938-42b4-9f0d-f64fa677f9e5">
+
+
+#### Full code Screenshot:
+<img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/009fec00-eb12-41c3-bfe3-9ffa935dbe77">
+
 
 
 ### 2. Pak RT memiliki 10 warga dengan nama: siti, situ, sana, ana, ani, caca, cici, dida, dodo, dan dadi. Supaya mudah dalam melakukan pencarian, Pak RT akan mengurutkan namanama tersebut sesuai dengan alfabet. Buatlah program untuk membantu Pak RT dengan menggunakan algoritma Bubble Sort!
@@ -166,13 +218,81 @@ int main() {
 
 
 ### 3. Buatlah program yang meminta user menginputkan suatu bilangan n dan meminta user untuk menginputkan sejumlah n karakter. Kemudian program akan melakukan sorting secara menaik (ascending) dan menurun (descending)! 
-![alt text](image.png)
+<img width="199" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/285ba52f-d4d5-45a9-834e-3aaf0ca5e78c">
 
 ```C++
+#include <iostream>
+using namespace std;
 
+void bubbleSort(char arr[], int a) {
+  int i, j;
+  for (i = 0; i < a - 1; i++) {
+    for (j = 0; j < a - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        char temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+}
+
+int main() {
+  int a;
+  cout << "input <n> = ";
+  cin >> a;
+
+  char karakter[a];
+
+  // Meminta user untuk menginputkan karakter
+  for (int i = 0; i < a; i++) {
+    cout << "Karakter ke-" << i + 1 << ": ";
+    cin >> karakter[i];
+  }
+
+  // Menampilkan karakter sebelum sorting
+  cout << "\nUrutan karakter sebelum sorting:\n";
+  for (int i = 0; i < a; i++) {
+    cout << karakter[i] << " ";
+  }
+
+  // Sorting ascending dengan bubble sort tanpa swap
+  bubbleSort(karakter, a);
+
+  // Menampilkan karakter setelah ascending sort
+  cout << "\n\nUrutan karakter setelah ascending sort:\n";
+  for (int i = 0; i < a; i++) {
+    cout << karakter[i] << " ";
+  }
+
+  // Sorting descending dengan bubble sort (modifikasi)
+  for (int i = 0; i < a / 2; i++) {
+    char temp = karakter[i];
+    karakter[i] = karakter[a - i - 1];
+    karakter[a - i - 1] = temp;
+  }
+
+  // Menampilkan karakter setelah descending sort
+  cout << "\n\nUrutan karakter setelah descending sort:\n";
+  for (int i = 0; i < a; i++) {
+    cout << karakter[i] << " ";
+  }
+
+  cout << endl;
+
+  return 0;
+}
 ```
 
 #### Output:
+<img width="249" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/6bde844f-47a5-4369-a49b-89c4cb440403">
+
+Kodingan diatas 
+
+### Full code Sreenshot:
+<img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/b8035ad4-b8c9-4453-99eb-88d93bb65586">
+<img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/08de0d56-e877-4d74-ba8a-0b61dd82271c">
+
 
 
 ## Kesimpulan
