@@ -4,7 +4,7 @@
 
 ## Dasar Teori
 ### Konsep Dasar Sorting
-Algoritma sorting merupakan algoritma yang digunakan untuk meletakkan elemen-elemen data ke dalam urutan tertentu, berdasarkan satu atau beberapa kunci pada tiap elemennya. Contoh pada kehidupan sehari-hari: mencari kontak yang dirutkan berdasarkan nama, profil pelajar diurutkan berdasarkan ID, informasi penerbangan, dll [1]. Berikut merupakan dua jenis pengurutan:
+Algoritma sorting merupakan algoritma yang digunakan untuk meletakkan elemen-elemen data ke dalam urutan tertentu, berdasarkan satu atau beberapa kunci pada tiap elemennya. Contoh pada kehidupan sehari-hari: mencari kontak yang dirutkan berdasarkan nama, profil pelajar diurutkan berdasarkan ID, informasi penerbangan, dll[1]. Berikut merupakan dua jenis pengurutan:
 
 - Ascending adalah sistem pengurutan dari yang terkecil hingga yang terbesar. Contohnya 1, 2, 3, 4, 5, 6.
 - Descending adalah sistem pengurutan dari yang terbesar hingga terkecil. Contohnya 6,5,4,3,2,1. 
@@ -24,9 +24,20 @@ Selection Sort merupakan cara pengurutan dengan cara membandingkan elemen sekara
 ## Konsep Dasar Kompleksitas Waktu
 <img width="454" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/6af6dce0-0661-45aa-8303-2e1059f87b6b">
 
-Kompleksitas waktu merupakan ukuran jumlah waktu yang diperlukan suatu algoritma untuk dijalankan sebagai fungsi dari ukuran input. Kompleksitas waktu menggambarkan seberapa efisien algoritma tersebut dalam menangani data yang semakin besar. Berikut cara menghitung kompleksitas waktu Big O:
+Kompleksitas waktu merupakan ukuran jumlah waktu yang diperlukan suatu algoritma untuk dijalankan sebagai fungsi dari ukuran input. Kompleksitas waktu menggambarkan seberapa efisien algoritma tersebut dalam menangani data yang semakin besar. Dapat dilihat pada gambar di atas bahwa semakin melengkung garisnya maka kompleksitas waktunya akan semakin mendekati "worse" artinya program tersebut akan semakin tidak efisien jika dijalankan. 
+
+Kompleksitas waktu dapat membantu programmer untuk memilih algoritma yang tepat untuk menyelesaikan suatu tugas, membantu untuk memprediksi berapa lama waktu yang dibutuhkan untuk menyelesaikan suatu tugas, dan membantu untuk mengoptimalkan kinerja program. Berikut cara menghitung kompleksitas waktu Big O:
+
 - Hitung operasi dominan, dengan mengidentifikasi jumlah operasi yang dilakukan oleh algoritma saat menangani ukuran input tertentu.
-- Hapus konstanta, dengan mengahpus dan fokus pada bagian yang mendominasi pertumbuhan, dapat melihat lebih jelas tergantung ukuran input yang semakin besar
+- Hapus konstanta, dengan mengahpus dan fokus pada bagian yang mendominasi pertumbuhan keseluruhan, tidak perlu memperhatikan konstanta dengan tingkat pertumbuhan yang lebih rendah.
+- Nyatakan kompleksitas dalam "N" sebagai ukuran masukan, misal jika kompleksitas sebanding dengan kuadrat ukuran masukan, tuliskan sebagai o(N²).
+
+Berikut beberapa kompleksitas waktu yang umum:
+- Konstan (O(1)): algoritma membutuhkan waktu yang sama untuk menyelesaikan tugas.
+- Linear (O(n)): algoritma membutuhkan waktu yang berbanding lurus dengan ukuran input.
+- Logaritmik (O(logn)): algorutma membutuhkan waktu yang berbanding lurus dengan algoritma dari ukuran input.
+- Kuadrat (O(N²): algoritma membutuhkan waktu yang berbanding lurus dengan kuadray dari ukuran input.
+- Eksponensial (O(²N): algoritma membutuhkan waktu yang meningkat secara eksponensial dengan ukuran input.
 
 ## Guided
 ### 1. Mengurutkan secara *ascending* untuk data numerik bertipe double menggunakan Algoritma Bubble Sort
@@ -85,6 +96,10 @@ Kode diatas merupakan program dengan algoritma bubble untuk mengurutkan array bi
 
 Memanggil fungsi bubble_sort untuk mengurutkan array, lalu mencetaknya setelah sudah diurutkan. Program mengembalikan nilai 0 yang menandakan bahwa program telah berjalan dengan sukses.
 
+Bubble sort memiliki kompleksitas waktu linier o(N²), n adalah jumlah elemen, karena algoritma bubble sort menggunakan dua loop bersarang, satu untuk iterasi melalui setiap elemen dalam array, dan satunya sebagai pembanding dan penukar elemen yang tidak terurut.
+
+Jika panjang array adalah n, kompleksitas waktu bubble sort akan menjadi o(N²), artinya waktu iterasi akan meningkat secara kuadrat seiring dengan peningkatan jumlah elemen yang akan diurutkan.  
+
 ### 2. Mengurutkan karakter secara descending (dari terbesar hingga terkecil) menggunakan Algoritma Insertion Sort
 
 ```C++
@@ -134,6 +149,8 @@ int main() {
 <img width="249" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/f321d36d-038b-48d3-af4d-c74892bfd0d7">
 
 Kode diatas merupakan program pengurutan dengan algoritma insertion sort yang memiliki parameter sebuah array karakter `arr` dan panjang array `length`. Elemen yang belum terurut dipindahkan ke posisi yang sesuai dengan cara membandingkan dan menukar elemen-elemen. Dalam fungsi main, program akan mencetak array sebelum diurutkan lalu memanggil fungsi `insertion_sort` untuk mengurutkan array, lalu mencetak array setelah diurutkan. Setelah itu dikembalikan nilai 0 yang artinya program telah berjalan dengan sukses.
+
+Kode diatas memiliki kompleksitas waktu adalah O(N²), di mana n adalah panjang array yang diurutkan. Dimulai dari iterasi `length - 1` memiliki kompleksitas waktu O(N) di mana n adalah panjang array, kemudian dalam iterasi utama iterasi penyisipan dalam *worst case* adalah O(N), n sebagai panjang array. Jadi kompleksitas totalnya O(N²).
 
 ## Unguided
 
@@ -193,6 +210,8 @@ int main()
 Kode diatas merupakan program dengan algoritma pengurutan selection sort secara descending dengan array yang berisi bilangan desimal floating-point ganda. Looping luar berguna untuk pengurutan bertahap, jumlah iterasi adalah `a-1` karena elemen paling akhir sudah dianggap posisi akhir setelah iterasi sebelumnya. Looping dalam berguna untuk menemukan elemen maksimum dengan memeriksa apakah elemen `arr[j]` lebih besar daripada elemen pada indeks `maks`. Jika benar maka elemen yang lebih besar telah ditemukan, jadi `maks` diperbarui untuk menyimpan indeks `j` dari elemen yang lebih besar.
 
 Setelah loop dalam selesai dijalankan, `maks` akan menyimpan indeks elemen terbesar di antara yang tersisa yang berguna untuk menukar elemen pada indeks `i` saat ini dengan elemen pada indeks `maks`.
+
+Kompleksitas waktu kode program di atas adalah O(N²), di mana n adlaah ukuran array. Karena terdapat loop bersarang, yang menyebabkan kompleksitas menjadi kuadrat terhadap ukuran array. Jika ukuran array n meningkat, waktu eksekusi algoritma selection sort juga akan meningkat secara kuadratik.
 
 #### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/009fec00-eb12-41c3-bfe3-9ffa935dbe77">
@@ -282,7 +301,9 @@ int main()
 #### Output:
 <img width="300" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/e03b13a5-46c2-42e6-ab1f-d1454299cbd7">
 
-Kode diatas merupakan program pengurutan dengan menggunakan bubble sort untuk mengurutkan array yang berisi nama orang. Array tersebut berupa array dua dimenensi dengan panjang array adalah `lenght`. Varibael `not_sorted` bertipe boolean digunakan untuk mengecek apakah array tersebut sudah terurut atau belum. Kemudian dicek apakah ada elemen yang perlu ditukar, jika ada maka lakukan penukaran dengan menggunakan variabel `temp` untuk menyimpan sementara. Program terus berjalan sampai terurut semuanya, cetak isi array, dan `return 0` menandakan bahwa program telah berjalan dengan sukses.
+Kode di atas merupakan program pengurutan dengan menggunakan bubble sort untuk mengurutkan array yang berisi nama orang. Array tersebut berupa array dua dimenensi dengan panjang array adalah `lenght`. Varibael `not_sorted` bertipe boolean digunakan untuk mengecek apakah array tersebut sudah terurut atau belum. Kemudian dicek apakah ada elemen yang perlu ditukar, jika ada maka lakukan penukaran dengan menggunakan variabel `temp` untuk menyimpan sementara. Program terus berjalan sampai terurut semuanya, cetak isi array, dan `return 0` menandakan bahwa program telah berjalan dengan sukses.
+
+Kompleksitas waktu kode di atas adalah O(N²), di mana n adalah panjang array yang diurutkan. Alasannya karena terdapat dua tingkat iterasi bersarang yang bergantung pada panjang array yang diinputkan. 
 
 #### Full code Screenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/919b610c-f720-4733-a0fb-d5584801a507">
@@ -369,11 +390,11 @@ int main()
 #### Output:
 <img width="248" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/a0ec03c5-afbf-4109-8073-270bb34f75bc">
 
-Kode diatas merupakan kode program yang memungkinkan pengguna untuk memasukkan sejumlah n yang akan dirutkan secara ascending dan descending. Variabel bubble sort akan mengiterasi untuk membandingkan dan menukar setiap elemen array sehingga dapat terurut secara ascending. 
+Kode di atas merupakan kode program yang memungkinkan pengguna untuk memasukkan sejumlah n yang akan dirutkan secara ascending dan descending. Variabel bubble sort akan mengiterasi untuk membandingkan dan menukar setiap elemen array sehingga dapat terurut secara ascending. 
 
 Selanjutnya pengguna diminta memasukkan jumlah karakter yang ingin diurutkan. Kemudian, pengguna diminta memasukkan setiap karakternya sejumlah karakter yang dimasukkan. Lalu, program akan menampilkan karakter sebelum diurutkan, melakukan bubble sort untuk mengurutkan karakter secara ascending serta descending dan menampilkan hasilnya. Program akan mengembalikan nilai 0 yang artinya program tersebut berjalan sukses.
 
-Kodingan diatas 
+Kode di atas meminta pengguna memasukkan karakter yang mana memiliki kompleksitas waktu O(N), n adalah jumlah karakter yang dimasukkan oleh pengguna. Lalu fungsi bubble sort yang melakukan sorting secara ascending memiliki kompleksitas waktu O(N²), fungsi bubble sort kedua juga memiliki kompleksitas waktu O(N²) karena mengurutkan semua elemen dalam array. Jadi total kompleksitas waktunya adalah O(N) + O(N²) + O(N²) = O(N²) bagian yang paling dominan adalah pada proses sorting yang menggunakan bubble sort.
 
 ### Full code Sreenshot:
 <img width="960" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/40026f18-9bae-42de-9274-b8d544c1b8ad">
@@ -381,10 +402,12 @@ Kodingan diatas
 
 ## Kesimpulan
 
-Kesimpulannya, algortima sorting adalah cara pengurutan yang ada pada bahasa pemrograman. Ada beberapa jenis sorting, yaitu bubble sort, selection sort, dan insertion sort. Bubble sort adalah pengurutan dengan cara membandingkan elemen berdekatan dan menukarnya jika belum terurut, dilakukan beberapa kali sampai semua terurut. Selection sort adalah pengurutan dengan elemen pertama, dan ulangi proses sampai semua terurut. Selection sort adalah pengurutan dengan cara mencari posisis yang tepat untuk elemen tersebut.
+Kesimpulannya, algortima sorting adalah cara pengurutan yang ada pada bahasa pemrograman. Ada beberapa jenis sorting, yaitu bubble sort, selection sort, dan insertion sort. Bubble sort adalah pengurutan dengan cara membandingkan elemen berdekatan dan menukarnya jika belum terurut, dilakukan beberapa kali sampai semua terurut. Selection sort adalah pengurutan dengan elemen pertama, dan ulangi proses sampai semua terurut. Selection sort adalah pengurutan dengan cara mencari posisis yang tepat untuk elemen tersebut. Kompleksitas waktu adalah waktu yang dibutuhkan oleh suatu algoritma untuk menyelesaikan suatu tugas. Ada beberapa jenis kompleksitas waktu yaitu konstan (O(1)), linear (O(N)), logaritmik (O(log N)), kuadrat (O(N²)), eksponensial (O(²N).
 
 ## Referensi
 
 [1] P. Ganapathi and R. Chowdhury, “Parallel Divide-and-Conquer algorithms for bubble sort, selection sort and insertion sort,” The Computer Journal, Aug. 2021, doi: 10.1093/comjnl/bxab107.
+
 [2] GeeksforGeeks. (2023, November 15). Insertion Sort. Diambil dari https://www.geeksforgeeks.org/insertion-sort/
+
 [3] P. Salvi, “How to calculate Big O notation time complexity | Stackademic,” Medium, Aug. 27, 2023. [Online]. Available: https://blog.stackademic.com/how-to-calculate-big-o-notation-time-complexity-5504bed8d292
