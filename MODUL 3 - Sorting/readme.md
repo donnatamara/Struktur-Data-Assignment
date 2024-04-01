@@ -15,11 +15,11 @@ Insertion Sort merupakan cara pengurutan dengan pengecekan satu persatu dimulai 
 
 ### Bubble Sort
 ### Konsep Dasar Algoritma Bubble Sort
-Bubble sort merupakan cara pengurutan dengan cara membandingkan satu elemen dengan elemen berikutnya. Mulai dari elemen pertama, bandingkan dua elemen pertama dengan berikutnya, jika elemen pertama lebih besar dari elemen berikutnya maka harus ditukar, ulangi terus sampai semua terurut secara ascending ataupun descending.
+Bubble sort merupakan cara pengurutan dengan cara membandingkan elemen-elemen yang berdekatan dalam array dan menukar posisinya jika elemen yang di sebelah kiri lebih besar daripada elemen di sebeleah kanan. Mulai dari elemen pertama, bandingkan dua elemen pertama dengan berikutnya, jika elemen pertama lebih besar dari elemen berikutnya maka harus ditukar, ulangi terus sampai semua terurut secara ascending ataupun descending[2]. 
 
 ### Selection Sort
 ### Konsep Dasar Algoritma Selection Sort
-Selection Sort merupakan cara pengurutan dengan cara membandingkan elemen sekarang dengan elemen berikutnya hingga elemen terakhir. Jika ditemukan elemen paling kecil lalu akan ditukar dengan elemen sekarang. Cara kerjanya mirip dengan cara pengurutan kartu remi. Array sebenarnya dibagi menjadi bagian yang diurutkan dan tidak disortir, nilai dari bagian yang tidak disortir diambil dan ditempatkan pada posisi yang benar di bagian yang diurutkan[2].
+Selection Sort merupakan cara pengurutan dengan cara membandingkan elemen sekarang dengan elemen berikutnya hingga elemen terakhir. Jika ditemukan elemen paling kecil lalu akan ditukar dengan elemen sekarang. Cara kerjanya mirip dengan cara pengurutan kartu remi. Array sebenarnya dibagi menjadi bagian yang diurutkan dan tidak disortir, nilai dari bagian yang tidak disortir diambil dan ditempatkan pada posisi yang benar di bagian yang diurutkan[3].
 
 ## Konsep Dasar Kompleksitas Waktu
 <img width="454" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/6af6dce0-0661-45aa-8303-2e1059f87b6b">
@@ -406,6 +406,8 @@ Kesimpulannya, algortima sorting adalah cara pengurutan yang ada pada bahasa pem
 
 [1] P. Ganapathi and R. Chowdhury, “Parallel Divide-and-Conquer algorithms for bubble sort, selection sort and insertion sort,” The Computer Journal, Aug. 2021, doi: 10.1093/comjnl/bxab107.
 
-[2] GeeksforGeeks. (2023, November 15). Insertion Sort. Diambil dari https://www.geeksforgeeks.org/insertion-sort/
+[2] R. Campbell, C++ Programming: From Novice to Expert in a Step-by-Step Journey. Independently Published, 2023.
 
-[3] P. Salvi, “How to calculate Big O notation time complexity | Stackademic,” Medium, Aug. 27, 2023. [Online]. Available: https://blog.stackademic.com/how-to-calculate-big-o-notation-time-complexity-5504bed8d292
+[3] GeeksforGeeks. (2023, November 15). Insertion Sort. Diambil dari https://www.geeksforgeeks.org/insertion-sort/
+
+[4] P. Salvi, “How to calculate Big O notation time complexity | Stackademic,” Medium, Aug. 27, 2023. [Online]. Available: https://blog.stackademic.com/how-to-calculate-big-o-notation-time-complexity-5504bed8d292
