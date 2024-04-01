@@ -3,9 +3,9 @@
 using namespace std;
 
 void selectionSort(double arr[], int a)
-{   // Looping melalui setiap elemen array (kecuali paling akhir)
+{ // Looping melalui setiap elemen array (kecuali paling akhir)
     for (int i = 0; i < a - 1; ++i)
-    {   
+    {
         int max = i;
         // Looping dalam untuk mencari elemen terbesar
         for (int j = i + 1; j < a; ++j)
@@ -39,9 +39,9 @@ int main()
     cout << "IPS setelah diurutkan secara descending:" << endl;
     for (int i = 0; i < a - 1; ++i)
     {
-        cout << IPS[i] << ", "; 
+        cout << IPS[i] << ", ";
     }
     // Cetak elemen terakhir
-    cout << IPS[a - 1] << endl; 
+    cout << IPS[a - 1] << endl;
     return 0;
 }
