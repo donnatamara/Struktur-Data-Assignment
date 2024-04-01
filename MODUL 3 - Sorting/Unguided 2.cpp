@@ -17,7 +17,7 @@ void bubble_sort(char arr[][10], int length)
             bool tukar = false;
             for (int k = 0; k < 10; k++)
             {
-                //membandingkan karakter pada indeks yang sama di string ini dan berikutnya
+                // membandingkan karakter pada indeks yang sama di string ini dan berikutnya
                 if (arr[i][k] > arr[i + 1][k])
                 {
                     tukar = true;
