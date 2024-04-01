@@ -340,7 +340,7 @@ int main()
 
   char karakter[a];
 
-  // Meminta user untuk menginputkan karakter
+  // Meminta pengguna untuk menginputkan karakter
   for (int i = 0; i < a; i++)
   {
     cout << "Karakter ke-" << i + 1 << ": ";
