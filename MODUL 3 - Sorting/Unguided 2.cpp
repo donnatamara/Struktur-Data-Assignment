@@ -6,16 +6,18 @@ void bubble_sort(char arr[][10], int length)
     bool not_sorted = true;
     int j = 0;
     char tmp;
-
+    // looping sampai array terurut
     while (not_sorted)
     {
         not_sorted = false;
         j++;
+        // Looping sepanjang array kecuali elemen terakhir
         for (int i = 0; i < length - j; i++)
         {
             bool tukar = false;
             for (int k = 0; k < 10; k++)
             {
+                //membandingkan karakter pada indeks yang sama di string ini dan berikutnya
                 if (arr[i][k] > arr[i + 1][k])
                 {
                     tukar = true;
@@ -29,7 +31,7 @@ void bubble_sort(char arr[][10], int length)
             if (tukar)
             {
                 // Menukar elemen
-                char temp[10];
+                char temp[10]; // Penyimpanan array sementara
                 for (int k = 0; k < 10; k++)
                 {
                     temp[k] = arr[i][k];
