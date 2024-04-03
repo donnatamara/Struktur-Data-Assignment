@@ -3,7 +3,7 @@
 <p align="center">Donna Nur Tamara</p>
 
 ## Dasar Teori
-Searching atau dapat disebut pencarian adalah 
+Searching atau dapat disebut pencarian adalah  
 
 ## Guided
 ### 1. Buatlah sebuah project dengan menggunakan sequential search sederhana untuk melakukan pencarian data.  
@@ -40,9 +40,9 @@ int main() {
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/01189237-4ae9-4c2b-8e59-28f8f1514563)
 
-
-kode diatas merupakan program 
+kode diatas merupakan kode program yang melakukan pencarian data menggunakan sequential search.
 
 ### 2. Buatlah sebuah project untuk melakukan pencarian data dengan menggunakan Binary Search.
 
@@ -120,8 +120,9 @@ int main() {
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/c5fbb13f-7fbf-47f7-881c-c8d31eb71543)
 
-Kode diatas adalah program yang
+Kode diatas adalah program pencarian data dengan menggunakan binary search.
 
 
 ## Unguided
