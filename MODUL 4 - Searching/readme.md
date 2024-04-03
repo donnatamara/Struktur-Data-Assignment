@@ -3,7 +3,7 @@
 <p align="center">Donna Nur Tamara</p>
 
 ## Dasar Teori
-Searching atau dapat disebut pencarian adalah  
+Searching atau dapat disebut pencarian adalah suatu proses untuk mengumpulkan sejumlah informasi didalam pengingat computer dan kemudian mencari kembali informasi yang diperlukan secepat mungkin. Ada beberapa cara dalam pencarian sebuah data. 
 
 ## Guided
 ### 1. Buatlah sebuah project dengan menggunakan sequential search sederhana untuk melakukan pencarian data.  
@@ -168,7 +168,7 @@ Kesimpulannya,
 
 ## Referensi
 
-[1] 
+[1] Tarigan, Wanra. Algoritma Pemrograman dan Struktur Data. Eureka Media Aksara, 2022.
 [2] 
 [3] 
 [4] 
