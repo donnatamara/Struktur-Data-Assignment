@@ -21,7 +21,7 @@ Bubble sort merupakan cara pengurutan dengan cara membandingkan elemen-elemen ya
 ### Konsep Dasar Algoritma Selection Sort
 Selection Sort merupakan cara pengurutan dengan cara membandingkan elemen sekarang dengan elemen berikutnya hingga elemen terakhir. Jika ditemukan elemen paling kecil lalu akan ditukar dengan elemen sekarang. Cara kerjanya mirip dengan cara pengurutan kartu remi. Array sebenarnya dibagi menjadi bagian yang diurutkan dan tidak disortir, nilai dari bagian yang tidak disortir diambil dan ditempatkan pada posisi yang benar di bagian yang diurutkan[3].
 
-## Konsep Dasar Kompleksitas Waktu
+### Konsep Dasar Kompleksitas Waktu
 <img width="454" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/6af6dce0-0661-45aa-8303-2e1059f87b6b">
 
 Kompleksitas waktu merupakan ukuran jumlah waktu yang diperlukan suatu algoritma untuk dijalankan sebagai fungsi dari ukuran input. Kompleksitas waktu menggambarkan seberapa efisien algoritma tersebut dalam menangani data yang semakin besar[3]. Dapat dilihat pada gambar di atas bahwa semakin melengkung garisnya maka kompleksitas waktunya akan semakin mendekati "worse" artinya program tersebut akan semakin tidak efisien jika dijalankan. 
@@ -162,10 +162,11 @@ Kode diatas memiliki kompleksitas waktu yang dimulai dari iterasi `length - 1` m
 using namespace std;
 
 void selectionSort(double arr[], int a)
-{
+{ // Looping melalui setiap elemen array (kecuali paling akhir)
     for (int i = 0; i < a - 1; ++i)
     {
         int max = i;
+        // Looping dalam untuk mencari elemen terbesar
         for (int j = i + 1; j < a; ++j)
         {
             if (arr[j] > arr[max])
@@ -173,7 +174,7 @@ void selectionSort(double arr[], int a)
                 max = j;
             }
         }
-
+        // Tukar elemen sekarang (i) dengan elemen terbesar (maks)
         double temp = arr[i];
         arr[i] = arr[max];
         arr[max] = temp;
@@ -183,7 +184,7 @@ void selectionSort(double arr[], int a)
 int main()
 {
     const int a = 5;
-    double IPS[a] = {3.8, 2.9, 3.3, 4.0, 2.4};
+    double IPS[a] = {3.8, 2.9, 3.3, 4.0, 2.4}; // Array nilai IPS
 
     cout << "IPS sebelum diurutkan:" << endl;
     for (int i = 0; i < a - 1; ++i)
@@ -191,14 +192,15 @@ int main()
         cout << IPS[i] << ", ";
     }
     cout << IPS[a - 1] << endl;
-
+    // Mengurutkan array IPS
     selectionSort(IPS, a);
 
     cout << "IPS setelah diurutkan secara descending:" << endl;
     for (int i = 0; i < a - 1; ++i)
     {
-        cout << IPS[i] << ", "; /* code */
+        cout << IPS[i] << ", ";
     }
+    // Cetak elemen terakhir
     cout << IPS[a - 1] << endl;
     return 0;
 }
@@ -228,16 +230,18 @@ void bubble_sort(char arr[][10], int length)
     bool not_sorted = true;
     int j = 0;
     char tmp;
-
+    // looping sampai array terurut
     while (not_sorted)
     {
         not_sorted = false;
         j++;
+        // Looping sepanjang array kecuali elemen terakhir
         for (int i = 0; i < length - j; i++)
         {
             bool tukar = false;
             for (int k = 0; k < 10; k++)
             {
+                // membandingkan karakter pada indeks yang sama di string ini dan berikutnya
                 if (arr[i][k] > arr[i + 1][k])
                 {
                     tukar = true;
@@ -251,7 +255,7 @@ void bubble_sort(char arr[][10], int length)
             if (tukar)
             {
                 // Menukar elemen
-                char temp[10];
+                char temp[10]; // Penyimpanan array sementara
                 for (int k = 0; k < 10; k++)
                 {
                     temp[k] = arr[i][k];
@@ -300,7 +304,7 @@ int main()
 #### Output:
 <img width="300" alt="image" src="https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/e03b13a5-46c2-42e6-ab1f-d1454299cbd7">
 
-Kode di atas merupakan program pengurutan dengan menggunakan *bubble sort* untuk mengurutkan array yang berisi nama orang. Array tersebut berupa array dua dimenensi dengan panjang array adalah `lenght`. Varibael `not_sorted` bertipe boolean digunakan untuk mengecek apakah array tersebut sudah terurut atau belum. Kemudian dicek apakah ada elemen yang perlu ditukar, jika ada maka lakukan penukaran dengan menggunakan variabel `temp` sebagai penyimpanan sementara. Program terus berjalan sampai terurut semuanya, cetak isi array, dan `return 0` menandakan bahwa program telah berjalan dengan sukses.
+Kode di atas merupakan program pengurutan dengan menggunakan *bubble sort* untuk mengurutkan array yang berisi nama orang. Array tersebut berupa array dua dimenensi dengan panjang array adalah `lenght`. Lalu cek apakah array tersebut sudah terurut atau belum dengan variabel `not_sorted`. Kemudian dicek apakah ada elemen yang perlu ditukar, jika ada maka lakukan penukaran dengan menggunakan variabel `temp` sebagai penyimpanan sementara. Program terus berjalan sampai terurut semuanya, cetak isi array, dan `return 0` menandakan bahwa program telah berjalan dengan sukses.
 
 Kompleksitas waktu kode di atas adalah O(N²), di mana n adalah panjang array yang diurutkan. Alasannya karena terdapat dua tingkat iterasi bersarang yang bergantung pada panjang array yang diinputkan. 
 
@@ -340,7 +344,7 @@ int main()
 
   char karakter[a];
 
-  // Meminta user untuk menginputkan karakter
+  // Meminta pengguna untuk menginputkan karakter
   for (int i = 0; i < a; i++)
   {
     cout << "Karakter ke-" << i + 1 << ": ";
