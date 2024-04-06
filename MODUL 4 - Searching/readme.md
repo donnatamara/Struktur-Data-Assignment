@@ -16,7 +16,7 @@ Biasanya algoritma ini sering digabungkan dengan algoritma sorting karena data y
 6. Ulangi langkah 2-6 sampai nilai yang dicari ditemukan atau tidak ditemukan [2].
 
 ### Sequential Search
-Sequential search atau dapat disebut linear search adalah teknik pencarian data dalam array dengan membaca satu demi satu dan diurutkan dari indeks pertama hingga indeks terakhir, maupun sebaliknya. Algoritma ini biasa digunakan untuk data berpola acak. 
+Sequential search atau dapat disebut linear search adalah teknik pencarian data dalam array dengan membaca satu demi satu dan diurutkan dari indeks pertama hingga indeks terakhir, maupun sebaliknya. Algoritma ini biasa digunakan untuk data berpola acak dan tidak cocok digunakan untuk array berukuran besar. 
 
 Pencarian dimulai dari elemen pertama, kemudian periksa apakah cocok dengan angka yang sedang dicari, jika tidak maka periksa dengan elemen berikutnya. Jika bertemu dengan angka yang sedang dicari maka pencarian selesai [3].
 
@@ -187,11 +187,14 @@ Pertama array `data` diisi dengan nilai-nilai contoh dan panjangnya akan dihitun
 
 ## Kesimpulan
 
-Kesimpulannya, 
+Kesimpulannya, pada algoritma searching adalah proses menemukan sebuah data yang diinginkan dalam sebuah kumpulan data. Memiliki dua jenis yang umum diketahui yaitu binary search dan sequential search. Binary search merupakan pencarian dengan membagi array atau list menjadi dua bagian secara berulang dan membandingkan elemen yang dicari dengan elemen tengah. Sedangkan sequential search atau dapat disebut linear search merupakan pencarian dengan membandingkan elemen yang dicari dengan setiap elemen dalam array secara berurutan.
 
 ## Referensi
 
 [1] Tarigan, Wanra. "Algoritma Pemrograman dan Struktur Data". Eureka Media Aksara, 2022.
+
 [2] P. I. Daulay, “Penerapan Algoritma Pemrograman dalam Pembelajaran Ilmu Komputer,” Bahasa dan Matematika, vol. 1, no. 6, pp. 91–103, doi: 10.61132/arjuna.v1i6.297.
+
 [3] “Linear Search (With code).” https://www.programiz.com/dsa/linear-search
+
 [4] 
