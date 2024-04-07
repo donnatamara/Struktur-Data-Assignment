@@ -147,7 +147,6 @@ Menggunakan library `iomanip` yang berguna untuk memformat output (seperti setw 
 Pertama array `data` diisi dengan nilai-nilai contoh dan panjangnya akan dihitung, dengan variabel `cari` sebagai penyimpan nilai yang ingin dicari. Kemudian data awal pada array `data` ditampilkan menggunakan looping dan fungsi `setw` guna memformat outputnya nanti. Lalu, pengguna diminta untuk memasukkan nilai yang ingin dicari. Program akan mengurutkan data dalam array `data` secara menaik dengan menggunakan fungsi `binarysearch`. Program akan mencetak pesan bahwa angka yang dicari ditemukan atau tidak serta menampilkan data setelah diurutkan. Program mengembalikan `EXIT_SUCCESS` yang artinya program telah selesai dijalankan.
 
 
-
 ## Unguided
 
 ### 1. Buatlah sebuah program untuk mencari sebuah huruf pada sebuah kalimat yang sudah di input dengan menggunakan Binary Search!
@@ -165,25 +164,117 @@ Pertama array `data` diisi dengan nilai-nilai contoh dan panjangnya akan dihitun
 
 
 ```C++
+#include <iostream>
+#include <string>
 
+using namespace std;
+
+int main() {
+    string kalimat;
+    cout << "Masukkan kalimat: ";
+    getline(cin, kalimat);
+
+    int banyak = 0;
+    const int max = 100; // Maksimum panjang kalimat
+    int indeksVokal[max];
+    int index = 0;
+
+    for (int i = 0; i < kalimat.length(); i++) {
+        char huruf = tolower(kalimat[i]); // Mengubah huruf menjadi huruf kecil
+        if (huruf == 'a' || huruf == 'e' || huruf == 'i' || huruf == 'o' || huruf == 'u') {
+            banyak++;
+            indeksVokal[index++] = i;
+        }
+    }
+
+    cout << "Banyak huruf vokal: " << banyak << endl;
+    if (banyak > 0) {
+        cout << "Indeks huruf vokal: ";
+        for (int i = 0; i < index; i++) {
+            cout << indeksVokal[i] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
 ```
 
 #### Output:
- 
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/170716df-ebb9-4b41-a491-1a3baf0091a4)
+
+Kode di atas merupakan kode program yang meminta pengguna memasukkan sebuah kalimat, kemudian menghitung jumlah huruf vokal beserta indeks dari setiap huruf vokal dalam kalimat tersebut.
+
+Pertama, program akan mendeklarasikan variabel `kalimat` sebagai string yang berguna untuk menyimpan kalimat yang dimasukkan oleh pengguna. Kemudian, pengguna diminta untuk memasukkan sebuah kalimat menggunakan `getline` agar dapat membaca spasi dalam kalimta tersebut.
+
+Program melakukan iterasi melalui setiap karakter dalam kalimat menggunakan perulangan `for`, yang mana pada setiap karakternya diubah menjadi huruf kecil menggunakan fungsi `tolower` untuk mempermudan pengecekan. Apabila karakter tersebut merupakan huruf vokal, maka variabel `banyak` akan ditambah satu dan indeks karakter akan disimpan pada `indeksVokal`. Program akan mengembalikan nilai 0 yang artinya program telah sukses berjalan.
+
+Program menampilkan jumlah huruf vokal yang ditemukan dan jika ditemukan, program akan menampilkan indeks-indeks huruf vokal yang telah disimpan dalam array `indeksvokal`.
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/c3bf2ec2-81bd-43fe-b435-4e467c6e83e7)
 
 
 
 ### 3. Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!
 
 ```C++
+#include <iostream>
 
+using namespace std;
+
+void sequentialSearch(const int data[], int size, int target, int indices[], int& count) {
+    count = 0; 
+    for (int i = 0; i < size; i++) {
+        if (data[i] == target) {
+            indices[count] = i; // Simpan indeks jika angka ditemukan
+            count++; 
+        }
+    }
+}
+
+int main() {
+    int data[] = {9, 4, 1, 4, 7, 10, 5, 4, 12, 4};
+    int size = sizeof(data) / sizeof(data[0]); // Menghitung panjang array secara dinamis
+    int target, count;
+    const int max = 100; // Ukuran maksimum untuk array indeks
+    int indices[max];
+
+    cout << "Masukkan angka yang ingin Anda cari: ";
+    cin >> target;
+
+    sequentialSearch(data, size, target, indices, count);
+
+    if (count > 0) {
+        cout << "Angka " << target << " ditemukan sebanyak " << count << " kali, pada indeks:" << endl;
+        for (int i = 0; i < count; i++) {
+            cout << indices[i] << " ";
+        }
+        cout << endl;
+    } else {
+        cout << "Angka " << target << " tidak ditemukan dalam data." << endl;
+    }
+
+    return 0;
+}
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/4224ce16-f093-490c-8369-09c80d8a969f)
+
+Kode di atas merupakan kode program untuk melakukan pencarian nilai pada array `data` menggunakan algoritma sequential search dengan pengguna dapat memasukkan sendiri nilai yang ingin dicari (contoh diatas adalah angka 4).
+
+Pertama, variabel `count` diatur menjadi 0, program melakukan iterasi pada array `data` dengan menggunakan perulangan `for` untuk mencari kemunculan angka target. Jika angka target ditemukan pada indeks ke-i, maka indeks tersebut disimpan dalam `indices` dan nilai `count` ditambah satu.
+
+Pada fungsi `main`, program menghitung ukuran array `data` dengan membagi ukuran total dengan ukuran setiap elemen tunggalnya. Kemudian, program meminta pengguna untuk memasukkan angka target yang ingin dicari, lalu melakukan pencarian angka target dengan menggunakan fungsi `sequentialsearch`. 
+
+Program mengecek apakah angka target ditemukan setidaknya satu kali. Jika ya, prorgam akan mengembalikan angka 0 tanda bahwa program telah selesai dijalankan serta pada output akan ditampilkan jumlah kecunculan angka target beserta indeksnya. Jika tidak, program akan mencetak "Angka tidak ditemukan dalam data.".
 
 ### Full code Sreenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/e5a04487-d02a-4f3f-867e-07189b9c2c86)
+
+
+
 
 
 ## Kesimpulan
@@ -198,4 +289,3 @@ Kesimpulannya, pada algoritma searching adalah proses menemukan sebuah data yang
 
 [3] “Linear Search (With code).” https://www.programiz.com/dsa/linear-search
 
-[4] 
