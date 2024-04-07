@@ -150,7 +150,7 @@ Pertama array `data` diisi dengan nilai-nilai contoh dan panjangnya akan dihitun
 
 ## Unguided
 
-### 1. 
+### 1. Buatlah sebuah program untuk mencari sebuah huruf pada sebuah kalimat yang sudah di input dengan menggunakan Binary Search!
 
 ```C++
 
@@ -161,7 +161,8 @@ Pertama array `data` diisi dengan nilai-nilai contoh dan panjangnya akan dihitun
 #### Full code Screenshot:
 
 
-### 2. 
+### 2. Buatlah sebuah program yang dapat menghitung banyaknya huruf vocal dalam sebuah kalimat!
+
 
 ```C++
 
@@ -174,7 +175,7 @@ Pertama array `data` diisi dengan nilai-nilai contoh dan panjangnya akan dihitun
 
 
 
-### 3. 
+### 3. Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!
 
 ```C++
 
