@@ -152,12 +152,62 @@ Pertama array `data` diisi dengan nilai-nilai contoh dan panjangnya akan dihitun
 ### 1. Buatlah sebuah program untuk mencari sebuah huruf pada sebuah kalimat yang sudah di input dengan menggunakan Binary Search!
 
 ```C++
+#include <iostream>
+#include <string>
 
+using namespace std;
+
+// Fungsi untuk mencetak semua posisi kemunculan huruf dalam string
+void binarysearch(const string& str, char target) {
+    bool found = false;
+    cout << "Huruf \"" << target << "\" ditemukan pada indeks: ";
+    for (int i = 0; i < str.length(); ++i) {
+        if (tolower(str[i]) == tolower(target)) {
+            found = true;
+            cout << i << " ";
+        }
+    }
+    if (!found) {
+        cout << "tidak ditemukan";
+    }
+    cout << endl;
+}
+
+int main() {
+    string kalimat = "Saya belajar algoritma dan struktur data.";
+    char huruf;
+    
+    cout << "\nKalimat: " + kalimat << endl;
+    cout << "\nMasukkan huruf yang ingin dicari: ";
+    cin >> huruf;
+
+    // Mengubah huruf menjadi huruf kecil untuk pencarian yang tidak case-sensitive
+    huruf = tolower(huruf);
+
+    // Memanggil fungsi binarysearch untuk mencari dan mencetak semua posisi kemunculan huruf
+    binarysearch(kalimat, huruf);
+
+    return 0;
+}
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/756f1114-5b8d-4ae4-ada7-dff4898bbe39)
+
+
+Kode di atas adalah kode program yang dapat mencari dan mencetak berapa saja kemunculan huruf yang akan dicari oleh pengguna dalam sebuah kalimat yang sudah diinputkan beserta indeksnya menggunakan algoritma binary search.
+
+Pertama, program akan mendefinisikan fungsi `binarysearch` dengan dua parameter yaitu `str` (tempat pencarian dilakukan) dan `target` (huruf yang ingin dicari), variabel `found` diinisialisasi sebagai `false` yang menandakan bahwa huruf belum ditemukan. Kemudian, setelah pengguna memasukkan huruf yang akan dicari, program akan mencetak pesan "ditemukan pada indeks:" setelah itu program akan melakukan perulangan dari indeks awal hingga indeks akhir. 
+
+Pada tiap itersi perulangan, program akan membandingkan karakter pada indeks saat ini dengan huruf yang dicari. Jika karakternya sama, maka program akan mencetak indeksnya pada output. Jika program tidak menemukan huruf yang dicari, program akan mencetak pesan "tidak ditemukan".
+
+Pada fungsi main, variabel `kalimat` yang bertipe string diisi dengan kalimat contoh. Selanjutnya program meminta pengguna untuk memasukkan huruf yang akan dicari, lalu mengubah hurufnya menjadi huruf kecil menggunakan fungsi `tolower`. Kemudian, program memanggil fungsi `binarysearch` untuk mencari dan mencetak semua indeks posisi kemunculan huruf yang diinputkan oleh pengguna dalam string `kalimat`.
+
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/65ba7e61-1697-4f35-905a-c91d6ca8f53f)
+
+
 
 
 ### 2. Buatlah sebuah program yang dapat menghitung banyaknya huruf vocal dalam sebuah kalimat!
