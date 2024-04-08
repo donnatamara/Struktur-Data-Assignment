@@ -3,9 +3,13 @@
 <p align="center">Donna Nur Tamara</p>
 
 ## Dasar Teori
-Searching atau dapat disebut pencarian adalah suatu proses untuk mengumpulkan sejumlah informasi didalam pengingat computer dan kemudian mencari kembali informasi yang diperlukan secepat mungkin. Ada beberapa cara dalam pencarian sebuah data [1]. Beberapa jenis searching yang umum diketahui yaitu:
+*Searching* atau dapat disebut pencarian adalah suatu proses untuk mengumpulkan sejumlah informasi didalam pengingat komputer dan kemudian mencari kembali informasi yang diperlukan secepat mungkin. Ada beberapa cara dalam pencarian sebuah data [1]. Hasil pencarian adalah salah satu dari tiga keadaan: data ditemukan, data ditemukan lebih dari satu, atau data tidak ditemukan.
+
+Searching juga dapat disebut sebuah proses pencarian suatu data dalam array dengan cara mengecek satu demi satu pada setiap indeks bari atau setiap indeks kolomnya dengan menggunakan teknik perulangan untuk melakukan pencarian data.
+
+Beberapa jenis searching yang umum diketahui yaitu:
 ### Binary Search
-Binary search merupakan sebuah teknik pencarian pada array/list dengan elemen terurut dengan menghapus bagian data pada setiap langkah, dengan cara menentukan nilai tengah (median) dari data, lalu melakukan perbandingan untuk menentukan apakah nilai yang dicari berada pada sebelum atau sesudahnya, lalu menentukan bagian lainnya dengan cara yang sama[2].
+Binary search merupakan sebuah teknik pencarian pada array/list dengan elemen terurut dengan menghapus bagian data pada setiap langkah, dengan cara menentukan nilai tengah (median) dari data, lalu melakukan perbandingan untuk menentukan apakah nilai yang dicari berada pada sebelum atau sesudahnya, lalu menentukan bagian lainnya dengan cara yang sama [2].
 
 Biasanya algoritma ini sering digabungkan dengan algoritma sorting karena data yang akan digunakan harus sudah terurut terlebih dahulu. Langkah-langkah pengurutannya adalah:
 1. Urutkan data dalam array secara terurut.
