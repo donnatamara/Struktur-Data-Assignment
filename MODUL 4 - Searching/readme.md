@@ -3,11 +3,14 @@
 <p align="center">Donna Nur Tamara</p>
 
 ## Dasar Teori
-Searching atau dapat disebut pencarian adalah suatu proses untuk mengumpulkan sejumlah informasi didalam pengingat computer dan kemudian mencari kembali informasi yang diperlukan secepat mungkin. Ada beberapa cara dalam pencarian sebuah data [1]. Beberapa jenis searching yang umum diketahui yaitu:
-### Binary Search
-Binary search merupakan sebuah teknik pencarian pada array/list dengan elemen terurut dengan menghapus bagian data pada setiap langkah, dengan cara menentukan nilai tengah (median) dari data, lalu melakukan perbandingan untuk menentukan apakah nilai yang dicari berada pada sebelum atau sesudahnya, lalu menentukan bagian lainnya dengan cara yang sama[2].
+*Searching* atau dapat disebut pencarian adalah suatu proses untuk mengumpulkan sejumlah informasi didalam pengingat komputer dan kemudian mencari kembali informasi yang diperlukan secepat mungkin. Ada beberapa cara dalam pencarian sebuah data [1]. Hasil pencarian adalah salah satu dari tiga keadaan: data ditemukan, data ditemukan lebih dari satu, atau data tidak ditemukan.
 
-Biasanya algoritma ini sering digabungkan dengan algoritma sorting karena data yang akan digunakan harus sudah terurut terlebih dahulu. Langkah-langkah pengurutannya adalah:
+*Searching* juga dapat disebut sebuah proses pencarian suatu data dalam array dengan cara mengecek satu demi satu pada setiap indeks bari atau setiap indeks kolomnya dengan menggunakan teknik perulangan untuk melakukan pencarian data. Terdapat 2 metode pada algoritma *searching*, yaitu:
+
+### *Binary Search*
+*Binary search* merupakan sebuah teknik pencarian pada array/list dengan elemen terurut dengan menghapus bagian data pada setiap langkah, dengan cara menentukan nilai tengah (median) dari data, lalu melakukan perbandingan untuk menentukan apakah nilai yang dicari berada pada sebelum atau sesudahnya, lalu menentukan bagian lainnya dengan cara yang sama [2].
+
+Biasanya algoritma ini sering digabungkan dengan algoritma *sorting* karena data yang akan digunakan harus sudah terurut terlebih dahulu. Langkah-langkah pengurutannya adalah:
 1. Urutkan data dalam array secara terurut.
 2. Tentukan nilai tengah dari array.
 3. Bandingkan nilai tengah dengan nilai yang dicari.
@@ -15,14 +18,14 @@ Biasanya algoritma ini sering digabungkan dengan algoritma sorting karena data y
 5. Jika nilai tengah lebih besar dari nilai yang dicari, maka cari nilai di setengah kiri array.
 6. Ulangi langkah 2-6 sampai nilai yang dicari ditemukan atau tidak ditemukan [2].
 
-### Sequential Search
-Sequential search atau dapat disebut linear search adalah teknik pencarian data dalam array dengan membaca satu demi satu dan diurutkan dari indeks pertama hingga indeks terakhir, maupun sebaliknya. Algoritma ini biasa digunakan untuk data berpola acak dan tidak cocok digunakan untuk array berukuran besar. 
+### *Sequential Search*
+*Sequential search* disebut juga *linear search* adalah teknik pencarian data dalam array dengan membaca satu demi satu dan diurutkan dari indeks pertama hingga indeks terakhir, maupun sebaliknya. Algoritma ini biasa digunakan untuk data berpola acak dan tidak cocok digunakan untuk array berukuran besar. 
 
 Pencarian dimulai dari elemen pertama, kemudian periksa apakah cocok dengan angka yang sedang dicari, jika tidak maka periksa dengan elemen berikutnya. Jika bertemu dengan angka yang sedang dicari maka pencarian selesai [3].
 
 
 ## Guided
-### 1. Buatlah sebuah project dengan menggunakan sequential search sederhana untuk melakukan pencarian data.  
+### 1. Buatlah sebuah project dengan menggunakan *sequential search* sederhana untuk melakukan pencarian data.  
 ```C++
 #include <iostream>
 
@@ -62,7 +65,7 @@ kode diatas merupakan kode program yang melakukan pencarian data menggunakan seq
 
 Pertama program akan mengisi array `data` dengan nilai-nilai yang telah ditemukan. Kemudian program membandingkan nilai `cari` dengan setiap elemen array `data` dari elemen pertama hingga elemen terakhir menggunakan perulangan `for`. Jika nilai yang dicari ditemukan, maka variabel `ketemu` akan diubah menjadi `true` dan perulangan dihentikan. Program menampilkan hasilnya, jika nilai yang dicari ditemukan maka indeksnya juga ditampilkan. Jika nilai tidak ditemukan, maka pesan "tidak dapat ditemukan" akan ditampilkan.
 
-### 2. Buatlah sebuah project untuk melakukan pencarian data dengan menggunakan Binary Search.
+### 2. Buatlah sebuah project untuk melakukan pencarian data dengan menggunakan *Binary Search*.
 
 ```C++
 #include <iostream>
@@ -140,24 +143,72 @@ int main() {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/c5fbb13f-7fbf-47f7-881c-c8d31eb71543)
 
-Kode diatas adalah program pencarian data dengan menggunakan selection sort binary search untuk mencari suatu nilai dalam sebuah array. Fungsi selection Sort digunakan untuk mengurutkan data, sedangkan binary search digunakan untuk mencari nilai yang diurutkan.
+Kode di atas adalah program pencarian data dengan menggunakan *selection sort* dan *binary search* untuk mencari suatu nilai dalam sebuah array. Fungsi *selection sort* digunakan untuk mengurutkan data, sedangkan *binary search* digunakan untuk mencari nilai yang diurutkan.
 
 Menggunakan library `iomanip` yang berguna untuk memformat output (seperti setw untuk mengatur lebar), `conio.h` dengan fungsi `_getche()` diatas berguna untuk membaca satu karakter dari keyboard tanpa menampilkannya di layar.
 
-Pertama array `data` diisi dengan nilai-nilai contoh dan panjangnya akan dihitung, dengan variabel `cari` sebagai penyimpan nilai yang ingin dicari. Kemudian data awal pada array `data` ditampilkan menggunakan looping dan fungsi `setw` guna memformat outputnya nanti. Lalu, pengguna diminta untuk memasukkan nilai yang ingin dicari. Program akan mengurutkan data dalam array `data` secara menaik dengan menggunakan fungsi `binarysearch`. Program akan mencetak pesan bahwa angka yang dicari ditemukan atau tidak serta menampilkan data setelah diurutkan. Program mengembalikan `EXIT_SUCCESS` yang artinya program telah selesai dijalankan.
+Pertama array `data` diisi dengan nilai-nilai contoh dan panjangnya akan dihitung, dengan variabel `cari` sebagai penyimpan nilai yang ingin dicari. Kemudian data awal pada array `data` ditampilkan menggunakan *looping* dan fungsi `setw` guna memformat outputnya nanti. Lalu, pengguna diminta untuk memasukkan nilai yang ingin dicari. Program akan mengurutkan data dalam array `data` secara menaik dengan menggunakan fungsi `binarysearch`. Program akan mencetak pesan bahwa angka yang dicari ditemukan atau tidak serta menampilkan data setelah diurutkan. Program mengembalikan `EXIT_SUCCESS` yang artinya program telah selesai dijalankan.
 
 
 ## Unguided
 
-### 1. Buatlah sebuah program untuk mencari sebuah huruf pada sebuah kalimat yang sudah di input dengan menggunakan Binary Search!
+### 1. Buatlah sebuah program untuk mencari sebuah huruf pada sebuah kalimat yang sudah di input dengan menggunakan *Binary Search*!
 
 ```C++
+#include <iostream>
+#include <string>
 
+using namespace std;
+
+// Fungsi untuk mencetak semua posisi kemunculan huruf dalam string
+void binarysearch(const string& str, char target) {
+    bool found = false;
+    cout << "Huruf \"" << target << "\" ditemukan pada indeks: ";
+    for (int i = 0; i < str.length(); ++i) {
+        if (tolower(str[i]) == tolower(target)) {
+            found = true;
+            cout << i << " ";
+        }
+    }
+    if (!found) {
+        cout << "tidak ditemukan";
+    }
+    cout << endl;
+}
+
+int main() {
+    string kalimat = "Saya belajar algoritma dan struktur data.";
+    char huruf;
+    
+    cout << "\nKalimat: " + kalimat << endl;
+    cout << "\nMasukkan huruf yang ingin dicari: ";
+    cin >> huruf;
+
+    // Mengubah huruf menjadi huruf kecil untuk pencarian yang tidak case-sensitive
+    huruf = tolower(huruf);
+
+    // Memanggil fungsi binarysearch untuk mencari dan mencetak semua posisi kemunculan huruf
+    binarysearch(kalimat, huruf);
+
+    return 0;
+}
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/756f1114-5b8d-4ae4-ada7-dff4898bbe39)
+
+
+Kode di atas adalah kode program yang dapat mencari dan mencetak berapa saja kemunculan huruf yang akan dicari oleh pengguna dalam sebuah kalimat yang sudah diinputkan beserta indeksnya menggunakan algoritma *binary search*.
+
+Pertama, program akan mendefinisikan fungsi `binarysearch` dengan dua parameter yaitu `str` (tempat pencarian dilakukan) dan `target` (huruf yang ingin dicari), variabel `found` diinisialisasi sebagai `false` yang menandakan bahwa huruf belum ditemukan. Kemudian, setelah pengguna memasukkan huruf yang akan dicari, program akan mencetak pesan "ditemukan pada indeks:" setelah itu program akan melakukan perulangan dari indeks awal hingga indeks akhir. 
+
+Pada tiap itersi perulangan, program akan membandingkan karakter pada indeks saat ini dengan huruf yang dicari. Jika karakternya sama, maka program akan mencetak indeksnya pada output. Jika program tidak menemukan huruf yang dicari, program akan mencetak pesan "tidak ditemukan".
+
+Pada fungsi main, variabel `kalimat` yang bertipe string diisi dengan kalimat contoh. Selanjutnya program meminta pengguna untuk memasukkan huruf yang akan dicari, lalu mengubah hurufnya menjadi huruf kecil menggunakan fungsi `tolower`. Kemudian, program memanggil fungsi `binarysearch` untuk mencari dan mencetak semua indeks posisi kemunculan huruf yang diinputkan oleh pengguna dalam string `kalimat`.
+
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/65ba7e61-1697-4f35-905a-c91d6ca8f53f)
 
 
 ### 2. Buatlah sebuah program yang dapat menghitung banyaknya huruf vocal dalam sebuah kalimat!
@@ -216,7 +267,7 @@ Program menampilkan jumlah huruf vokal yang ditemukan dan jika ditemukan, progra
 
 
 
-### 3. Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!
+### 3. Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma *Sequential Search*!
 
 ```C++
 #include <iostream>
@@ -274,12 +325,10 @@ Program mengecek apakah angka target ditemukan setidaknya satu kali. Jika ya, pr
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/e5a04487-d02a-4f3f-867e-07189b9c2c86)
 
 
-
-
-
 ## Kesimpulan
 
-Kesimpulannya, pada algoritma searching adalah proses menemukan sebuah data yang diinginkan dalam sebuah kumpulan data. Memiliki dua jenis yang umum diketahui yaitu binary search dan sequential search. Binary search merupakan pencarian dengan membagi array atau list menjadi dua bagian secara berulang dan membandingkan elemen yang dicari dengan elemen tengah. Sedangkan sequential search atau dapat disebut linear search merupakan pencarian dengan membandingkan elemen yang dicari dengan setiap elemen dalam array secara berurutan.
+Kesimpulannya, pada algoritma *searching* adalah proses menemukan sebuah data yang diinginkan dalam sebuah kumpulan data. Memiliki dua metode yang umum diketahui yaitu *binary search* dan *sequential search*. *Binary search* merupakan pencarian dengan membagi array atau list menjadi dua bagian secara berulang dan membandingkan elemen yang dicari dengan elemen tengah. Sedangkan *sequential search* atau dapat disebut juga dengan *linear search merupakan pencarian dengan membandingkan elemen yang dicari dengan setiap elemen dalam array secara berurutan.
+
 
 ## Referensi
 
