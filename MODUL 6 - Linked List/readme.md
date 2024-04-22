@@ -36,7 +36,10 @@ Kodingan di atas adalah program
 
 ## Unguided
 
-### 1. 
+### 1. Buatlah program menu Single Linked List Non-Circular untuk menyimpan Nama dan usia mahasiswa, dengan menggunakan inputan dari user. Lakukan operasi berikut:
+
+a.	Masukkan data sesuai urutan berikut. (Gunakan insert depan, belakang atau tengah). Data pertama yang dimasukkan adalah nama dan usia anda.
+
 
 ```C++
 ```
