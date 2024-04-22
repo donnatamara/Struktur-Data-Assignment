@@ -223,6 +223,324 @@ int main() {
     clearList();
     return 0;
 }
+```
+
+#### Output:
+
+
+Kodingan di atas adalah program 
+
+#### Full code Screenshot:
+
+## 2. Single and Double Linked List
+
+```C++
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* prev;
+    Node* next;
+};
+
+class DoublyLinkedList {
+public:
+    Node* head;
+    Node* tail;
+
+    DoublyLinkedList() {
+        head = nullptr;
+        tail = nullptr;
+    }
+
+    void push(int data) {
+        Node* newNode = new Node;
+        newNode->data = data;
+        newNode->prev = nullptr;
+        newNode->next = head;
+        if (head != nullptr) {
+            head->prev = newNode;
+        } else {
+            tail = newNode;
+        }
+        head = newNode;
+    }
+
+    void pop() {
+        if (head == nullptr) {
+            return;
+        }
+        Node* temp = head;
+        head = head->next;
+        if (head != nullptr) {
+            head->prev = nullptr;
+        } else {
+            tail = nullptr;
+        }
+        delete temp;
+    }
+
+    bool update(int oldData, int newData) {
+        Node* current = head;
+        while (current != nullptr) {
+            if (current->data == oldData) {
+                current->data = newData;
+                return true;
+            }
+            current = current->next;
+        }
+        return false;
+    }
+
+    void deleteAll() {
+        Node* current = head;
+        while (current != nullptr) {
+            Node* temp = current;
+            current = current->next;
+            delete temp;
+        }
+        head = nullptr;
+        tail = nullptr;
+    }
+
+    void display() {
+        Node* current = head;
+        while (current != nullptr) {
+            cout << current->data << " ";
+            current = current->next;
+        }
+        cout << endl;
+    }
+};
+
+int main() {
+    DoublyLinkedList list;
+    while (true) {
+        cout << "1. Add data" << endl;
+        cout << "2. Delete data" << endl;
+        cout << "3. Update data" << endl;
+        cout << "4. Clear data" << endl;
+        cout << "5. Display data" << endl;
+        cout << "6. Exit" << endl;
+        int choice;
+        cout << "Enter your choice: ";
+        cin >> choice;
+        switch (choice) {
+            case 1: {
+                int data;
+                cout << "Enter data to add: ";
+                cin >> data;
+                list.push(data);
+                break;
+            }
+            case 2: {
+                list.pop();
+                break;
+            }
+            case 3: {
+                int oldData, newData;
+                cout << "Enter old data: ";
+                cin >> oldData;
+                cout << "Enter new data: ";
+                cin >> newData;
+                bool updated = list.update(oldData, newData);
+                if (!updated) {
+                    cout << "Data not found" << endl;
+                }
+                break;
+            }
+            case 4: {
+                list.deleteAll();
+                break;
+            }
+            case 5: {
+                list.display();
+                break;
+            }
+            case 6: {
+                return 0;
+            }
+            default: {
+                cout << "Invalid choice" << endl;
+                break;
+            }
+        }
+    }
+    return 0;
+}
+```
+#### Output:
+
+
+Kodingan di atas adalah program 
+
+#### Full code Screenshot:
+
+## 3. Circular and Non Circular Linked List
+
+```C++
+#include <iostream>
+using namespace std;
+
+/// PROGRAM SINGLE LINKED LIST CIRCULAR
+
+// Deklarasi Struct Node
+struct Node {
+    string data;
+    Node *next;
+};
+
+Node *head, *tail, *baru, *bantu, *hapus;
+
+void init() {
+    head = NULL;
+    tail = head;
+}
+
+// Pengecekan
+int isEmpty() {
+    if (head == NULL)
+        return 1; // true 
+    else
+        return 0; // false
+}
+
+// Buat Node Baru
+void buatNode(string data) {
+    baru = new Node;
+    baru->data = data;
+    baru->next = NULL;
+}
+
+// Hitung List
+int hitungList() {
+    bantu = head;
+    int jumlah = 0;
+
+    while (bantu != NULL) {
+        jumlah++;
+        bantu = bantu->next;
+    }
+
+    return jumlah;
+}
+
+// Tambah Depan 
+void insertDepan(string data) {
+    // Buat Node baru
+    buatNode(data);
+
+    if (isEmpty() == 1) {
+        head = baru;
+        tail = head;
+        baru->next = head;
+    } else {
+        while (tail->next != head) {
+            tail = tail->next;
+        }
+
+        baru->next = head;
+        head = baru;
+        tail->next = head;
+    }
+}
+
+// Tambah Belakang
+void insertBelakang(string data) {
+    // Buat Node Baru
+    buatNode(data);
+
+    if (isEmpty() == 1) {
+        head = baru;
+        tail = head;
+        baru->next = head;
+    } else {
+        while (tail->next != head) {
+            tail = tail->next;
+        }
+
+        tail->next = baru;
+        baru->next = head;
+    }
+}
+
+// Tambah Tengah
+void insertTengah(string data, int posisi) {
+    if (isEmpty() == 1) {
+        head = baru;
+        tail = head;
+        baru->next = head;
+    } else {
+        baru->data = data;
+
+        // transversing
+        int nomor = 1;
+        bantu = head;
+
+        while (nomor < posisi -1) {
+            bantu = bantu->next;
+            nomor++;
+        }
+
+        baru->next = bantu->next;
+        bantu->next = baru;
+    }
+}
+
+// Hapus Depab
+void hapusDepan() {
+    if (isEmpty() == 0) {
+        hapus = head;
+        tail = head;
+
+        if (hapus->next == head) {
+            head = NULL;
+            tail = NULL;
+            delete hapus;
+        } else {
+            while (tail->next != hapus) {
+                tail = tail->next;
+            }
+
+            head = head->next;
+            tail->next = head;
+            hapus->next = NULL;
+            delete hapus;
+        }
+    } else {
+        cout << "List masih kosong!" << endl;
+    }
+}
+
+// Hapus Belakang
+void hapusBelakang() {
+    if (isEmpty() == 0) {
+        hapus = head;
+        tail = head;
+
+        if (hapus->next == head) {
+            head = NULL;
+            tail = NULL;
+            delete hapus;
+        } else {
+            while (hapus->next != head) {
+                hapus = hapus->next;
+            }
+
+            while (tail->next != hapus) {
+                tail = tail->next;
+            }
+            
+            tail->next = head;
+            hapus->next = NULL;
+            delete hapus;
+        }
+    } else {
+        cout << "List masih kosong!" << endl;
+    }
+}
 
 // Hapus Tengah
 void hapusTengah(int posisi) {
@@ -299,13 +617,13 @@ int main() {
     return 0;
 }
 ```
-
 #### Output:
 
 
 Kodingan di atas adalah program 
 
 #### Full code Screenshot:
+
 
 ## Unguided
 
@@ -371,6 +689,119 @@ Pada menu 7, tampilan akhirnya akan menjadi seperti dibawah ini :
 Kodingan di atas adalah 
 
 #### Full code Screenshot:
+
+### 3. Buatlah program menu Linked List Non Circular untuk menyimpan Nama dan NIM mahasiswa, dengan menggunakan input dari user. 
+1. Buatlah menu untuk menambahkan, mengubah, menghapus, dan melihat Nama dan  NIM mahasiswa, berikut contoh tampilan output dari nomor 1:
+   • Tampilan Menu: 
+PROGRAM SINGLE LINKED LIST NON-CIRCULAR  
+1. Tambah Depan  
+2. Tambah Belakang  
+3. Tambah Tengah  
+4. Ubah Depan  
+5. Ubah Belakang  
+6. Ubah Tengah  
+7. Hapus Depan  
+8. Hapus Belakang  
+9. Hapus Tengah  
+10. Hapus List  
+11. TAMPILKAN  
+0. KELUAR  
+Pilih Operasi :
+    • Tampilan Operasi Tambah:
+-Tambah Depan 
+Masukkan Nama : 
+Masukkan NIM : 
+Data telah ditambahkan
+
+-Tambah Tengah 
+Masukkan Nama : 
+Masukkan NIM : 
+Masukkan Posisi : 
+Data telah ditambahkan
+
+• Tampilan Operasi Hapus: 
+-Hapus Belakang 
+Data (nama mahasiswa yang dihapus) berhasil dihapus
+
+
+-Hapus Tengah 
+Masukkan posisi : 
+Data (nama mahasiswa yang dihapus) berhasil dihapus
+
+
+• Tampilan Operasi Ubah: 
+-Ubah Belakang 
+Masukkan nama : 
+Masukkan NIM : 
+Data (nama lama) telah diganti dengan data (nama baru)
+
+
+-Ubah Belakang 
+Masukkan nama : 
+Masukkan NIM : 
+Masukkan posisi : 
+Data (nama lama) telah diganti dengan data (nama baru)
+
+
+• Tampilan Operasi Tampil Data: 
+DATA MAHASISWA 
+NAMA NIM 
+Nama1 NIM1 
+Nama2 NIM2
+*Buat tampilan output sebagus dan secantik mungkin sesuai kreatifitas anda  masing-masing, jangan terpaku pada contoh output yang diberikan
+
+```C++
+```
+
+#### Output:
+
+
+Kodingan di atas adalah program yang 
+
+#### Full code Screenshot:
+
+### 4. Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu  tampilkan data yang telah dimasukkan. (Gunakan insert depan, belakang atau tengah) 
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/1e284aab-e2ce-41de-966d-4405d7c58fdf)
+
+```C++
+```
+
+#### Output:
+
+
+Kodingan di atas adalah program yang 
+
+#### Full code Screenshot:
+
+### 5. Lakukan perintah berikut: 
+a) Tambahkan data berikut diantara Farrel dan Denis: 
+Wati 2330004 
+b) Hapus data Denis 
+c) Tambahkan data berikut di awal: 
+Owi 2330000 
+d) Tambahkan data berikut di akhir: 
+David 23300100 
+e) Ubah data Udin menjadi data berikut: 
+Idin 23300045 
+f) Ubah data terkahir menjadi berikut: 
+Lucy 23300101 
+g) Hapus data awal 
+h) Ubah data awal menjadi berikut: 
+Bagas 2330002 
+i) Hapus data akhir 
+j) Tampilkan seluruh data
+
+```C++
+```
+
+#### Output:
+
+
+Kodingan di atas adalah program yang 
+
+#### Full code Screenshot:
+ 
+
 
 ## Kesimpulan
 
