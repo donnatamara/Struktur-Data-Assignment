@@ -4,7 +4,11 @@
 
 ## Dasar Teori
 
-### 1. 
+### 1. Variabel
+Variabel adalah tempat untuk menampung atau menyimpan sebuah data dengan tipe data yang sudah ditentukan.
+
+### 2. Struct
+Struct adalah
 
 
 ## Guided
@@ -170,6 +174,4 @@ Kesimpulannya,
 
 ## Referensi
 
-[1] R. Hidayat, "Pengertian Tipe Data dan Penggunaannya dalam Bahasa Pemrograman," J. Informatika dan Teknologi Univ. Gunadarma, 2020.
-[2] A. Aristo, “Swift: Class vs. Struct - Dipantry - Medium,” Medium, Dec. 28, 2021. [Online]. Available: https://medium.com/dipantry/swift-class-vs-struct-c0b279b1dfaf.
-[3] P. Van Weert and M. Gregoire, C++17 Standard Library Quick Reference. Apress, 2019.
+[1] 
