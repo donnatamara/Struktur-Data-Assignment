@@ -3,9 +3,16 @@
 <p align="center">Donna Nur Tamara</p>
 
 ## Dasar Teori
+Linked list merupakan kumpulan node yang bersama-sama membentuk urutan linier, setiap node menyimpan sebuah pointer, yang biasanya menggunakan 'next' ke node berikutnya dalam daftar, setiap node juga menyimpan elemen terkaitnya [1]. 
 
-### 1. 
-
+### 1. Linked List Non Circular
+Linked list non circular adalah
+### 2. Linked List Circular
+Linked list circular adalah
+### 3. Single Linked List
+Single linked list adalah
+### 4. Double Lunked List
+Double linked list adalah
 
 ## Guided
 
@@ -647,20 +654,6 @@ Kodingan di atas adalah program yang
 
 #### Full code Screenshot:
 
-
-### 2. 
-
-
-```C++
-```
-
-#### Output:
-
-
-Kodingan diatas adlaha program 
-
-#### Full code Screenshot:
-
 ### 2. Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.
 
 Case:
@@ -809,6 +802,5 @@ Kesimpulannya,
 
 ## Referensi
 
-[1] R. Hidayat, "Pengertian Tipe Data dan Penggunaannya dalam Bahasa Pemrograman," J. Informatika dan Teknologi Univ. Gunadarma, 2020.
-[2] A. Aristo, “Swift: Class vs. Struct - Dipantry - Medium,” Medium, Dec. 28, 2021. [Online]. Available: https://medium.com/dipantry/swift-class-vs-struct-c0b279b1dfaf.
-[3] P. Van Weert and M. Gregoire, C++17 Standard Library Quick Reference. Apress, 2019.
+[1] Goodrich, M. T., Tamassia, R., & Mount, D. M. (2019). Data structures and algorithms in C++. John Wiley & Sons.
+[2] 
