@@ -6,7 +6,7 @@
 Linked list merupakan kumpulan node yang bersama-sama membentuk urutan linier, setiap node menyimpan sebuah pointer, yang biasanya menggunakan 'next' ke node berikutnya dalam daftar, setiap node juga menyimpan elemen terkaitnya [1]. 
 
 ### 1. Linked List Non Circular
-Linked list non circular adalah
+Linked list non circular adalah 
 ### 2. Linked List Circular
 Linked list circular adalah
 ### 3. Single Linked List
