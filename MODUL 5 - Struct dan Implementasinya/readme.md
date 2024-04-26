@@ -5,10 +5,12 @@
 ## Dasar Teori
 
 ### 1. Variabel
-Variabel adalah tempat untuk menampung atau menyimpan sebuah data dengan tipe data yang sudah ditentukan.
+Variabel adalah tempat untuk menampung atau menyimpan sebuah data dengan tipe data yang sudah ditentukan. Variabel hanya dapat menampung sebuah nilai, tidak dapat diisi lebih dari satu. Variabel memiliki 2 jenis yaitu:
+- Variabel lokal: dibuat didalam fungsi, dan dapat dipanggil hanya oleh fungsi yang mendeklarasikannya.
+- Variabel global: dibuat diluar fungsi, dapat dipanggil oleh semua fungsi yang ada didalam program.
 
 ### 2. Struct
-Struct adalah
+Struct adalah tipe data bentukan yang terdiir dari sejumlah tipe data standar maupun tipe data bentukan lainnya yang telah terdefinikasi sebelumya. Keyword yang digunakan untuk mendeklarasikan sebuah struktur adalah struct. 
 
 
 ## Guided
