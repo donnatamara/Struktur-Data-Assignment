@@ -722,20 +722,29 @@ Kodingan di atas adalah program yang
 
 ### 3. Lakukan perintah berikut: 
 a) Tambahkan data berikut diantara Farrel dan Denis: 
-Wati 2330004 
-b) Hapus data Denis 
+Wati 2330004
+
+b) Hapus data Denis
+
 c) Tambahkan data berikut di awal: 
-Owi 2330000 
+Owi 2330000
+
 d) Tambahkan data berikut di akhir: 
-David 23300100 
+David 23300100
+
 e) Ubah data Udin menjadi data berikut: 
-Idin 23300045 
+Idin 23300045
+
 f) Ubah data terkahir menjadi berikut: 
 Lucy 23300101 
+
 g) Hapus data awal 
+
 h) Ubah data awal menjadi berikut: 
 Bagas 2330002 
+
 i) Hapus data akhir 
+
 j) Tampilkan seluruh data
 
 ```C++
