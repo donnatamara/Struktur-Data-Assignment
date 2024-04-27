@@ -160,12 +160,13 @@ Kodingan di atas adalah program yang
 
 
 ```C++
+
 ```
 
 #### Output:
 
 
-Kodingan diatas adlaha program 
+Kode diatas yaitu contoh pendeklarasian variabel `favorit` sebagai array dari struct `buku`, mengisi data ke dalamnya dan menampilkannya. Jika dideklarasi variabel `favorit` dibuat berjenis array dari struct `buku` dengan ukuran `jumlah_buku`, maka setiap elemen pada array `favorit` akan menjadi satu dengan judul, pengarang, penerbit, tebal halaman, dan harga buku yang berbeda-beda. Ynag kemudian diisi dengan data untuk setiap elemennya. Kemudian, program akan menampilkan informasi buku focorit dengan menggunakan loop `for` unutk mengakses dan menampilkan data dari setiap elemen array `favorit`.
 
 #### Full code Screenshot:
 
