@@ -6,13 +6,16 @@
 Linked list merupakan kumpulan node yang bersama-sama membentuk urutan linier, setiap node menyimpan sebuah pointer, yang biasanya menggunakan 'next' ke node berikutnya dalam daftar, setiap node juga menyimpan elemen terkaitnya [1]. 
 
 ### 1. Linked List Non Circular
-Linked list non circular adalah 
+Linked list non circular adalah struktur data dinamis yang terdiri dari node-node yang saling terhubung satu sama lain dengan bantuan sebuah pointer. Setiap node memiliki dua bagian utama yaitu data dan pinter yang menunjuk ke node berikutnya. Linked list efisien untuk menyimpan dan mengelola data dalam program C++ untuk pemula [2].
+
 ### 2. Linked List Circular
-Linked list circular adalah
+Linked list circular adalah jenis linked list yang terakhir mengarah ke node pertama, membuat struktur lingkaran, artinya pointer next dari node terakhir diatur ke alamat node pertama, membentuk sebuah loop. 
+
 ### 3. Single Linked List
-Single linked list adalah
-### 4. Double Lunked List
-Double linked list adalah
+Single linked list adalah struktur data yang terdiri dari node-node yang saling terhubung, dimana setiap node memiliki data dan referensi kek node berikutnya dalam urutan. Single linked list biasanya dimulai dengan deklarasi node pertama dan dapat digunakan untuk berbagai keperluan dalam pemrograman. 
+
+### 4. Double Linked List
+Double linked list adalah struktur data linear yang terdiri dari node yang saling terhubung satu sama lain, dimana setiap node memiliki tiga elemen yaitu data sebagai penyimpan nilai yang ingin direpresentasikan, pointer sebelumnya (prev) digunakan untuk menunjuk ke node sebelumnya dalam daftar dan pinter selanjutnya (next) digunakan untuk menunjuk ke node selanjutnya dalam daftar [3].
 
 ## Guided
 
@@ -803,4 +806,7 @@ Kesimpulannya,
 ## Referensi
 
 [1] Goodrich, M. T., Tamassia, R., & Mount, D. M. (2019). Data structures and algorithms in C++. John Wiley & Sons.
-[2] 
+
+[2] A. Agus Priyono. Pemrograman C++ untuk Pemula. 2020.
+
+[3] Tedi Suryadi. (2021). Struktur Data dan Algoritma dengan C++. Bandung: Informatika.
