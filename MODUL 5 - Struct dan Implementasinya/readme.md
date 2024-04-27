@@ -5,12 +5,16 @@
 ## Dasar Teori
 
 ### 1. Variabel
-Variabel adalah tempat untuk menampung atau menyimpan sebuah data dengan tipe data yang sudah ditentukan. Variabel hanya dapat menampung sebuah nilai, tidak dapat diisi lebih dari satu. Variabel memiliki 2 jenis yaitu:
-- Variabel lokal: dibuat didalam fungsi, dan dapat dipanggil hanya oleh fungsi yang mendeklarasikannya.
+Variabel adalah tempat untuk menampung atau menyimpan sebuah data dengan tipe data yang sudah ditentukan. Variabel hanya dapat menampung sebuah nilai, tidak dapat diisi lebih dari satu. variabel adalah simbol yang digunakan untuk menyimpan nilai. 
+
+Variabel adalah lokasi penyimpanan dalam memori komputer yang menyimpan nilai. Dalam pemrograman, variabel digunakan untuk menyimpan data yang dapat dimanipulasi dan dirujuk dalam sebuah program. Mereka memiliki tipe data tertentu dan pengidentifikasi unik, memungkinkan para pemrogram untuk bekerja dengan berbagai jenis informasi secara efisien [1]. Variabel memiliki 2 jenis yaitu:
+- Variabel lokal: dibuat didalam fungsi, dan dapat dipanggil hanya oleh fungsi yang mendeklarasikannya. Variabel lokal dalam C++ adalah variabel yang dideklarasikan dalam fungsi atau blok kode yang berbeda dengan variabel global. Variabel lokal hanya dapat diakses dalam fungsi atau blok kode di mana mereka dideklarasikan dan tidak dapat diakses dari luar fungsi atau blok kode tersebut [2].
 - Variabel global: dibuat diluar fungsi, dapat dipanggil oleh semua fungsi yang ada didalam program.
 
 ### 2. Struct
-Struct adalah tipe data bentukan yang terdiir dari sejumlah tipe data standar maupun tipe data bentukan lainnya yang telah terdefinikasi sebelumya. Keyword yang digunakan untuk mendeklarasikan sebuah struktur adalah struct. 
+Struct adalah tipe data bentukan yang terdiir dari sejumlah tipe data standar maupun tipe data bentukan lainnya yang telah terdefinikasi sebelumya. Keyword yang digunakan untuk mendeklarasikan sebuah struktur adalah struct. Struct dalam pemrograman C++ digunakan untuk membentuk tipe data dengan anggota (member) tertentu. Pendeklarasian struct dilakukan dengan menentukan anggota-anggotanya, seperti variabel-variabel yang akan digunakan dalam program. Sebagai contoh, dalam struct tgl, terdapat anggota hari, bulan, dan tahun [2].
+
+Struct dalam bahasa C++ adalah struktur data yang memungkinkan terjadinya pembentukan tipe data baru dengan menggabungkan berbagai macam variabel dengan tipe data berbeda yang tersedia dalam C++. Tipe data yang baru, dapat dibentuk di luar tipe data yang sudah ada dengan menggabungkan beberapa tipe data tersebut sesuai dengan kebutuhan program atau aplikasi yang dirancang [3].
 
 
 ## Guided
@@ -298,4 +302,7 @@ Kesimpulannya,
 
 ## Referensi
 
-[1] 
+[1] S. Anam, I. Yanti, Z. Fitria, U. Habibah, "Cara mudah belajar bahasa pemrograman C++," UB Press, 2021. 
+[2] C. Ramadhani, S.T., M.Eng, "Algoritma Pemrograman dan Struktur Data Menggunakan C++," Andi Publisher, 2019.
+[3] M. T. D. Putra, Munawir, and A. R. Yuniarti, "Belajar Pemrograman Lanjut dengan C++," Widina Media Utama, 2020.
+[4] 
