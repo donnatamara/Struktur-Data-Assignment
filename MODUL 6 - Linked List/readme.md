@@ -637,56 +637,7 @@ Kodingan di atas adalah program
 
 ## Unguided
 
-### 1. Buatlah program menu Single Linked List Non-Circular untuk menyimpan Nama dan usia mahasiswa, dengan menggunakan inputan dari user. Lakukan operasi berikut:
-
-a.	Masukkan data sesuai urutan berikut. (Gunakan insert depan, belakang atau tengah). Data pertama yang dimasukkan adalah nama dan usia anda.
-![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/8f5c97d5-01fa-460c-9679-6cc09f5b57ab)
-b.	Hapus data Akechi
-c.	Tambahkan data berikut diantara John dan Jane : Futaba	18
-d.	Tambahkan data berikut diawal : Igor	20
-e.	Ubah data Michael menjadi : Reyn	18
-f.	Tampilkan seluruh data
-
-```C++
-```
-
-#### Output:
-
-
-Kodingan di atas adalah program yang 
-
-#### Full code Screenshot:
-
-### 2. Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.
-
-Case:
-1.	Tambahkan produk Azarine dengan harga 65000 diantara Somethinc dan Skintific
-2.	Hapus produk wardah
-3.	Update produk Hanasui menjadi Cleora dengan harga 55.000
-4.	Tampilkan menu seperti dibawah ini
-  Toko Skincare Purwokerto
-    1.	Tambah Data
-    2.	Hapus Data
-    3.	Update Data
-    4.	Tambah Data Urutan Tertentu
-    5.	Hapus Data Urutan Tertentu
-    6.	Hapus Seluruh Data
-    7.	Tampilkan Data
-    8.	Exit
-Pada menu 7, tampilan akhirnya akan menjadi seperti dibawah ini :
-
-```C++
-
-```
-
-#### Output:
-
-
-Kodingan di atas adalah 
-
-#### Full code Screenshot:
-
-### 3. Buatlah program menu Linked List Non Circular untuk menyimpan Nama dan NIM mahasiswa, dengan menggunakan input dari user. 
+### 1. Buatlah program menu Linked List Non Circular untuk menyimpan Nama dan NIM mahasiswa, dengan menggunakan input dari user. 
 1. Buatlah menu untuk menambahkan, mengubah, menghapus, dan melihat Nama dan  NIM mahasiswa, berikut contoh tampilan output dari nomor 1:
    • Tampilan Menu: 
 PROGRAM SINGLE LINKED LIST NON-CIRCULAR  
@@ -756,7 +707,7 @@ Kodingan di atas adalah program yang
 
 #### Full code Screenshot:
 
-### 4. Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu  tampilkan data yang telah dimasukkan. (Gunakan insert depan, belakang atau tengah) 
+### 2. Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu  tampilkan data yang telah dimasukkan. (Gunakan insert depan, belakang atau tengah) 
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/1e284aab-e2ce-41de-966d-4405d7c58fdf)
 
 ```C++
@@ -769,22 +720,31 @@ Kodingan di atas adalah program yang
 
 #### Full code Screenshot:
 
-### 5. Lakukan perintah berikut: 
+### 3. Lakukan perintah berikut: 
 a) Tambahkan data berikut diantara Farrel dan Denis: 
-Wati 2330004 
-b) Hapus data Denis 
+Wati 2330004
+
+b) Hapus data Denis
+
 c) Tambahkan data berikut di awal: 
-Owi 2330000 
+Owi 2330000
+
 d) Tambahkan data berikut di akhir: 
-David 23300100 
+David 23300100
+
 e) Ubah data Udin menjadi data berikut: 
-Idin 23300045 
+Idin 23300045
+
 f) Ubah data terkahir menjadi berikut: 
 Lucy 23300101 
+
 g) Hapus data awal 
+
 h) Ubah data awal menjadi berikut: 
 Bagas 2330002 
+
 i) Hapus data akhir 
+
 j) Tampilkan seluruh data
 
 ```C++
