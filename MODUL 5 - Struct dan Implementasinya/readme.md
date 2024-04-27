@@ -211,7 +211,11 @@ int main()
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/85225dfa-4c0c-4841-98e7-1b08a7f65f3c)
 
-Kodingan di atas adalah program yang 
+Kode di atas adalah program yang menampilkan informasi tentang buku favorit yang telah dimasukkan data 5 buku oleh pengguna, termasuk judul, pengarang, penerbit, tebal halaman, dan harga. 
+
+Pertama, program akan mendefinisikan struktur `buku` yang digunakan untuk menyimpan informasi tentang buku yaitu `judulBuku`, `pengarang`, `penerbit`, `tebalHalaman`, dan `hargaBuku` yang anggotanya dibatasi maksimal 5 buku. Kemudian, program akan menjalankan fungsi utama, mendeklarasikan variabel `favorit` dengan tipe `buku` sebagai penyimpanannya. Lalu, pengguna diminta memasukkan data untuk 5 buku dan kemudian inputan disimpan dalam variabel `favorit`. 
+
+Setelah itu, program akan menampilkan informasi dari 5 buku yang telah disimpan dalam variabel `favorit` yang berisi judul, buku, pengarang, penerbit, tebal halaman, dan harga buku pada setiap buku. Program akan mengembalikan nilai 0 yang menandakan bahwa program telah selesai dijalankan dengan sukses.
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/b2a73aec-3ca8-4747-a83c-9ae531bd6b60)
@@ -281,7 +285,7 @@ int main()
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/88505993-d2a9-4ef5-9586-5aaecaeb25d2)
 
-Kode diatas yaitu contoh pendeklarasian variabel `favorit` sebagai array dari struct `buku`, mengisi data ke dalamnya dan menampilkannya. Jika dideklarasi variabel `favorit` dibuat berjenis array dari struct `buku` dengan ukuran `jumlah_buku`, maka setiap elemen pada array `favorit` akan menjadi satu dengan judul, pengarang, penerbit, tebal halaman, dan harga buku yang berbeda-beda. Ynag kemudian diisi dengan data untuk setiap elemennya. Kemudian, program akan menampilkan informasi buku focorit dengan menggunakan loop `for` unutk mengakses dan menampilkan data dari setiap elemen array `favorit`.
+Kode diatas yaitu contoh pendeklarasian variabel `favorit` sebagai array dari struct `buku`, mengisi data ke dalamnya dan menampilkannya. Jika dideklarasi variabel `favorit` dibuat berjenis array dari struct `buku` dengan ukuran `jumlah_buku`, maka setiap elemen pada array `favorit` akan menjadi satu dengan judul, pengarang, penerbit, tebal halaman, dan harga buku yang berbeda-beda, yang kemudian diisi dengan data untuk setiap elemennya. Kemudian, program akan menampilkan informasi buku focorit dengan menggunakan loop `for` unutk mengakses dan menampilkan data dari setiap elemen array `favorit`.
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/6e5ac82c-6296-401d-950b-5da60e7649f5)
