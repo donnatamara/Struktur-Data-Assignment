@@ -5,16 +5,20 @@
 ## Dasar Teori
 
 ### 1. Variabel
-Variabel adalah tempat untuk menampung atau menyimpan sebuah data dengan tipe data yang sudah ditentukan. Variabel hanya dapat menampung sebuah nilai, tidak dapat diisi lebih dari satu. variabel adalah simbol yang digunakan untuk menyimpan nilai. 
+Variabel adalah lokasi penyimpanan dalam memori komputer yang menyimpan nilai. Dalam pemrograman, variabel digunakan untuk menyimpan data yang dapat dimanipulasi dan dirujuk dalam sebuah program. Mereka memiliki tipe data tertentu dan pengidentifikasi unik, memungkinkan para pemrogram untuk bekerja dengan berbagai jenis informasi secara efisien [1]. 
 
-Variabel adalah lokasi penyimpanan dalam memori komputer yang menyimpan nilai. Dalam pemrograman, variabel digunakan untuk menyimpan data yang dapat dimanipulasi dan dirujuk dalam sebuah program. Mereka memiliki tipe data tertentu dan pengidentifikasi unik, memungkinkan para pemrogram untuk bekerja dengan berbagai jenis informasi secara efisien [1]. Variabel memiliki 2 jenis yaitu:
-- Variabel lokal: dibuat didalam fungsi, dan dapat dipanggil hanya oleh fungsi yang mendeklarasikannya. Variabel lokal dalam C++ adalah variabel yang dideklarasikan dalam fungsi atau blok kode yang berbeda dengan variabel global. Variabel lokal hanya dapat diakses dalam fungsi atau blok kode di mana mereka dideklarasikan dan tidak dapat diakses dari luar fungsi atau blok kode tersebut [2].
-- Variabel global: dibuat diluar fungsi, dapat dipanggil oleh semua fungsi yang ada didalam program.
+Mereka memainkan peran penting dalam bahasa pemrograman seperti C++ dengan memungkinkan para pemrogram untuk memanipulasi dan bekerja dengan data secara efisien [2]. Variabel memiliki 2 jenis yaitu:
+- Variabel lokal: Dibuat didalam fungsi, dan dapat dipanggil hanya oleh fungsi yang mendeklarasikannya. Variabel lokal dalam C++ adalah variabel yang dideklarasikan dalam fungsi atau blok kode yang berbeda dengan variabel global. Variabel lokal hanya dapat diakses dalam fungsi atau blok kode di mana mereka dideklarasikan dan tidak dapat diakses dari luar fungsi atau blok kode tersebut [3].
+- Variabel global: Dibuat diluar fungsi, dapat dipanggil oleh semua fungsi yang ada didalam program. Variabel global adalah variabel yang dideklarasikan di luar semua fungsi atau blok kode, membuatnya dapat diakses dari mana pun dalam program tanpa batasan lingkup lokal. Dalam C++, variabel yang dideklarasikan di luar fungsi main() secara otomatis dianggap sebagai variabel global. Variabel global dibuat saat program dimulai dan dimusnahkan ketika program berakhir, ini disebut durasi statis [4].
+
 
 ### 2. Struct
-Struct adalah tipe data bentukan yang terdiir dari sejumlah tipe data standar maupun tipe data bentukan lainnya yang telah terdefinikasi sebelumya. Keyword yang digunakan untuk mendeklarasikan sebuah struktur adalah struct. Struct dalam pemrograman C++ digunakan untuk membentuk tipe data dengan anggota (member) tertentu. Pendeklarasian struct dilakukan dengan menentukan anggota-anggotanya, seperti variabel-variabel yang akan digunakan dalam program. Sebagai contoh, dalam struct tgl, terdapat anggota hari, bulan, dan tahun [2].
+Struct adalah tipe data bentukan yang terdiir dari sejumlah tipe data standar maupun tipe data bentukan lainnya yang telah terdefinikasi sebelumya. Keyword yang digunakan untuk mendeklarasikan sebuah struktur adalah struct. Struct dalam pemrograman C++ digunakan untuk membentuk tipe data dengan anggota (member) tertentu. Pendeklarasian struct dilakukan dengan menentukan anggota-anggotanya, seperti variabel-variabel yang akan digunakan dalam program. Sebagai contoh, dalam struct tgl, terdapat anggota hari, bulan, dan tahun [4].
 
 Struct dalam bahasa C++ adalah struktur data yang memungkinkan terjadinya pembentukan tipe data baru dengan menggabungkan berbagai macam variabel dengan tipe data berbeda yang tersedia dalam C++. Tipe data yang baru, dapat dibentuk di luar tipe data yang sudah ada dengan menggabungkan beberapa tipe data tersebut sesuai dengan kebutuhan program atau aplikasi yang dirancang [3].
+
+Struct digunakan untuk mengelompokkan data terkait ke dalam satu unit yang lebih besar. Dalam C++, struct mirip dengan class, namun dengan perbedaan utama bahwa semua anggotanya secara default bersifat public, sehingga memungkinkan akses langsung ke anggota struct tersebut [4].
+
 
 
 ## Guided
@@ -298,11 +302,12 @@ Kode diatas yaitu contoh pendeklarasian variabel `favorit` sebagai array dari st
 
 ## Kesimpulan
 
-Kesimpulannya, 
+Kesimpulannya, struct adaalah 
 
 ## Referensi
 
 [1] S. Anam, I. Yanti, Z. Fitria, U. Habibah, "Cara mudah belajar bahasa pemrograman C++," UB Press, 2021. 
 [2] C. Ramadhani, S.T., M.Eng, "Algoritma Pemrograman dan Struktur Data Menggunakan C++," Andi Publisher, 2019.
-[3] M. T. D. Putra, Munawir, and A. R. Yuniarti, "Belajar Pemrograman Lanjut dengan C++," Widina Media Utama, 2020.
-[4] 
+[3] Josuttis, N. M. (2019). "C++17: The Complete Guide". Nicolai Josuttis.
+[4] M. T. D. Putra, Munawir, and A. R. Yuniarti, "Belajar Pemrograman Lanjut dengan C++," Widina Media Utama, 2020.
+[5] 
