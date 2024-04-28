@@ -15,7 +15,9 @@ Mereka memainkan peran penting dalam bahasa pemrograman seperti C++ dengan memun
 ### 2. Struct
 Struct adalah tipe data bentukan yang terdiri dari sejumlah tipe data standar maupun tipe data bentukan lainnya yang telah terdefinisi sebelumya. Keyword yang digunakan untuk mendeklarasikan sebuah struktur adalah struct. Struct dalam pemrograman C++ digunakan untuk membentuk tipe data dengan anggota (member) tertentu. Pendeklarasian struct dilakukan dengan menentukan anggota-anggotanya, seperti variabel-variabel yang akan digunakan dalam program. Sebagai contoh, dalam struct tgl, terdapat anggota hari, bulan, dan tahun [4].
 
-Struct dalam bahasa C++ adalah struktur data yang memungkinkan terjadinya pembentukan tipe data baru dengan menggabungkan berbagai macam variabel dengan tipe data berbeda yang tersedia dalam C++. Tipe data yang baru, dapat dibentuk di luar tipe data yang sudah ada dengan menggabungkan beberapa tipe data tersebut sesuai dengan kebutuhan program atau aplikasi yang dirancang [3]. Struct digunakan untuk mengelompokkan data terkait ke dalam satu unit yang lebih besar. Dalam C++, struct mirip dengan class, namun dengan perbedaan utama bahwa semua anggotanya secara default bersifat public, sehingga memungkinkan akses langsung ke anggota struct tersebut [4].
+Struct dalam bahasa C++ adalah struktur data yang memungkinkan terjadinya pembentukan tipe data baru dengan menggabungkan berbagai macam variabel dengan tipe data berbeda yang tersedia dalam C++. Tipe data yang baru, dapat dibentuk di luar tipe data yang sudah ada dengan menggabungkan beberapa tipe data tersebut sesuai dengan kebutuhan program atau aplikasi yang dirancang. Struct digunakan untuk mengelompokkan data terkait ke dalam satu unit yang lebih besar. Dalam C++, struct mirip dengan class, namun dengan perbedaan utama bahwa semua anggotanya secara default bersifat public, sehingga memungkinkan akses langsung ke anggota struct tersebut.
+
+Struct dalam konteks pemrograman C++ digunakan untuk mendefinisikan tipe data kustom yang memungkinkan pengguna untuk mengorganisasi data dengan cara yang terstruktur. Struct memungkinkan pengguna untuk membuat entitas data yang terdiri dari beberapa variabel dengan tipe data yang berbeda, yang dapat membantu dalam mengatur dan mengelola data dengan lebih efisien dalam program C++ [5].
 
 
 
@@ -300,7 +302,9 @@ Kode diatas yaitu contoh pendeklarasian variabel `favorit` sebagai array dari st
 
 ## Kesimpulan
 
-Kesimpulannya, struct adalah 
+Kesimpulannya, struct adalah sebuah struktur data yang memungkinkan terjadinya pembentukan tipe data baru dengan mpenggabungan antara berbagai macam variabel dengan tipe data yang berbeda. Struct digunakan untuk membentuk tipe data dengan anggota tertentu, yang dilakukan dengan menentukan anggota-anggotanya. Di dalam struct terdapat variabel sebagai anggota, setiap anggota struct memiliki nama dan data yang unik. Variabel memiliki dua jenis, yaitu variabel lokal yang dibuat didalam fungsi dan dapat dipanggil oleh fungsi yang mendeklarasikannya, dan variabel global yang dibuat diluar fungsi dan dapat dipanggil oleh semua fungsi yang ada dalam program tersebut.
+
+
 
 ## Referensi
 
@@ -308,4 +312,4 @@ Kesimpulannya, struct adalah
 [2] C. Ramadhani, S.T., M.Eng, "Algoritma Pemrograman dan Struktur Data Menggunakan C++," Andi Publisher, 2019.
 [3] Josuttis, N. M. (2019). "C++17: The Complete Guide". Nicolai Josuttis.
 [4] M. T. D. Putra, Munawir, and A. R. Yuniarti, "Belajar Pemrograman Lanjut dengan C++," Widina Media Utama, 2020.
-[5] 
+[5] J. Carey, S. Doshi, and P. Rajan, "C++ Data Structures and Algorithm Design Principles," Packt, Oct. 2019.
