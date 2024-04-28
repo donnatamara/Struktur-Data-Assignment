@@ -753,7 +753,7 @@ j) Tampilkan seluruh data
 #### Output:
 
 
-Kodingan di atas adalah program yang 
+
 
 #### Full code Screenshot:
  
@@ -770,3 +770,5 @@ Kesimpulannya,
 [2] A. Agus Priyono. Pemrograman C++ untuk Pemula. 2020.
 
 [3] Tedi Suryadi. (2021). Struktur Data dan Algoritma dengan C++. Bandung: Informatika.
+
+[4] 
