@@ -38,6 +38,7 @@ void insertDepan(string nama, string nim) {
     baru->next = head;
     head = baru;
   }
+    cout << "Data telah diperbarui" << endl;
 }
 
 // Insert node at the back
@@ -53,6 +54,7 @@ void insertBelakang(string nama, string nim) {
     tail->next = baru;
     tail = baru;
   }
+    cout << "Data telah diperbarui" << endl;
 }
 
 // Count the number of nodes in the linked list
@@ -69,7 +71,7 @@ int hitungList() {
 // Insert node in the middle
 void insertTengah(string nama, string nim, int posisi) {
   if (posisi < 1 || posisi > hitungList()) {
-    cout << "Invalid position. Position must be between 1 and the number of nodes." << endl;
+    cout << "Posisi tidak valid. Posisi harus berada di antara 1 dan jumlah node." << endl;
     return;
   } else if (posisi == 1) {
     insertDepan(nama, nim);
@@ -88,20 +90,25 @@ void insertTengah(string nama, string nim, int posisi) {
     baru->next = bantu->next;
     bantu->next = baru;
   }
+    cout << "Data telah diperbarui" << endl;
 }
 
 // Delete node at the front
 void hapusDepan() {
   if (!isEmpty()) {
     Node *hapus = head;
+    // Store name of deleted student
+    string namaDihapus = hapus->nama;
     if (head->next != NULL) {
       head = head->next;
     } else {
       head = tail = NULL;
     }
     delete hapus;
+    // Print success message with student name
+    cout << "Data " << namaDihapus << " telah terhapus" << endl; 
   } else {
-    cout << "The list is empty." << endl;
+    cout << "Daftar tersebut kosong." << endl;
   }
 }
 
@@ -109,6 +116,8 @@ void hapusDepan() {
 void hapusBelakang() {
   if (!isEmpty()) {
     Node *hapus = tail;
+    // Store name of deleted student
+    string namaDihapus = hapus->nama; 
     if (head != tail) {
       Node *bantu = head;
       while (bantu->next != tail) {
@@ -120,15 +129,17 @@ void hapusBelakang() {
       head = tail = NULL;
     }
     delete hapus;
+    // Print success message with student name
+    cout << "Data " << namaDihapus << " telah terhapus" << endl; 
   } else {
-    cout << "The list is empty." << endl;
+    cout << "Daftar tersebut kosong." << endl;
   }
 }
 
 // Delete node in the middle
 void hapusTengah(int posisi) {
   if (posisi < 1 || posisi > hitungList()) {
-    cout << "Invalid position. Position must be between 1 and the number of nodes." << endl;
+    cout << "Posisi tidak valid. Posisi harus berada di antara 1 dan jumlah node." << endl;
     return;
   } else if (posisi == 1) {
     hapusDepan();
@@ -140,18 +151,26 @@ void hapusTengah(int posisi) {
       bantu = bantu->next;
     }
     hapus = bantu->next;
+    // Store name of deleted student
+    string namaDihapus = hapus->nama;
     bantu->next = hapus->next;
     delete hapus;
+    // Print success message with student name
+    cout << "Data " << namaDihapus << " telah terhapus" << endl; 
   }
 }
 
 // Update data in the front node
 void ubahDepan(string nama, string nim) {
   if (!isEmpty()) {
+    // Store old name
+    string namaLama = head->nama;
     head->nama = nama;
     head->nim = nim;
+    // Print success message with old and new names
+    cout << "Data " << namaLama << " telah diubah menjadi data " << nama << endl; 
   } else {
-    cout << "The list is empty." << endl;
+    cout << "Daftar tersebut kosong." << endl;
   }
 }
 
@@ -159,7 +178,7 @@ void ubahDepan(string nama, string nim) {
 void ubahTengah(string nama, string nim, int posisi) {
   if (!isEmpty()) {
     if (posisi < 1 || posisi > hitungList()) {
-      cout << "Invalid position. Position must be between 1 and the number of nodes." << endl;
+      cout << "Posisi tidak valid. Posisi harus berada di antara 1 dan jumlah node." << endl;
       return;
     } else if (posisi == 1) {
       ubahDepan(nama, nim);
@@ -169,21 +188,29 @@ void ubahTengah(string nama, string nim, int posisi) {
       for (int i = 1; i < posisi; i++) {
         bantu = bantu->next;
       }
+      // Store old name
+      string namaLama = bantu->nama;
       bantu->nama = nama;
       bantu->nim = nim;
+      // Print success message with old and new names
+      cout << "Data " << namaLama << " telah diubah menjadi data " << nama << endl; 
     }
   } else {
-    cout << "The list is empty." << endl;
+    cout << "Daftar tersebut kosong." << endl;
   }
 }
 
 // Update data in the back node
 void ubahBelakang(string nama, string nim) {
   if (!isEmpty()) {
+    // Store old name
+    string namaLama = tail->nama;
     tail->nama = nama;
     tail->nim = nim;
+    // Print success message with old and new names
+    cout << "Data " << namaLama << " telah diubah menjadi data " << nama << endl; 
   } else {
-    cout << "The list is empty." << endl;
+    cout << "Daftar tersebut kosong." << endl;
   }
 }
 
@@ -196,7 +223,7 @@ void clearList() {
     delete hapus;
   }
   tail = NULL;
-  cout << "The list has been cleared." << endl;
+  cout << "Daftar telah dihapus" << endl;
 }
 
 // Display the linked list
@@ -208,13 +235,13 @@ void tampil() {
     cout << "------------------------------------------------" << endl;
     int i = 1;
     while (bantu != NULL) {
-      cout << "| " << setw(3) << i << " | " << setw(15) << bantu->nama << " | " << setw(15) << bantu->nim << " |" << endl;
+      cout << "| " << setw(3) << i << " | " << setw(15) << bantu->nama << "  | " << setw(15) << bantu->nim << "      |" << endl;
       bantu = bantu->next;
       i++;
     }
-    cout << "-----------------------------------------" << endl;
+    cout << "------------------------------------------------" << endl;
   } else {
-    cout << "The list is empty." << endl;
+    cout << "Daftar tersebut kosong." << endl;
   }
 }
 
@@ -227,26 +254,26 @@ int main() {
   int posisi;
 
   do {
-    cout << "\n# MENU LINKED LIST MAHASISWA #" << endl;
-    cout << "----------------------------" << endl;
-    cout << "1. Tambah Data Depan" << endl;
-    cout << "2. Tambah Data Belakang" << endl;
+    cout << "\n# MENU SINGLE LINKED LIST MAHASISWA #" << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "1. Tambah Data Awal" << endl;
+    cout << "2. Tambah Data Akhir" << endl;
     cout << "3. Tambah Data Tengah" << endl;
-    cout << "4. Hapus Data Depan" << endl;
-    cout << "5. Hapus Data Belakang" << endl;
-    cout << "6. Hapus Data Tengah" << endl;
-    cout << "7. Ubah Data Depan" << endl;
-    cout << "8. Ubah Data Tengah" << endl;
-    cout << "9. Ubah Data Belakang" << endl;
+    cout << "4. Ubah Data Awal" << endl;
+    cout << "5. Ubah Data Akhir" << endl;
+    cout << "6. Ubah Data Tengah" << endl;
+    cout << "7. Hapus Data Awal" << endl;
+    cout << "8. Hapus Data Akhir" << endl;
+    cout << "9. Hapus Data Tengah" << endl;
     cout << "10. Tampilkan Data" << endl;
     cout << "11. Hapus Semua Data" << endl;
     cout << "0. Keluar" << endl;
-    cout << "\nPilihan Anda: ";
+    cout << "\nPilih Menu: ";
     cin >> pilihan;
 
     switch (pilihan) {
       case 1:
-        cout << "Masukkan nama: ";
+        cout << "Masukkan Nama: ";
         cin >> nama;
         cout << "Masukkan NIM: ";
         cin >> nim;
@@ -254,7 +281,7 @@ int main() {
         tampil();
         break;
       case 2:
-        cout << "Masukkan nama: ";
+        cout << "Masukkan Nama: ";
         cin >> nama;
         cout << "Masukkan NIM: ";
         cin >> nim;
@@ -262,30 +289,16 @@ int main() {
         tampil();
         break;
       case 3:
-        cout << "Masukkan nama: ";
+        cout << "Masukkan Nama : ";
         cin >> nama;
         cout << "Masukkan NIM: ";
         cin >> nim;
-        cout << "Masukkan posisi (1-" << hitungList() << "): ";
+        cout << "Masukkan Posisi: ";
         cin >> posisi;
         insertTengah(nama, nim, posisi);
         tampil();
         break;
       case 4:
-        hapusDepan();
-        tampil();
-        break;
-      case 5:
-        hapusBelakang();
-        tampil();
-        break;
-      case 6:
-        cout << "Masukkan posisi (1-" << hitungList() << "): ";
-        cin >> posisi;
-        hapusTengah(posisi);
-        tampil();
-        break;
-      case 7:
         cout << "Masukkan nama baru: ";
         cin >> nama;
         cout << "Masukkan NIM baru: ";
@@ -293,8 +306,16 @@ int main() {
         ubahDepan(nama, nim);
         tampil();
         break;
-      case 8:
-        cout << "Masukkan posisi (1-" << hitungList() << "): ";
+      case 5:
+        cout << "Masukkan nama : ";
+        cin >> nama;
+        cout << "Masukkan NIM : ";
+        cin >> nim;
+        ubahBelakang(nama, nim);
+        tampil();
+        break;
+      case 6:
+        cout << "Masukkan posisi: ";
         cin >> posisi;
         cout << "Masukkan nama baru: ";
         cin >> nama;
@@ -303,12 +324,18 @@ int main() {
         ubahTengah(nama, nim, posisi);
         tampil();
         break;
+      case 7:
+        hapusDepan();
+        tampil();
+        break;
+      case 8:
+        hapusBelakang();
+        tampil();
+        break;
       case 9:
-        cout << "Masukkan nama baru: ";
-        cin >> nama;
-        cout << "Masukkan NIM baru: ";
-        cin >> nim;
-        ubahBelakang(nama, nim);
+        cout << "Masukkan posisi: ";
+        cin >> posisi;
+        hapusTengah(posisi);
         tampil();
         break;
       case 10:
@@ -319,7 +346,7 @@ int main() {
         tampil();
         break;
       case 0:
-        cout << "Keluar dari program." << endl;
+        cout << "Selesai! Anda keluar dari program." << endl;
         break;
       default:
         cout << "Pilihan tidak valid!" << endl;
