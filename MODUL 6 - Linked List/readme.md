@@ -236,11 +236,14 @@ int main() {
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/f441677a-95fc-443d-9bd9-eefb4422903e)
 
 
-Kodingan di atas adalah program 
+Kode di atas adalah program untuk 
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/fa8f8096-252e-4f7a-a8e4-714784018227)
+
 
 ## 2. Single and Double Linked List
 
@@ -382,11 +385,13 @@ int main() {
 }
 ```
 #### Output:
-
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/219ab408-eba0-4431-8ab1-8095cfd95bf6)
 
 Kodingan di atas adalah program 
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/cd82bdf2-93eb-41c0-85d6-8183a97790cf)
+
 
 ## 3. Circular and Non Circular Linked List
 
@@ -1059,8 +1064,20 @@ int main() {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/09f8d88d-fdff-46e3-8cf6-1dc7ddf84f40)
 
+Kode di atas adalah program yang mengelola dan menampilkan data mahasiswa dengan menggunakan single linked list, terdapat berbagai fungsi yaitu menambah, mengubah, menghapus, dan menampilkan data mahasiswa dalam daftar tersebut. Pengguna dapat memilih opsi yang ingin dijalankan dari menu yang telah disediakan.
 
-Kodingan di atas adalah program yang 
+Program mendefinisikan struktur `Node` untuk menyimpan data satu mahasiswa yang terdiri dari string nama, nim, serta node yang berguna untuk menyimpan pointer. Program memeriksa apakah linked list kosong, jika kosong kedua pointer akan sama-sama menunjuk ke node baru, jika tidak, pointer `next` dari node baru diarahkan ke node `head` yang ada saat ini. Kemudian pointer `head` diperbarui untuk menunjuk ke node baru, menjadikannya node terdepan yang baru. 
+
+Algoritma yang ditampilkan dalam program tersebut adalah menambah data dengan menggunakan `insertDepan` dengan membuat node baru, dan menghubungkan `next` ke `head`, serta memperbarui `head` dan `tail` jika daftar kosong, `insertBelakang` digunakan dengan membuat node baru, menghubungkan `next` ke `NULL`, dan memperbarui `tail` jika daftar kosong.
+`insertTengah` dengan menemukan node pada posisi sebelumnya, menghubungkan node baru di antara node sebelumnya dan node berikutnya, dan memperbarui `tail` jika posisinya adalah posisi terakhir. 
+
+Algoritma penghapusan data, memiliki `hapusDepan` dengan menyimpan nama node yang dihapus, memperbarui `head` ke node berikutnya, dan menghapus node yang ingin dihapus. `hapusBelakang` untuk menyimpan nama node yang dihapus, memperbarui `tail` ke node sebelumnya, dan menghapus node yang ingin dihapus. `hapusTengah` dengan menemukan node sebelumnya, menghubungkan node sebelumnya ke node berikutnya, dan menghapus node yang ingin dihapus.
+
+Algoritma perubahan data, memiliki `ubahDepan` dengan menyimpan nama lama dan mengganti nama dan NIM node pertama dengan yang baru. `ubahBelakang` dengan menyimpan nama lama dan mengganti nama dan NIM node terakhir dengan yang baru. `ubahTengah` dengan menemukan node pada posisi yang ditentukan, menyimpan nama lama, dan mengganti nama dan NIM node dengan yang baru.
+
+Algoritma Penampilan data, memiliki `tampil`yang berguna untuk menampilkan header tabel, mengulangi setiap node, dan menampilkan nama, NIM, dan garis pembatas.
+
+
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/e025d1b4-575a-436b-ab33-f18e663a6b11)
@@ -1072,8 +1089,7 @@ Kodingan di atas adalah program yang
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/ba67a1b3-adc4-44ea-b2a1-ff1b15e5a7fb)
 
-
-Kodingan di atas adalah program yang 
+Diatas adalah hasil output dari instruksi yang telah diberikan menggunakan kode unguided 1. Dengan menggunakan insert depan, belakang, dan tengah sebagai perintah yang akan dijalankan. Hasil output ditambahkan dengan sebuah tabel agar dapat lebih jelas terbaca.
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/bc3c9152-bd24-431a-a4f6-db42386639f9)
@@ -1085,7 +1101,7 @@ Wati 2330004
 
 b) Hapus data Denis
 
-c) Tambahkan data berikut di awal: 
+c) Tambahkan data berikut di awal:
 Owi 2330000
 
 d) Tambahkan data berikut di akhir: 
@@ -1109,10 +1125,10 @@ j) Tampilkan seluruh data
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/4c933c85-a2d4-4d29-9625-3d12a4c57aad)
 
+Dengan memasukkan data sesuai instruksi yang telah diberikan, hasil akhir output terlihat seperti diatas. 
 
 #### Full code Screenshot:
  ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/a86901e2-c6f6-4042-945d-a9f459a7abaf)
-
 
 
 ## Kesimpulan
