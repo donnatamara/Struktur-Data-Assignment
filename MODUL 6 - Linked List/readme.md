@@ -386,9 +386,9 @@ int main() {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/219ab408-eba0-4431-8ab1-8095cfd95bf6)
 
-Kodingan di atas adalah contoh penerapan program dari struktur data double linked list yang memuat beberapa operasi dasar seperti menambahkan data, menghapus data, mengubah data, menghapus semua data, dan menampilkan data. Pengguna dapat mengelola data dalam bentuk linked list melalui menu yang telah disediakan.
+Kodingan di atas adalah contoh penerapan program dari struktur data double linked list yang memuat beberapa operasi dasar seperti menambahkan data, menghapus data, mengubah data, menghapus semua data, dan menampilkan data. Pengguna dapat mengelola data dalam bentuk linked list melalui menu yang telah disediakan. Program ini berjalan dalam loop tak terbatas sampai penggguna memilih opsi keluar pada menu nomor 6.
 
-
+Program mendefinisikan kelas Node yang memiliki atribut data, pointer prev, dan pointer next, mendefinisikan kelas 
 
 
 #### Full code Screenshot:
