@@ -238,8 +238,7 @@ int main() {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/f441677a-95fc-443d-9bd9-eefb4422903e)
 
-
-Kode di atas adalah program untuk 
+Kode di atas adalah contoh penerapan program dari single linked non circular yang memuat beberapa fungsi dasar untuk pengoperasiannya. Pertama program akan mendefinisikan struktur Node yang berisi data bertipe integer dan pointer ke Node berikutnya, mendeklarasikan pointer `head` dan `tail` untuk inisialisasi posisi awal dan akhir dari linked list. Kemudian, program menginisialisasi linked list dengan mengatuh `head` dan `tail` menjadi NULL. Program memeriksa apakah linked list tersebut kosong atau tidak. Pada fungsi `main()` terdapat beberapa fungsi sebagai opsi operasi yang ingin dijalankan, seperti untuk melakukan operasi-operasi seperti penambahan, penghapusan, perubahan nilai, dan penampilan isi dari list. Program akan mengembalikan nilai 0 yang artinya program telah berjalan sukses. 
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/fa8f8096-252e-4f7a-a8e4-714784018227)
@@ -387,7 +386,10 @@ int main() {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/219ab408-eba0-4431-8ab1-8095cfd95bf6)
 
-Kodingan di atas adalah program 
+Kodingan di atas adalah contoh penerapan program dari struktur data double linked list yang memuat beberapa operasi dasar seperti menambahkan data, menghapus data, mengubah data, menghapus semua data, dan menampilkan data. Pengguna dapat mengelola data dalam bentuk linked list melalui menu yang telah disediakan.
+
+
+
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/cd82bdf2-93eb-41c0-85d6-8183a97790cf)
