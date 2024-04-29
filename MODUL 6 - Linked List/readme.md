@@ -1135,7 +1135,7 @@ Dengan memasukkan data sesuai instruksi yang telah diberikan, hasil akhir output
 
 ## Kesimpulan
 
-Kesimpulannya, 
+Kesimpulannya, linked list adalah 
 
 ## Referensi
 
