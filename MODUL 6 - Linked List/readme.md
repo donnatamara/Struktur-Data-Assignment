@@ -3,19 +3,19 @@
 <p align="center">Donna Nur Tamara</p>
 
 ## Dasar Teori
-Linked list merupakan kumpulan node yang bersama-sama membentuk urutan linier, setiap node menyimpan sebuah pointer, yang biasanya menggunakan 'next' ke node berikutnya dalam daftar, setiap node juga menyimpan elemen terkaitnya [1]. 
+Linked list merupakan kumpulan node yang bersama-sama membentuk urutan linier, setiap node menyimpan sebuah pointer, yang biasanya menggunakan 'next' ke node berikutnya dalam daftar, setiap node juga menyimpan elemen terkaitnya [1]. Linked list adalah kumpulan elemen data yang bersifat linier. Elemen-elemen data ini disebut node yang menunjuk ke node berikutnya dengan menggunakan sebuah pointer. Linked list termasuk struktur data dinamis, yaitu memori dialokasikan sesuai kebutuhan. Untuk setiap data dalam sebuah node pada linked list, terdapat pointer yang memberikan lokasi alamat node berikutnya [2]. Ada beberapa jenis linked list:
 
 ### 1. Linked List Non Circular
-Linked list non circular adalah struktur data dinamis yang terdiri dari node-node yang saling terhubung satu sama lain dengan bantuan sebuah pointer. Setiap node memiliki dua bagian utama yaitu data dan pinter yang menunjuk ke node berikutnya. Linked list efisien untuk menyimpan dan mengelola data dalam program C++ untuk pemula [2].
+Linked list non circular adalah struktur data dinamis yang terdiri dari node-node yang saling terhubung satu sama lain dengan bantuan sebuah pointer. Setiap node memiliki dua bagian utama yaitu data dan pinter yang menunjuk ke node berikutnya. Linked list efisien untuk menyimpan dan mengelola data dalam program C++ untuk pemula [3].
 
 ### 2. Linked List Circular
 Linked list circular adalah jenis linked list yang terakhir mengarah ke node pertama, membuat struktur lingkaran, artinya pointer next dari node terakhir diatur ke alamat node pertama, membentuk sebuah loop. 
 
 ### 3. Single Linked List
-Single linked list adalah struktur data yang terdiri dari node-node yang saling terhubung, dimana setiap node memiliki data dan referensi kek node berikutnya dalam urutan. Single linked list biasanya dimulai dengan deklarasi node pertama dan dapat digunakan untuk berbagai keperluan dalam pemrograman. 
+Single linked list adalah jenis linked list yang paling sederhana, di mana setiap node berisi sejumlah data dan hanya ada satu pointer yang mengarah ke node berikutnya dalam linked list tersebut. Single linked list dapat dijalankan hanya dengan satu cara saja. Operasi yang dapat dilakukan pada single linked list yaitu menelusuri sebuah linked list, mencari nilai tertentu dalam sebuah linked list, menyisipkan node baru, menghapus node, menggabungkan dua linked list, mengurutkan linked list, dan membalikkan linked list [2]. 
 
 ### 4. Double Linked List
-Double linked list adalah struktur data linear yang terdiri dari node yang saling terhubung satu sama lain, dimana setiap node memiliki tiga elemen yaitu data sebagai penyimpan nilai yang ingin direpresentasikan, pointer sebelumnya (prev) digunakan untuk menunjuk ke node sebelumnya dalam daftar dan pinter selanjutnya (next) digunakan untuk menunjuk ke node selanjutnya dalam daftar [3].
+Double linked list adalah struktur data linear yang terdiri dari node yang saling terhubung satu sama lain, dimana setiap node memiliki tiga elemen yaitu data sebagai penyimpan nilai yang ingin direpresentasikan, pointer sebelumnya (prev) digunakan untuk menunjuk ke node sebelumnya dalam daftar dan pinter selanjutnya (next) digunakan untuk menunjuk ke node selanjutnya dalam daftar [4].
 
 ## Guided
 
@@ -1141,8 +1141,10 @@ Kesimpulannya, linked list adalah
 
 [1] Goodrich, M. T., Tamassia, R., & Mount, D. M. (2019). Data structures and algorithms in C++. John Wiley & Sons.
 
-[2] A. Agus Priyono. Pemrograman C++ untuk Pemula. 2020.
+{2] D. Malhotra and N. Malhotra, "Data Structures and Program Design Using C++", Mercury Learning and Information, Germany, 2019.
 
-[3] Tedi Suryadi. (2021). Struktur Data dan Algoritma dengan C++. Bandung: Informatika.
+[3] A. Agus Priyono. Pemrograman C++ untuk Pemula. 2020.
 
-[4] 
+[4] Tedi Suryadi. (2021). Struktur Data dan Algoritma dengan C++. Bandung: Informatika.
+
+[5] 
