@@ -388,8 +388,6 @@ int main() {
 
 Kodingan di atas adalah contoh penerapan program dari struktur data double linked list yang memuat beberapa operasi dasar seperti menambahkan data, menghapus data, mengubah data, menghapus semua data, dan menampilkan data. Pengguna dapat mengelola data dalam bentuk linked list melalui menu yang telah disediakan. Program ini berjalan dalam loop tak terbatas sampai penggguna memilih opsi keluar pada menu nomor 6.
 
-Program mendefinisikan kelas Node yang memiliki atribut data, pointer prev, dan pointer next, mendefinisikan kelas 
-
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/cd82bdf2-93eb-41c0-85d6-8183a97790cf)
@@ -635,11 +633,12 @@ int main() {
 }
 ```
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/68defe4d-1041-435b-9dc3-9e322b333d99)
 
-
-Kodingan di atas adalah program 
+Kode di atas adalah program yang menggunakan linked berbentuk circular, program ini memuat beberapa operasi dasar pada single linked list, seperti penambahan, penghapusan, menghitung jumlah elemen dalam list dan menampilkan list. Dalam fungsi `main()` program melakukan beberapa operasi seperti menambahkan data "Ayam" dan "Bebek" di depan linked list, "Cicak" dan "Domba" dibelakang linked list, menghapus "Domba" dari belakang, "Ayam" dari depan, menambah "Sapi" ditengah pada posisi kedua, dan mengahpus "Bebek" dari tengah pada posisi kedua. Setiap kali operasi dilakukan, isi linked list ditampilkan untuk memperlihatkan hasilnya.
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/da7b8ed6-7e7d-4bcb-9df1-53eaa8b67df3)
 
 
 ## Unguided
