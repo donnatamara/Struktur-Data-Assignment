@@ -1135,7 +1135,7 @@ Dengan memasukkan data sesuai instruksi yang telah diberikan, hasil akhir output
 
 ## Kesimpulan
 
-Kesimpulannya, linked list adalah sebuah kumpulan node yang membentuk urutan linier yang elemen-elemen datanya menunjuk ke node berikutnya dengan menggunakan sebuah pointer, biasanya menggunakan 'next' ke node berikutnya dalam sebuah daftar. Terdapat beberapa jenis linked list, linked list non circular yaitu  
+Kesimpulannya, linked list adalah sebuah kumpulan node yang membentuk urutan linier yang elemen-elemen datanya menunjuk ke node berikutnya dengan menggunakan sebuah pointer, biasanya menggunakan 'next' ke node berikutnya dalam sebuah daftar. Terdapat beberapa jenis linked list, linked list non circular yaitu struktur data dinamis terdiri dari node-node yang saling terhubung dengan bantuan sebuah pointer, linked list circular yaitu struktur data yang terdiri dari elemen-elemen yang saling terhubung melalui pointer dan elemen terakhirnya mengarah kembali ke alemen pertama sehingga membentuk sebuah lingkaran, single linked list yaitu setiap node berisi sejumlah data yang hanya satu pointer mengarah pada node berikutnya, dan double linked list adalah struktur data linear terdiri dari node yang saling terhubung dan setiap node memiliki tiga elemen yaitu data, pointer prev, dan pointer next.
 
 ## Referensi
 
