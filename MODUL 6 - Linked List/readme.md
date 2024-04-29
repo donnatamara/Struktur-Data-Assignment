@@ -9,13 +9,13 @@ Linked list merupakan kumpulan node yang bersama-sama membentuk urutan linier, s
 Linked list non circular adalah struktur data dinamis yang terdiri dari node-node yang saling terhubung satu sama lain dengan bantuan sebuah pointer. Setiap node memiliki dua bagian utama yaitu data dan pinter yang menunjuk ke node berikutnya. Linked list efisien untuk menyimpan dan mengelola data dalam program C++ untuk pemula [3].
 
 ### 2. Linked List Circular
-Linked list circular adalah jenis linked list yang terakhir mengarah ke node pertama, membuat struktur lingkaran, artinya pointer next dari node terakhir diatur ke alamat node pertama, membentuk sebuah loop. 
+Linked list circular adalah jenis linked list yang terakhir mengarah ke node pertama, membuat struktur lingkaran, artinya pointer next dari node terakhir diatur ke alamat node pertama, membentuk sebuah loop. Linked list circular adalah suatu struktur data yang terdiri dari elemen-elemen yang saling berhubungan melalui pointer, serta memiliki sifat khusus bahwa elemen terakhir dalam linked list tersebut mengarah kembali ke elemen pertama, sehingga membentuk suatu lingkaran. Dengan demikian, linked list circular dapat dianggap sebagai suatu struktur data yang memiliki awal dan akhir yang tidak jelas, karena elemen terakhir dapat dianggap sebagai awal dari linked list tersebut [4].
 
 ### 3. Single Linked List
 Single linked list adalah jenis linked list yang paling sederhana, di mana setiap node berisi sejumlah data dan hanya ada satu pointer yang mengarah ke node berikutnya dalam linked list tersebut. Single linked list dapat dijalankan hanya dengan satu cara saja. Operasi yang dapat dilakukan pada single linked list yaitu menelusuri sebuah linked list, mencari nilai tertentu dalam sebuah linked list, menyisipkan node baru, menghapus node, menggabungkan dua linked list, mengurutkan linked list, dan membalikkan linked list [2]. 
 
 ### 4. Double Linked List
-Double linked list adalah struktur data linear yang terdiri dari node yang saling terhubung satu sama lain, dimana setiap node memiliki tiga elemen yaitu data sebagai penyimpan nilai yang ingin direpresentasikan, pointer sebelumnya (prev) digunakan untuk menunjuk ke node sebelumnya dalam daftar dan pinter selanjutnya (next) digunakan untuk menunjuk ke node selanjutnya dalam daftar [4].
+Double linked list adalah struktur data linear yang terdiri dari node yang saling terhubung satu sama lain, dimana setiap node memiliki tiga elemen yaitu data sebagai penyimpan nilai yang ingin direpresentasikan, pointer sebelumnya (prev) digunakan untuk menunjuk ke node sebelumnya dalam daftar dan pinter selanjutnya (next) digunakan untuk menunjuk ke node selanjutnya dalam daftar [5].
 
 ## Guided
 
@@ -1135,16 +1135,17 @@ Dengan memasukkan data sesuai instruksi yang telah diberikan, hasil akhir output
 
 ## Kesimpulan
 
-Kesimpulannya, linked list adalah 
+Kesimpulannya, linked list adalah sebuah kumpulan node yang membentuk urutan linier yang elemen-elemen datanya menunjuk ke node berikutnya dengan menggunakan sebuah pointer, biasanya menggunakan 'next' ke node berikutnya dalam sebuah daftar. Terdapat beberapa jenis linked list, linked list non circular yaitu  
 
 ## Referensi
 
-[1] Goodrich, M. T., Tamassia, R., & Mount, D. M. (2019). Data structures and algorithms in C++. John Wiley & Sons.
+[1] Goodrich, M. T., Tamassia, R., & Mount, D. M. "Data structures and algorithms in C++". John Wiley & Sons. 2019
 
 {2] D. Malhotra and N. Malhotra, "Data Structures and Program Design Using C++", Mercury Learning and Information, Germany, 2019.
 
-[3] A. Agus Priyono. Pemrograman C++ untuk Pemula. 2020.
+[3] A. Agus Priyono. "Pemrograman C++ untuk Pemula". 2020.
 
-[4] Tedi Suryadi. (2021). Struktur Data dan Algoritma dengan C++. Bandung: Informatika.
+[4] R. Firliana, R. Rina, dan P. Kasih. "Struktur Data yang Terorganisir, dalam Algoritma dan Pemrograman C++". Adjie Media Nusantara. 2019.
 
-[5] 
+[5] Tedi Suryadi. "Struktur Data dan Algoritma dengan C++". Bandung: Informatika. 2021
+
