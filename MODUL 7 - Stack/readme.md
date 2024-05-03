@@ -5,6 +5,7 @@
 ## Dasar Teori
 
 ### 1. Stack
+Stack adalah sebuah struktur data sederhana dalam bahasa pemrograman C++ yang digunakan sebagai penyimpanan data.  
 
 
 ## Guided
@@ -124,10 +125,12 @@ int main() {
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/91542043-5141-45d6-89f9-aba0b3a568cb)
 
 
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/985db3e9-3594-4148-80ec-024ccf8bfbc8)
 
 
 
