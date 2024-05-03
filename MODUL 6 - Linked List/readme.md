@@ -3,19 +3,19 @@
 <p align="center">Donna Nur Tamara</p>
 
 ## Dasar Teori
-Linked list merupakan kumpulan node yang bersama-sama membentuk urutan linier, setiap node menyimpan sebuah pointer, yang biasanya menggunakan 'next' ke node berikutnya dalam daftar, setiap node juga menyimpan elemen terkaitnya [1]. 
+Linked list merupakan kumpulan node yang bersama-sama membentuk urutan linier, setiap node menyimpan sebuah pointer, yang biasanya menggunakan 'next' ke node berikutnya dalam daftar, setiap node juga menyimpan elemen terkaitnya [1]. Linked list adalah kumpulan elemen data yang bersifat linier. Elemen-elemen data ini disebut node yang menunjuk ke node berikutnya dengan menggunakan sebuah pointer. Linked list termasuk struktur data dinamis, yaitu memori dialokasikan sesuai kebutuhan. Untuk setiap data dalam sebuah node pada linked list, terdapat pointer yang memberikan lokasi alamat node berikutnya [2]. Ada beberapa jenis linked list:
 
 ### 1. Linked List Non Circular
-Linked list non circular adalah struktur data dinamis yang terdiri dari node-node yang saling terhubung satu sama lain dengan bantuan sebuah pointer. Setiap node memiliki dua bagian utama yaitu data dan pinter yang menunjuk ke node berikutnya. Linked list efisien untuk menyimpan dan mengelola data dalam program C++ untuk pemula [2].
+Linked list non circular adalah struktur data dinamis yang terdiri dari node-node yang saling terhubung satu sama lain dengan bantuan sebuah pointer. Setiap node memiliki dua bagian utama yaitu data dan pinter yang menunjuk ke node berikutnya. Linked list efisien untuk menyimpan dan mengelola data dalam program C++ untuk pemula [3].
 
 ### 2. Linked List Circular
-Linked list circular adalah jenis linked list yang terakhir mengarah ke node pertama, membuat struktur lingkaran, artinya pointer next dari node terakhir diatur ke alamat node pertama, membentuk sebuah loop. 
+Linked list circular adalah jenis linked list yang terakhir mengarah ke node pertama, membuat struktur lingkaran, artinya pointer next dari node terakhir diatur ke alamat node pertama, membentuk sebuah loop. Linked list circular adalah suatu struktur data yang terdiri dari elemen-elemen yang saling berhubungan melalui pointer, serta memiliki sifat khusus bahwa elemen terakhir dalam linked list tersebut mengarah kembali ke elemen pertama, sehingga membentuk suatu lingkaran. Dengan demikian, linked list circular dapat dianggap sebagai suatu struktur data yang memiliki awal dan akhir yang tidak jelas, karena elemen terakhir dapat dianggap sebagai awal dari linked list tersebut [4].
 
 ### 3. Single Linked List
-Single linked list adalah struktur data yang terdiri dari node-node yang saling terhubung, dimana setiap node memiliki data dan referensi kek node berikutnya dalam urutan. Single linked list biasanya dimulai dengan deklarasi node pertama dan dapat digunakan untuk berbagai keperluan dalam pemrograman. 
+Single linked list adalah jenis linked list yang paling sederhana, di mana setiap node berisi sejumlah data dan hanya ada satu pointer yang mengarah ke node berikutnya dalam linked list tersebut. Single linked list dapat dijalankan hanya dengan satu cara saja. Operasi yang dapat dilakukan pada single linked list yaitu menelusuri sebuah linked list, mencari nilai tertentu dalam sebuah linked list, menyisipkan node baru, menghapus node, menggabungkan dua linked list, mengurutkan linked list, dan membalikkan linked list [2]. 
 
 ### 4. Double Linked List
-Double linked list adalah struktur data linear yang terdiri dari node yang saling terhubung satu sama lain, dimana setiap node memiliki tiga elemen yaitu data sebagai penyimpan nilai yang ingin direpresentasikan, pointer sebelumnya (prev) digunakan untuk menunjuk ke node sebelumnya dalam daftar dan pinter selanjutnya (next) digunakan untuk menunjuk ke node selanjutnya dalam daftar [3].
+Double linked list adalah struktur data linear yang terdiri dari node yang saling terhubung satu sama lain, dimana setiap node memiliki tiga elemen yaitu data sebagai penyimpan nilai yang ingin direpresentasikan, pointer sebelumnya (prev) digunakan untuk menunjuk ke node sebelumnya dalam daftar dan pinter selanjutnya (next) digunakan untuk menunjuk ke node selanjutnya dalam daftar [5].
 
 ## Guided
 
@@ -236,11 +236,13 @@ int main() {
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/f441677a-95fc-443d-9bd9-eefb4422903e)
 
-
-Kodingan di atas adalah program 
+Kode di atas adalah contoh penerapan program dari single linked non circular yang memuat beberapa fungsi dasar untuk pengoperasiannya. Pertama program akan mendefinisikan struktur Node yang berisi data bertipe integer dan pointer ke Node berikutnya, mendeklarasikan pointer `head` dan `tail` untuk inisialisasi posisi awal dan akhir dari linked list. Kemudian, program menginisialisasi linked list dengan mengatuh `head` dan `tail` menjadi NULL. Program memeriksa apakah linked list tersebut kosong atau tidak. Pada fungsi `main()` terdapat beberapa fungsi sebagai opsi operasi yang ingin dijalankan, seperti untuk melakukan operasi-operasi seperti penambahan, penghapusan, perubahan nilai, dan penampilan isi dari list. Program akan mengembalikan nilai 0 yang artinya program telah berjalan sukses. 
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/fa8f8096-252e-4f7a-a8e4-714784018227)
+
 
 ## 2. Single and Double Linked List
 
@@ -382,11 +384,14 @@ int main() {
 }
 ```
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/219ab408-eba0-4431-8ab1-8095cfd95bf6)
 
+Kodingan di atas adalah contoh penerapan program dari struktur data double linked list yang memuat beberapa operasi dasar seperti menambahkan data, menghapus data, mengubah data, menghapus semua data, dan menampilkan data. Pengguna dapat mengelola data dalam bentuk linked list melalui menu yang telah disediakan. Program ini berjalan dalam loop tak terbatas sampai penggguna memilih opsi keluar pada menu nomor 6.
 
-Kodingan di atas adalah program 
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/cd82bdf2-93eb-41c0-85d6-8183a97790cf)
+
 
 ## 3. Circular and Non Circular Linked List
 
@@ -628,11 +633,12 @@ int main() {
 }
 ```
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/68defe4d-1041-435b-9dc3-9e322b333d99)
 
-
-Kodingan di atas adalah program 
+Kode di atas adalah program yang menggunakan linked berbentuk circular, program ini memuat beberapa operasi dasar pada single linked list, seperti penambahan, penghapusan, menghitung jumlah elemen dalam list dan menampilkan list. Dalam fungsi `main()` program melakukan beberapa operasi seperti menambahkan data "Ayam" dan "Bebek" di depan linked list, "Cicak" dan "Domba" dibelakang linked list, menghapus "Domba" dari belakang, "Ayam" dari depan, menambah "Sapi" ditengah pada posisi kedua, dan mengahpus "Bebek" dari tengah pada posisi kedua. Setiap kali operasi dilakukan, isi linked list ditampilkan untuk memperlihatkan hasilnya.
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/da7b8ed6-7e7d-4bcb-9df1-53eaa8b67df3)
 
 
 ## Unguided
@@ -1059,8 +1065,20 @@ int main() {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/09f8d88d-fdff-46e3-8cf6-1dc7ddf84f40)
 
+Kode di atas adalah program yang mengelola dan menampilkan data mahasiswa dengan menggunakan single linked list, terdapat berbagai fungsi yaitu menambah, mengubah, menghapus, dan menampilkan data mahasiswa dalam daftar tersebut. Pengguna dapat memilih opsi yang ingin dijalankan dari menu yang telah disediakan.
 
-Kodingan di atas adalah program yang 
+Program mendefinisikan struktur `Node` untuk menyimpan data satu mahasiswa yang terdiri dari string nama, nim, serta node yang berguna untuk menyimpan pointer. Program memeriksa apakah linked list kosong, jika kosong kedua pointer akan sama-sama menunjuk ke node baru, jika tidak, pointer `next` dari node baru diarahkan ke node `head` yang ada saat ini. Kemudian pointer `head` diperbarui untuk menunjuk ke node baru, menjadikannya node terdepan yang baru. 
+
+Algoritma yang ditampilkan dalam program tersebut adalah menambah data dengan menggunakan `insertDepan` dengan membuat node baru, dan menghubungkan `next` ke `head`, serta memperbarui `head` dan `tail` jika daftar kosong, `insertBelakang` digunakan dengan membuat node baru, menghubungkan `next` ke `NULL`, dan memperbarui `tail` jika daftar kosong.
+`insertTengah` dengan menemukan node pada posisi sebelumnya, menghubungkan node baru di antara node sebelumnya dan node berikutnya, dan memperbarui `tail` jika posisinya adalah posisi terakhir. 
+
+Algoritma penghapusan data, memiliki `hapusDepan` dengan menyimpan nama node yang dihapus, memperbarui `head` ke node berikutnya, dan menghapus node yang ingin dihapus. `hapusBelakang` untuk menyimpan nama node yang dihapus, memperbarui `tail` ke node sebelumnya, dan menghapus node yang ingin dihapus. `hapusTengah` dengan menemukan node sebelumnya, menghubungkan node sebelumnya ke node berikutnya, dan menghapus node yang ingin dihapus.
+
+Algoritma perubahan data, memiliki `ubahDepan` dengan menyimpan nama lama dan mengganti nama dan NIM node pertama dengan yang baru. `ubahBelakang` dengan menyimpan nama lama dan mengganti nama dan NIM node terakhir dengan yang baru. `ubahTengah` dengan menemukan node pada posisi yang ditentukan, menyimpan nama lama, dan mengganti nama dan NIM node dengan yang baru.
+
+Algoritma Penampilan data, memiliki `tampil`yang berguna untuk menampilkan header tabel, mengulangi setiap node, dan menampilkan nama, NIM, dan garis pembatas.
+
+
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/e025d1b4-575a-436b-ab33-f18e663a6b11)
@@ -1072,8 +1090,7 @@ Kodingan di atas adalah program yang
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/ba67a1b3-adc4-44ea-b2a1-ff1b15e5a7fb)
 
-
-Kodingan di atas adalah program yang 
+Diatas adalah hasil output dari instruksi yang telah diberikan menggunakan kode unguided 1. Dengan menggunakan insert depan, belakang, dan tengah sebagai perintah yang akan dijalankan. Hasil output ditambahkan dengan sebuah tabel agar dapat lebih jelas terbaca.
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/bc3c9152-bd24-431a-a4f6-db42386639f9)
@@ -1085,7 +1102,7 @@ Wati 2330004
 
 b) Hapus data Denis
 
-c) Tambahkan data berikut di awal: 
+c) Tambahkan data berikut di awal:
 Owi 2330000
 
 d) Tambahkan data berikut di akhir: 
@@ -1109,22 +1126,25 @@ j) Tampilkan seluruh data
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/4c933c85-a2d4-4d29-9625-3d12a4c57aad)
 
+Dengan memasukkan data sesuai instruksi yang telah diberikan, hasil akhir output terlihat seperti diatas. 
 
 #### Full code Screenshot:
  ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/a86901e2-c6f6-4042-945d-a9f459a7abaf)
 
 
-
 ## Kesimpulan
 
-Kesimpulannya, 
+Kesimpulannya, linked list adalah sebuah kumpulan node yang membentuk urutan linier yang elemen-elemen datanya menunjuk ke node berikutnya dengan menggunakan sebuah pointer, biasanya menggunakan 'next' ke node berikutnya dalam sebuah daftar. Terdapat beberapa jenis linked list, linked list non circular yaitu struktur data dinamis terdiri dari node-node yang saling terhubung dengan bantuan sebuah pointer, linked list circular yaitu struktur data yang terdiri dari elemen-elemen yang saling terhubung melalui pointer dan elemen terakhirnya mengarah kembali ke alemen pertama sehingga membentuk sebuah lingkaran, single linked list yaitu setiap node berisi sejumlah data yang hanya satu pointer mengarah pada node berikutnya, dan double linked list adalah struktur data linear terdiri dari node yang saling terhubung dan setiap node memiliki tiga elemen yaitu data, pointer prev, dan pointer next.
 
 ## Referensi
 
-[1] Goodrich, M. T., Tamassia, R., & Mount, D. M. (2019). Data structures and algorithms in C++. John Wiley & Sons.
+[1] Goodrich, M. T., Tamassia, R., & Mount, D. M. "Data structures and algorithms in C++". John Wiley & Sons. 2019
 
-[2] A. Agus Priyono. Pemrograman C++ untuk Pemula. 2020.
+{2] D. Malhotra and N. Malhotra, "Data Structures and Program Design Using C++", Mercury Learning and Information, Germany, 2019.
 
-[3] Tedi Suryadi. (2021). Struktur Data dan Algoritma dengan C++. Bandung: Informatika.
+[3] A. Agus Priyono. "Pemrograman C++ untuk Pemula". 2020.
 
-[4] 
+[4] R. Firliana, R. Rina, dan P. Kasih. "Struktur Data yang Terorganisir, dalam Algoritma dan Pemrograman C++". Adjie Media Nusantara. 2019.
+
+[5] Tedi Suryadi. "Struktur Data dan Algoritma dengan C++". Bandung: Informatika. 2021
+
