@@ -5,7 +5,7 @@
 ## Dasar Teori
 
 ### 1. Stack
-Stack adalah sebuah struktur data sederhana dalam bahasa pemrograman C++ yang digunakan sebagai penyimpanan data.  
+Stack adalah sebuah struktur data sederhana dalam bahasa pemrograman C++ yang digunakan sebagai penyimpanan data. Stack adalah struktur data linier yang mengikuti prinsip LIFO (Last in First Out). Dengan kata lain, kita dapat mengatakan bahwa jika prinsip LIFO diimplementasikan dengan larik maka akan disebut sebagai stack. Operasi yang sering dijalankan dengan stack adalah push dan pop. Operasi push dikenal sebagai operasi insert dan operasi pop dikenal sebagai operasi delete. Selama operasi push kita harus memeriksa kondisi overflow dan selama operasi pop kita harus memeriksa kondisi underflow [1].   
 
 
 ## Guided
@@ -170,4 +170,5 @@ Kesimpulannya,
 
 ## Referensi
 
-[1] 
+[1] S. N. Mohanty and P. K. Tripathy, Data structure and algorithms using C++: A Practical Implementation. John Wiley & Sons, 2021.
+[2] 
