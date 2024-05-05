@@ -21,8 +21,8 @@ Operasi-operasi/fungsi pada stack:
 - Search, untuk mencari keberadaan suatu elemen dalam sebuah tumpukan.
 
 Operasi push dikenal sebagai operasi insert dan operasi pop dikenal sebagai operasi delete. Selama operasi push kita harus memeriksa kondisi overflow dan selama operasi pop kita harus memeriksa kondisi underflow [1]. 
-- Overflow, jika seseorang dapat mencoba menyisipkan sebuah elemen dengan struktur data (stack) yang sudah terisi, maka situasi tersebut akan disebut sebagai overflow. Condition untuk overflow adalah Top = size - 1 (untuk stack dimulai dari 0), Top = size (untuk stack dimulai dari 1) [1].
-- Underflow, jika seseorang dapat mencoba menghapus sebuah elemen dari sebuah struktur data (stack) kosong maka situasi tersebut akan disebut sebagai underflow. Condition untuk underflow adalah Top = -1 (untuk stack dimulai dari 0), Top = 0 (untuk stack dimulai dari 1) [2].
+- Overflow, jika seseorang dapat mencoba menyisipkan sebuah elemen dengan struktur data (stack) yang sudah terisi. Condition untuk overflow adalah Top = size - 1 (untuk stack dimulai dari 0), Top = size (untuk stack dimulai dari 1) [1].
+- Underflow, jika seseorang dapat mencoba menghapus sebuah elemen dari sebuah struktur data (stack) kosong. Condition untuk underflow adalah Top = -1 (untuk stack dimulai dari 0), Top = 0 (untuk stack dimulai dari 1) [2].
 
 
 ## Guided
@@ -301,7 +301,7 @@ Program di atas menggunakan fungsi-fungsi seperti `stack<char> a` digunakan untu
 
 ## Kesimpulan
 
-Kesimpulannya, stack merupakan kumpulan beberapa elemen yang hanya dapat ditambah dan atau dihapus dari satu ujung (gerbang) yang sama, seolah-olah bertumpuk. Stack mengikuti prinsip LIFO (Last in First Out) yang berarti elemen terakhir masuk akan pertama keluar yang direpresentasikan menggunakan linked list dan array yang disajikan dengan stack. Dalam stack ada beberapa operasi yaitu push, pop, clear, isEmpty, isFull, top, size, peek, dan search.  
+Kesimpulannya, stack merupakan kumpulan beberapa elemen yang hanya dapat ditambah dan atau dihapus dari satu ujung (gerbang) yang sama, seolah-olah bertumpuk. Stack mengikuti prinsip LIFO (Last in First Out) yang berarti elemen terakhir masuk akan pertama keluar yang direpresentasikan menggunakan linked list dan array yang disajikan dengan stack. Dalam stack ada beberapa operasi yaitu push, pop, clear, isEmpty, isFull, top, size, peek, dan search. Dalam stack ada istilah overflow adalah jika menyisipkan sebuah elemen dengan stack yang sudah terisi, sedangkan underflow adalah jika mencoba menghapus sebuah elemen dari sebuah stack kosong.
 
 ## Referensi
 
