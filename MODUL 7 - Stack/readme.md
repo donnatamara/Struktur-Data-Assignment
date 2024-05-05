@@ -5,20 +5,19 @@
 ## Dasar Teori
 
 ### 1. Stack
-Stack adalah sebuah struktur data sederhana dalam bahasa pemrograman C++ yang digunakan sebagai penyimpanan data. Stack adalah struktur data linier yang mengikuti prinsip LIFO (Last in First Out). Dengan kata lain, kita dapat mengatakan bahwa jika prinsip LIFO diimplementasikan dengan larik maka akan disebut sebagai stack [1]. 
+Stack adalah sebuah struktur data sederhana dalam bahasa pemrograman C++ yang digunakan sebagai penyimpanan data. Stack adalah struktur data linier yang mengikuti prinsip LIFO (Last in First Out). Dengan kata lain, kita dapat mengatakan bahwa jika prinsip LIFO diimplementasikan dengan larik maka akan disebut sebagai stack [1]. Stack adalah kumpulan elemen yang hanya dapat ditambah dan atau dihapus dari satu ujung (gerbang) yang sama, seolah-olah bertumpuk [4]. 
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/be64829f-e557-4cbf-b03d-a2866dce1e47)
 
 Operasi-operasi/fungsi pada stack:
-- Push, digunakan untuk menambah item pada stack pada tumpukan paling atas [2].
-- Pop, digunakan untuk mengambill item pada stack pada tumpukan paling atas [2].
-- Clear, digunakan untuk mengosongkan stack [2].
-- IsEmpty, fungsi yang digunakan untuk mengecek apakah stack sudah kosong [2].
-- IsFull, fungsi yang digunakan untuk mengecek apakah stack sudah penuh [2].
-- 
-
-Operasi dasar pada stack adalah push dan pop.
-- Push adalah operasi yang memasukkan data ke dalam stack. Operasi ini biasa dinyatakan dengan oush(T,d), dengan T menyatakan stack dan d menyatakan item data yang disisipkan ke dalam stack T [2].
-- Pop adalah operasi untuk mengambil data dari stack. Operasi ini biasa dinyatakan dengan pop(T). Dalam hal ini data teratas dari stack T akan dikeluarkan dan menjadi nilai balik pop. Pop biasanya dituangkan dalam bentuk pernyataan : data = pop (T) [2].
+- Push, digunakan untuk menambah item pada stack pada tumpukan paling atas. Operasi yang memasukkan data ke dalam stack. Operasi ini biasa dinyatakan dengan oush(T,d), dengan T menyatakan stack dan d menyatakan item data yang disisipkan ke dalam stack T [2].
+- Pop, digunakan untuk mengambil item pada stack pada tumpukan paling atas [2]. Setiap kali operasi pop dilakukan maka bagian yang paling atas akan berkurang satu, Operasi pop dilakukan jika stack tidak kosong [4].
+- Clear, digunakan untuk mengosongkan stack. Operasi ini biasa dinyatakan dengan pop(T). Dalam hal ini data teratas dari stack T akan dikeluarkan dan menjadi nilai balik pop. Pop biasanya dituangkan dalam bentuk pernyataan : data = pop (T) [2].
+- IsEmpty, fungsi yang digunakan untuk mengecek apakah stack sudah kosong [2]. Jika stack kosong, maka operasi ini akan mengembalikan nilai `True`, dan jika tidak, maka nilai `False` [3].
+- IsFull, fungsi yang digunakan untuk mengecek apakah stack sudah penuh [2]. Jika stack penuh, maka operasi ini akan mengembalikan nilai `True`, dan jika belum, maka nilai `False` [3].
+- Top, mendapatkan suatu nilai atau melihat elemen teratas pada tumpukan tanpa menghapusnya.
+- Size, menghilangkan jumlah elemen yang atau tidak (terutama pada implementasi tumpukan dengan kapasitas terbatas).
+- Peek, memungkinkan pengguna untuk melihat elemen yang terletak di atas stack tanpa menghapusnya. Elemen ini tidak dihapus dan tetap berada di atas stack [3].
+- Search, untuk mencari keberadaan suatu elemen dalam sebuah tumpukan.
 
 Operasi push dikenal sebagai operasi insert dan operasi pop dikenal sebagai operasi delete. Selama operasi push kita harus memeriksa kondisi overflow dan selama operasi pop kita harus memeriksa kondisi underflow [1]. 
 
@@ -295,20 +294,21 @@ Pertama, program memeriksa apakah kalimat yang dimasukkan memiliki minimal 3 kat
 
 Program di atas menggunakan fungsi-fungsi seperti `stack<char> a` digunakan untuk membuat stack bernama a yang dapat menampung karakter selama proses pembalikan, `a.push(b)` digunakan untuk memasukkan karakter b yang sedang dibaca ke dalam stack a (proses membangun stack dalam urutan terbalik), `while (!a.empty())` digunakan untuk melakukan perulangan selama stack a tidak kosong, `kalimat += a.top()` digunakan untuk menambahkan karakter teratas dari stack a ke string kalimat, `a.pop()` digunakan untuk menghapus karakter teratas dari stack a. 
 
-
-
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/2db1dd83-3d52-4dd9-b047-4a57c1b7952c)
 
 
 
-
 ## Kesimpulan
 
-Kesimpulannya, stack
+Kesimpulannya, stack adalah 
 
 ## Referensi
 
 [1] S. N. Mohanty and P. K. Tripathy, Data structure and algorithms using C++: A Practical Implementation. John Wiley & Sons, 2021.
 
 [2] A. S. R. St. MTi, STRUKTUR DATA DAN ALGORITMA DENGAN C++. CV. AA. RIZKY, 2019.
+
+[3] M. F. Rohmah and R. E. Cahyono, Teori dan Aplikasi Algoritma Pemrograman dengan Bahasa C dan C++. Penerbit NEM, 2022.
+
+[4] E. Erkamim et al., Buku Ajar Algoritma dan Struktur Data. PT. Sonpedia Publishing Indonesia, 2024.
