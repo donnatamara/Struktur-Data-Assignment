@@ -5,31 +5,25 @@
 ## Dasar Teori
 
 ### Definisi Stack
-Stack adalah sebuah struktur data sederhana dalam bahasa pemrograman C++ yang digunakan sebagai penyimpanan data. Stack adalah struktur data linier yang mengikuti prinsip LIFO (Last in First Out). Dengan kata lain, kita dapat mengatakan bahwa jika prinsip LIFO diimplementasikan dengan larik maka akan disebut sebagai stack [1]. Stack adalah kumpulan elemen yang hanya dapat ditambah dan atau dihapus dari satu ujung (gerbang) yang sama, seolah-olah bertumpuk [4]. 
+_Stack_ adalah sebuah struktur data sederhana dalam bahasa pemrograman C++ yang digunakan sebagai penyimpanan data. _Stack_ adalah struktur data linier yang mengikuti prinsip _LIFO (Last in First Out)_. Dengan kata lain, kita dapat mengatakan bahwa jika prinsip LIFO diimplementasikan dengan larik maka akan disebut sebagai _stack_ [1]. _Stack_ adalah kumpulan elemen yang hanya dapat ditambah dan atau dihapus dari satu ujung (gerbang) yang sama, seolah-olah bertumpuk [4]. 
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/be64829f-e557-4cbf-b03d-a2866dce1e47)
 
 ### Operasi pada Stack
 Operasi-operasi/fungsi pada stack:
-- Push, digunakan untuk menambah item pada stack pada tumpukan paling atas. Operasi yang memasukkan data ke dalam stack. Operasi ini biasa dinyatakan dengan oush(T,d), dengan T menyatakan stack dan d menyatakan item data yang disisipkan ke dalam stack T [2].
-  Operasi push dikenal sebagai operasi insert dan operasi pop dikenal sebagai operasi delete. Selama operasi push kita 
-  harus memeriksa kondisi overflow dan selama operasi pop kita harus memeriksa kondisi underflow [1]. 
-  - Overflow, jika seseorang dapat mencoba menyisipkan sebuah elemen dengan struktur data (stack) yang sudah terisi. 
-  Condition untuk overflow adalah Top = size - 1 (untuk stack dimulai dari 0), Top = size (untuk stack dimulai dari 1) [1].
-  - Underflow, jika seseorang dapat mencoba menghapus sebuah elemen dari sebuah struktur data (stack) kosong. Condition 
-  untuk underflow adalah Top = -1 (untuk stack dimulai dari 0), Top = 0 (untuk stack dimulai dari 1) [1].
-- Pop, digunakan untuk mengambil item pada stack pada tumpukan paling atas [2]. Setiap kali operasi pop dilakukan maka bagian yang paling atas akan berkurang satu, Operasi pop dilakukan jika stack tidak kosong [4].
-- Clear, digunakan untuk mengosongkan stack. Operasi ini biasa dinyatakan dengan pop(T). Dalam hal ini data teratas dari stack T akan dikeluarkan dan menjadi nilai balik pop. Pop biasanya dituangkan dalam bentuk pernyataan : data = pop (T) [2].
-- IsEmpty, fungsi yang digunakan untuk mengecek apakah stack sudah kosong [2]. Jika stack kosong, maka operasi ini akan mengembalikan nilai `True`, dan jika tidak, maka nilai `False` [3].
-- IsFull, fungsi yang digunakan untuk mengecek apakah stack sudah penuh [2]. Jika stack penuh, maka operasi ini akan mengembalikan nilai `True`, dan jika belum, maka nilai `False` [3].
-- Top, mendapatkan suatu nilai atau melihat elemen teratas pada tumpukan tanpa menghapusnya.
-- Size, menghilangkan jumlah elemen yang atau tidak (terutama pada implementasi tumpukan dengan kapasitas terbatas).
-- Peek, memungkinkan pengguna untuk melihat elemen yang terletak di atas stack tanpa menghapusnya. Elemen ini tidak dihapus dan tetap berada di atas stack [3].
-- Search, untuk mencari keberadaan suatu elemen dalam sebuah tumpukan.
+- **Push**, digunakan untuk menambah item pada _stack_ pada tumpukan paling atas. Operasi yang memasukkan data ke dalam _stack_. Operasi ini biasa dinyatakan dengan _push_(T,d), dengan T menyatakan _stack_ dan d menyatakan item data yang disisipkan ke dalam _stack_ T [2].
+- **Pop**, digunakan untuk mengambil item pada stack pada tumpukan paling atas [2]. Setiap kali operasi pop dilakukan maka bagian yang paling atas akan berkurang satu, Operasi pop dilakukan jika stack tidak kosong [4].
+- **Clear**, digunakan untuk mengosongkan stack. Operasi ini biasa dinyatakan dengan pop(T). Dalam hal ini data teratas dari stack T akan dikeluarkan dan menjadi nilai balik pop. Pop biasanya dituangkan dalam bentuk pernyataan : data = pop (T) [2].
+- **IsEmpty**, fungsi yang digunakan untuk mengecek apakah stack sudah kosong [2]. Jika stack kosong, maka operasi ini akan mengembalikan nilai `True`, dan jika tidak, maka nilai `False` [3].
+- **IsFull**, fungsi yang digunakan untuk mengecek apakah stack sudah penuh [2]. Jika stack penuh, maka operasi ini akan mengembalikan nilai `True`, dan jika belum, maka nilai `False` [3].
+- **Top**, mendapatkan suatu nilai atau melihat elemen teratas pada tumpukan tanpa menghapusnya.
+- **Size**, menghilangkan jumlah elemen yang atau tidak (terutama pada implementasi tumpukan dengan kapasitas terbatas).
+- **Peek**, memungkinkan pengguna untuk melihat elemen yang terletak di atas stack tanpa menghapusnya. Elemen ini tidak dihapus dan tetap berada di atas stack [3].
+- **Search**, untuk mencari keberadaan suatu elemen dalam sebuah tumpukan.
 
-Operasi push dikenal sebagai operasi insert dan operasi pop dikenal sebagai operasi delete. Selama operasi push kita harus memeriksa kondisi overflow dan selama operasi pop kita harus memeriksa kondisi underflow [1]. 
-- Overflow, jika seseorang dapat mencoba menyisipkan sebuah elemen dengan struktur data (stack) yang sudah terisi. Condition untuk overflow adalah Top = size - 1 (untuk stack dimulai dari 0), Top = size (untuk stack dimulai dari 1) [1].
-- Underflow, jika seseorang dapat mencoba menghapus sebuah elemen dari sebuah struktur data (stack) kosong. Condition untuk underflow adalah Top = -1 (untuk stack dimulai dari 0), Top = 0 (untuk stack dimulai dari 1) [1].
-
+Operasi push dikenal sebagai operasi _insert_ dan operasi _pop_ dikenal sebagai operasi _delete_. Selama operasi _push_ kita harus memeriksa kondisi overflow dan selama operasi _pop_ kita harus memeriksa kondisi underflow [1]. 
+- _Overflow_, jika seseorang dapat mencoba menyisipkan sebuah elemen dengan struktur data (stack) yang sudah terisi. 
+_Condition_ untuk _overflow_ adalah Top = size - 1 (untuk stack dimulai dari 0), Top = size (untuk stack dimulai dari 1) [1].
+- _Underflow_, jika seseorang dapat mencoba menghapus sebuah elemen dari sebuah struktur data (stack) kosong. _Condition_ untuk _underflow_ adalah Top = -1 (untuk stack dimulai dari 0), Top = 0 (untuk stack dimulai dari 1) [1].
 
 ## Guided
 
@@ -307,14 +301,14 @@ Program di atas menggunakan fungsi-fungsi seperti `stack<char> a` digunakan untu
 
 ## Kesimpulan
 
-Kesimpulannya, stack merupakan kumpulan beberapa elemen yang hanya dapat ditambah dan atau dihapus dari satu ujung (gerbang) yang sama, seolah-olah bertumpuk. Stack mengikuti prinsip LIFO (Last in First Out) yang berarti elemen terakhir masuk akan pertama keluar yang direpresentasikan menggunakan linked list dan array yang disajikan dengan stack. Dalam stack ada beberapa operasi yaitu push, pop, clear, isEmpty, isFull, top, size, peek, dan search. Dalam stack ada istilah overflow adalah jika menyisipkan sebuah elemen dengan stack yang sudah terisi, sedangkan underflow adalah jika mencoba menghapus sebuah elemen dari sebuah stack kosong.
+Kesimpulannya, _stack_ merupakan kumpulan beberapa elemen yang hanya dapat ditambah dan atau dihapus dari satu ujung (gerbang) yang sama, seolah-olah bertumpuk. Stack mengikuti prinsip _LIFO (Last in First Out)_ yang berarti elemen terakhir masuk akan pertama keluar yang direpresentasikan menggunakan _linked list_ dan _array_ yang disajikan dengan _stack_. Dalam _stack_ ada beberapa operasi yaitu _push_, _pop_, _clear_, _isEmpty_, _isFull_, _top_, _size_, _peek_, dan _search_. Dalam _stack_ ada istilah _overflow_ adalah jika menyisipkan sebuah elemen dengan stack yang sudah terisi, sedangkan _underflow_ adalah jika mencoba menghapus sebuah elemen dari sebuah stack kosong.
 
 ## Referensi
 
-[1] S. N. Mohanty and P. K. Tripathy, Data structure and algorithms using C++: A Practical Implementation. John Wiley & Sons, 2021.
+[1] S. N. Mohanty and P. K. Tripathy, "Data structure and algorithms using C++: A Practical Implementation". John Wiley & Sons, 2021.
 
-[2] A. S. R. St. MTi, STRUKTUR DATA DAN ALGORITMA DENGAN C++. CV. AA. RIZKY, 2019.
+[2] A. S. R. St. MTi, "STRUKTUR DATA DAN ALGORITMA DENGAN C++". CV. AA. RIZKY, 2019.
 
-[3] M. F. Rohmah and R. E. Cahyono, Teori dan Aplikasi Algoritma Pemrograman dengan Bahasa C dan C++. Penerbit NEM, 2022.
+[3] M. F. Rohmah and R. E. Cahyono, "Teori dan Aplikasi Algoritma Pemrograman dengan Bahasa C dan C++". Penerbit NEM, 2022.
 
-[4] E. Erkamim et al., Buku Ajar Algoritma dan Struktur Data. PT. Sonpedia Publishing Indonesia, 2024.
+[4] E. Erkamim et al., "Buku Ajar Algoritma dan Struktur Data". PT. Sonpedia Publishing Indonesia, 2024.
