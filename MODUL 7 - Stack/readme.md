@@ -143,7 +143,9 @@ int main() {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/91542043-5141-45d6-89f9-aba0b3a568cb)
 
-Kode di atas adalah kode program yang menggunakan array dari struktur data stack.
+Kode di atas adalah kode program yang menggunakan array dari struktur data stack, program menyediakan fungsi-fungsi dasar untuk mengelola stack buku, seperti menambahkan, menghapus, melihat, mengubah, dan menghitung buku. 
+
+Pertama, program mendefinisikan array `arrayBuku` untuk menampung 5 judul buku, variabel `maksimal` diset menjadi 5, menunjukkan kapasitas maksimum tumpukan. Lalu, program akan menambahkan buku baru ke tumpukan dengan fungsi `pushArrayBuku(string data)` fungsi akan memeriska tumpukan penuh dengan menggunakan `isFull()`, jika tumpukan penuh, pesan "Data telah penuh" dicetak dan buku baru tidak ditambahkan, jika tumpukan tidak kosong judul buku pada posisi `top - posisi` dicetak. Kemudian, program menghitung jumlah buku dalam tumpukan dengan menggunakan fungsi `countStack()`. Lalu, program mengubah judul buku pada posisi tertentu dalam tumpukan fungsi `changeArrayBuku(int posisi, string data)`. Kemudian, menggunakan fungsi `destroyArrayBuku()` untuk menghapus semua buku dari tumpukan. Lalu, mencetak daftar judul semua buku dalam tumpukan menggunakan fungsi `cetakArrayBuku()`. 
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/985db3e9-3594-4148-80ec-024ccf8bfbc8)
