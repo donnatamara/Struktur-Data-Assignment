@@ -28,8 +28,6 @@ Operasi push dikenal sebagai operasi insert dan operasi pop dikenal sebagai oper
 
 ## Guided
 
-### 1. 
-
 ```C++
 #include <iostream>
 
@@ -145,7 +143,7 @@ int main() {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/91542043-5141-45d6-89f9-aba0b3a568cb)
 
-Kode di atas adalah kode program 
+Kode di atas adalah kode program yang menggunakan array dari struktur data stack.
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/985db3e9-3594-4148-80ec-024ccf8bfbc8)
@@ -161,9 +159,12 @@ Kode di atas adalah kode program
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/d13b9514-1d71-4acc-a27e-d70ea4620a37)
+
 
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/2d9b8972-14bf-427f-9f14-ebba4fa9e34d)
 
 
 
@@ -171,13 +172,58 @@ Kode di atas adalah kode program
 ### 2. Buatlah program untuk melakukan pembalikan terhadap kalimat menggunakan stack dengan minimal 3 kata. Jelaskan output program yang source codenya beserta operasi/fungsi yang dibuat?
 
 ```C++
+#include <iostream>
+#include <string>
+#include <stack>
 
+using namespace std;
+
+int main()
+{
+  // Deklarasi variabel
+  string kalimat;
+  stack<char> a;
+
+  // Meminta input kalimat
+  cout << "Masukkan Kata ";
+  getline(cin, kalimat);
+
+  // Memeriksa apakah kalimat memiliki minimal 3 kata
+  if (kalimat.length() < 3)
+  {
+    cout << "Kalimat harus memiliki minimal 3 kata." << endl;
+    return 0;
+  }
+
+  // Memasukkan kalimat ke dalam stack
+  for (char b : kalimat)
+  {
+    a.push(b);
+  }
+
+  // Membalik kalimat
+  kalimat = "";
+  while (!a.empty())
+  {
+    kalimat += a.top();
+    a.pop();
+  }
+
+  // Menampilkan kalimat yang dibalik
+  cout << "Datastack Array : " << endl;
+  cout << "Data : " << kalimat << endl;
+
+  return 0;
+}
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/90789817-a402-4a47-85f6-dd68811c92ef)
+
 
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/2db1dd83-3d52-4dd9-b047-4a57c1b7952c)
 
 
 
@@ -189,4 +235,5 @@ Kesimpulannya, stack
 ## Referensi
 
 [1] S. N. Mohanty and P. K. Tripathy, Data structure and algorithms using C++: A Practical Implementation. John Wiley & Sons, 2021.
+
 [2] A. S. R. St. MTi, STRUKTUR DATA DAN ALGORITMA DENGAN C++. CV. AA. RIZKY, 2019.
