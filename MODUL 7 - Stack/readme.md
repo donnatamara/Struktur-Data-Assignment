@@ -11,6 +11,12 @@ Stack adalah sebuah struktur data sederhana dalam bahasa pemrograman C++ yang di
 ### Operasi pada Stack
 Operasi-operasi/fungsi pada stack:
 - Push, digunakan untuk menambah item pada stack pada tumpukan paling atas. Operasi yang memasukkan data ke dalam stack. Operasi ini biasa dinyatakan dengan oush(T,d), dengan T menyatakan stack dan d menyatakan item data yang disisipkan ke dalam stack T [2].
+  Operasi push dikenal sebagai operasi insert dan operasi pop dikenal sebagai operasi delete. Selama operasi push kita 
+  harus memeriksa kondisi overflow dan selama operasi pop kita harus memeriksa kondisi underflow [1]. 
+  - Overflow, jika seseorang dapat mencoba menyisipkan sebuah elemen dengan struktur data (stack) yang sudah terisi. 
+  Condition untuk overflow adalah Top = size - 1 (untuk stack dimulai dari 0), Top = size (untuk stack dimulai dari 1) [1].
+  - Underflow, jika seseorang dapat mencoba menghapus sebuah elemen dari sebuah struktur data (stack) kosong. Condition 
+  untuk underflow adalah Top = -1 (untuk stack dimulai dari 0), Top = 0 (untuk stack dimulai dari 1) [1].
 - Pop, digunakan untuk mengambil item pada stack pada tumpukan paling atas [2]. Setiap kali operasi pop dilakukan maka bagian yang paling atas akan berkurang satu, Operasi pop dilakukan jika stack tidak kosong [4].
 - Clear, digunakan untuk mengosongkan stack. Operasi ini biasa dinyatakan dengan pop(T). Dalam hal ini data teratas dari stack T akan dikeluarkan dan menjadi nilai balik pop. Pop biasanya dituangkan dalam bentuk pernyataan : data = pop (T) [2].
 - IsEmpty, fungsi yang digunakan untuk mengecek apakah stack sudah kosong [2]. Jika stack kosong, maka operasi ini akan mengembalikan nilai `True`, dan jika tidak, maka nilai `False` [3].
@@ -22,7 +28,7 @@ Operasi-operasi/fungsi pada stack:
 
 Operasi push dikenal sebagai operasi insert dan operasi pop dikenal sebagai operasi delete. Selama operasi push kita harus memeriksa kondisi overflow dan selama operasi pop kita harus memeriksa kondisi underflow [1]. 
 - Overflow, jika seseorang dapat mencoba menyisipkan sebuah elemen dengan struktur data (stack) yang sudah terisi. Condition untuk overflow adalah Top = size - 1 (untuk stack dimulai dari 0), Top = size (untuk stack dimulai dari 1) [1].
-- Underflow, jika seseorang dapat mencoba menghapus sebuah elemen dari sebuah struktur data (stack) kosong. Condition untuk underflow adalah Top = -1 (untuk stack dimulai dari 0), Top = 0 (untuk stack dimulai dari 1) [2].
+- Underflow, jika seseorang dapat mencoba menghapus sebuah elemen dari sebuah struktur data (stack) kosong. Condition untuk underflow adalah Top = -1 (untuk stack dimulai dari 0), Top = 0 (untuk stack dimulai dari 1) [1].
 
 
 ## Guided
