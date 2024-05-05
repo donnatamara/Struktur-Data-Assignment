@@ -301,7 +301,7 @@ Program di atas menggunakan fungsi-fungsi seperti `stack<char> a` digunakan untu
 
 ## Kesimpulan
 
-Kesimpulannya, stack adalah 
+Kesimpulannya, stack merupakan kumpulan beberapa elemen yang hanya dapat ditambah dan atau dihapus dari satu ujung (gerbang) yang sama, seolah-olah bertumpuk. Stack mengikuti prinsip LIFO (Last in First Out) yang berarti elemen terakhir masuk akan pertama keluar yang direpresentasikan menggunakan linked list dan array yang disajikan dengan stack. Dalam stack ada beberapa operasi yaitu push, pop, clear, isEmpty, isFull, top, size, peek, dan search.  
 
 ## Referensi
 
