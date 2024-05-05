@@ -155,13 +155,80 @@ Kode di atas adalah kode program yang menggunakan array dari struktur data stack
 ### 1. Buatlah program untuk menentukan apakah kalimat tersebut yang diinputkan dalam program stack adalah palindrom/tidak. Palindrom kalimat yang dibaca dari depan dan belakang sama. Jelaskan bagaimana cara kerja programnya. 
 
 ```C++
+#include <iostream>
+#include <stack>
+#include <string>
 
+using namespace std;
+
+// Fungsi untuk membersihkan string dari karakter selain huruf
+string cleanString(const string &kalimat)
+{
+  string cleaned;
+  for (char a : kalimat)
+  {
+    if (isalpha(a))
+    {
+      cleaned += tolower(a); // Mengubah huruf menjadi huruf kecil
+    }
+  }
+  return cleaned;
+}
+
+bool isPalindrome(const string &kalimat)
+{
+  stack<char> huruf;
+
+  // Membersihkan kalimat dari karakter selain huruf dan mengubah huruf menjadi huruf kecil
+  string cleaned = cleanString(kalimat);
+
+  // Memasukkan huruf ke dalam stack
+  for (char a : cleaned)
+  {
+    huruf.push(a);
+  }
+
+  // Membandingkan huruf dari depan dan belakang menggunakan stack
+  for (char a : cleaned)
+  {
+    char hurufStack = huruf.top();
+    huruf.pop();
+    if (a != hurufStack)
+    {
+      return false;
+    }
+  }
+
+  return true; // Jika semua huruf cocok, kalimat merupakan palindrom
+}
+
+int main()
+{
+  string kalimat;
+  cout << "Masukkan kalimat: ";
+  getline(cin, kalimat);
+
+  if (isPalindrome(kalimat))
+  {
+    cout << kalimat << " adalah : palindrom." << endl;
+  }
+  else
+  {
+    cout << kalimat << " adalah : bukan palindrom." << endl;
+  }
+
+  return 0;
+}
 ```
 
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/d13b9514-1d71-4acc-a27e-d70ea4620a37)
 
+Kode di atas adalah kode program untuk mengecek apakah kalimat tersebut merupakan kalimat palindrom atau bukan, dengan pengguna memasukkan kalimatnya sendiri. 
 
+Pertama, program akan membersihkan kalimat dari karakter selain huruf dan diubah menjadi huruf kecil semua. Kemudian, program menggunakan stack untuk menyimpan karakter dari kalimat yang sudah dibersihkan, dengan membandingkan karakter dari depan dan belakang kalimat menggunakan stack, program dapat menentukan apakah kalimat tersebut merupakan kalimat palindrom atau bukan. 
+
+Program menggunakan fungsi-fungsi seperti, `clearString` yang didalamnya ada `string cleaned` dengan variabel string `cleaned` digunakan untuk menyimpan string yang telah dibersihkan, `if (isalpha(a))` digunakan untuk memeriksa apakah karakter a adalah huruf, `cleaned += tolower(a)` digunakan untuk menambahkan karakter a ke string `cleaned` setelah diubah menjadi huruf kecil menggunakan fungsi `tolower`. fungsi `isPalindrome` didalamnya ada `huruf.push(a)` digunakan untuk menambahkan karakter a ke stack `huruf`, `char hurufStack = huruf.top()` digunakan untuk mengambil karakter teratas dalam stack `huruf` dan menyimpannya di variabel `hurufStack`, `huruf.pop()` digunakan untuk menghapus karakter teratas dari stack `huruf`, `if (a != hurufStack)` digunakan untuk membandingkan karakter a dengan `hurufStack`, jika berbeda, maka kalimat bukan palindrom dan fungsi mengembalikan `false`, jika karakter cocok, maka kalimat merupakan palindrom dan fungsi mengembalikan `true`.
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/2d9b8972-14bf-427f-9f14-ebba4fa9e34d)
@@ -219,6 +286,12 @@ int main()
 
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/90789817-a402-4a47-85f6-dd68811c92ef)
+
+Kode di atas adalah kode program yang dapat membalikkan urutan kata dalam sebuah kalimat dengan minimal kalimat yang dapat diproses adalah 3 kata, dengan meminta pengguna untuk memasukkan sebuah kalimat. 
+
+Pertama, program memeriksa apakah kalimat yang dimasukkan memiliki minimal 3 kata, jika tidak maka program akan menampilkan pesan bahwa kalimat minimal harus memiliki 3 kata dan program akan keluar. Jika kalimat memiliki minimal 3 kata, program akan memasukkan setiap karakter kalimat ke dalam sebuah stack. Kemudian, program akan mengambil karakter dari stack satu persatu dan menambahkannya ke string kosong yang baru, lalu membalikan kalimatnya. Terakhir, program akan membalikkan nilai 0 tanda bahwa program telah selesai, dan menampilkan kalimat yang telah di balik ke layar sebagai output. 
+
+Program di atas menggunakan fungsi-fungsi seperti `stack<char> a` digunakan untuk membuat stack bernama a yang dapat menampung karakter selama proses pembalikan, `a.push(b)` digunakan untuk memasukkan karakter b yang sedang dibaca ke dalam stack a (proses membangun stack dalam urutan terbalik), `while (!a.empty())` digunakan untuk melakukan perulangan selama stack a tidak kosong, `kalimat += a.top()` digunakan untuk menambahkan karakter teratas dari stack a ke string kalimat, `a.pop()` digunakan untuk menghapus karakter teratas dari stack a. 
 
 
 
