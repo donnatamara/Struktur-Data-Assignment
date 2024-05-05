@@ -9,21 +9,21 @@ _Stack_ adalah sebuah struktur data sederhana dalam bahasa pemrograman C++ yang 
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/be64829f-e557-4cbf-b03d-a2866dce1e47)
 
 ### Operasi pada _Stack_
-Operasi-operasi/fungsi pada stack:
+Operasi-operasi/fungsi pada _stack_:
 - **Push**, digunakan untuk menambah item pada _stack_ pada tumpukan paling atas. Operasi yang memasukkan data ke dalam _stack_. Operasi ini biasa dinyatakan dengan _push_(T,d), dengan T menyatakan _stack_ dan d menyatakan item data yang disisipkan ke dalam _stack_ T [2].
-- **Pop**, digunakan untuk mengambil item pada stack pada tumpukan paling atas [2]. Setiap kali operasi pop dilakukan maka bagian yang paling atas akan berkurang satu, Operasi pop dilakukan jika stack tidak kosong [4].
-- **Clear**, digunakan untuk mengosongkan stack. Operasi ini biasa dinyatakan dengan pop(T). Dalam hal ini data teratas dari stack T akan dikeluarkan dan menjadi nilai balik pop. Pop biasanya dituangkan dalam bentuk pernyataan : data = pop (T) [2].
+- **Pop**, digunakan untuk mengambil item pada stack pada tumpukan paling atas [2]. Setiap kali operasi _pop_ dilakukan maka bagian yang paling atas akan berkurang satu, Operasi pop dilakukan jika _stack_ tidak kosong [4].
+- **Clear**, digunakan untuk mengosongkan _stack_. Operasi ini biasa dinyatakan dengan pop(T). Dalam hal ini data teratas dari _stack_ T akan dikeluarkan dan menjadi nilai balik _pop_. _Pop_ biasanya dituangkan dalam bentuk pernyataan data = pop (T) [2].
 - **IsEmpty**, fungsi yang digunakan untuk mengecek apakah stack sudah kosong [2]. Jika stack kosong, maka operasi ini akan mengembalikan nilai `True`, dan jika tidak, maka nilai `False` [3].
 - **IsFull**, fungsi yang digunakan untuk mengecek apakah stack sudah penuh [2]. Jika stack penuh, maka operasi ini akan mengembalikan nilai `True`, dan jika belum, maka nilai `False` [3].
 - **Top**, mendapatkan suatu nilai atau melihat elemen teratas pada tumpukan tanpa menghapusnya.
 - **Size**, menghilangkan jumlah elemen yang atau tidak (terutama pada implementasi tumpukan dengan kapasitas terbatas).
-- **Peek**, memungkinkan pengguna untuk melihat elemen yang terletak di atas stack tanpa menghapusnya. Elemen ini tidak dihapus dan tetap berada di atas stack [3].
+- **Peek**, memungkinkan pengguna untuk melihat elemen yang terletak di atas stack tanpa menghapusnya. Elemen ini tidak dihapus dan tetap berada di atas _stack_ [3].
 - **Search**, untuk mencari keberadaan suatu elemen dalam sebuah tumpukan.
 
 Operasi _push_ dikenal sebagai operasi _insert_ dan operasi _pop_ dikenal sebagai operasi _delete_. Selama operasi _push_ kita harus memeriksa kondisi _overflow_ dan selama operasi _pop_ kita harus memeriksa kondisi _underflow_ [1]. 
-- _Overflow_, jika seseorang dapat mencoba menyisipkan sebuah elemen dengan struktur data (stack) yang sudah terisi. 
-_Condition_ untuk _overflow_ adalah Top = size - 1 (untuk stack dimulai dari 0), Top = size (untuk stack dimulai dari 1) [1].
-- _Underflow_, jika seseorang dapat mencoba menghapus sebuah elemen dari sebuah struktur data (stack) kosong. _Condition_ untuk _underflow_ adalah Top = -1 (untuk stack dimulai dari 0), Top = 0 (untuk stack dimulai dari 1) [1].
+- _Overflow_, jika seseorang dapat mencoba menyisipkan sebuah elemen dengan struktur data (_stack_) yang sudah terisi. 
+_Condition_ untuk _overflow_ adalah `Top = size - 1` (untuk stack dimulai dari 0), `Top = size` (untuk stack dimulai dari 1) [1].
+- _Underflow_, jika seseorang dapat mencoba menghapus sebuah elemen dari sebuah struktur data (_stack_) kosong. _Condition_ untuk _underflow_ adalah `Top = -1` (untuk stack dimulai dari 0), `Top = 0` (untuk stack dimulai dari 1) [1].
 
 
 
