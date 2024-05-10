@@ -111,7 +111,9 @@ int main() {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/adf94611-c9ac-417b-b5c0-84d16a22d10f)
 
+Kode di atas adalah kode program yang menampilkan antrian teller suatu bank dengan jumlah maksimal 5 orang, pengguna dapat menambahkan nama pelanggan ke antrian dengan fungsi `enqueueAntrian`, menghapus elemen pertama dari antrian menggunakan fungsi `dequeueAntrian()` dan memeriksa status antrian (isFull, isEmpty). Kode ini memungkinkan tampilan isi antrian dengan fungsi `viewQueue`, mengosongkan antrian dengan menggunakan fungsi `clearQueue`, menghitung jumlah elemen dalam antrian menggunakan fungsi `viewQueue`
 
+Pertama, program akan menginisialisasi antrian dengan menggunakan fungsi `maksimalQueue` yang menentukan batas maksimum elemen dalam antrian (maksimal 5) dan mendeklarasikan variabel `front` dan `back` yang menunjukkan indeks depan dan belakang antrian. Kemudian pada fungsi `main()`, program akan menjalankan operasi-operasi tersebut untuk menambahkan data ke antrian, menghapus elemen pertama, menghitung jumlah elemen, mengosongkan antrian, dan menampilkan isi antrian setelah operasi-operasi tersebut dilakukan.
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/6a9c2ae3-5985-48ac-8cba-34cc4152565a)
