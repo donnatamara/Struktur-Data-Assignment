@@ -106,10 +106,12 @@ int main() {
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/adf94611-c9ac-417b-b5c0-84d16a22d10f)
 
 
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/6a9c2ae3-5985-48ac-8cba-34cc4152565a)
 
 
 
@@ -119,14 +121,95 @@ int main() {
 ### 1. Ubahlah penerapan konsep queue pada bagian guided dari array menjadi linked list 
 
 ```C++
+#include <iostream>
 
+using namespace std;
+
+struct Node {
+    string data;
+    Node* next;
+};
+
+Node* front = NULL;
+Node* back = NULL;
+
+bool isEmpty() {
+    return front == NULL;
+}
+
+void enqueueAntrian(string data) {
+    Node* newNode = new Node;
+    newNode->data = data;
+    newNode->next = NULL;
+
+    if (isEmpty()) {
+        front = newNode;
+        back = newNode;
+    } else {
+        back->next = newNode;
+        back = newNode;
+    }
+}
+
+void dequeueAntrian() {
+    if (isEmpty()) {
+        cout << "Antrian kosong" << endl;
+    } else {
+        Node* temp = front;
+        front = front->next;
+        delete temp;
+    }
+}
+
+int countQueue() {
+    int count = 0;
+    Node* current = front;
+    while (current != NULL) {
+        count++;
+        current = current->next;
+    }
+    return count;
+}
+
+void clearQueue() {
+    while (!isEmpty()) {
+        dequeueAntrian();
+    }
+}
+
+void viewQueue() {
+    cout << "Data antrian teller: " << endl;
+    Node* current = front;
+    int index = 1;
+    while (current != NULL) {
+        cout << index << ". " << current->data << endl;
+        current = current->next;
+        index++;
+    }
+}
+
+int main() {
+    enqueueAntrian("Andi");
+    enqueueAntrian("Maya");
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    dequeueAntrian();
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    clearQueue();
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    return 0;
+}
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/5e592ab1-5fd8-414b-a8f5-c77bca3ea17b)
 
 
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/bb0f21b9-f226-4b4f-b504-a64aa7283cbe)
 
 
 
@@ -134,14 +217,97 @@ int main() {
 ### 2. Dari nomor 1 buatlah konsep antri dengan atribut Nama mahasiswa dan NIM Mahasiswa
 
 ```C++
+#include <iostream>
 
+using namespace std;
+
+struct Mahasiswa {
+    string nama;
+    string nim;
+    Mahasiswa* next;
+};
+
+Mahasiswa* front = NULL;
+Mahasiswa* back = NULL;
+
+bool isEmpty() {
+    return front == NULL;
+}
+
+void enqueueAntrian(string nama, string nim) {
+    Mahasiswa* newNode = new Mahasiswa;
+    newNode->nama = nama;
+    newNode->nim = nim;
+    newNode->next = NULL;
+
+    if (isEmpty()) {
+        front = newNode;
+        back = newNode;
+    } else {
+        back->next = newNode;
+        back = newNode;
+    }
+}
+
+void dequeueAntrian() {
+    if (isEmpty()) {
+        cout << "Antrian kosong" << endl;
+    } else {
+        Mahasiswa* temp = front;
+        front = front->next;
+        delete temp;
+    }
+}
+
+int countQueue() {
+    int count = 0;
+    Mahasiswa* current = front;
+    while (current != NULL) {
+        count++;
+        current = current->next;
+    }
+    return count;
+}
+
+void clearQueue() {
+    while (!isEmpty()) {
+        dequeueAntrian();
+    }
+}
+
+void viewQueue() {
+    cout << "Data antrian mahasiswa: " << endl;
+    Mahasiswa* current = front;
+    int index = 1;
+    while (current != NULL) {
+        cout << index << ". Nama: " << current->nama << ", NIM: " << current->nim << endl;
+        current = current->next;
+        index++;
+    }
+}
+
+int main() {
+    enqueueAntrian("Donna", "2311110014");
+    enqueueAntrian("Dundun", "2311110114");
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    dequeueAntrian();
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    clearQueue();
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    return 0;
+}
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/06f8dc04-58e4-473a-92ac-9e4bef0b574e)
 
 
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/fdd76972-2692-4b7d-9e2e-513c8415b246)
 
 
 
