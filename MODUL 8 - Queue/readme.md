@@ -5,8 +5,12 @@
 ## Dasar Teori
 
 ### 1. Queue
-Queue atau antiran merupakan kumpulan elemen dengan penyisipan dan penghapusan elemen yang dilakukan dari sisi/gerbang yang berbeda. Penyisipan dilakukan dari gerbang belakang dan penghapusan dilakukan dari gerbang depan, sehingga Queue mempunyai sifat FIFO (First In First Out), yaitu elemen yang pertama masuk akan keluar pertama juga [1]. 
+Queue atau antiran merupakan kumpulan elemen dengan penyisipan dan penghapusan elemen yang dilakukan dari sisi/gerbang yang berbeda. Penyisipan dilakukan dari gerbang belakang dan penghapusan dilakukan dari gerbang depan, sehingga Queue mempunyai sifat FIFO (First In First Out), yaitu elemen yang pertama masuk akan keluar pertama juga [1].
+
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/7f5a388b-18a5-4d8f-af72-98b33ce35d34)
+
+
+
 
 
 
