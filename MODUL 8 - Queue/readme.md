@@ -124,7 +124,6 @@ Pertama, program akan menginisialisasi antrian dengan menggunakan fungsi `maksim
 
 
 
-
 ## Unguided
 
 ### 1. Ubahlah penerapan konsep queue pada bagian guided dari array menjadi linked list 
@@ -134,70 +133,87 @@ Pertama, program akan menginisialisasi antrian dengan menggunakan fungsi `maksim
 
 using namespace std;
 
-struct Node {
+struct Mahasiswa
+{
     string data;
-    Node* next;
+    Mahasiswa *next;
 };
 
-Node* front = NULL;
-Node* back = NULL;
+Mahasiswa *front = NULL;
+Mahasiswa *back = NULL;
 
-bool isEmpty() {
+bool isEmpty()
+{
     return front == NULL;
 }
 
-void enqueueAntrian(string data) {
-    Node* newNode = new Node;
+void enqueueAntrian(string data)
+{
+    Mahasiswa *newNode = new Mahasiswa;
     newNode->data = data;
     newNode->next = NULL;
 
-    if (isEmpty()) {
+    if (isEmpty())
+    {
         front = newNode;
         back = newNode;
-    } else {
+    }
+    else
+    {
         back->next = newNode;
         back = newNode;
     }
 }
 
-void dequeueAntrian() {
-    if (isEmpty()) {
+void dequeueAntrian()
+{
+    if (isEmpty())
+    {
         cout << "Antrian kosong" << endl;
-    } else {
-        Node* temp = front;
+    }
+    else
+    {
+        Mahasiswa *temp = front;
         front = front->next;
         delete temp;
     }
 }
 
-int countQueue() {
+int countQueue()
+{
     int count = 0;
-    Node* current = front;
-    while (current != NULL) {
+    Mahasiswa *current = front;
+    while (current != NULL)
+    {
         count++;
         current = current->next;
     }
     return count;
 }
 
-void clearQueue() {
-    while (!isEmpty()) {
+void clearQueue()
+{
+    while (!isEmpty())
+    {
         dequeueAntrian();
     }
 }
 
-void viewQueue() {
+void viewQueue()
+{
     cout << "Data antrian teller: " << endl;
-    Node* current = front;
+    Mahasiswa *current = front;
     int index = 1;
-    while (current != NULL) {
+    while (current != NULL)
+    {
         cout << index << ". " << current->data << endl;
         current = current->next;
         index++;
     }
 }
 
-int main() {
+int main()
+{
     enqueueAntrian("Andi");
     enqueueAntrian("Maya");
     viewQueue();
@@ -220,7 +236,7 @@ Kode di atas merupakan kode program yang menerapkan konsep queue menggunakan lin
 Lalu, pada fungsi `main()` program akan menjalankan serta menampilkan sesuai instruksi yang telah dimasukkan yaitu menambah beberapa elemen ke antrian dengan fungsi `enqueueAntrian()`, menampilkan isi antrian dengan `viewQueue()` dan mencetak jumlah elemen dengan `countQueue()`, menghapus elemen pertama dari antrian dengan `dequeueAntrian()`, mengosongkan antrian dengan `clearQueue()` dan menampilkan kembali isi antrian serta jumlah elemennya. Program akan mengembalikan nilai 0 yang artinya program telah berjalan dengan sukses. 
 
 #### Full code Screenshot:
-![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/bb0f21b9-f226-4b4f-b504-a64aa7283cbe)
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/14fdbf72-17d3-47fd-9fcf-4857b411db01)
 
 
 
@@ -232,72 +248,89 @@ Lalu, pada fungsi `main()` program akan menjalankan serta menampilkan sesuai ins
 
 using namespace std;
 
-struct Mahasiswa {
+struct Mahasiswa
+{
     string nama;
     string nim;
-    Mahasiswa* next;
+    Mahasiswa *next;
 };
 
-Mahasiswa* front = NULL;
-Mahasiswa* back = NULL;
+Mahasiswa *front = NULL;
+Mahasiswa *back = NULL;
 
-bool isEmpty() {
+bool isEmpty()
+{
     return front == NULL;
 }
 
-void enqueueAntrian(string nama, string nim) {
-    Mahasiswa* newNode = new Mahasiswa;
+void enqueueAntrian(string nama, string nim)
+{
+    Mahasiswa *newNode = new Mahasiswa;
     newNode->nama = nama;
     newNode->nim = nim;
     newNode->next = NULL;
 
-    if (isEmpty()) {
+    if (isEmpty())
+    {
         front = newNode;
         back = newNode;
-    } else {
+    }
+    else
+    {
         back->next = newNode;
         back = newNode;
     }
 }
 
-void dequeueAntrian() {
-    if (isEmpty()) {
+void dequeueAntrian()
+{
+    if (isEmpty())
+    {
         cout << "Antrian kosong" << endl;
-    } else {
-        Mahasiswa* temp = front;
+    }
+    else
+    {
+        Mahasiswa *temp = front;
         front = front->next;
         delete temp;
     }
 }
 
-int countQueue() {
+int countQueue()
+{
     int count = 0;
-    Mahasiswa* current = front;
-    while (current != NULL) {
+    Mahasiswa *current = front;
+    while (current != NULL)
+    {
         count++;
         current = current->next;
     }
     return count;
 }
 
-void clearQueue() {
-    while (!isEmpty()) {
+void clearQueue()
+{
+    while (!isEmpty())
+    {
         dequeueAntrian();
     }
 }
 
-void viewQueue() {
+void viewQueue()
+{
     cout << "Data antrian mahasiswa: " << endl;
-    Mahasiswa* current = front;
+    Mahasiswa *current = front;
     int index = 1;
-    while (current != NULL) {
+    while (current != NULL)
+    {
         cout << index << ". Nama: " << current->nama << ", NIM: " << current->nim << endl;
         current = current->next;
         index++;
     }
 }
 
-int main() {
+int main()
+{
     enqueueAntrian("Donna", "2311110014");
     enqueueAntrian("Dundun", "2311110114");
     viewQueue();
@@ -322,7 +355,7 @@ Pertama, program akan mendeklarasikan struct bernama `Mahasiswa` yang memiliki d
 Lalu, pada fungsi `main()` program akan menjalankan serta menampilkan sesuai instruksi yang telah dimasukkan yaitu menambah beberapa elemen ke antrian dengan fungsi `enqueueAntrian()`, menampilkan isi antrian dengan `viewQueue()` dan mencetak jumlah elemen dengan `countQueue()`, menghapus elemen pertama dari antrian dengan `dequeueAntrian()`, mengosongkan antrian dengan `clearQueue()` dan menampilkan kembali isi antrian serta jumlah elemennya. Program akan mengembalikan nilai 0 yang artinya program telah berjalan dengan sukses.
 
 #### Full code Screenshot:
-![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/fdd76972-2692-4b7d-9e2e-513c8415b246)
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/91ed1b15-a76c-46f7-b14c-4a81ba19c2ae)
 
 
 
