@@ -2,70 +2,87 @@
 
 using namespace std;
 
-struct Node {
+struct Mahasiswa
+{
     string data;
-    Node* next;
+    Mahasiswa *next;
 };
 
-Node* front = NULL;
-Node* back = NULL;
+Mahasiswa *front = NULL;
+Mahasiswa *back = NULL;
 
-bool isEmpty() {
+bool isEmpty()
+{
     return front == NULL;
 }
 
-void enqueueAntrian(string data) {
-    Node* newNode = new Node;
+void enqueueAntrian(string data)
+{
+    Mahasiswa *newNode = new Mahasiswa;
     newNode->data = data;
     newNode->next = NULL;
 
-    if (isEmpty()) {
+    if (isEmpty())
+    {
         front = newNode;
         back = newNode;
-    } else {
+    }
+    else
+    {
         back->next = newNode;
         back = newNode;
     }
 }
 
-void dequeueAntrian() {
-    if (isEmpty()) {
+void dequeueAntrian()
+{
+    if (isEmpty())
+    {
         cout << "Antrian kosong" << endl;
-    } else {
-        Node* temp = front;
+    }
+    else
+    {
+        Mahasiswa *temp = front;
         front = front->next;
         delete temp;
     }
 }
 
-int countQueue() {
+int countQueue()
+{
     int count = 0;
-    Node* current = front;
-    while (current != NULL) {
+    Mahasiswa *current = front;
+    while (current != NULL)
+    {
         count++;
         current = current->next;
     }
     return count;
 }
 
-void clearQueue() {
-    while (!isEmpty()) {
+void clearQueue()
+{
+    while (!isEmpty())
+    {
         dequeueAntrian();
     }
 }
 
-void viewQueue() {
+void viewQueue()
+{
     cout << "Data antrian teller: " << endl;
-    Node* current = front;
+    Mahasiswa *current = front;
     int index = 1;
-    while (current != NULL) {
+    while (current != NULL)
+    {
         cout << index << ". " << current->data << endl;
         current = current->next;
         index++;
     }
 }
 
-int main() {
+int main()
+{
     enqueueAntrian("Andi");
     enqueueAntrian("Maya");
     viewQueue();
