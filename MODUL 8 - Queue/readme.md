@@ -215,7 +215,9 @@ int main() {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/5e592ab1-5fd8-414b-a8f5-c77bca3ea17b)
 
+Kode di atas merupakan kode program yang menerapkan konsep queue menggunakan linked list. Pertama, program akan mendeklarasikan struct bernama `Node` yang memiliki dua atribut yaitu `data` dan `next`. Lalu, program akan mendekalrasikan dua pointer global yaitu `front` dan `back` untuk menandai elemen pertama dan terakhir dalam queue. Kemudian, pada fungsi `isEmpty()` akan mengembalikan nilai boolean `true` jika queue kosong dan `false` jika tidak. Fungsi `enqueueAntrian(string data)` untuk menambahkan elemen baru ke antrian, `dequeueAntrian()` untuk menghapus elemen dari depan antrian, `countQueue()` untuk menghitung jumlah elemen dari antrian, `clearQueue()` untuk mengosongkan antrian, dan `viewQueue()` untuk menampilkan isi pada antrian. 
 
+Lalu, pada fungsi `main()` program akan menjalankan serta menampilkan sesuai instruksi yang telah dimasukkan yaitu menambah beberapa elemen ke antrian dengan fungsi `enqueueAntrian()`, menampilkan isi antrian dengan `viewQueue()` dan mencetak jumlah elemen dengan `countQueue()`, menghapus elemen pertama dari antrian dengan `dequeueAntrian()`, mengosongkan antrian dengan `clearQueue()` dan menampilkan kembali isi antrian serta jumlah elemennya. Program akan mengembalikan nilai 0 yang artinya program telah berjalan dengan sukses. 
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/bb0f21b9-f226-4b4f-b504-a64aa7283cbe)
@@ -313,7 +315,11 @@ int main() {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/06f8dc04-58e4-473a-92ac-9e4bef0b574e)
 
+Kode di atas merupakan kode program yang menerapkan konsep queue menggunakan linked list. Seperti kode sebelumnya, hanya saja pada fungsi `main()` ditambahkan beberapa elemen.
 
+Pertama, program akan mendeklarasikan struct bernama `Mahasiswa` yang memiliki dua atribut yaitu `data` dan `next`. Lalu, program akan mendekalrasikan dua pointer global yaitu `front` dan `back` untuk menandai elemen pertama dan terakhir dalam queue. Kemudian, pada fungsi `isEmpty()` akan mengembalikan nilai boolean `true` jika queue kosong dan `false` jika tidak. Fungsi `enqueueAntrian(string data)` untuk menambahkan elemen baru ke antrian, `dequeueAntrian()` untuk menghapus elemen dari depan antrian, `countQueue()` untuk menghitung jumlah elemen dari antrian, `clearQueue()` untuk mengosongkan antrian, dan `viewQueue()` untuk menampilkan isi pada antrian. 
+
+Lalu, pada fungsi `main()` program akan menjalankan serta menampilkan sesuai instruksi yang telah dimasukkan yaitu menambah beberapa elemen ke antrian dengan fungsi `enqueueAntrian()`, menampilkan isi antrian dengan `viewQueue()` dan mencetak jumlah elemen dengan `countQueue()`, menghapus elemen pertama dari antrian dengan `dequeueAntrian()`, mengosongkan antrian dengan `clearQueue()` dan menampilkan kembali isi antrian serta jumlah elemennya. Program akan mengembalikan nilai 0 yang artinya program telah berjalan dengan sukses.
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/fdd76972-2692-4b7d-9e2e-513c8415b246)
