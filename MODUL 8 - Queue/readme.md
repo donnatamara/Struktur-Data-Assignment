@@ -5,13 +5,20 @@
 ## Dasar Teori
 
 ### 1. Queue
-Queue atau antiran merupakan kumpulan elemen dengan penyisipan dan penghapusan elemen yang dilakukan dari sisi/gerbang yang berbeda. Penyisipan dilakukan dari gerbang belakang dan penghapusan dilakukan dari gerbang depan, sehingga Queue mempunyai sifat FIFO (First In First Out), yaitu elemen yang pertama masuk akan keluar pertama juga [1].
+Queue atau antiran merupakan kumpulan elemen dengan penyisipan dan penghapusan elemen yang dilakukan dari sisi/gerbang yang berbeda. Penyisipan dilakukan dari gerbang belakang dan penghapusan dilakukan dari gerbang depan, sehingga Queue mempunyai sifat FIFO (First In First Out), yaitu elemen yang pertama masuk akan keluar pertama juga [1]. Antrian (Queue) merupakan suatu kumpulan data yang penambahan elemennya (masuk antrian) hanya bisa dilakukan pada suatu ujung (disebut dengan sisi belakang/rear) atau disebut juga enqueue yaitu apabila seseorang masuk ke dalam sebuah antrian. 
+
+Jika seseorang keluar dari antrian/penghapusan (pengambilan elemen) dilakukan lewat ujung yang lain (disebut dengan sisi depan/fornt) atau disebut juga dequeue yaitu apabila seseorang keluar dari antrian. Jadi, dalam antrian menggunakan prinsip "masuk pertama keluar pertama" atau disebut dengan orinsip FIFO (first in first out). Dengan kata lain, urutan keluar akan sama dengan urutan masuknya. Contoh dalam kehidupan sehari-hari adalah antrian mobil saat membeli karcis di pintu jalan tol, antrian di bioskop dan sebagainya [2]. 
 
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/7f5a388b-18a5-4d8f-af72-98b33ce35d34)
 
-
-
-
+### Operasi-operasi standar pada Queue
+- Insialisasi, adalah prosedur untuk membuat queue pada kondisi awal, queue yang masih kosong.
+- InQueue atau insert queue, adalah prosedur untuk memasukkan sebuah elemen baru pada queue, jumlah elemen pada queue akan bertambah satu dan elemen tersebut merupakan elemen belakang [2].
+- Dequeue atau delete queue, adalah prosedur untuk menghapus/mengambil sebuah elemen dari queue, elemen yang diambil adalah elemen depan dan jumlah elemen queue akan berkurang satu [2].
+  Operasi-operasi yang berhubungan dengan jumlah elemen satu queue adalah:
+  - Size, adalah operasi untuk mendapatkan banyaknya elemen queue [2].
+  - Empty, adalah operasi untuk mengetahui apakah queue dalam keadaan         kosong atau tidak. Dengan status ini maka dapat dicegah dilakukannya        operasi Dequeue dari suatu queue yang kosong [2].
+  - Full, adalah operasi untuk mengetahui apakah queue penuh atau tidak.      Prosedur ini hanya berlaku untuk queue yang jumlahnya terbatas [2].
 
 
 
@@ -363,10 +370,10 @@ Lalu, pada fungsi `main()` program akan menjalankan serta menampilkan sesuai ins
 
 ## Kesimpulan
 
-Kesimpulannya, queue adalah 
+Kesimpulannya, queue atau antrian adalah 
 
 ## Referensi
 
 [1] E. Erkamim et al., "Buku Ajar Algoritma dan Struktur Data" . PT. Sonpedia Publishing Indonesia, 2024.
 
-[2]
+[2] A. S. R. St. MTi, "STRUKTUR DATA DAN ALGORITMA DENGAN C++". CV. AA. RIZKY, 2019.
