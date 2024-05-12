@@ -31,10 +31,12 @@ Jika seseorang keluar dari antrian/penghapusan (pengambilan elemen) dilakukan le
 **a. Queue Linear (Implementasi Queue dengan batasan linier)**
    Queue Liniear adalah implementasi Queue menggunakan struktur data linear seperti array atau linked list, yang mana 
    elemen-elemen ditambahkan di ujung belakang (rear) dan dihapus dari ujung depan (front) [5].
+   
 **b. Queue Circular (Implementasi Queue dengan memanfaatkan siklus)**
    Queue circular adalah implementasi Queue yang menggunakan struktur data linear seperti array dengan pemanfaatan 
    siklus, yang mana elemen-elemen tetap ditambahkan di ujung belakang (rear) dan dihapus dari ujun depan (front), 
    namun jika Queue mencapai batas maksimum, elemen baru akan ditempatkan di awal [5].
+   
 **c. Priority Queue (Implementasi Queue dengan prioritas pada setiap elemen)**
    Priority Queue adalah implementasi Queue di mana setiap elemen memeiliki prioritas tertentu. Queue jenis ini dapat 
    menggunakan struktur data seperti heap untuk memastikan elemen-elemen tetap terurut secara tepat [5].
