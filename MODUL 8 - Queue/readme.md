@@ -4,22 +4,40 @@
 
 ## Dasar Teori
 
-### 1. Queue
-Queue atau antiran merupakan kumpulan elemen dengan penyisipan dan penghapusan elemen yang dilakukan dari sisi/gerbang yang berbeda. Penyisipan dilakukan dari gerbang belakang dan penghapusan dilakukan dari gerbang depan, sehingga Queue mempunyai sifat FIFO (First In First Out), yaitu elemen yang pertama masuk akan keluar pertama juga [1]. Antrian (Queue) merupakan suatu kumpulan data yang penambahan elemennya (masuk antrian) hanya bisa dilakukan pada suatu ujung (disebut dengan sisi belakang/rear) atau disebut juga enqueue yaitu apabila seseorang masuk ke dalam sebuah antrian. 
+### A. Queue
+Queue atau antiran merupakan kumpulan elemen dengan penyisipan dan penghapusan elemen yang dilakukan dari sisi/gerbang yang berbeda. Penyisipan dilakukan dari gerbang belakang dan penghapusan dilakukan dari gerbang depan, sehingga Queue mempunyai sifat FIFO (First In First Out), yaitu elemen yang pertama masuk akan keluar pertama juga [1]. Antrian (Queue) merupakan suatu kumpulan data yang penambahan elemennya (masuk antrian) hanya bisa dilakukan pada suatu ujung (disebut dengan sisi belakang/rear) atau disebut juga enqueue yaitu apabila seseorang masuk ke dalam sebuah antrian, queue merupakan struktur data dinamis [2]. 
 
 Jika seseorang keluar dari antrian/penghapusan (pengambilan elemen) dilakukan lewat ujung yang lain (disebut dengan sisi depan/fornt) atau disebut juga dequeue yaitu apabila seseorang keluar dari antrian. Jadi, dalam antrian menggunakan prinsip "masuk pertama keluar pertama" atau disebut dengan orinsip FIFO (first in first out). Dengan kata lain, urutan keluar akan sama dengan urutan masuknya. Contoh dalam kehidupan sehari-hari adalah antrian mobil saat membeli karcis di pintu jalan tol, antrian di bioskop dan sebagainya [2]. 
 
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/7f5a388b-18a5-4d8f-af72-98b33ce35d34)
 
-### Operasi-operasi standar pada Queue
+### B. Operasi-operasi standar pada Queue
 - Insialisasi, adalah prosedur untuk membuat queue pada kondisi awal, queue yang masih kosong.
-- InQueue atau insert queue, adalah prosedur untuk memasukkan sebuah elemen baru pada queue, jumlah elemen pada queue akan bertambah satu dan elemen tersebut merupakan elemen belakang [2].
-- Dequeue atau delete queue, adalah prosedur untuk menghapus/mengambil sebuah elemen dari queue, elemen yang diambil adalah elemen depan dan jumlah elemen queue akan berkurang satu [2].
+- InQueue atau insert queue, adalah prosedur untuk memasukkan sebuah elemen baru pada queue, jumlah elemen pada queue akan
+  bertambah satu dan elemen tersebut merupakan elemen belakang [2].
+- Dequeue atau delete queue, adalah prosedur untuk menghapus/mengambil sebuah elemen dari queue, elemen yang diambil adalah
+  elemen depan dan jumlah elemen queue akan berkurang satu [2].
   Operasi-operasi yang berhubungan dengan jumlah elemen satu queue adalah:
   - Size, adalah operasi untuk mendapatkan banyaknya elemen queue [2].
-  - Empty, adalah operasi untuk mengetahui apakah queue dalam keadaan         kosong atau tidak. Dengan status ini maka dapat dicegah dilakukannya        operasi Dequeue dari suatu queue yang kosong [2].
-  - Full, adalah operasi untuk mengetahui apakah queue penuh atau tidak.      Prosedur ini hanya berlaku untuk queue yang jumlahnya terbatas [2].
+  - IsEmpty, adalah operasi untuk mengetahui apakah queue dalam keadaan kosong atau tidak. Dengan status ini maka dapat
+    dicegah dilakukannya operasi Dequeue dari suatu queue yang kosong [2].
+  - IsFull, adalah operasi untuk mengetahui apakah queue penuh atau tidak. Prosedur ini hanya berlaku untuk queue yang
+    jumlahnya terbatas [2].
+  - Front atau peek, adalah operasi untuk mwngwmbalikan elemen yang paling depan di queue [3].
+  - Rear, adalah operasi untuk mengembalikan elemen yang paling belakang di   queue [3], namun tidak menghapusnya.  
+- Enqueue adalah operasi yang menambahkan elemen ke akhir antrian. Operasi dilakukan dengan cara mengecek apakah antrian sudah penuh. Jika tidak, pointer `rear` dinaikkan untuk menunjuk ke ruang kosong berikutnya, dan elemen baru ditambahkan ke antrian di lokasi yang dipoint oleh `rear` [4].
 
+### C. Jenis-jenis Queue
+a. Queue Linear (Implementasi Queue dengan batasan linier)
+   Queue Liniear adalah implementasi Queue menggunakan struktur data linear seperti array atau linked list, yang mana 
+   elemen-elemen ditambahkan di ujung belakang (rear) dan dihapus dari ujung depan (front) [5].
+b. Queue Circular (Implementasi Queue dengan memanfaatkan siklus)
+   Queue circular adalah implementasi Queue yang menggunakan struktur data linear seperti array dengan pemanfaatan 
+   siklus, yang mana elemen-elemen tetap ditambahkan di ujung belakang (rear) dan dihapus dari ujun depan (front), 
+   namun jika Queue mencapai batas maksimum, elemen baru akan ditempatkan di awal [5].
+c. Priority Queue (Implementasi Queue dengan prioritas pada setiap elemen)
+   Priority Queue adalah implementasi Queue di mana setiap elemen memeiliki prioritas tertentu. Queue jenis ini dapat 
+   menggunakan struktur data seperti heap untuk memastikan elemen-elemen tetap terurut secara tepat [5].
 
 
 ## Guided
@@ -238,7 +256,7 @@ int main()
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/5e592ab1-5fd8-414b-a8f5-c77bca3ea17b)
 
-Kode di atas merupakan kode program yang menerapkan konsep queue menggunakan linked list. Pertama, program akan mendeklarasikan struct bernama `Node` yang memiliki dua atribut yaitu `data` dan `next`. Lalu, program akan mendekalrasikan dua pointer global yaitu `front` dan `back` untuk menandai elemen pertama dan terakhir dalam queue. Kemudian, pada fungsi `isEmpty()` akan mengembalikan nilai boolean `true` jika queue kosong dan `false` jika tidak. Fungsi `enqueueAntrian(string data)` untuk menambahkan elemen baru ke antrian, `dequeueAntrian()` untuk menghapus elemen dari depan antrian, `countQueue()` untuk menghitung jumlah elemen dari antrian, `clearQueue()` untuk mengosongkan antrian, dan `viewQueue()` untuk menampilkan isi pada antrian. 
+Kode di atas merupakan kode program yang menerapkan konsep queue menggunakan linked list. Pertama, program akan mendeklarasikan struct bernama `Mahasiswa` yang memiliki dua atribut yaitu `data` dan `next`. Lalu, program akan mendekalrasikan dua pointer global yaitu `front` dan `back` untuk menandai elemen pertama dan terakhir dalam queue. Kemudian, pada fungsi `isEmpty()` akan mengembalikan nilai boolean `true` jika queue kosong dan `false` jika tidak. Fungsi `enqueueAntrian(string data)` untuk menambahkan elemen baru ke antrian, `dequeueAntrian()` untuk menghapus elemen dari depan antrian, `countQueue()` untuk menghitung jumlah elemen dari antrian, `clearQueue()` untuk mengosongkan antrian, dan `viewQueue()` untuk menampilkan isi pada antrian. 
 
 Lalu, pada fungsi `main()` program akan menjalankan serta menampilkan sesuai instruksi yang telah dimasukkan yaitu menambah beberapa elemen ke antrian dengan fungsi `enqueueAntrian()`, menampilkan isi antrian dengan `viewQueue()` dan mencetak jumlah elemen dengan `countQueue()`, menghapus elemen pertama dari antrian dengan `dequeueAntrian()`, mengosongkan antrian dengan `clearQueue()` dan menampilkan kembali isi antrian serta jumlah elemennya. Program akan mengembalikan nilai 0 yang artinya program telah berjalan dengan sukses. 
 
@@ -367,13 +385,20 @@ Lalu, pada fungsi `main()` program akan menjalankan serta menampilkan sesuai ins
 
 
 
-
 ## Kesimpulan
 
-Kesimpulannya, queue atau antrian adalah 
+Kesimpulannya, queue atau antrian adalah struktur data dinamis berupa kumpulan elemen yang memungkinkan penyisipan dan penghapusan elemen yang dilakukan dari sisi yang berbeda,. Penyisipan elemen dilakukan dari gerbang belakang (rear) dan penghapusan dilakukan dari gerbang depan (front). Karena cara ini, Queue memiliki sifat FIFO (First In First Out), yang berarti elemen yang pertama masuk akan keluar pertama juga. 
+
+Queue memiliki beberapa operasi dasar diantaranya inisialisasi, Inqueue atau insert queue, dequeue atau delete queue, enqueue, size, isEmpty, isFull, front atau peek, dan rear. Queue juga memiliki jenis-jenis yaitu Queue linear adalah queue yang menggunakan struktur data linear seperti array atau linked list, queue circular adalah queue yang menggunakan struktur data linear seperti array dengan pemanfaatan siklus, dan priority queue adalah queue yang setiap elemennya memiliki prioritas tertentu.
 
 ## Referensi
 
 [1] E. Erkamim et al., "Buku Ajar Algoritma dan Struktur Data" . PT. Sonpedia Publishing Indonesia, 2024.
 
 [2] A. S. R. St. MTi, "STRUKTUR DATA DAN ALGORITMA DENGAN C++". CV. AA. RIZKY, 2019.
+
+[3] J. Carey, S. Doshi, and P. Rajan, C++ Data structures and algorithm design principles: Leverage the power of modern C++ to build robust and scalable applications. Packt Publishing Ltd, 2019.
+
+[4] S. N. Mohanty and P. K. Tripathy, Data structure and algorithms using C++: A Practical Implementation. John Wiley & Sons, 2021.
+
+[5] R. Pratama, “Queue: Pengenalan, Implementasi, Operasi Dasar, dan Aplikasi,” Medium, May 24, 2023. [Online]. Available: https://medium.com/@furatamarizuki/queue-pengenalan-implementasi-operasi-dasar-dan-aplikasi-c5eed7e871a3
