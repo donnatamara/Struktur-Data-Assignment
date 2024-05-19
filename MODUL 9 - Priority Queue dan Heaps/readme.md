@@ -5,7 +5,8 @@
 ## Dasar Teori
 
 ### Definisi Priority Queue
-
+P
+riority Queue adalah struktur data dasar yang terdiri dari satu set pasangan key-value di mana kunci yang lebih kecil Sebuah priority queue hanya mengimplementasikan dua operasi yaitu insert untuk menambahkan item dengan prioritas terkait ke dalam antrean, dan DeleteMin yang digunakan untuk menghapus item dengan prioritas tertinggi dari antrean [2]. 
 
 ### Definisi Heaps
 
@@ -286,3 +287,4 @@ Kesimpulannya,
 ## Referensi
 
 [1] 
+[2] Carroll, S., & Goponenko, A. "A C++ Implementation of a Thread-Safe Priority Queue Based on Multi-Dimensional Linked Lists and MRLock". 2019.
