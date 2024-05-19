@@ -269,6 +269,9 @@ int main() {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/c0f22aa6-26a0-4c93-8298-8ace03f32cdc)
 
+Kode di atas adalah kode program yang menggunakan data max heap atau priority queue dengan menggunakan array. Pertama, program akan mendefinisikan array `H` dan variabel `heapSize` untuk menyimpan elemen-elemen heap dan jumlah elemen dalam heap. Selanjutnya, program memiliki fungsi-fungsi seperti `parent`, `leftChild`, dan `rightChild` untuk menentukan indeks parent, left child, dan right child dari suatu node dalam heap. Fungsi `shiftUp` dan `shiftDown` digunakan unruk mempertahankan properti heap setelah operasi-operasi seperti penambahan, penghapusan, atau perubahan prioritas elemen. 
+
+Program di atas juga memiliki operasi-operasi dasar seperti `insert` untuk menambahkan elemen, `extractMax` untuk mengeluarkan elemen maksimum, `changePriority` untuk mengubah prioritas elemen, `getMax` untuk mendapatkan elemen maksimum tanpa mengeluarkannya, dan `remove` untuk menghapus elemen. Pada fungsi `main`, program meminta input pengguna dengan sejumlah elemen dan isi elemen-elemennya yang akan dimasukkan ke dalam heap, lalu menampilkan heap setelah setiap operasi seperti mengeluarkan elemen maksimum, mengubah prioritas elemen pada indeks 2 menjadi 49, serta menghapus elemen pada indeks 3. Kemudian, program akan mengembalikan nilai 0 tanda bahwa program telah sukses berjalan.
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/92c16df6-8042-4166-aeaa-e8af2c933e74)
