@@ -1,99 +1,117 @@
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
-struct Mahasiswa
-{
-    string nama;
-    string nim;
-    Mahasiswa *next;
-};
+int H[50];
+int heapSize = -1;
 
-Mahasiswa *front = NULL;
-Mahasiswa *back = NULL;
-
-bool isEmpty()
-{
-    return front == NULL;
+int parent(int i) {
+    return (i - 1) / 2;
 }
 
-void enqueueAntrian(string nama, string nim)
-{
-    Mahasiswa *newNode = new Mahasiswa;
-    newNode->nama = nama;
-    newNode->nim = nim;
-    newNode->next = NULL;
+int leftChild(int i) {
+    return ((2 * i) + 1);
+}
 
-    if (isEmpty())
-    {
-        front = newNode;
-        back = newNode;
-    }
-    else
-    {
-        back->next = newNode;
-        back = newNode;
+int rightChild(int i) {
+    return ((2 * i) + 2);
+}
+
+void shiftUp(int i) {
+    while (i > 0 && H[parent(i)] < H[i]) {
+        swap(H[parent(i)], H[i]);
+        i = parent(i);
     }
 }
 
-void dequeueAntrian()
-{
-    if (isEmpty())
-    {
-        cout << "Antrian kosong" << endl;
+void shiftDown(int i) {
+    int maxIndex = i;
+    int l = leftChild(i);
+    if (l <= heapSize && H[l] > H[maxIndex]) {
+        maxIndex = l;
     }
-    else
-    {
-        Mahasiswa *temp = front;
-        front = front->next;
-        delete temp;
+    int r = rightChild(i);
+    if (r <= heapSize && H[r] > H[maxIndex]) {
+        maxIndex = r;
     }
-}
-
-int countQueue()
-{
-    int count = 0;
-    Mahasiswa *current = front;
-    while (current != NULL)
-    {
-        count++;
-        current = current->next;
-    }
-    return count;
-}
-
-void clearQueue()
-{
-    while (!isEmpty())
-    {
-        dequeueAntrian();
+    if (i != maxIndex) {
+        swap(H[i], H[maxIndex]);
+        shiftDown(maxIndex);
     }
 }
 
-void viewQueue()
-{
-    cout << "Data antrian mahasiswa: " << endl;
-    Mahasiswa *current = front;
-    int index = 1;
-    while (current != NULL)
-    {
-        cout << index << ". Nama: " << current->nama << ", NIM: " << current->nim << endl;
-        current = current->next;
-        index++;
+void insert(int p) {
+    heapSize = heapSize + 1;
+    H[heapSize] = p;
+    shiftUp(heapSize);
+}
+
+int extractMax() {
+    int result = H[0];
+    H[0] = H[heapSize];
+    heapSize = heapSize - 1;
+    shiftDown(0);
+    return result;
+}
+
+void changePriority(int i, int p) {
+    int oldp = H[i];
+    H[i] = p;
+    if (p > oldp) {
+        shiftUp(i);
+    } else {
+        shiftDown(i);
     }
 }
 
-int main()
-{
-    enqueueAntrian("Donna", "2311110014");
-    enqueueAntrian("Dundun", "2311110114");
-    viewQueue();
-    cout << "Jumlah antrian = " << countQueue() << endl;
-    dequeueAntrian();
-    viewQueue();
-    cout << "Jumlah antrian = " << countQueue() << endl;
-    clearQueue();
-    viewQueue();
-    cout << "Jumlah antrian = " << countQueue() << endl;
+int getMax() {
+    return H[0];
+}
+
+void remove(int i) {
+    H[i] = getMax() + 1;
+    shiftUp(i);
+    extractMax();
+}
+
+int main() {
+    int a;
+    cout << "Enter the number of elements in the heap : ";
+    cin >> a;
+
+    cout << "Enter the elements of the heap : ";
+    for (int i = 0; i < a; ++i) {
+        int element;
+        cin >> element;
+        insert(element);
+    }
+
+    cout << "Priority Queue : ";
+    for (int i = 0; i <= heapSize; ++i) {
+        cout << H[i] << " ";
+    }
+    cout << "\n";
+
+    cout << "Node with maximum priority : " << extractMax() << "\n";
+
+    cout << "Priority queue after extracting maximum : ";
+    for (int i = 0; i <= heapSize; ++i) {
+        cout << H[i] << " ";
+    }
+    cout << "\n";
+
+    changePriority(2, 49);
+    cout << "Priority queue after priority change : ";
+    for (int i = 0; i <= heapSize; ++i) {
+        cout << H[i] << " ";
+    }
+    cout << "\n";
+
+    remove(3);
+    cout << "Priority queue after removing the element : ";
+    for (int i = 0; i <= heapSize; ++i) {
+        cout << H[i] << " ";
+    }
     return 0;
 }
