@@ -4,7 +4,10 @@
 
 ## Dasar Teori
 
-### Definisi 
+### Definisi Priority Queue
+
+### Definisi Heaps
+
 
 
 
@@ -128,9 +131,14 @@
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/7e2eda98-b3cb-41e4-b5be-8e8dbf4a28f0)z
 
+Kode di atas adalah kode program menggunakan heap maksimum dengan menggunakan array statis. Pertama, program menginisialisasi heap `H[50]` yang merupakan array statis dengan kapasitas 50 elemen untuk menyimpan sebuah heap dengan variabel `heapSize` untuk melacak jumlah elemennya. Lalu, program akan menghitung indeks elemen dengan menggunakan fungsi `parent`, `leftChild`, dan `rightChild`. Kemudian, program akan memperbaiki heap dengan memindahkan elemen ke atas atau ke bawah sesuai kebutuhan dengan menggunakan fungsi `shiftUp` dan `shiftDown`. Operasi `insert` digunakan untuk menambah elemen baru ke dalam heap dan memperbaiki posisinya menggunakan fungsi `siftUp`. Fungsi `extractMax` untuk menghapus dan mengembalikan elemen maksimum dari heap, fungsi `changePriority` untuk mengubah prioritas elemen dan memperbaikinya dengan menggunakan fungsi `shiftUp` atau `shiftDown`. Lalu ada fungsi `getMax` yang dapat mengembalikan elemen maksimum tanpa menghapusnya, dan `remove` untuk menghapus elemen di indeks tertentu dengan mengatur nilai elemen tersebut lebih besar dari elemen di indeks tertentu dengan mengatur nilai elemen tersebut lebih besar dari elemen maksimum saat ini, lalu menghapusnya dengan `extractMax`.
+
+Dalam fungsi `main`, program menambahkan beberapa elemen ke dalam heap menggunakan fungsi `insert`, lalu mengambil dan mencetak elemen maksimum dari heap menggunakan `extractMax`, mencetak isi heap setelah penghapusan elemen maksimum, mengubah prioritas elemen di indeks 2 menjadi 49 menggunakan `changePriority` dan heap diperbaiki, mencetak isi heap setelah perubahan prioritas, menghapus elemen di indeks 3 menggunakan `remove`, elemen di indeks 3 dihapus dan heap diperbaiki. Program akan mengembalikan nilai 0 yang artinya program telah selesai berjalan.
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/d9a5cbcc-1cc4-4877-ac13-264f913c49f7)
 
 
 
