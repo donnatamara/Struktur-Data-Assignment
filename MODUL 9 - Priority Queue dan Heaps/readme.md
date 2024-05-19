@@ -5,10 +5,10 @@
 ## Dasar Teori
 
 ### Definisi Priority Queue
-Priority Queue adalah struktur data dasar yang terdiri dari satu set pasangan key-value di mana kunci menunjukkan prioritas (berdasarkan konvensi, kunci yang lebih kecil menunjukkan prioritas yang lebih tinggi. Struktur data ini banyak digunakan dalam algoritma, mulai dari aplikasi tingkat tinggi hingga kernel sistem tingkat rendah. Implementasi yang efisien dalam lingkungan multithreaded sangat penting untuk sistem multi-core modern dan masa depan. [1]. Sebuah priority queue hanya mengimplementasikan dua operasi yaitu insert untuk menambahkan item dengan prioritas terkait ke dalam antrean, dan DeleteMin yang digunakan untuk menghapus item dengan prioritas tertinggi dari antrean [2]. Priority queue menawarkan pencarian waktu konstan dari elemen dengan prioritas tertinggi. Prioritas ditentukan dengan menggunakan operator kurang dari daripada elemen. Menyisipkan dan menghapus keduanya berjalan dalam waktu logaritmik.
+Priority Queue adalah struktur data dasar yang terdiri dari satu set pasangan key-value di mana kunci menunjukkan prioritas (berdasarkan konvensi, kunci yang lebih kecil menunjukkan prioritas yang lebih tinggi. Struktur data ini banyak digunakan dalam algoritma, mulai dari aplikasi tingkat tinggi hingga kernel sistem tingkat rendah. Implementasi yang efisien dalam lingkungan multithreaded sangat penting untuk sistem multi-core modern dan masa depan. [1]. Sebuah priority queue hanya mengimplementasikan dua operasi yaitu insert untuk menambahkan item dengan prioritas terkait ke dalam antrean, dan DeleteMin yang digunakan untuk menghapus item dengan prioritas tertinggi dari antrean [2]. Priority queue menawarkan pencarian waktu konstan dari elemen dengan prioritas tertinggi. Prioritas ditentukan dengan menggunakan operator kurang dari daripada elemen. Menyisipkan dan menghapus keduanya berjalan dalam waktu logaritmik[3].
 
 ### Definisi Heaps
-
+Heap adalah teknik pengurutan berbasis perbandingan berdasarkan struktur data binary heap. Teknik ini mirip dengan selection sort, di mana pertama-tama kita menemukan elemen minimum dan menempatkan elemen minimum tersebut di awal, ulangi proses yang sama untuk elemen-elemen yang tersisa [4].
 
 
 
@@ -288,3 +288,7 @@ Kesimpulannya,
 [1] Goponenko, A., & Carroll, S. (2019). A C++ implementation of a lock-free priority queue based on Multi-Dimensional Linked List. Link: https://www. researchgate. net/publication/337020321_A_C_Implementation_of_a_Lock-Free _Priority_Queue_Based_on_Multi-Dimensional_Linked_List.
 
 [2] Carroll, S., & Goponenko, A. (2019). A C++ implementation of a threadsafe priority queue based on multi-dimensional linked lists and MRLock.
+
+[3]
+
+[4] GeeksforGeeks, “Heap Sort Data Structures and Algorithms tutorials,” GeeksforGeeks, Mar. 29, 2024. https://www.geeksforgeeks.org/heap-sort/
