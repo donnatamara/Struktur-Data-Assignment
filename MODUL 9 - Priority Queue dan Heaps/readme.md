@@ -4,19 +4,21 @@
 
 ## Dasar Teori
 
-### Definisi Priority Queue
+### Priority Queue
 Priority Queue adalah struktur data yang memungkinkan untuk menyimpan elemen-elemen dengan prioritas yang berbeda-beda. Elemen dengan prioritas yang lebih tinggi akan diproses terlebih dahulu dengan prioritas yang lebih tinggi akan diproses terlebih dahulu dibandingkan elemen dengan prioritas yang lebih rendah. Prinsip utama dari priority queue adalah "first in, highest priority out". 
 
 Priority Queue adalah struktur data dasar yang terdiri dari satu set pasangan key-value di mana kunci menunjukkan prioritas (berdasarkan konvensi, kunci yang lebih kecil menunjukkan prioritas yang lebih tinggi. Struktur data ini banyak digunakan dalam algoritma, mulai dari aplikasi tingkat tinggi hingga kernel sistem tingkat rendah. Implementasi yang efisien dalam lingkungan multithreaded sangat penting untuk sistem multi-core modern dan masa depan. [1]. Ada beberapa cara untuk mengimplementasikan priority queue, termasuk menggunakan array, linked list, heap, atau binary serach tree. Priority queue sering digunakan dalam sistem real-time, di mana urutan pemrosesan elemen dapat memiliki konsekuensi yang signifikan.
 
 Sebuah priority queue hanya mengimplementasikan dua operasi yaitu insert untuk menambahkan item dengan prioritas terkait ke dalam antrean, dan DeleteMin yang digunakan untuk menghapus item dengan prioritas tertinggi dari antrean [2]. Priority queue menawarkan pencarian waktu konstan dari elemen dengan prioritas tertinggi. Prioritas ditentukan dengan menggunakan operator kurang dari daripada elemen. Menyisipkan dan menghapus keduanya berjalan dalam waktu logaritmik[3].
 
-### Definisi Heaps
+### Heaps
 Heap adalah teknik pengurutan berbasis perbandingan berdasarkan struktur data binary heap. Teknik ini mirip dengan selection sort, di mana pertama-tama kita menemukan elemen minimum dan menempatkan elemen minimum tersebut di awal, ulangi proses yang sama untuk elemen-elemen yang tersisa [4]. 
 
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/ddced6d8-0619-478e-a90a-c3f708edb466)
 
-Heap dibagi menjadi dua jenis yaitu max-heap, nilai dalam setiap node harus lebih besar atau sama dengan nilai anak-anaknya, sedangkan min-heap, nilai dalam setiap node harus lebih kecil atau sama dengan nilai anak-anaknya. 
+Heap dibagi menjadi dua jenis yaitu:
+- Heap maksimum (maxHeap) yaitu nilai di setiap node harus lebih besar (atau sama dengan) nilai di semua node di subtree kirinya, dan lebih kecil (atau sama dengan) nilai di semua node di subtree kanannya.
+- Heap minimum (minHeap) yaitu nilai di setiap node harus lebih kecil (atau sama dengan) nilai di semua node di subtree kirinya, dan lebih besar (atau sama dengan) nilai di semua node di subtree kanannya. 
 
 
 
