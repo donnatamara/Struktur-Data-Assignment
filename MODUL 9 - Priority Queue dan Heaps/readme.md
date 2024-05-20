@@ -14,7 +14,7 @@ Sebuah priority queue hanya mengimplementasikan dua operasi yaitu insert untuk m
 ### Heaps
 Heap dalam struktur data adalah sebuah binary tree lengkap yang memenuhi properti heap, di mana setiap simpul yang diberikan adalah selalu lebih besar dari simpul-simpul turunannya dan kunci dari simpul akar adalah yang tersebar di antara simpul-simpul lainnya. Properti ini juga disebut properti heap maksimal. Dimana setiap simpul yang diberikan selalu lebih kecil dari simpul-simpul anaknya dan kunci dari simpul akar adalah yang terkecil di antara simpul-simpul lainnya. Properti ini juga disebut properti min heap [4].
 
-Secara umum, pengertian dari heap adalah bagian dari memori yang terorganisasi untuk dapat melayani alokasi memori secara dinamis. Suatu heap tree adalah Complete Binary Tree (CBT) di mana harga-harga key pada node-nodenya sedemikian rupa sehingga harga-harga key pada node-node anaknya tidak ada yang lebih besar dari harga key pada node orang tuanya
+Secara umum, pengertian dari heap adalah bagian dari memori yang terorganisasi untuk dapat melayani alokasi memori secara dinamis. Suatu heap tree adalah Complete Binary Tree (CBT) di mana harga-harga key pada node-nodenya sedemikian rupa sehingga harga-harga key pada node-node anaknya tidak ada yang lebih besar dari harga key pada node orang tuanya [5].
 
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/ddced6d8-0619-478e-a90a-c3f708edb466)
 
@@ -28,6 +28,8 @@ Operasi-operasi pada struktur data heap:
 - Insertion, menambahkan item baru di heap [6].
 - Deletion, menghapus item dari heap [6].
 - Extract Min-Max, mengembalikan dan mengahpus elemen maksimum atau minimum masing-masing di max-heap dan min-heap [6].
+
+
 
 ## Guided
 
@@ -298,11 +300,13 @@ Program di atas juga memiliki operasi-operasi dasar seperti `insert` untuk menam
 
 ## Kesimpulan
 
-Kesimpulannya, priority queue adalah struktur data yang memungkinkan untuk menyimpan elemen-elemen dengan prioritas tertentu, dengan prioritas yang lebih tinggi diproses terlebih dahulu dibandingkan dengan elemen yang lebih rendah. Ada beberapa cara untuk mengimplementasikan priority queue, termasuk menggunakan array, linked list, heap, atau binary serach tree. Heap adalah struktur data binary tree 
+Kesimpulannya, priority queue adalah struktur data yang memungkinkan untuk menyimpan elemen-elemen dengan prioritas tertentu, dengan prioritas yang lebih tinggi diproses terlebih dahulu dibandingkan dengan elemen yang lebih rendah. Ada beberapa cara untuk mengimplementasikan priority queue, termasuk menggunakan array, linked list, heap, atau binary serach tree. Heap adalah struktur data binary tree lengkap yang memenuhi properti heap, di mana setiap simpul yang diberikan selalu lebih besar dari simpul-simpul lainnya. Heap dibagi menjadi dua yaitu heap maksimum dan heap minimum. Ada beberapa operasi pada heap heapify, find-max, insertion, deletion, dan extract min-max.
+
+
 
 ## Referensi
 
-[1] Goponenko, A., & Carroll, S. (2019). A C++ implementation of a lock-free priority queue based on Multi-Dimensional Linked List. Link: https://www. researchgate. net/publication/337020321_A_C_Implementation_of_a_Lock-Free _Priority_Queue_Based_on_Multi-Dimensional_Linked_List.
+[1] Goponenko, A., & Carroll, S. A C++ implementation of a lock-free priority queue based on Multi-Dimensional Linked List. Link: https://www. researchgate. net/publication/337020321_A_C_Implementation_of_a_Lock-Free _Priority_Queue_Based_on_Multi-Dimensional_Linked_List. 2019.
 
 [2] Carroll, S., & Goponenko, A. "A C++ implementation of a threadsafe priority queue based on multi-dimensional linked lists and MRLock". 2019.
 
@@ -310,6 +314,6 @@ Kesimpulannya, priority queue adalah struktur data yang memungkinkan untuk menyi
 
 [4] Programiz. (n.d.). "Heap Data Structure". https://www.programiz.com/dsa/heap-data-structure. Diakses tanggal 20 Mei 2024.
 
-[5] GeeksforGeeks, “Heap Sort Data Structures and Algorithms tutorials,” GeeksforGeeks, Mar. 29, 2024. https://www.geeksforgeeks.org/heap-sort/
+[5]	E. Chalikdjen, H. Ong, dan S. P. Sajuthi, “Heap Tree dan Kegunaannya dalam Heap Sort.” 
 
-[6] Trivusi, “Struktur Data Heap: Pengertian, Karakteristik, dan Operasinya,” Trivusi, Jan. 07, 2023. https://www.trivusi.web.id/2023/01/struktur-data-heap.html
+[6] GeeksforGeeks, “Heap Sort Data Structures and Algorithms tutorials,” GeeksforGeeks, Mar. 29, 2024. https://www.geeksforgeeks.org/heap-sort/
