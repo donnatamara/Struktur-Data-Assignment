@@ -12,7 +12,9 @@ Priority Queue adalah struktur data dasar yang terdiri dari satu set pasangan ke
 Sebuah priority queue hanya mengimplementasikan dua operasi yaitu insert untuk menambahkan item dengan prioritas terkait ke dalam antrean, dan DeleteMin yang digunakan untuk menghapus item dengan prioritas tertinggi dari antrean [2]. Priority queue menawarkan pencarian waktu konstan dari elemen dengan prioritas tertinggi. Prioritas ditentukan dengan menggunakan operator kurang dari daripada elemen. Menyisipkan dan menghapus keduanya berjalan dalam waktu logaritmik[3].
 
 ### Heaps
-Heap adalah teknik pengurutan berbasis perbandingan berdasarkan struktur data binary heap. Teknik ini mirip dengan selection sort, di mana pertama-tama kita menemukan elemen minimum dan menempatkan elemen minimum tersebut di awal, ulangi proses yang sama untuk elemen-elemen yang tersisa [4]. 
+Heap dalam struktur data adalah sebuah binary tree lengkap yang memenuhi properti heap, di mana setiap simpul yang diberikan adalah selalu lebih besar dari simpul-simpul turunannya dan kunci dari simpul akar adalah yang tersebar di antara simpul-simpul lainnya. Properti ini juga disebut properti heap maksimal. Dimana setiap simpul yang diberikan selalu lebih kecil dari simpul-simpul anaknya dan kunci dari simpul akar adalah yang terkecil di antara simpul-simpul lainnya. Properti ini juga disebut properti min heap [4].
+
+Secara umum, pengertian dari heap adalah bagian dari memori yang terorganisasi untuk dapat melayani alokasi memori secara dinamis. Suatu heap tree adalah Complete Binary Tree (CBT) di mana harga-harga key pada node-nodenya sedemikian rupa sehingga harga-harga key pada node-node anaknya tidak ada yang lebih besar dari harga key pada node orang tuanya
 
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/ddced6d8-0619-478e-a90a-c3f708edb466)
 
@@ -20,7 +22,12 @@ Heap dibagi menjadi dua jenis yaitu:
 - Heap maksimum (maxHeap) yaitu nilai di setiap node harus lebih besar (atau sama dengan) nilai di semua node di subtree kirinya, dan lebih kecil (atau sama dengan) nilai di semua node di subtree kanannya.
 - Heap minimum (minHeap) yaitu nilai di setiap node harus lebih kecil (atau sama dengan) nilai di semua node di subtree kirinya, dan lebih besar (atau sama dengan) nilai di semua node di subtree kanannya. 
 
-
+Operasi-operasi pada struktur data heap:
+- Heapify, proses untuk mengatur ulang heap untuk mempertahankan properti heap [6].
+- Find-max (atau Find-min), menemukan item maksimum dari max-heap, atau item minimum dari min-heap [6].
+- Insertion, menambahkan item baru di heap [6].
+- Deletion, menghapus item dari heap [6].
+- Extract Min-Max, mengembalikan dan mengahpus elemen maksimum atau minimum masing-masing di max-heap dan min-heap [6].
 
 ## Guided
 
@@ -291,14 +298,18 @@ Program di atas juga memiliki operasi-operasi dasar seperti `insert` untuk menam
 
 ## Kesimpulan
 
-Kesimpulannya, 
+Kesimpulannya, priority queue adalah struktur data yang memungkinkan untuk menyimpan elemen-elemen dengan prioritas tertentu, dengan prioritas yang lebih tinggi diproses terlebih dahulu dibandingkan dengan elemen yang lebih rendah. Ada beberapa cara untuk mengimplementasikan priority queue, termasuk menggunakan array, linked list, heap, atau binary serach tree. Heap adalah struktur data binary tree 
 
 ## Referensi
 
 [1] Goponenko, A., & Carroll, S. (2019). A C++ implementation of a lock-free priority queue based on Multi-Dimensional Linked List. Link: https://www. researchgate. net/publication/337020321_A_C_Implementation_of_a_Lock-Free _Priority_Queue_Based_on_Multi-Dimensional_Linked_List.
 
-[2] Carroll, S., & Goponenko, A. (2019). A C++ implementation of a threadsafe priority queue based on multi-dimensional linked lists and MRLock.
+[2] Carroll, S., & Goponenko, A. "A C++ implementation of a threadsafe priority queue based on multi-dimensional linked lists and MRLock". 2019.
 
-[3] B. Andrist, V. Sehr, and B. Garney, C++ High performance: Master the art of optimizing the functioning of your C++ code. Packt Publishing Ltd, 2020.
+[3] B. Andrist, V. Sehr, and B. Garney, "C++ High performance: Master the art of optimizing the functioning of your C++ code". Packt Publishing Ltd, 2020.
 
-[4] GeeksforGeeks, “Heap Sort Data Structures and Algorithms tutorials,” GeeksforGeeks, Mar. 29, 2024. https://www.geeksforgeeks.org/heap-sort/
+[4] Programiz. (n.d.). "Heap Data Structure". https://www.programiz.com/dsa/heap-data-structure. Diakses tanggal 20 Mei 2024.
+
+[5] GeeksforGeeks, “Heap Sort Data Structures and Algorithms tutorials,” GeeksforGeeks, Mar. 29, 2024. https://www.geeksforgeeks.org/heap-sort/
+
+[6] Trivusi, “Struktur Data Heap: Pengertian, Karakteristik, dan Operasinya,” Trivusi, Jan. 07, 2023. https://www.trivusi.web.id/2023/01/struktur-data-heap.html
