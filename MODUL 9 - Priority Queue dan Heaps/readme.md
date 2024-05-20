@@ -306,7 +306,7 @@ Kesimpulannya, priority queue adalah struktur data yang memungkinkan untuk menyi
 
 ## Referensi
 
-[1] Goponenko, A., & Carroll, S. A C++ implementation of a lock-free priority queue based on Multi-Dimensional Linked List. Link: https://www. researchgate. net/publication/337020321_A_C_Implementation_of_a_Lock-Free _Priority_Queue_Based_on_Multi-Dimensional_Linked_List. 2019.
+[1] Goponenko, A., & Carroll, S. A C++ implementation of a lock-free priority queue based on Multi-Dimensional Linked List. Link: https://www.researchgate.net/publication/337020321_A_C_Implementation_of_a_Lock-Free_Priority_Queue_Based_on_Multi-Dimensional_Linked_List. 2019.
 
 [2] Carroll, S., & Goponenko, A. "A C++ implementation of a threadsafe priority queue based on multi-dimensional linked lists and MRLock". 2019.
 
