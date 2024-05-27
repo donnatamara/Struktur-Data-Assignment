@@ -35,6 +35,8 @@ int main () {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/562437fb-e45a-414a-b14a-8167184810d8)
 
+
+
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/72641bfd-6346-491a-9cbd-88b582b46228)
 
