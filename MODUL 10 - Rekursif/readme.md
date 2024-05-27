@@ -8,8 +8,9 @@
 Rekursif adalah fungsi yang memanggil dirinya sendiri atau metode yang secara langsung atau tidak langsung memanggil dirinya sendiri [1]. Dalam rekursif biasanya mengandung prosedur dan fungsi, perbedaannya yaitu bahwa rekursif bisa memanggil ke dirinya sendiri, tetapi prosedur atau fungsi harus dipanggil lewat pemanggil prosedur atau fungsi [2]. Pemanggilan prosedur atau fungsi dari dirinya sendiri dapat berarti jika proses yang berulang tidak bisa diketahui kapan akan berakhir [1]. Fungsi rekursif harus memiliki dua bagian pernyataan rekursif dan kondisi terminasi. Perbedaan fungsi rekursif dan non rekursif yaitu fungsi rekursif mampu melakukan pemanggilan dirinya sendiri, sedangkan fungsi non rekursif hanya bisa memanggil fungsi lain [3]. 
 
 Rekursif dibagi menjadi dua jenis yaitu:
-- Rekursif langsung, fungsinya secara langsung memanggil dirinya sendiri [1]
-- Rekursif tidak langsung, terjadi ketika fungsi A memanggil fungsi B, dan fungsi B memanggil kembali ke fungsi A maka itu melibatkan rekursi tidak langsung [1].
+- Rekursif langsung (Direct Recursion), fungsinya secara langsung memanggil dirinya sendiri [1]. Rekursi ini biasanya digunakan dalam pemrograman untuk menyelesaikan masalah yang dapat direduksi menjadi masalah serupa yang lebih kecil. Rekursi ini juga dapat membuat kode menjadi lebih ringkas dan simpel ketika digunakan dengan baik, namun perlu diingat untuk menghindari rekursi yang tak hingga yang dapat menyebabkan StackOverFlowError [4].
+  
+- Rekursif tidak langsung (Indirect Recursion), terjadi ketika fungsi A memanggil fungsi B, dan fungsi B memanggil kembali ke fungsi A maka itu melibatkan rekursi tidak langsung [1]. Rekursi ini merupakan fungsi yang memanggil fungsi lain dengan cara memanggil fungsi rekursif lain, bukan fungsi itu sendiri. Rekursi ini digunakan untuk menyelesaikan masalah yang lebih kompleks yang tidak dapat diselesaikan oleh rekursif langsung. 
 
 ## Kekurangan Rekursif 
 Setiap program rekursif memiliki persyaratan ruang yang lebih besar daripada program iteratif karena semua fungsi akan tetap ada di tumpukan hingga base case tercapai. Program rekursif juga memiliki persyaratan waktu yang lebih besar karena pemanggilan fungsi dan pengembalian overhead [1].
@@ -19,6 +20,8 @@ Rekursi menyediakan cara yang bersih dan sederhana dalam penulisan kode program.
 
 ## Alokasi Memori untuk Rekursif
 Saat sebuah fungsi apapun dipanggil dari fungsi `main()`, memori dialokasikan untuknya di stack. Sebuah fungsi rekursif memanggil dirinya sendiri, memori untuk fungsi yang dipanggil dialokasikan di atas memori yang dialokasikan untuk fungsi pemanggil dan salinan variabel lokal yang berbeda dibuat untuk setiap panggilan fungsi. Ketika base case tercapai, fungsi mengembalikan nilainya ke fungsi yang memamnggil, dilajutkan dengan melepaskan memori dan proses berlanjut [1].
+
+
 
 ## Guided 
 ### Rekursif Langsung (Direct Recursion)
@@ -205,7 +208,8 @@ Kode di atas adalah kode program yang dapat menghitung faktorial dari suatu bila
 
 ## Kesimpulan
 
-Kesimpulannya, Rekursif adalah proses sebuah fungsi yang memanggil dirinya sendiri
+Kesimpulannya, Rekursif adalah proses sebuah fungsi yang memanggil dirinya sendiri dengan cara rekursif langsung atau rekursif tidak langsung. Rekursif langsung merupakan fungsi yang memanggil dirinya sendiri secara langsung atau tidak langsung memanggil dirinya sendiri, sedangkan rekursif tidak langsung merupakan fungsi yang memanggil fungsi lain dengan cara memanggil fungsi rekursif lain, bukan fungsi itu sendiri. Kekurangan dari rekursif adalah setiap programnya memiliki persyaratan ruang yang lebih besar, dan memiliki persyaratan yang lebih besar juga. Kelebihan dari rekursif adalah rekursi menyediakan cara yang bersih dan sederhaan dalam penulisan kode program, beberapa masalah dianjurkan untuk menggunakan rekursif dalam penyelesaiannya. Alokasi memori untuk rekursif adalah di atas memori yang dialokasikan untuk fungsi pemanggil dan salinan variabel lokal yang berbeda dibuat untuk setiap panggilan fungsi, ketika base case tercapai, fungsi mengembalikan nilainya ke fungsi yang memanggil, dilanjutkan dengan melepas memori dan proses pun berlanjut.
+
 
 
 ## Referensi
@@ -216,4 +220,6 @@ Kesimpulannya, Rekursif adalah proses sebuah fungsi yang memanggil dirinya sendi
  
 [3] S. Anam, I. Yanti, Z. Fitriah, and U. Habibah, Cara mudah belajar bahasa pemrograman C++. Universitas Brawijaya Press, 2021.
 
-[4] 
+[4] R. Firliana, R. Rina, dan P. Kasih, "Struktur Data yang Terorganisir," dalam Algoritma dan Pemrograman C++, Adjie Media Nusantara, 2019.
+
+[5]  E. Lutfina, N. Inayati, and G. W. Saraswati, "Analisis Perbandingan Kinerja Metode Rekursif dan Metode Iteratif dalam Algoritma Linear Search", Komputika: Jaringan Sistem Komputer, 2022.
