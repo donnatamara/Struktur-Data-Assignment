@@ -70,7 +70,8 @@ int main() {
 }
 ```
 
-#### Output:![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/f76a6ab2-e595-4dfc-9ed0-e9f825d74243)
+#### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/f76a6ab2-e595-4dfc-9ed0-e9f825d74243)
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/cb5d6807-d28e-4c8a-907a-9490bc71faca)
