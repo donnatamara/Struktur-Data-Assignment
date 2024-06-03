@@ -4,6 +4,15 @@
 
 ## Dasar Teori
 
+
+merepresentasikan setiap nilai dengan sebuah kunci yang mungkin unik dan, kemudian, menggunakan kunci yang sama untuk memeriksa keberadaan kunci tersebut atau untuk mengambil nilai yang sesuai, tergantung pada kasus penggunaannya. Fungsi yang mendapatkan kunci unik dari data yang diberikan disebut fungsi hash. Mari kita ambil satu contoh sederhana sebelum masuk ke dalam hashing. Katakanlah kita memiliki sebuah penampung yang menyimpan bilangan bulat, dan kita ingin mengetahui apakah sebuah bilangan bulat tertentu merupakan bagian dari penampung tersebut atau bukan secepat mungkin. Cara yang paling sederhana adalah dengan memiliki larik Boolean dengan setiap bit mewakili nilai yang sama dengan indeksnya. Ketika kita ingin menyisipkan sebuah elemen, kita akan mengatur nilai Boolean yang berhubungan dengan elemen tersebut menjadi 0. Untuk menyisipkan x, kita cukup mengatur data[x] = true. Memeriksa apakah sebuah bilangan bulat tertentu, x, ada di dalam penampung juga sama sederhananya - kita cukup memeriksa apakah data[x] bernilai benar [1]. Dengan demikian, fungsi penyisipan, penghapusan, dan pencarian menjadi O(1). Sebuah tabel hash sederhana untuk menyimpan bilangan-bilangan bulat bernomor dari 0 sampai 9 akan terlihat sebagai berikut: 
+
+
+
+Tabel hash dibangun dari dua ide dasar: mengurangi kunci aplikasi menjadi kunci hash, sebuah angka dalam rentang dari 0 sampai N - 1, dan memetakan angka tersebut ke dalam rentang yang lebih kecil dari 0 hingga m - 1, m” N. Kita dapat menggunakan rentang kecil tersebut untuk mengindeks ke dalam larik dengan akses waktu yang tetap. Kedua ide ini sederhana, tetapi bagaimana mereka diimplementasikan dalam prakteknya mempengaruhi efisiensi tabel hash [2].
+
+Tabel hash menyimpan elemen-elemennya dalam semacam larik ember. Ketika menambahkan sebuah elemen ke tabel hash, sebuah bilangan bulat dihitung untuk elemen tersebut menggunakan fungsi hash. Containers menggunakan hash table untuk menyimpan elemen-elemennya. Tabel ini mengharuskan elemen-elemennya dibandingkan dengan operator (==) dan ada cara untuk menghitung nilai hash berdasarkan elemen[3]. Setiap kunci dan setiap nilai dari tabel hash masing-masing adalah kumpulan fitur dan kumpulan contoh objek dalam kelompok maksimal [5]. 
+
 ### 
 
 
@@ -252,9 +261,9 @@ int main() {
 ## Unguided
 
 ### 1.	Implementasikan hash table untuk menyimpan data mahasiswa. Setiap mahasiswa memiliki NIM dan nilai. Implementasikan fungsi untuk menambahkan data baru, menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan nilai. Dengan ketentuan : 
-    a.	Setiap mahasiswa memiliki NIM dan nilai. 
-    b.	Program memiliki tampilan pilihan menu berisi poin C.
-    c.	Implementasikan fungsi untuk menambahkan data baru, menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan rentang nilai (80 – 90).
+a.	Setiap mahasiswa memiliki NIM dan nilai. 
+b.	Program memiliki tampilan pilihan menu berisi poin C.
+c.	Implementasikan fungsi untuk menambahkan data baru, menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan rentang nilai (80 – 90).
 
 
 ```C++
@@ -276,6 +285,10 @@ Kesimpulannya,
 
 ## Referensi
 
-[1] S. H. S. Kom. MT and I. W. J. S. Kom. MCs, Konsep Algoritme dan Aplikasinya dalam Bahasa Pemrograman C++. Penerbit Andi, 2020.
+[1] J. Carey, S. Doshi, and P. Rajan, C++ Data structures and algorithm design principles: Leverage the power of modern C++ to build robust and scalable applications. Packt Publishing Ltd, 2019.
 
-[2] 
+[2] T. Mailund, The Joys of Hashing: Hash Table Programming with C. Apress, 2019.
+
+[3] B. Andrist, V. Sehr, and B. Garney, C++ High performance: Master the art of optimizing the functioning of your C++ code. Packt Publishing Ltd, 2020.
+
+[4] V. Tran, L. Wang, H. Chen, and Q. Xiao, “MCHT: A maximal clique and hash table-based maximal prevalent co-location pattern mining algorithm,” Expert Systems With Applications, vol. 175, p. 114830, Aug. 2021, doi: 10.1016/j.eswa.2021.114830.
