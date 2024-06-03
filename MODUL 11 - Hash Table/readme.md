@@ -4,17 +4,24 @@
 
 ## Dasar Teori
 
+Hash table adalah struktur data yang digunakan untuk menyimpan dan mengambil data menggunakan kunci unik. Fungsi hash mengambil kunci sebagai input dan menghasilkan indeks yang sesuai dengan array. Setiap kunci dan setiap nilai dari tabel hash masing-masing adalah kumpulan fitur dan kumpulan contoh objek dalam kelompok maksimal [1]. 
 
-merepresentasikan setiap nilai dengan sebuah kunci yang mungkin unik dan, kemudian, menggunakan kunci yang sama untuk memeriksa keberadaan kunci tersebut atau untuk mengambil nilai yang sesuai, tergantung pada kasus penggunaannya. Fungsi yang mendapatkan kunci unik dari data yang diberikan disebut fungsi hash. Mari kita ambil satu contoh sederhana sebelum masuk ke dalam hashing. Katakanlah kita memiliki sebuah penampung yang menyimpan bilangan bulat, dan kita ingin mengetahui apakah sebuah bilangan bulat tertentu merupakan bagian dari penampung tersebut atau bukan secepat mungkin. Cara yang paling sederhana adalah dengan memiliki larik Boolean dengan setiap bit mewakili nilai yang sama dengan indeksnya. Ketika kita ingin menyisipkan sebuah elemen, kita akan mengatur nilai Boolean yang berhubungan dengan elemen tersebut menjadi 0. Untuk menyisipkan x, kita cukup mengatur data[x] = true. Memeriksa apakah sebuah bilangan bulat tertentu, x, ada di dalam penampung juga sama sederhananya - kita cukup memeriksa apakah data[x] bernilai benar [1]. Dengan demikian, fungsi penyisipan, penghapusan, dan pencarian menjadi O(1). Sebuah tabel hash sederhana untuk menyimpan bilangan-bilangan bulat bernomor dari 0 sampai 9 akan terlihat sebagai berikut: 
+Hash table juga dapat diartikan sebagai fungsi yang merepresentasikan setiap nilai dengan sebuah kunci yang mungkin unik dan, kemudian, menggunakan kunci yang sama untuk memeriksa keberadaan kunci tersebut atau untuk mengambil nilai yang sesuai, tergantung pada kasus penggunaannya. Hash table adalah Fungsi yang mendapatkan kunci unik dari data yang diberikan[2]. 
 
+Mari kita ambil satu contoh sederhana sebelum masuk ke dalam hashing. Katakanlah kita memiliki sebuah penampung yang menyimpan bilangan bulat, dan kita ingin mengetahui apakah sebuah bilangan bulat tertentu merupakan bagian dari penampung tersebut atau bukan secepat mungkin. Cara yang paling sederhana adalah dengan memiliki larik Boolean dengan setiap bit mewakili nilai yang sama dengan indeksnya. Ketika kita ingin menyisipkan sebuah elemen, kita akan mengatur nilai Boolean yang berhubungan dengan elemen tersebut menjadi 0. Untuk menyisipkan x, kita cukup mengatur data[x] = true. Memeriksa apakah sebuah bilangan bulat tertentu, x, ada di dalam penampung juga sama sederhananya - kita cukup memeriksa apakah data[x] bernilai benar [2]. Dengan demikian, fungsi penyisipan, penghapusan, dan pencarian menjadi O(1). Sebuah tabel hash sederhana untuk menyimpan bilangan-bilangan bulat bernomor dari 0 sampai 9 akan terlihat sebagai berikut: 
 
+![Screenshot 2024-06-03 214503](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/91af5fda-db02-4786-b6f6-bd6a4acb1071)
 
-Tabel hash dibangun dari dua ide dasar: mengurangi kunci aplikasi menjadi kunci hash, sebuah angka dalam rentang dari 0 sampai N - 1, dan memetakan angka tersebut ke dalam rentang yang lebih kecil dari 0 hingga m - 1, m” N. Kita dapat menggunakan rentang kecil tersebut untuk mengindeks ke dalam larik dengan akses waktu yang tetap. Kedua ide ini sederhana, tetapi bagaimana mereka diimplementasikan dalam prakteknya mempengaruhi efisiensi tabel hash [2].
+Tabel hash dibangun dari dua ide dasar: mengurangi kunci aplikasi menjadi kunci hash, sebuah angka dalam rentang dari 0 sampai N - 1, dan memetakan angka tersebut ke dalam rentang yang lebih kecil dari 0 hingga m - 1, m” N. Kita dapat menggunakan rentang kecil tersebut untuk mengindeks ke dalam larik dengan akses waktu yang tetap. Kedua ide ini sederhana, tetapi bagaimana mereka diimplementasikan dalam prakteknya mempengaruhi efisiensi tabel hash [3].
 
-Tabel hash menyimpan elemen-elemennya dalam semacam larik ember. Ketika menambahkan sebuah elemen ke tabel hash, sebuah bilangan bulat dihitung untuk elemen tersebut menggunakan fungsi hash. Containers menggunakan hash table untuk menyimpan elemen-elemennya. Tabel ini mengharuskan elemen-elemennya dibandingkan dengan operator (==) dan ada cara untuk menghitung nilai hash berdasarkan elemen[3]. Setiap kunci dan setiap nilai dari tabel hash masing-masing adalah kumpulan fitur dan kumpulan contoh objek dalam kelompok maksimal [5]. 
+Tabel hash menyimpan elemen-elemennya dalam semacam larik ember. Ketika menambahkan sebuah elemen ke tabel hash, sebuah bilangan bulat dihitung untuk elemen tersebut menggunakan fungsi hash. Containers menggunakan hash table untuk menyimpan elemen-elemennya. Tabel ini mengharuskan elemen-elemennya dibandingkan dengan operator (==) dan ada cara untuk menghitung nilai hash berdasarkan elemen[4]. 
 
-### 
-
+### Operasi hash table
+- Insertion, memasukkan data baru ke tabel hash.
+- Deletion, menghapus data dari hash table.
+- Searching, mencari data dalam hash table dan mencari data di dalam bucker yang sesuai.
+- Update, memperbarui data dalam hash table lalu memperbarui data yang ditemukan.
+- Traversal, melalui seluruh hush table untuk memproses semua data yang ada dalam tabel.
 
 
 ## Guided 
@@ -140,9 +147,12 @@ int main() {
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/65713825-5e39-45b7-9332-42c87ef0f79e)
 
+Kode di atas adalah kode program yang menggunakan hash table dengan operasi insert, get, remove, dan traverse. Pertama, 'MAX_SIZE' ditetapkan sebagai 10 dan fungsi hash mengembalikan indeks berdasarkan 'key' menggunakan operasi modulus. Struktur 'Node' digunakan untuk menyimpan elemen dengan pasangan 'key' dan 'value', serta pointer 'next' untuk menghubungkan node dalam kasus collision. Class 'HasTable' memiliki array pointer ke 'Node' ('table'). Fungsi 'insert' menambahkan atau memperbarui pasangan 'key' dan 'value' di hash table, fungsi 'get' bertujuan untuk mengembalikan 'value' berdasarkan 'key', fungsi 'remove' yaitu untuk menghapus node dengan 'key' tertentu, dan fungsi objek 'HashTable' dibuat, beberapa pasangan 'key' dan 'value' ditambahkan, pencarian nilai berdasarkan 'key' dilakukan, node dengan 'key' tertentu dihapus, dan semua elemen dalam hash table dicetak. 
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/ef309c1b-e28d-4682-a851-4f5295ba77ee)
 
 
 
@@ -248,13 +258,15 @@ int main() {
 
     return 0;
 }
-
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/4d5f19e2-91d1-4b57-920f-9a9c85225659)
 
+Kode di atas adalah kode program yang menggunakan struktur data hash table dengan ukuran 11 slot. Pertama, program akan membuat 'employee_map' dengan fungsi 'HashMap' dan memiliki array 'table' dengan ukuran 'TABLE_SIZE', lalu tiga data dari karyawan dimasukkan ke 'employee_Map' menggunakan fungsi 'insert', dengan data dihash menggunakan fungsi 'hashfunc' untuk menentukan indeks di 'table'. Metode 'searchByName' digunakan untuk mencari nomor telepon berdasarkan nama karyawan, sedangkan 'remove' digunakan untuk menghapus karyawan. Setelah operasi insert dan remove, isi 'employee_map' dicetak menggunakan fungsi 'print'. Saat terjadi kecocokan hash, data disimpan dalam bentuk linked list di slot yang sama. Operasi percarian menggunakan fungsi hash untuk indeks di mana data mungkin disimpan, dan jika data ditemukan, nomor telepon karyawan dicetak. Operasi penghapusan data dari hash table, dengan mencocokkan hash yang dilakukan melalui pencarian dalam linked list di slot yang sesuai. Seteleah operasi, isi hasah table ditampilkan, menunjukkan pasangan nama nomor telepon yang disimpan dalam setiap slot, termasuk penanganan tabrakan dengan linked list.
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/41cb9e3c-6f45-4be2-bb54-33692f581605)
 
 
 
@@ -274,6 +286,7 @@ c.	Implementasikan fungsi untuk menambahkan data baru, menghapus data, mencari d
 
 
 #### Full code Screenshot:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/ec156244-9f7e-479c-80d7-52db71aa014d)
 
 
 
@@ -285,10 +298,10 @@ Kesimpulannya,
 
 ## Referensi
 
-[1] J. Carey, S. Doshi, and P. Rajan, C++ Data structures and algorithm design principles: Leverage the power of modern C++ to build robust and scalable applications. Packt Publishing Ltd, 2019.
+[1]  V. Tran, L. Wang, H. Chen, and Q. Xiao, “MCHT: A maximal clique and hash table-based maximal prevalent co-location pattern mining algorithm,” Expert Systems With Applications, vol. 175, p. 114830, Aug. 2021, doi: 10.1016/j.eswa.2021.114830.
 
-[2] T. Mailund, The Joys of Hashing: Hash Table Programming with C. Apress, 2019.
+[2] J. Carey, S. Doshi, and P. Rajan, C++ Data structures and algorithm design principles: Leverage the power of modern C++ to build robust and scalable applications. Packt Publishing Ltd, 2019.
 
-[3] B. Andrist, V. Sehr, and B. Garney, C++ High performance: Master the art of optimizing the functioning of your C++ code. Packt Publishing Ltd, 2020.
+[3] T. Mailund, The Joys of Hashing: Hash Table Programming with C. Apress, 2019.
 
-[4] V. Tran, L. Wang, H. Chen, and Q. Xiao, “MCHT: A maximal clique and hash table-based maximal prevalent co-location pattern mining algorithm,” Expert Systems With Applications, vol. 175, p. 114830, Aug. 2021, doi: 10.1016/j.eswa.2021.114830.
+[4] B. Andrist, V. Sehr, and B. Garney, C++ High performance: Master the art of optimizing the functioning of your C++ code. Packt Publishing Ltd, 2020.
