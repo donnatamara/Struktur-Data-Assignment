@@ -8,7 +8,9 @@ Hash table adalah struktur data yang digunakan untuk menyimpan dan mengambil dat
 
 Hash table juga dapat diartikan sebagai fungsi yang merepresentasikan setiap nilai dengan sebuah kunci yang mungkin unik dan, kemudian, menggunakan kunci yang sama untuk memeriksa keberadaan kunci tersebut atau untuk mengambil nilai yang sesuai, tergantung pada kasus penggunaannya. Hash table adalah Fungsi yang mendapatkan kunci unik dari data yang diberikan[2]. 
 
-Mari kita ambil satu contoh sederhana sebelum masuk ke dalam hashing. Katakanlah kita memiliki sebuah penampung yang menyimpan bilangan bulat, dan kita ingin mengetahui apakah sebuah bilangan bulat tertentu merupakan bagian dari penampung tersebut atau bukan secepat mungkin. Cara yang paling sederhana adalah dengan memiliki larik Boolean dengan setiap bit mewakili nilai yang sama dengan indeksnya. Ketika kita ingin menyisipkan sebuah elemen, kita akan mengatur nilai Boolean yang berhubungan dengan elemen tersebut menjadi 0. Untuk menyisipkan x, kita cukup mengatur data[x] = true. Memeriksa apakah sebuah bilangan bulat tertentu, x, ada di dalam penampung juga sama sederhananya - kita cukup memeriksa apakah data[x] bernilai benar [2]. Dengan demikian, fungsi penyisipan, penghapusan, dan pencarian menjadi O(1). Sebuah tabel hash sederhana untuk menyimpan bilangan-bilangan bulat bernomor dari 0 sampai 9 akan terlihat sebagai berikut: 
+Mari kita ambil satu contoh sederhana sebelum masuk ke dalam hashing. Katakanlah kita memiliki sebuah penampung yang menyimpan bilangan bulat, dan kita ingin mengetahui apakah sebuah bilangan bulat tertentu merupakan bagian dari penampung tersebut atau bukan secepat mungkin. Cara yang paling sederhana adalah dengan memiliki larik Boolean dengan setiap bit mewakili nilai yang sama dengan indeksnya. 
+
+Ketika kita ingin menyisipkan sebuah elemen, kita akan mengatur nilai Boolean yang berhubungan dengan elemen tersebut menjadi 0. Untuk menyisipkan x, kita cukup mengatur data[x] = true. Memeriksa apakah sebuah bilangan bulat tertentu, x, ada di dalam penampung juga sama sederhananya - kita cukup memeriksa apakah data[x] bernilai benar [2]. Dengan demikian, fungsi penyisipan, penghapusan, dan pencarian menjadi O(1). Sebuah tabel hash sederhana untuk menyimpan bilangan-bilangan bulat bernomor dari 0 sampai 9 akan terlihat sebagai berikut: 
 
 ![Screenshot 2024-06-03 214503](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/91af5fda-db02-4786-b6f6-bd6a4acb1071)
 
@@ -22,6 +24,14 @@ Tabel hash menyimpan elemen-elemennya dalam semacam larik ember. Ketika menambah
 - Searching, mencari data dalam hash table dan mencari data di dalam bucker yang sesuai.
 - Update, memperbarui data dalam hash table lalu memperbarui data yang ditemukan.
 - Traversal, melalui seluruh hush table untuk memproses semua data yang ada dalam tabel.
+
+### Collision Resolution
+Collision atau tabrakan terjadi ketika dua key yang berbeda dipetakan ke alamat dan bahkan kegagalan operasi tabel hash. Collusion ini dapat diatasi dengan beberapa jenis teknik yaitu:
+- Chaining, yaitu setiap slot tabel hash dapat menampung pointer ke linked list yang berisi data-data yang dipetakan ke slot tersebut.
+- Probing, slot-slot hash table diperiksa secara berurutan untuk mencari slot kosong terdekat dari slot yang dihitung dari fungsi hash. Ada beberapa cara stategi probing yaitu diantaranya:
+  - Linear probing, slot diperika secara berurutan, dimulai dari slot yang dihitung dari fungsi hash, hingga ditemukan slot kosong.
+  - Quadratic probing, slot diperiksa dengan pola kuadrat dari slot yang dihitung dari fungsi hash, hingga ditemukan slot kosong.
+  - Double hashing, digunakan untuk menghitung offset dari slot yang dihitung dari fungsi hash pertama. Offset digunakan untuk mencari slot kosong dalam ola terentu.
 
 
 ## Guided 
