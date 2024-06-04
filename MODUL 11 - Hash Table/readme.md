@@ -159,7 +159,7 @@ int main() {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/65713825-5e39-45b7-9332-42c87ef0f79e)
 
-Kode di atas adalah kode program yang menggunakan hash table dengan operasi insert, get, remove, dan traverse. Pertama, 'MAX_SIZE' ditetapkan sebagai 10 dan fungsi hash mengembalikan indeks berdasarkan 'key' menggunakan operasi modulus. Struktur 'Node' digunakan untuk menyimpan elemen dengan pasangan 'key' dan 'value', serta pointer 'next' untuk menghubungkan node dalam kasus collision. Class 'HasTable' memiliki array pointer ke 'Node' ('table'). Fungsi 'insert' menambahkan atau memperbarui pasangan 'key' dan 'value' di hash table, fungsi 'get' bertujuan untuk mengembalikan 'value' berdasarkan 'key', fungsi 'remove' yaitu untuk menghapus node dengan 'key' tertentu, dan fungsi objek 'HashTable' dibuat, beberapa pasangan 'key' dan 'value' ditambahkan, pencarian nilai berdasarkan 'key' dilakukan, node dengan 'key' tertentu dihapus, dan semua elemen dalam hash table dicetak. 
+Kode di atas adalah kode program yang menggunakan hash table dengan operasi insert, get, remove, dan traverse. Pertama, `MAX_SIZE` ditetapkan sebagai 10 dan fungsi hash mengembalikan indeks berdasarkan `key` menggunakan operasi modulus. Struktur `Node` digunakan untuk menyimpan elemen dengan pasangan `key` dan `value`, serta pointer `next` untuk menghubungkan node dalam kasus collision. Class `HasTable` memiliki array pointer ke `Node` (`table`). Fungsi `insert` menambahkan atau memperbarui pasangan `key` dan `value` di hash table, fungsi `get` bertujuan untuk mengembalikan `value` berdasarkan `key`, fungsi `remove` yaitu untuk menghapus node dengan `key` tertentu, dan fungsi objek `HashTable` dibuat, beberapa pasangan `key` dan `value` ditambahkan, pencarian nilai berdasarkan `key` dilakukan, node dengan `key` tertentu dihapus, dan semua elemen dalam hash table dicetak. 
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/ef309c1b-e28d-4682-a851-4f5295ba77ee)
@@ -273,7 +273,7 @@ int main() {
 #### Output:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/4d5f19e2-91d1-4b57-920f-9a9c85225659)
 
-Kode di atas adalah kode program yang menggunakan struktur data hash table dengan ukuran 11 slot. Pertama, program akan membuat 'employee_map' dengan fungsi 'HashMap' dan memiliki array 'table' dengan ukuran 'TABLE_SIZE', lalu tiga data dari karyawan dimasukkan ke 'employee_Map' menggunakan fungsi 'insert', dengan data dihash menggunakan fungsi 'hashfunc' untuk menentukan indeks di 'table'. Metode 'searchByName' digunakan untuk mencari nomor telepon berdasarkan nama karyawan, sedangkan 'remove' digunakan untuk menghapus karyawan. Setelah operasi insert dan remove, isi 'employee_map' dicetak menggunakan fungsi 'print'. Saat terjadi kecocokan hash, data disimpan dalam bentuk linked list di slot yang sama. Operasi percarian menggunakan fungsi hash untuk indeks di mana data mungkin disimpan, dan jika data ditemukan, nomor telepon karyawan dicetak. Operasi penghapusan data dari hash table, dengan mencocokkan hash yang dilakukan melalui pencarian dalam linked list di slot yang sesuai. Seteleah operasi, isi hasah table ditampilkan, menunjukkan pasangan nama nomor telepon yang disimpan dalam setiap slot, termasuk penanganan tabrakan dengan linked list.
+Kode di atas adalah kode program yang menggunakan struktur data hash table dengan ukuran 11 slot. Pertama, program akan membuat `employee_map` dengan fungsi `HashMap` dan memiliki array `table` dengan ukuran `TABLE_SIZE`, lalu tiga data dari karyawan dimasukkan ke `employee_Map` menggunakan fungsi `insert`, dengan data dihash menggunakan fungsi `hashfunc` untuk menentukan indeks di `table`. Metode `searchByName` digunakan untuk mencari nomor telepon berdasarkan nama karyawan, sedangkan `remove` digunakan untuk menghapus karyawan. Setelah operasi insert dan remove, isi `employee_map` dicetak menggunakan fungsi `print`. Saat terjadi kecocokan hash, data disimpan dalam bentuk linked list di slot yang sama. Operasi percarian menggunakan fungsi hash untuk indeks di mana data mungkin disimpan, dan jika data ditemukan, nomor telepon karyawan dicetak. Operasi penghapusan data dari hash table, dengan mencocokkan hash yang dilakukan melalui pencarian dalam linked list di slot yang sesuai. Seteleah operasi, isi hasah table ditampilkan, menunjukkan pasangan nama nomor telepon yang disimpan dalam setiap slot, termasuk penanganan tabrakan dengan linked list.
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/41cb9e3c-6f45-4be2-bb54-33692f581605)
@@ -354,7 +354,7 @@ public:
             {
                 delete *it; // Free memory
                 table[hash_val].erase(it);
-                inputOrder.remove(nim); // Remove from input order list
+                inputOrder.remove(nim); 
                 return;
             }
         }
@@ -482,7 +482,7 @@ int main()
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/18f6b436-a1fb-4efc-a4a1-ffe085944be9)
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/20b5e2fe-9963-4f78-a678-d619b49f4d8b)
 
-
+Kode di atas adalah kode program yang menggunakan fungsi hash table untuk menyimpan data mahasiswa dengan NIM dan nilai menggunakan class `HashNode` dan `HashMap`, program juga menyediakan berbagai menu untuk menambah, menghapus, mencari, dan menampilkan data mahasiswa. Pertama program akan menginisialisasi class `HashMap` yang mengelola hash table yang menyimpan data `HashNode`. Kemudian, class `HashMap` diimplementasikan hash table dengan ukuran tetap `TABLE_SIZE`. Fungsi `insert` untuk menambahkan data mahasiswa ke table hash, memperbarui nilai jika NIM sudah ada, dan mencatat urutan input menggunkan list `inputOrder`. Fungsi  `searchByNim` untuk mencari data mahasiswa berdasarkan NIM dan mengembalikan hasilnya. Fungsi `searchByGradeRange` untuk mencari data mahasiswa dengan nilai dalam rentang tertentu. Fungsi `print` untuk mencetak semua data mahasiswa berdasarkan urutan input. Fungsi `menu` untuk menampilkan pilihan menu untuk pengguna. Fungsi `main` untuk mengatur alur program dengan loop menu, memungkinkan pengguna untuk menambah, menghapus, mencari, dan mencetak data mahasiswa. Program ini dapat memastikan tidak ada NIM yang menyebabkan loop tak berujung dengan menggunakan chaining untuk menangani kolisi pada table hash. 
 
 #### Full code Screenshot:
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/ec156244-9f7e-479c-80d7-52db71aa014d)
@@ -491,7 +491,7 @@ int main()
 
 ## Kesimpulan
 
-Kesimpulannya, 
+Kesimpulannya, hash table adalah struktur data yang digunakan untuk menyimpan dan mengambil data menggunakan kunci unik. Hash table menyimpan elemen dalam bucket. Beberapa operasi pada hash table adalah insertion untuk memasukkan data baru ke hash table, deletion untuk menghapus data dari hash table, searching untuk mencari data dalam hash table dan bucket yang sesuai, update untuk memperbarui data dalam hash table, tranversal untuk memproses semua data yang ada melalui hash table. Kolisi atau tabrakan dalam hash table dapat diatasi dengan teknik chaining dan probing. Dalam probing ada beberapa strategi yaitu linear probing, quadratic probing, dan double hashing.
 
 
 
