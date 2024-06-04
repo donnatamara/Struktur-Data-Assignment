@@ -315,7 +315,7 @@ class HashMap
 {
 private:
     vector<HashNode *> table[TABLE_SIZE];
-    list<string> inputOrder; // To keep track of the order of input
+    list<string> inputOrder; 
 
 public:
     int hashFunc(string key)
@@ -341,7 +341,7 @@ public:
             }
         }
         table[hash_val].push_back(new HashNode(nim, grade));
-        inputOrder.push_back(nim); // Keep track of the order of input
+        inputOrder.push_back(nim); 
     }
 
     void remove(string nim)
@@ -479,6 +479,9 @@ int main()
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/18f6b436-a1fb-4efc-a4a1-ffe085944be9)
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/20b5e2fe-9963-4f78-a678-d619b49f4d8b)
+
 
 
 #### Full code Screenshot:
