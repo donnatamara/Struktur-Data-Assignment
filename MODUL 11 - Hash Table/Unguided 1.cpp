@@ -24,7 +24,7 @@ class HashMap
 {
 private:
     vector<HashNode *> table[TABLE_SIZE];
-    list<string> inputOrder; // To keep track of the order of input
+    list<string> inputOrder; 
 
 public:
     int hashFunc(string key)
@@ -50,7 +50,7 @@ public:
             }
         }
         table[hash_val].push_back(new HashNode(nim, grade));
-        inputOrder.push_back(nim); // Keep track of the order of input
+        inputOrder.push_back(nim); 
     }
 
     void remove(string nim)
@@ -61,9 +61,9 @@ public:
         {
             if ((*it)->nim == nim)
             {
-                delete *it; // Free memory
+                delete *it; 
                 table[hash_val].erase(it);
-                inputOrder.remove(nim); // Remove from input order list
+                inputOrder.remove(nim); 
                 return;
             }
         }
