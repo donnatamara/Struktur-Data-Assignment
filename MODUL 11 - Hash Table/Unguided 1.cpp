@@ -1,167 +1,187 @@
 #include <iostream>
+#include <string>
+#include <vector>
+#include <list>
+
 using namespace std;
 
-const int MAX_SIZE = 10;
+const int TABLE_SIZE = 11;
 
-// Fungsi hash sederhana
-int hash_func(int key) {
-    return key % MAX_SIZE;
+class HashNode
+{
+public:
+    string nim;
+    int grade;
+
+    HashNode(string nim, int grade)
+    {
+        this->nim = nim;
+        this->grade = grade;
+    }
+};
+
+class HashMap
+{
+private:
+    vector<HashNode *> table[TABLE_SIZE];
+    list<string> inputOrder; // To keep track of the order of input
+
+public:
+    int hashFunc(string key)
+    {
+        int hash_val = 0;
+        for (char c : key)
+        {
+            hash_val += c;
+        }
+        return hash_val % TABLE_SIZE;
+    }
+
+    void insert(string nim, int grade)
+    {
+        int hash_val = hashFunc(nim);
+
+        for (auto node : table[hash_val])
+        {
+            if (node->nim == nim)
+            {
+                node->grade = grade;
+                return;
+            }
+        }
+        table[hash_val].push_back(new HashNode(nim, grade));
+        inputOrder.push_back(nim); // Keep track of the order of input
+    }
+
+    void remove(string nim)
+    {
+        int hash_val = hashFunc(nim);
+
+        for (auto it = table[hash_val].begin(); it != table[hash_val].end(); it++)
+        {
+            if ((*it)->nim == nim)
+            {
+                delete *it; // Free memory
+                table[hash_val].erase(it);
+                inputOrder.remove(nim); // Remove from input order list
+                return;
+            }
+        }
+    }
+
+    string searchByNim(string nim)
+    {
+        int hash_val = hashFunc(nim);
+        for (auto node : table[hash_val])
+        {
+            if (node->nim == nim)
+            {
+                return "NIM: " + node->nim + ", Nilai: " + to_string(node->grade);
+            }
+        }
+        return "Mahasiswa tidak ditemukan";
+    }
+
+    vector<string> searchByGradeRange(int minGrade, int maxGrade)
+    {
+        vector<string> results;
+        for (int i = 0; i < TABLE_SIZE; i++)
+        {
+            for (auto node : table[i])
+            {
+                if (node->grade >= minGrade && node->grade <= maxGrade)
+                {
+                    results.push_back("NIM: " + node->nim + ", Nilai: " + to_string(node->grade));
+                }
+            }
+        }
+        return results;
+    }
+
+    void print()
+    {
+        int count = 1;
+        for (const auto &nim : inputOrder)
+        {
+            int hash_val = hashFunc(nim);
+            for (auto node : table[hash_val])
+            {
+                if (node->nim == nim)
+                {
+                    cout << count << ". NIM: " << node->nim << ", Nilai: " << node->grade << endl;
+                    count++;
+                }
+            }
+        }
+    }
+};
+
+void menu()
+{
+    cout << "Menu:\n";
+    cout << "1. Tambah data mahasiswa\n";
+    cout << "2. Hapus data mahasiswa\n";
+    cout << "3. Cari data NIM mahasiswa\n";
+    cout << "4. Cari data nilai mahasiswa (80-90)\n";
+    cout << "5. Tampilkan semua data mahasiswa\n";
+    cout << "6. Keluar\n";
+    cout << "Pilih opsi: ";
 }
 
-// Struktur data untuk setiap node
-struct Node {
-    int NIM;
-    int nilai;
-    Node* next;
-    Node(int NIM, int nilai) : NIM(NIM), nilai(nilai), next(nullptr) {}
-};
+int main()
+{
+    HashMap student_map;
+    int choice;
+    string nim;
+    int grade;
 
-// Class hash table
-class HashTable {
-private:
-    Node** table;
-public:
-    HashTable() {
-        table = new Node*[MAX_SIZE]();
-    }
-    ~HashTable() {
-        for (int i = 0; i < MAX_SIZE; i++) {
-            Node* current = table[i];
-            while (current != nullptr) {
-                Node* temp = current;
-                current = current->next;
-                delete temp;
-            }
-        }
-        delete[] table;
-    }
-
-    // Insertion
-    void insert(int NIM, int nilai) {
-        int index = hash_func(NIM);
-        Node* current = table[index];
-        while (current != nullptr) {
-            if (current->NIM == NIM) {
-                current->nilai = nilai;
-                return;
-            }
-            current = current->next;
-        }
-        Node* node = new Node(NIM, nilai);
-        node->next = table[index];
-        table[index] = node;
-    }
-
-    // Searching by NIM
-    int get(int NIM) {
-        int index = hash_func(NIM);
-        Node* current = table[index];
-        while (current != nullptr) {
-            if (current->NIM == NIM) {
-                return current->nilai;
-            }
-            current = current->next;
-        }
-        return -1;
-    }
-
-    // Searching by nilai
-    void get_by_range(int min_nilai, int max_nilai) {
-        for (int i = 0; i < MAX_SIZE; i++) {
-            Node* current = table[i];
-            while (current != nullptr) {
-                if (current->nilai >= min_nilai && current->nilai <= max_nilai) {
-                    cout << "NIM: " << current->NIM << ", Nilai: " << current->nilai << endl;
-                }
-                current = current->next;
-            }
-        }
-    }
-
-    // delete
-    void remove(int NIM) {
-        int index = hash_func(NIM);
-        Node* current = table[index];
-        Node* prev = nullptr;
-        while (current != nullptr) {
-            if (current->NIM == NIM) {
-                if (prev == nullptr) {
-                    table[index] = current->next;
-                } else {
-                    prev->next = current->next;
-                }
-                delete current;
-                return;
-            }
-            prev = current;
-            current = current->next;
-        }
-    }
-
-    // Traversal
-    void traverse() {
-        for (int i = 0; i < MAX_SIZE; i++) {
-            Node* current = table[i];
-            while (current != nullptr) {
-                cout << "NIM: " << current->NIM << ", Nilai: " << current->nilai << endl;
-                current = current->next;
-            }
-        }
-    }
-};
-
-int main() {
-    HashTable ht;
-    int choice, NIM, nilai;
-    do {
-        cout << "\nMenu:\n";
-        cout << "1. Tambah data mahasiswa\n";
-        cout << "2. Hapus data mahasiswa\n";
-        cout << "3. Cari data NIM mahasiswa\n";
-        cout << "4. Cari data nilai mahasiswa\n";
-        cout << "5. Tampilkan semua data mahasiswa\n";
-        cout << "6. Keluar\n";
-        cout << "Pilih opsi: ";
+    while (true)
+    {
+        menu();
         cin >> choice;
 
-        switch (choice) {
-            case 1:
-                cout << "Masukkan NIM: ";
-                cin >> NIM;
-                cout << "Masukkan nilai: ";
-                cin >> nilai;
-                ht.insert(NIM, nilai);
-                break;
-            case 2:
-                cout << "Masukkan NIM yang akan dihapus: ";
-                cin >> NIM;
-                ht.remove(NIM);
-                break;
-            case 3:
-                cout << "Masukkan NIM yang akan dicari: ";
-                cin >> NIM;
-                nilai = ht.get(NIM);
-                if (nilai != -1) {
-                    cout << "NIM: " << NIM << ", Nilai: " << nilai << endl;
-                } else {
-                    cout << "Data tidak ditemukan.\n";
-                }
-                break;
-            case 4:
-                cout << "Data mahasiswa dengan nilai dalam rentang 80-90:\n";
-                ht.get_by_range(80, 90);
-                break;
-            case 5:
-                cout << "Semua data mahasiswa:\n";
-                ht.traverse();
-                break;
-            case 6:
-                cout << "Keluar dari program.\n";
-                break;
-            default:
-                cout << "Pilihan tidak valid.\n";
+        switch (choice)
+        {
+        case 1:
+            cout << "Masukkan NIM: ";
+            cin >> nim;
+            cout << "Masukkan nilai: ";
+            cin >> grade;
+            student_map.insert(nim, grade);
+            break;
+        case 2:
+            cout << "Masukkan NIM yang akan dihapus: ";
+            cin >> nim;
+            student_map.remove(nim);
+            break;
+        case 3:
+            cout << "Masukkan NIM yang akan dicari: ";
+            cin >> nim;
+            cout << student_map.searchByNim(nim) << endl;
+            break;
+        case 4:
+        {
+            vector<string> results = student_map.searchByGradeRange(80, 90);
+            for (const auto &res : results)
+            {
+                cout << res << endl;
+            }
+            if (results.empty())
+            {
+                cout << "Data tidak ditemukan" << endl;
+            }
+            break;
         }
-    } while (choice != 6);
+        case 5:
+            student_map.print();
+            break;
+        case 6:
+            cout << "Keluar dari program" << endl;
+            return 0;
+        default:
+            cout << "Pilihan tidak valid." << endl;
+        }
+    }
 
     return 0;
 }
