@@ -1,46 +1,57 @@
 #include <iostream>
 #include <queue>
+
 using namespace std;
 
-struct TNode {
+struct TNode
+{
     int data;
     TNode *left;
     TNode *right;
 
     // constructor
-    TNode(int value) {
+    TNode(int value)
+    {
         data = value;
         left = nullptr;
         right = nullptr;
     }
 };
 
-void preOrder(TNode *node) {
-    if (node != nullptr) {
+void preOrder(TNode *node)
+{
+    if (node != nullptr)
+    {
         cout << node->data << " ";
         preOrder(node->left);
         preOrder(node->right);
     }
 }
 
-void inOrder(TNode *node) {
-    if (node != nullptr) {
+void inOrder(TNode *node)
+{
+    if (node != nullptr)
+    {
         inOrder(node->left);
         cout << node->data << " ";
         inOrder(node->right);
     }
 }
 
-void postOrder(TNode *node) {
-    if (node != nullptr) {
+void postOrder(TNode *node)
+{
+    if (node != nullptr)
+    {
         postOrder(node->left);
         postOrder(node->right);
         cout << node->data << " ";
     }
 }
 
-void displayChildAndDescendant(TNode *node) {
-    if (node == nullptr) return;
+void displayChildAndDescendant(TNode *node)
+{
+    if (node == nullptr)
+        return;
 
     cout << "Children of " << node->data << ": ";
     if (node->left != nullptr)
@@ -53,10 +64,12 @@ void displayChildAndDescendant(TNode *node) {
     queue<TNode *> q;
     q.push(node->left);
     q.push(node->right);
-    while (!q.empty()) {
+    while (!q.empty())
+    {
         TNode *current = q.front();
         q.pop();
-        if (current != nullptr) {
+        if (current != nullptr)
+        {
             cout << current->data << " ";
             q.push(current->left);
             q.push(current->right);
@@ -65,7 +78,8 @@ void displayChildAndDescendant(TNode *node) {
     cout << endl;
 }
 
-void addNode(TNode *root) {
+void addNode(TNode *root)
+{
     int parentData;
     cout << "Enter data for the parent node: ";
     cin >> parentData;
@@ -77,18 +91,23 @@ void addNode(TNode *root) {
     TNode *parentNode = nullptr;
     queue<TNode *> q;
     q.push(root);
-    while (!q.empty()) {
+    while (!q.empty())
+    {
         TNode *current = q.front();
         q.pop();
-        if (current->data == parentData) {
+        if (current->data == parentData)
+        {
             parentNode = current;
             break;
         }
-        if (current->left != nullptr) q.push(current->left);
-        if (current->right != nullptr) q.push(current->right);
+        if (current->left != nullptr)
+            q.push(current->left);
+        if (current->right != nullptr)
+            q.push(current->right);
     }
 
-    if (parentNode == nullptr) {
+    if (parentNode == nullptr)
+    {
         cout << "Parent node not found. Please try again." << endl;
         return;
     }
@@ -100,7 +119,8 @@ void addNode(TNode *root) {
         parentNode->right = childNode;
 }
 
-void showChildAndDescendant(TNode *root) {
+void showChildAndDescendant(TNode *root)
+{
     cout << "Enter data for a node to display its children and descendants: ";
     int nodeData;
     cin >> nodeData;
@@ -108,33 +128,43 @@ void showChildAndDescendant(TNode *root) {
     queue<TNode *> q;
     q.push(root);
     TNode *selectedNode = nullptr;
-    while (!q.empty()) {
+    while (!q.empty())
+    {
         TNode *current = q.front();
         q.pop();
-        if (current->data == nodeData) {
+        if (current->data == nodeData)
+        {
             selectedNode = current;
             break;
         }
-        if (current->left != nullptr) q.push(current->left);
-        if (current->right != nullptr) q.push(current->right);
+        if (current->left != nullptr)
+            q.push(current->left);
+        if (current->right != nullptr)
+            q.push(current->right);
     }
 
-    if (selectedNode != nullptr) {
+    if (selectedNode != nullptr)
+    {
         displayChildAndDescendant(selectedNode);
-    } else {
+    }
+    else
+    {
         cout << "Node not found." << endl;
     }
 }
 
-int main() {
+int main()
+{
     cout << "Enter data for the root node: ";
     int rootData;
+    int DonnaNurTamara_2311110014;
     cin >> rootData;
 
     TNode *root = new TNode(rootData);
 
     char choice;
-    do {
+    do
+    {
         cout << "\nMenu:\n";
         cout << "1. Add a new node\n";
         cout << "2. PreOrder traversal\n";
@@ -145,34 +175,35 @@ int main() {
         cout << "Your choice: ";
         cin >> choice;
 
-        switch(choice) {
-            case '1':
-                addNode(root);
-                break;
-            case '2':
-                cout << "PreOrder traversal: ";
-                preOrder(root);
-                cout << endl;
-                break;
-            case '3':
-                cout << "InOrder traversal: ";
-                inOrder(root);
-                cout << endl;
-                break;
-            case '4':
-                cout << "PostOrder traversal: ";
-                postOrder(root);
-                cout << endl;
-                break;
-            case '5':
-                showChildAndDescendant(root);
-                break;
-            case '6':
-                cout << "Thank you, program terminated." << endl;
-                break;
-            default:
-                cout << "Invalid choice. Please try again." << endl;
-                break;
+        switch (choice)
+        {
+        case '1':
+            addNode(root);
+            break;
+        case '2':
+            cout << "PreOrder traversal: ";
+            preOrder(root);
+            cout << endl;
+            break;
+        case '3':
+            cout << "InOrder traversal: ";
+            inOrder(root);
+            cout << endl;
+            break;
+        case '4':
+            cout << "PostOrder traversal: ";
+            postOrder(root);
+            cout << endl;
+            break;
+        case '5':
+            showChildAndDescendant(root);
+            break;
+        case '6':
+            cout << "Thank you, program terminated." << endl;
+            break;
+        default:
+            cout << "Invalid choice. Please try again." << endl;
+            break;
         }
     } while (choice != '6');
 
