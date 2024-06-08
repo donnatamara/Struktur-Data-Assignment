@@ -6,9 +6,23 @@
 
 ### Graph
 
+#### Graph Traversal
+Menemukan lintasan atau rute dalam graf. Contoh algoritma yang digunakan adalah Depth First Search (DFS), Breadth-First Search (BFS), Dijkstra's
+Algorithm, A* Search Algorithm, dan lain-lain [1].
+
 
 ### Tree
+Tree merupakan salah satu struktur data yang palaing penting, karena banyak aplikasi alami memiliki struktur hirarki berguna dalam membantu memecahkan banyak masalah algoritmis. Pembentukan Binary Tree berdasarkan Preorder,
+Inorder atau Postorder Untuk membentuk suatu binary tree
+berdasarkan preorder, inorder atau postorder dapat dilakukan
+dengan syarat menggunakan 2 dari tiga penelusuran tersebut
+dan salah satunya harus inorder [2]. 
 
+#### Binary Tree
+Memiliki karakteristik maksimum child adalah 2 (left child dan right child). Complete binary tree apabila semua node kecuali leaf memiliki 0 atau 2 child. Subtree pada heap tree dapat memiliki 0 atau 2 child. Subtree pada pada Heap Tree dapat memiliki path length yang berbeda Skewed Binary Tree (Miring) : Bila semua node, kecuali Leaf memiliki hanya 1 child. Full Binary Tree : Bila semua node kecuali Leaf memiliki 2 Child dan semua subtree harus memiliki path yang sama [2].
+
+#### Tree Tranversal
+Melakukan pengolahan atau pencarian pada struktur data pohon. Contoh algoritma yang digunakan adalah Inorder Tranversal, Preorder Tranversal, Postorder Tranversal, dan lain-lain [1].
 
 
 ## Guided 
@@ -473,4 +487,6 @@ Kesimpulannya,
 
 ## Referensi
 
-[1] 
+[1] A. S. R. St. MTi, STRUKTUR DATA DAN ALGORITMA DENGAN C++. CV. AA. RIZKY, 2019.
+
+[2] A. S. R. St. MTi, STRUKTUR DATA DAN ALGORITMA DENGAN C++. CV. AA. RIZKY, 2019.
