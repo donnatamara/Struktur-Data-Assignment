@@ -54,6 +54,7 @@ int main() {
 
 #### Output:
 
+Kode di atas adalah kode program yang mengimplementasikan struktur data graph. Program dimulai dengan deklarasi array `simpul` dengan panjang 7 yang berisi nama-nama kota dan matriks `busur` berukuran 7x7 yang menyimpan bobot busur antara simpul-simpul dalam graph. Fungsi `tampilGraph()` digunakan untuk menampilkan representasi adjacency list dari graph, di mana loop pertama mengiterasi setiap baris (simpul awal), menampilkan nama simpul awal dengan format rata kiri dan lebar 15 karakter, diikuti oleh loop kedua yang mengiterasi setiap kolom (simpul tujuan). Jika ada busur dari simpul awal ke simpul tujuan, nama simpul tujuan dan bobot busur ditampilkan dalam format `nama_simpul_tujuan (bobot)`, setelah semua kolom diperiksa, program akan pindah ke baris baru untuk ke simpul berikutnya, Pada fungsi `main` didalamnya akan memanggil `tampilGraph` untuk menampilkan graph ke layar dan mengakhiri program dengan nilai `0`, menunjukkan program berhasil berjalan tanpa error. 
 
 #### Full code Screenshot:
 
@@ -230,6 +231,7 @@ int main()
 
 #### Output:
 
+Kode di atas adalah kode program untuk membuat dan menampilkan matriks bobot dari beberapa simpul (kota) yang diinputkan oleh pengguna. Pertama, program meminta pengguna untuk memasukkan jumlah simpul dan menyimpan nilainya dalam variabel `n`. Selanjutnya, pengguna diminta untuk memasukkan nama setiap simpul, yang disimpan dalam array `simpul_kota`. Setelah itu, pengguna memasukkan bobot antara setiap pasangan simpul, yang disimpan dalam array dua dimensi `bobot`. Program kemudian menampilkan matriks bobot dalam bentuk tabel yang rapi, dengan menggunakan `setw(8)` untuk mengatur lebar kolom. Setiap baris tabel dimulai dengan nama simpul, diikuti oleh bobot antar simpul. Program mengakhiri eksekusinya dengan mengembalikan nilai 0 yang menandakan bahwa program telah sukses dijalankan. 
 
 #### Full code Screenshot:
 
@@ -452,6 +454,7 @@ int main()
 
 #### Output:
 
+Kode di atas adalah kode program yang menggunakan sebuah binary tree dengan menampilkan menu-menu yang dapat pengguna akses untuk memilihnya. Pertama, program akan meminta pengguna untuk memasukkan data untuk node akar, yang kemudian digunakan untuk membuat pohon. Program menyediakan menu dengan opsi untuk menambahkan node baru, melakukan tranversal (PreOrder, InOrder, dan PostOrder), menampilkan anak dan keturunan dari node tertentu, atau keluar dari program. Saat pengguna memilih untuk menambahkan node baru, program akan meminta data untuk node induk dan anak, lalu menambahkan node anak sesuai dengan struktur pohon. Fungsi traversal digunakan untuk mencetak nilai node dalam urutan yang berbeda, sedangkan fungsi untuk menampilkan anak dan keturunanya menggunakan queue untuk menampilkan secra level-order. Program akan terus menampilkan menu hingga pengguna memilih untuk keluar dari prorgram untuk keluar, memberikan pengalaman yang interaktif dalamnya,, memberikan pengalaman interaktif dalam memanipulasi binary tree. 
 
 #### Full code Screenshot:
 
