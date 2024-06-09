@@ -15,20 +15,10 @@ Ada beberapa jeni graph berdasarkan sifat-sifatnya, yaitu:
 ### Tree
 Tree merupakan struktur data hierarki yang terdiri dari node-node yang saling terhubung. Setiap tree memiliki satu node khusus yang disebut root node. Selain root node, tree juga memiliki node-node lain yang disebut shild node. Child node yang tidak memiliki child nodenya sendiri disebuh leaf node[4]. Tree dapat berguna untuk menyimpan dan memanipulasi data hierarki, setelah membuat pohon, hitung nilainya dalam urutan yang berbeda dan mencari nilai di dalam pohon [2]. 
 
-Hubungan antara node-node dalam tree adalah seperti root node tidak memiliki parent node, setiap child node memiliki tapt satu parent node, setiap leaf node tidak memiliki child node [4].
+Hubungan antara node-node dalam tree adalah seperti root node tidak memiliki parent node, setiap child node memiliki taepat satu parent node, setiap leaf node tidak memiliki child node [4].
 
 Sebuah pohon terdiri dari simpul-simpul yang dihubungkan oleh cabang-cabang. Biasanya, simpul berisi beberapa jenis data. Setiap simpul dalam pohon memiliki satu simpul induk, kecuali satu simpul akar yang unik, yang tidak memiliki induk. Sebuah simpul yang tidak memiliki anak disebut simpul daun atau simpul eksternal. Sebuah simpul yang memiliki setidaknya satu anak disebut simpul internal [2].
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/d027cc59-06b3-4eaf-8bfd-dceb039b2c02) 
-
-#### Binary Tree
-Binary tree merupakan struktur data hierarki yang terdiri dari node-node yang saling terhubung [4].
-Memiliki karakteristik maksimum child adalah 2 (left child dan right child). Complete binary tree apabila semua node kecuali leaf memiliki 0 atau 2 child. Subtree pada heap tree dapat memiliki 0 atau 2 child. Subtree pada pada Heap Tree dapat memiliki path length yang berbeda Skewed Binary Tree (Miring) : Bila semua node, kecuali Leaf memiliki hanya 1 child. Full Binary Tree : Bila semua node kecuali Leaf memiliki 2 Child dan semua subtree harus memiliki path yang sama [1].
-
-Pembentukan Binary Tree berdasarkan Preorder,
-Inorder atau Postorder Untuk membentuk suatu binary tree
-berdasarkan preorder, inorder atau postorder dapat dilakukan
-dengan syarat menggunakan 2 dari tiga penelusuran tersebut
-dan salah satunya harus inorder [1]. 
 
 Ada beberapa operasi pada tree diantaranya adalah:
 - Create, untuk membentuk binary tree baru yang masih kosong.
@@ -40,6 +30,11 @@ Ada beberapa operasi pada tree diantaranya adalah:
 - Find, untuk mencari root, parent, left child, atau right child dari suatu node.
 - Characteristic, mengetahui karakteristik dari suatu tree.
 - Traverse, mengunjungi seluruh node-node pada tree dengan cara traversal.
+
+#### Binary Tree
+Binary tree merupakan struktur data hierarki yang terdiri dari node-node yang saling terhubung [4]. Memiliki karakteristik maksimum child adalah 2 (left child dan right child). Complete binary tree apabila semua node kecuali leaf memiliki 0 atau 2 child. Subtree pada heap tree dapat memiliki 0 atau 2 child. Subtree pada pada Heap Tree dapat memiliki path length yang berbeda Skewed Binary Tree (Miring) : Bila semua node, kecuali Leaf memiliki hanya 1 child. Full Binary Tree : Bila semua node kecuali Leaf memiliki 2 Child dan semua subtree harus memiliki path yang sama [1].
+
+Pembentukan Binary Tree berdasarkan Preorder, Inorder atau Postorder Untuk membentuk suatu binary tree berdasarkan preorder, inorder atau postorder dapat dilakukan dengan syarat menggunakan 2 dari tiga penelusuran tersebut dan salah satunya harus inorder [1]. 
 
 #### Tree Traversal
 Travesal melakukan pengolahan atau pencarian pada struktur data pohon. Contoh algoritma yang digunakan adalah Inorder Tranversal, Preorder Tranversal, Postorder Tranversal, dan lain-lain [1]. Penjelasan lebih lanjut sebagai berikut:
