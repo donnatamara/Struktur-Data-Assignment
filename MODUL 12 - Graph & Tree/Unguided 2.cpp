@@ -9,14 +9,43 @@ struct TNode
     TNode *left;
     TNode *right;
 
-    // constructor
+    // Constructor
     TNode(int value)
     {
         data = value;
         left = nullptr;
         right = nullptr;
     }
+
+    // Destructor
+    ~TNode()
+    {
+        delete left;
+        delete right;
+    }
 };
+
+// Fungsi untuk pencarian node berdasarkan data
+TNode* findNode(TNode *root, int data)
+{
+    if (root == nullptr)
+        return nullptr;
+
+    queue<TNode *> q;
+    q.push(root);
+    while (!q.empty())
+    {
+        TNode *current = q.front();
+        q.pop();
+        if (current->data == data)
+            return current;
+        if (current->left != nullptr)
+            q.push(current->left);
+        if (current->right != nullptr)
+            q.push(current->right);
+    }
+    return nullptr;
+}
 
 void preOrder(TNode *node)
 {
@@ -80,32 +109,13 @@ void displayChildAndDescendant(TNode *node)
 
 void addNode(TNode *root)
 {
-    int parentData;
+    int parentData, childData;
     cout << "Enter data for the parent node: ";
     cin >> parentData;
-
-    int childData;
     cout << "Enter data for the child node: ";
     cin >> childData;
 
-    TNode *parentNode = nullptr;
-    queue<TNode *> q;
-    q.push(root);
-    while (!q.empty())
-    {
-        TNode *current = q.front();
-        q.pop();
-        if (current->data == parentData)
-        {
-            parentNode = current;
-            break;
-        }
-        if (current->left != nullptr)
-            q.push(current->left);
-        if (current->right != nullptr)
-            q.push(current->right);
-    }
-
+    TNode *parentNode = findNode(root, parentData);
     if (parentNode == nullptr)
     {
         cout << "Parent node not found. Please try again." << endl;
@@ -115,34 +125,22 @@ void addNode(TNode *root)
     TNode *childNode = new TNode(childData);
     if (parentNode->left == nullptr)
         parentNode->left = childNode;
-    else
+    else if (parentNode->right == nullptr)
         parentNode->right = childNode;
+    else
+    {
+        cout << "Parent node already has two children." << endl;
+        delete childNode;
+    }
 }
 
 void showChildAndDescendant(TNode *root)
 {
-    cout << "Enter data for a node to display its children and descendants: ";
     int nodeData;
+    cout << "Enter data for a node to display its children and descendants: ";
     cin >> nodeData;
 
-    queue<TNode *> q;
-    q.push(root);
-    TNode *selectedNode = nullptr;
-    while (!q.empty())
-    {
-        TNode *current = q.front();
-        q.pop();
-        if (current->data == nodeData)
-        {
-            selectedNode = current;
-            break;
-        }
-        if (current->left != nullptr)
-            q.push(current->left);
-        if (current->right != nullptr)
-            q.push(current->right);
-    }
-
+    TNode *selectedNode = findNode(root, nodeData);
     if (selectedNode != nullptr)
     {
         displayChildAndDescendant(selectedNode);
@@ -157,7 +155,6 @@ int main()
 {
     cout << "Enter data for the root node: ";
     int rootData;
-    int DonnaNurTamara_2311110014;
     cin >> rootData;
 
     TNode *root = new TNode(rootData);
@@ -207,5 +204,6 @@ int main()
         }
     } while (choice != '6');
 
+    delete root; // Menghapus root dan semua turunannya
     return 0;
 }
