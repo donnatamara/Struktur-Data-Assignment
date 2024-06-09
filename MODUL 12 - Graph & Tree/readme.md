@@ -12,11 +12,6 @@ Ada beberapa jeni graph berdasarkan sifat-sifatnya, yaitu:
 - Graph tak berarah (undirected graph), setiap sisi tidak memiliki arah, sehingga sisi (u, v) sama dengan sisi (v, u) [3].
 - Graph berbobot (weighted graph), setiap sisi memiliki bobot atau nilai numerik yang menyatakan biaya atau jarak [3].
 
-#### Graph Traversal
-Menemukan lintasan atau rute dalam graf. Contoh algoritma yang digunakan adalah Depth First Search (DFS), Breadth-First Search (BFS), Dijkstra's
-Algorithm, Search Algorithm, dan lain-lain [1].
-
-
 ### Tree
 Tree merupakan struktur data hierarki yang terdiri dari node-node yang saling terhubung. Setiap tree memiliki satu node khusus yang disebut root node. Selain root node, tree juga memiliki node-node lain yang disebut shild node. Child node yang tidak memiliki child nodenya sendiri disebuh leaf node[4]. Tree dapat berguna untuk menyimpan dan memanipulasi data hierarki, setelah membuat pohon, hitung nilainya dalam urutan yang berbeda dan mencari nilai di dalam pohon [2]. 
 
@@ -35,9 +30,24 @@ berdasarkan preorder, inorder atau postorder dapat dilakukan
 dengan syarat menggunakan 2 dari tiga penelusuran tersebut
 dan salah satunya harus inorder [1]. 
 
-#### Tree Tranversal
-Melakukan pengolahan atau pencarian pada struktur data pohon. Contoh algoritma yang digunakan adalah Inorder Tranversal, Preorder Tranversal, Postorder Tranversal, dan lain-lain [1].
+Ada beberapa operasi pada tree diantaranya adalah:
+- Create, untuk membentuk binary tree baru yang masih kosong.
+- Clear, untuk menghapus semua node pada binary tree.
+- Retive, untuk mengetahui isi dari node yang ditunjuk pointer current.
+- isEMpty, untuk memeriksa apakah binary tree masih kosong atau tidak.
+- Delete, menghapus sebuah subtree yang ditunjuk pointer current.
+- Insert, untuk memasukkan sebuah node kedalam tree.
+- Find, untuk mencari root, parent, left child, atau right child dari suatu node.
+- Characteristic, mengetahui karakteristik dari suatu tree.
+- Traverse, mengunjungi seluruh node-node pada tree dengan cara traversal.
 
+#### Tree Traversal
+Travesal melakukan pengolahan atau pencarian pada struktur data pohon. Contoh algoritma yang digunakan adalah Inorder Tranversal, Preorder Tranversal, Postorder Tranversal, dan lain-lain [1]. Penjelasan lebih lanjut sebagai berikut:
+- Inorder traversal: mengunjungi node kiri, kemudian node akar, lalu node kanan [5].
+- Pre-order traversal: mengunjungi node akar, kemudian node kiri, lalu node akar [5].
+- Post-order traversal: mengunjungi node kiri, kemudian node kanan, lalu node akar [5].
+
+  
 
 ## Guided 
 ### 1. Guided 1
@@ -509,5 +519,5 @@ Kesimpulannya,
 
 [4] Y. Kanetkar, Data Structures through C++: Experience Data Structures C++ through animations. BPB Publications, 2019.
 
-[5] 
+[5] A. Drozdek, Data Structures and Algorithms in C++. Cengage Learning, edisi 2020.
 
