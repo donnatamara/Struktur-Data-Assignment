@@ -5,21 +5,35 @@
 ## Dasar Teori
 
 ### Graph
+Graph adalah struktur data yang terdiri dari set objek (simpul atau vertex) yang terhubung oleh satu set sambungan (sisi atau edge). Secara formal, graph G didefinisikan sebagai pasangan himpunan (V, E), di mana V adalah himpunan simpul dan E adlah himpunan sisi. Setiap sisi e di E menghubungkan dua simpul yang berbeda u dan v di V [3].
+
+Ada beberapa jeni graph berdasarkan sifat-sifatnya, yaitu:
+- Graph berarah (directed graph), setiap sisi memiliki arah sehingga sisi (u, v) berbesa dengan sisi (v, u) [3].
+- Graph tak berarah (undirected graph), setiap sisi tidak memiliki arah, sehingga sisi (u, v) sama dengan sisi (v, u) [3].
+- Graph berbobot (weighted graph), setiap sisi memiliki bobot atau nilai numerik yang menyatakan biaya atau jarak [3].
 
 #### Graph Traversal
 Menemukan lintasan atau rute dalam graf. Contoh algoritma yang digunakan adalah Depth First Search (DFS), Breadth-First Search (BFS), Dijkstra's
-Algorithm, A* Search Algorithm, dan lain-lain [1].
+Algorithm, Search Algorithm, dan lain-lain [1].
 
 
 ### Tree
-Tree merupakan salah satu struktur data yang palaing penting, karena banyak aplikasi alami memiliki struktur hirarki berguna dalam membantu memecahkan banyak masalah algoritmis. Pembentukan Binary Tree berdasarkan Preorder,
+Tree merupakan struktur data hierarki yang terdiri dari node-node yang saling terhubung. Setiap tree memiliki satu node khusus yang disebut root node. Selain root node, tree juga memiliki node-node lain yang disebut shild node. Child node yang tidak memiliki child nodenya sendiri disebuh leaf node[4]. Tree dapat berguna untuk menyimpan dan memanipulasi data hierarki, setelah membuat pohon, hitung nilainya dalam urutan yang berbeda dan mencari nilai di dalam pohon [2]. 
+
+Hubungan antara node-node dalam tree adalah seperti root node tidak memiliki parent node, setiap child node memiliki tapt satu parent node, setiap leaf node tidak memiliki child node [4].
+
+Sebuah pohon terdiri dari simpul-simpul yang dihubungkan oleh cabang-cabang. Biasanya, simpul berisi beberapa jenis data. Setiap simpul dalam pohon memiliki satu simpul induk, kecuali satu simpul akar yang unik, yang tidak memiliki induk. Sebuah simpul yang tidak memiliki anak disebut simpul daun atau simpul eksternal. Sebuah simpul yang memiliki setidaknya satu anak disebut simpul internal [2].
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/d027cc59-06b3-4eaf-8bfd-dceb039b2c02) 
+
+#### Binary Tree
+Binary tree merupakan struktur data hierarki yang terdiri dari node-node yang saling terhubung [4].
+Memiliki karakteristik maksimum child adalah 2 (left child dan right child). Complete binary tree apabila semua node kecuali leaf memiliki 0 atau 2 child. Subtree pada heap tree dapat memiliki 0 atau 2 child. Subtree pada pada Heap Tree dapat memiliki path length yang berbeda Skewed Binary Tree (Miring) : Bila semua node, kecuali Leaf memiliki hanya 1 child. Full Binary Tree : Bila semua node kecuali Leaf memiliki 2 Child dan semua subtree harus memiliki path yang sama [1].
+
+Pembentukan Binary Tree berdasarkan Preorder,
 Inorder atau Postorder Untuk membentuk suatu binary tree
 berdasarkan preorder, inorder atau postorder dapat dilakukan
 dengan syarat menggunakan 2 dari tiga penelusuran tersebut
-dan salah satunya harus inorder [2]. 
-
-#### Binary Tree
-Memiliki karakteristik maksimum child adalah 2 (left child dan right child). Complete binary tree apabila semua node kecuali leaf memiliki 0 atau 2 child. Subtree pada heap tree dapat memiliki 0 atau 2 child. Subtree pada pada Heap Tree dapat memiliki path length yang berbeda Skewed Binary Tree (Miring) : Bila semua node, kecuali Leaf memiliki hanya 1 child. Full Binary Tree : Bila semua node kecuali Leaf memiliki 2 Child dan semua subtree harus memiliki path yang sama [2].
+dan salah satunya harus inorder [1]. 
 
 #### Tree Tranversal
 Melakukan pengolahan atau pencarian pada struktur data pohon. Contoh algoritma yang digunakan adalah Inorder Tranversal, Preorder Tranversal, Postorder Tranversal, dan lain-lain [1].
@@ -489,4 +503,11 @@ Kesimpulannya,
 
 [1] A. S. R. St. MTi, STRUKTUR DATA DAN ALGORITMA DENGAN C++. CV. AA. RIZKY, 2019.
 
-[2] A. S. R. St. MTi, STRUKTUR DATA DAN ALGORITMA DENGAN C++. CV. AA. RIZKY, 2019.
+[2] J. Carey, S. Doshi, and P. Rajan, C++ Data structures and algorithm design principles: Leverage the power of modern C++ to build robust and scalable applications. Packt Publishing Ltd, 2019.
+
+[3] T. H. Cormen, C. E. Leiserson, R. L. Rivest, and C. Stein, Introduction to Algorithms, fourth edition. MIT Press, 2022.
+
+[4] Y. Kanetkar, Data Structures through C++: Experience Data Structures C++ through animations. BPB Publications, 2019.
+
+[5] 
+
