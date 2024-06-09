@@ -3,7 +3,6 @@
 <p align="center">Donna Nur Tamara</p>
 
 ## Dasar Teori
-
 ### Graph
 Graph adalah struktur data yang terdiri dari set objek (simpul atau vertex) yang terhubung oleh satu set sambungan (sisi atau edge). Secara formal, graph G didefinisikan sebagai pasangan himpunan (V, E), di mana V adalah himpunan simpul dan E adlah himpunan sisi. Setiap sisi e di E menghubungkan dua simpul yang berbeda u dan v di V [3].
 
@@ -491,6 +490,7 @@ int main()
 ```
 
 #### Output:
+![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/793ad272-a3fb-4610-91f4-5927d8d34ffd)
 
 Kode di atas adalah kode program yang menggunakan sebuah binary tree dengan menampilkan menu-menu yang dapat pengguna akses untuk memilihnya. Pertama, program akan meminta pengguna untuk memasukkan data untuk node akar, yang kemudian digunakan untuk membuat pohon. Program menyediakan menu dengan opsi untuk menambahkan node baru, melakukan tranversal (PreOrder, InOrder, dan PostOrder), menampilkan anak dan keturunan dari node tertentu, atau keluar dari program. Saat pengguna memilih untuk menambahkan node baru, program akan meminta data untuk node induk dan anak, lalu menambahkan node anak sesuai dengan struktur pohon. Fungsi traversal digunakan untuk mencetak nilai node dalam urutan yang berbeda, sedangkan fungsi untuk menampilkan anak dan keturunanya menggunakan queue untuk menampilkan secra level-order. Program akan terus menampilkan menu hingga pengguna memilih untuk keluar dari prorgram untuk keluar, memberikan pengalaman yang interaktif dalamnya,, memberikan pengalaman interaktif dalam memanipulasi binary tree. 
 
@@ -498,9 +498,10 @@ Kode di atas adalah kode program yang menggunakan sebuah binary tree dengan mena
 ![image](https://github.com/donnatamara/Struktur-Data-Assignment/assets/161492059/b91dcc85-caf6-4f4a-86d5-7bb68ea07535)
 
 
+
 ## Kesimpulan
 
-Kesimpulannya, 
+Kesimpulannya, graph adalah struktur data yang terdiri dari simpul yang terhubung oleh sisi. Graph memiliki beberapa jenis yaitu graph berarah, graph tidak berarah, dan graph berbobot. Tree adalah struktur data hierarki yang terdiri dari node (simpul), setiap node memiliki parent node kecuali root node yang tidak memiliki parent node. Beberapa operasi pada tree yaitu create, clear, retive, isEmpty, delete, insert, find, characteristic, serta traverse. Pada traverse terdapat in-order, pre-order, dan post-order.
 
 
 
