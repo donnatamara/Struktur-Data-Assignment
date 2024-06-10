@@ -15,8 +15,7 @@ struct Node
 void
 insertbelakang(int key, int data, int value)
 {
-    for (int i = 0; i < value; i++)
-        ;
+    for (int i = 0; i < value; i++);
 }
 
 void printList(int key)

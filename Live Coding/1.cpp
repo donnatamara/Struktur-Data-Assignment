@@ -17,8 +17,8 @@ bool sequentialSearch(int data[], int n, int cari, int &index)
 int main()
 {
     int n = 5;
-    int cari = 5;
     int data[n] = {1, 2, 3, 4, 5, 5};
+    int cari = 5;
     bool ketemu;
     int index;
 
