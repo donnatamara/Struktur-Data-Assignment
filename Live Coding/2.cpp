@@ -8,9 +8,7 @@ bool faktorial(int data, int n, int &index)
         for (int j = 0; i < n; i++)
         {
             int n = n * i++;
-            {
-                if (int hasil = n / n - (n-1);
-            }
+            if (int hasil = n / n - (n-1) * i++);
         }
     }
 
